@@ -1,0 +1,1113 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Manual ground-truth audit</title>
+<style>
+body{font-family:system-ui,Segoe UI,sans-serif;max-width:900px;margin:0 auto;padding:1rem;
+background:#f6f8fa;color:#1f2328;line-height:1.5}
+h1{font-size:1.4rem}
+.summary{background:#fff;border:1px solid #d0d7de;border-radius:8px;padding:.8rem 1rem;margin-bottom:1rem}
+.card{background:#fff;border:1px solid #d0d7de;border-radius:8px;padding:.8rem 1rem;margin-bottom:.8rem}
+.head{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.4rem}
+.num{font-weight:700;color:#57606a}
+.badge{color:#fff;padding:.1rem .5rem;border-radius:12px;font-size:.78rem;font-weight:600}
+.cat{background:#ddf4ff;padding:.1rem .5rem;border-radius:12px;font-size:.8rem}
+.cve{font-weight:600}
+.fork{margin:.2rem 0}
+.meta{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem;color:#57606a;margin:.3rem 0}
+.file,.links{font-size:.85rem;margin:.2rem 0}
+code{background:#eff1f3;padding:.05rem .3rem;border-radius:4px;font-size:.82rem;word-break:break-all}
+details{margin:.4rem 0}summary{cursor:pointer;font-size:.85rem;color:#0969da}
+ul{margin:.4rem 0;padding-left:1.2rem}li{margin:.15rem 0}
+a{color:#0969da}
+.verdict{display:block;margin-top:.5rem;font-size:.85rem}
+select{margin-left:.4rem;padding:.15rem}
+</style></head><body>
+<h1>Manual ground-truth audit — run 2026-07-04</h1>
+<div class="summary">
+<p><b>How to check each item:</b> abra o <i>fix commit</i> (upstream) e o <i>file in the fork</i>.
+Veja se as linhas adicionadas pelo patch estão presentes no arquivo do fork. Se estiverem → o fork
+está <b>patched</b> (concorda com GT=CONFIRMED_PATCHED).</p>
+<p><b>Total:</b> 43 pares fork×CVE — 23 TP · 11 FN · 9 ambíguos ·
+<b>0 FP · 0 TN</b>.</p>
+<p>⚠ <b>Point to note:</b> every conclusive pair is "PATCHED" (none is "VULNERABLE").
+The <b>11 FN</b> (highlighted at the top) are the cases where the ground truth confirms the
+fix but the AST layer stayed in ZONA_INCERTEZA (the uncertainty zone) &mdash; these are the
+most important ones to audit by hand.</p>
+</div>
+
+    <div class="card">
+      <div class="head">
+        <span class="num">#1</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2022-39252</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/gossiping/machine.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/093fb5d0aa21c0b5eaea6ec96b477f1075271cbb" target="_blank">commit 1</a> · <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/41449d2cc360e347f5d4e1c154ec1e3185f11acd" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/gossiping/machine.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] async fn should_accept_forward(</code></li><li><code>[OK 1.00] &amp;self,</code></li><li><code>[OK 1.00] info: &amp;GossipRequest,</code></li><li><code>[OK 1.00] sender_key: Curve25519PublicKey,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#2</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2022-39252</span>
+      </div>
+      <div class="fork"><b>fork:</b> matrix-construct/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/gossiping/machine.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/093fb5d0aa21c0b5eaea6ec96b477f1075271cbb" target="_blank">commit 1</a> · <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/41449d2cc360e347f5d4e1c154ec1e3185f11acd" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/matrix-construct/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/gossiping/machine.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] async fn should_accept_forward(</code></li><li><code>[OK 1.00] &amp;self,</code></li><li><code>[OK 1.00] info: &amp;GossipRequest,</code></li><li><code>[OK 1.00] sender_key: Curve25519PublicKey,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#3</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2022-39252</span>
+      </div>
+      <div class="fork"><b>fork:</b> verji/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/gossiping/machine.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/093fb5d0aa21c0b5eaea6ec96b477f1075271cbb" target="_blank">commit 1</a> · <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/41449d2cc360e347f5d4e1c154ec1e3185f11acd" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/verji/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/gossiping/machine.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] async fn should_accept_forward(</code></li><li><code>[OK 1.00] &amp;self,</code></li><li><code>[OK 1.00] info: &amp;GossipRequest,</code></li><li><code>[OK 1.00] sender_key: Curve25519PublicKey,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#4</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2024-34353</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.8667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk/src/encryption/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/71136e44c03c79f80d6d1a2446673bc4d53a2067" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk/src/encryption/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.74] self.client.encryption().backups().setup_and_resume().await?;</code></li><li><code>[OK 0.95] let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()</code></li><li><code>[X 0.54] .expect(&quot;Can&#x27;t create new recovery key&quot;);</code></li><li><code>[OK 1.00] let backup_key = decryption_key.megolm_v1_public_key();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#5</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2024-34353</span>
+      </div>
+      <div class="fork"><b>fork:</b> matrix-construct/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.8667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk/src/encryption/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/71136e44c03c79f80d6d1a2446673bc4d53a2067" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/matrix-construct/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk/src/encryption/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.74] self.client.encryption().backups().setup_and_resume().await?;</code></li><li><code>[OK 0.95] let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()</code></li><li><code>[X 0.54] .expect(&quot;Can&#x27;t create new recovery key&quot;);</code></li><li><code>[OK 1.00] let backup_key = decryption_key.megolm_v1_public_key();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#6</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2024-34353</span>
+      </div>
+      <div class="fork"><b>fork:</b> verji/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.8667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk/src/encryption/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/71136e44c03c79f80d6d1a2446673bc4d53a2067" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/verji/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk/src/encryption/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.74] self.client.encryption().backups().setup_and_resume().await?;</code></li><li><code>[OK 0.95] let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()</code></li><li><code>[X 0.54] .expect(&quot;Can&#x27;t create new recovery key&quot;);</code></li><li><code>[OK 1.00] let backup_key = decryption_key.megolm_v1_public_key();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#7</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-48937</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/machine/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/13c1d2048286bbabf5e7bc6b015aafee98f04d55" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/machine/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] let (verification_state, device_id) = match sender_data.user_id() {</code></li><li><code>[OK 1.00] Some(i) if i != sender =&gt; {</code></li><li><code>[OK 1.00] VerificationState::Unverified(VerificationLevel::None(</code></li><li><code>[OK 0.98] DeviceLinkProblem::MissingDevice,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#8</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-48937</span>
+      </div>
+      <div class="fork"><b>fork:</b> verji/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/machine/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/13c1d2048286bbabf5e7bc6b015aafee98f04d55" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/verji/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/machine/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] let (verification_state, device_id) = match sender_data.user_id() {</code></li><li><code>[OK 1.00] Some(i) if i != sender =&gt; {</code></li><li><code>[OK 1.00] VerificationState::Unverified(VerificationLevel::None(</code></li><li><code>[OK 0.98] DeviceLinkProblem::MissingDevice,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#9</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2024-31208</span>
+      </div>
+      <div class="fork"><b>fork:</b> kakahu2015/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/storage/databases/main/events.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/55b0aa847a61774b6a3acdc4b177a20dc019f01a" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/kakahu2015/synapse/blob/HEAD/synapse/storage/databases/main/events.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import collections</code></li><li><code>[OK 1.00] from synapse.storage.databases.main.event_federation import EventFederationStore</code></li><li><code>[OK 1.00] for links in EventFederationStore._get_chain_links(</code></li><li><code>[OK 1.00] txn, {chain_id for chain_id, _ in chain_map.values()}</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#10</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2024-31208</span>
+      </div>
+      <div class="fork"><b>fork:</b> microchipster/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/storage/databases/main/events.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/55b0aa847a61774b6a3acdc4b177a20dc019f01a" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/microchipster/synapse/blob/HEAD/synapse/storage/databases/main/events.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import collections</code></li><li><code>[OK 1.00] from synapse.storage.databases.main.event_federation import EventFederationStore</code></li><li><code>[OK 1.00] for links in EventFederationStore._get_chain_links(</code></li><li><code>[OK 1.00] txn, {chain_id for chain_id, _ in chain_map.values()}</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#11</span>
+        <span class="badge" style="background:#9a6700">FN (ground truth patched, AST uncertain)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2024-31208</span>
+      </div>
+      <div class="fork"><b>fork:</b> shcherbak/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 0.9333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/storage/databases/main/events.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/55b0aa847a61774b6a3acdc4b177a20dc019f01a" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/shcherbak/synapse/blob/HEAD/synapse/storage/databases/main/events.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import collections</code></li><li><code>[OK 1.00] from synapse.storage.databases.main.event_federation import EventFederationStore</code></li><li><code>[OK 1.00] for links in EventFederationStore._get_chain_links(</code></li><li><code>[OK 1.00] txn, {chain_id for chain_id, _ in chain_map.values()}</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#12</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2023-38690</span>
+      </div>
+      <div class="fork"><b>fork:</b> jamesjen/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/irc/BridgedClient.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/0afb064635d37e039067b5b3d6423448b93026d3" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/jamesjen/matrix-appservice-irc/blob/HEAD/src/irc/BridgedClient.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] public assertConnected(): Client {</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#13</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2023-38690</span>
+      </div>
+      <div class="fork"><b>fork:</b> oI0ck/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/irc/BridgedClient.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/0afb064635d37e039067b5b3d6423448b93026d3" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/oI0ck/matrix-appservice-irc/blob/HEAD/src/irc/BridgedClient.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] public assertConnected(): Client {</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#14</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2023-38700</span>
+      </div>
+      <div class="fork"><b>fork:</b> jamesjen/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/bridge/MatrixHandler.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/jamesjen/matrix-appservice-irc/blob/HEAD/src/bridge/MatrixHandler.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] private readonly processingInvitesForRooms: {</code></li><li><code>[OK 1.00] [roomIdUserId: string]: Promise&lt;unknown&gt;;</code></li><li><code>[OK 1.00] } = {};</code></li><li><code>[OK 1.00] [metricName: string]: number;</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#15</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2023-38700</span>
+      </div>
+      <div class="fork"><b>fork:</b> oI0ck/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/bridge/MatrixHandler.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/oI0ck/matrix-appservice-irc/blob/HEAD/src/bridge/MatrixHandler.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] private readonly processingInvitesForRooms: {</code></li><li><code>[OK 1.00] [roomIdUserId: string]: Promise&lt;unknown&gt;;</code></li><li><code>[OK 1.00] } = {};</code></li><li><code>[OK 1.00] [metricName: string]: number;</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#16</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2024-39691</span>
+      </div>
+      <div class="fork"><b>fork:</b> jamesjen/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/bridge/MatrixHandler.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/1835e047f269001054be4c68867797aa12372a0f" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/jamesjen/matrix-appservice-irc/blob/HEAD/src/bridge/MatrixHandler.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#17</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2024-39691</span>
+      </div>
+      <div class="fork"><b>fork:</b> oI0ck/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/bridge/MatrixHandler.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/1835e047f269001054be4c68867797aa12372a0f" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/oI0ck/matrix-appservice-irc/blob/HEAD/src/bridge/MatrixHandler.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#18</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2024-52505</span>
+      </div>
+      <div class="fork"><b>fork:</b> jamesjen/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/provisioning/Schema.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/4a024eae1a992b1ea67e71a998e0b833b54221e2" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/jamesjen/matrix-appservice-irc/blob/HEAD/src/provisioning/Schema.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] pattern: &quot;^#([^:\\x00-\\x1F\\s,]){1,199}$&quot;,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#19</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2024-52505</span>
+      </div>
+      <div class="fork"><b>fork:</b> oI0ck/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/provisioning/Schema.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/4a024eae1a992b1ea67e71a998e0b833b54221e2" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/oI0ck/matrix-appservice-irc/blob/HEAD/src/provisioning/Schema.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] pattern: &quot;^#([^:\\x00-\\x1F\\s,]){1,199}$&quot;,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#20</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2025-27146</span>
+      </div>
+      <div class="fork"><b>fork:</b> jamesjen/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L1_SHA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/irc/BridgedClient.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/74f02c8e11f16ed1b355700092c1aa9c036a11bd" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/jamesjen/matrix-appservice-irc/blob/HEAD/src/irc/BridgedClient.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>(file identical to the post-patch version - SHA match, patched by definition)</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#21</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">bridge</span>
+        <span class="cve">CVE-2025-27146</span>
+      </div>
+      <div class="fork"><b>fork:</b> oI0ck/matrix-appservice-irc</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L1_SHA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/irc/BridgedClient.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-appservice-irc/commit/74f02c8e11f16ed1b355700092c1aa9c036a11bd" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/oI0ck/matrix-appservice-irc/blob/HEAD/src/irc/BridgedClient.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>(file identical to the post-patch version - SHA match, patched by definition)</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#22</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26131</span>
+      </div>
+      <div class="fork"><b>fork:</b> H1d3r/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/MainActivity.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/53734255ec270b0814946350787393dfcaa2a5a9" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/H1d3r/element-android/blob/HEAD/vector/src/main/java/im/vector/app/features/MainActivity.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import im.vector.app.features.home.room.detail.RoomDetailActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.home.room.threads.ThreadsActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.location.live.map.LiveLocationMapViewActivity</code></li><li><code>[OK 1.00] val allowList = listOf(</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#23</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26131</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/SchildiChat-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/MainActivity.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/53734255ec270b0814946350787393dfcaa2a5a9" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/SchildiChat-android/blob/HEAD/vector/src/main/java/im/vector/app/features/MainActivity.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import im.vector.app.features.home.room.detail.RoomDetailActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.home.room.threads.ThreadsActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.location.live.map.LiveLocationMapViewActivity</code></li><li><code>[OK 1.00] val allowList = listOf(</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#24</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26131</span>
+      </div>
+      <div class="fork"><b>fork:</b> bincnc/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/MainActivity.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/53734255ec270b0814946350787393dfcaa2a5a9" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/bincnc/element-android/blob/HEAD/vector/src/main/java/im/vector/app/features/MainActivity.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] import im.vector.app.features.home.room.detail.RoomDetailActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.home.room.threads.ThreadsActivity</code></li><li><code>[OK 1.00] import im.vector.app.features.location.live.map.LiveLocationMapViewActivity</code></li><li><code>[OK 1.00] val allowList = listOf(</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#25</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26132</span>
+      </div>
+      <div class="fork"><b>fork:</b> H1d3r/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/8f9695a9a8d944cb9b92568cbd76578c51d32e07" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/H1d3r/element-android/blob/HEAD/library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] val storageDir: File = File(context.filesDir, &quot;media&quot;).also { it.mkdirs() }</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#26</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26132</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/SchildiChat-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/8f9695a9a8d944cb9b92568cbd76578c51d32e07" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/SchildiChat-android/blob/HEAD/library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] val storageDir: File = File(context.filesDir, &quot;media&quot;).also { it.mkdirs() }</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#27</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2024-26132</span>
+      </div>
+      <div class="fork"><b>fork:</b> bincnc/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/8f9695a9a8d944cb9b92568cbd76578c51d32e07" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/bincnc/element-android/blob/HEAD/library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] val storageDir: File = File(context.filesDir, &quot;media&quot;).also { it.mkdirs() }</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#28</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2025-27606</span>
+      </div>
+      <div class="fork"><b>fork:</b> H1d3r/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L1_SHA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/pin/PinFragment.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/87d7fcdc8036a4db4da8c403f87c73a64a546304" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/H1d3r/element-android/blob/HEAD/vector/src/main/java/im/vector/app/features/pin/PinFragment.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>(file identical to the post-patch version - SHA match, patched by definition)</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#29</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2025-27606</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/SchildiChat-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L1_SHA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/pin/PinFragment.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/87d7fcdc8036a4db4da8c403f87c73a64a546304" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/SchildiChat-android/blob/HEAD/vector/src/main/java/im/vector/app/features/pin/PinFragment.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>(file identical to the post-patch version - SHA match, patched by definition)</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#30</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">client</span>
+        <span class="cve">CVE-2025-27606</span>
+      </div>
+      <div class="fork"><b>fork:</b> bincnc/element-android</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L1_SHA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>vector/src/main/java/im/vector/app/features/pin/PinFragment.kt</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/element-android/commit/87d7fcdc8036a4db4da8c403f87c73a64a546304" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/bincnc/element-android/blob/HEAD/vector/src/main/java/im/vector/app/features/pin/PinFragment.kt" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>(file identical to the post-patch version - SHA match, patched by definition)</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#31</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2025-23197</span>
+      </div>
+      <div class="fork"><b>fork:</b> Rath-debug/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/github/GithubInstance.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/e51d8210233ac759e7f7dfebc2c4f1bf6ce94802" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/Rath-debug/matrix-hookshot/blob/HEAD/src/github/GithubInstance.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] if (install.suspended_at) {</code></li><li><code>[OK 0.95] log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi</code></li><li><code>[OK 1.00] continue;</code></li><li><code>[OK 1.00] try {</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#32</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2025-23197</span>
+      </div>
+      <div class="fork"><b>fork:</b> maladesov/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/github/GithubInstance.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/e51d8210233ac759e7f7dfebc2c4f1bf6ce94802" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/maladesov/matrix-hookshot/blob/HEAD/src/github/GithubInstance.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] if (install.suspended_at) {</code></li><li><code>[OK 0.95] log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi</code></li><li><code>[OK 1.00] continue;</code></li><li><code>[OK 1.00] try {</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#33</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2025-23197</span>
+      </div>
+      <div class="fork"><b>fork:</b> yncyrydybyl/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/github/GithubInstance.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/e51d8210233ac759e7f7dfebc2c4f1bf6ce94802" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/yncyrydybyl/matrix-hookshot/blob/HEAD/src/github/GithubInstance.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] if (install.suspended_at) {</code></li><li><code>[OK 0.95] log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi</code></li><li><code>[OK 1.00] continue;</code></li><li><code>[OK 1.00] try {</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#34</span>
+        <span class="badge" style="background:#1a7f37">TP (agree: patched)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-48937</span>
+      </div>
+      <div class="fork"><b>fork:</b> matrix-construct/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> CONFIRMED_PATCHED (conf 1.0)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-crypto/src/machine/mod.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/13c1d2048286bbabf5e7bc6b015aafee98f04d55" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/matrix-construct/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-crypto/src/machine/mod.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] let (verification_state, device_id) = match sender_data.user_id() {</code></li><li><code>[OK 1.00] Some(i) if i != sender =&gt; {</code></li><li><code>[OK 1.00] VerificationState::Unverified(VerificationLevel::None(</code></li><li><code>[OK 0.98] DeviceLinkProblem::MissingDevice,</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#35</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2023-43656</span>
+      </div>
+      <div class="fork"><b>fork:</b> Rath-debug/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.3333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/Connections/GenericHook.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/dc126afa6af86d66aefcd23a825326f405bcc894" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/Rath-debug/matrix-hookshot/blob/HEAD/src/Connections/GenericHook.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.39] import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup</code></li><li><code>[X 0.41] private static quickModule?: QuickJSWASMModule;</code></li><li><code>[X 0.58] public static async initialiseQuickJS() {</code></li><li><code>[X 0.53] GenericHookConnection.quickModule = await newQuickJSWASMModule();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#36</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2023-43656</span>
+      </div>
+      <div class="fork"><b>fork:</b> maladesov/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.3333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/Connections/GenericHook.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/dc126afa6af86d66aefcd23a825326f405bcc894" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/maladesov/matrix-hookshot/blob/HEAD/src/Connections/GenericHook.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.38] import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup</code></li><li><code>[X 0.41] private static quickModule?: QuickJSWASMModule;</code></li><li><code>[X 0.58] public static async initialiseQuickJS() {</code></li><li><code>[X 0.53] GenericHookConnection.quickModule = await newQuickJSWASMModule();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#37</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">integration</span>
+        <span class="cve">CVE-2023-43656</span>
+      </div>
+      <div class="fork"><b>fork:</b> yncyrydybyl/matrix-hookshot</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.3333)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>src/Connections/GenericHook.ts</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-hookshot/commit/dc126afa6af86d66aefcd23a825326f405bcc894" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/yncyrydybyl/matrix-hookshot/blob/HEAD/src/Connections/GenericHook.ts" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.39] import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup</code></li><li><code>[X 0.41] private static quickModule?: QuickJSWASMModule;</code></li><li><code>[X 0.58] public static async initialiseQuickJS() {</code></li><li><code>[X 0.53] GenericHookConnection.quickModule = await newQuickJSWASMModule();</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#38</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-66622</span>
+      </div>
+      <div class="fork"><b>fork:</b> SchildiChat/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-base/src/room/room_info.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/4ea0418abefab2aa93f8851a4d39c723e703e6b0" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/SchildiChat/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-base/src/room/room_info.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.62] AnySyncStateEvent::RoomJoinRules(c) =&gt; match c.join_rule() {</code></li><li><code>[OK 1.00] JoinRule::Invite</code></li><li><code>[OK 1.00] | JoinRule::Knock</code></li><li><code>[OK 1.00] | JoinRule::Private</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#39</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-66622</span>
+      </div>
+      <div class="fork"><b>fork:</b> matrix-construct/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-base/src/room/room_info.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/4ea0418abefab2aa93f8851a4d39c723e703e6b0" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/matrix-construct/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-base/src/room/room_info.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.62] AnySyncStateEvent::RoomJoinRules(c) =&gt; match c.join_rule() {</code></li><li><code>[OK 1.00] JoinRule::Invite</code></li><li><code>[OK 1.00] | JoinRule::Knock</code></li><li><code>[OK 1.00] | JoinRule::Private</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#40</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">sdk</span>
+        <span class="cve">CVE-2025-66622</span>
+      </div>
+      <div class="fork"><b>fork:</b> verji/matrix-rust-sdk</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6667)</span>
+        <span><b>automatic (AST):</b> ZONA_INCERTEZA</span>
+        <span><b>type:</b> ZONA_INCERTEZA</span>
+      </div>
+      <div class="file"><b>file:</b> <code>crates/matrix-sdk-base/src/room/room_info.rs</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/matrix-org/matrix-rust-sdk/commit/4ea0418abefab2aa93f8851a4d39c723e703e6b0" target="_blank">commit 1</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/verji/matrix-rust-sdk/blob/HEAD/crates/matrix-sdk-base/src/room/room_info.rs" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[X 0.62] AnySyncStateEvent::RoomJoinRules(c) =&gt; match c.join_rule() {</code></li><li><code>[OK 1.00] JoinRule::Invite</code></li><li><code>[OK 1.00] | JoinRule::Knock</code></li><li><code>[OK 1.00] | JoinRule::Private</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#41</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2025-61672</span>
+      </div>
+      <div class="fork"><b>fork:</b> kakahu2015/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/rest/client/keys.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/26aaaf9e48fff80cf67a20c691c75d670034b3c1" target="_blank">commit 1</a> · <a href="https://github.com/element-hq/synapse/commit/7069636c2d6d1ef2022287addf3ed8b919ef2740" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/kakahu2015/synapse/blob/HEAD/synapse/rest/client/keys.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] from http import HTTPStatus</code></li><li><code>[X 0.72] from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni</code></li><li><code>[X 0.58] from typing_extensions import Self</code></li><li><code>[X 0.71] from synapse._pydantic_compat import (</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#42</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2025-61672</span>
+      </div>
+      <div class="fork"><b>fork:</b> microchipster/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/rest/client/keys.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/26aaaf9e48fff80cf67a20c691c75d670034b3c1" target="_blank">commit 1</a> · <a href="https://github.com/element-hq/synapse/commit/7069636c2d6d1ef2022287addf3ed8b919ef2740" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/microchipster/synapse/blob/HEAD/synapse/rest/client/keys.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] from http import HTTPStatus</code></li><li><code>[X 0.72] from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni</code></li><li><code>[X 0.58] from typing_extensions import Self</code></li><li><code>[X 0.71] from synapse._pydantic_compat import (</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+    <div class="card">
+      <div class="head">
+        <span class="num">#43</span>
+        <span class="badge" style="background:#57606a">AMBIGUOUS (excluded from metrics)</span>
+        <span class="cat">server</span>
+        <span class="cve">CVE-2025-61672</span>
+      </div>
+      <div class="fork"><b>fork:</b> shcherbak/synapse</div>
+      <div class="meta">
+        <span><b>GT:</b> AMBIGUOUS (conf 0.6)</span>
+        <span><b>automatic (AST):</b> CORRIGIDO</span>
+        <span><b>type:</b> L2_CORRIGIDO</span>
+      </div>
+      <div class="file"><b>file:</b> <code>synapse/rest/client/keys.py</code></div>
+      <div class="links">🔗 <b>upstream fix:</b> <a href="https://github.com/element-hq/synapse/commit/26aaaf9e48fff80cf67a20c691c75d670034b3c1" target="_blank">commit 1</a> · <a href="https://github.com/element-hq/synapse/commit/7069636c2d6d1ef2022287addf3ed8b919ef2740" target="_blank">commit 2</a> &nbsp;|&nbsp;
+        📄 <a href="https://github.com/shcherbak/synapse/blob/HEAD/synapse/rest/client/keys.py" target="_blank">open the file in the fork (HEAD)</a></div>
+      <details><summary>patch key lines searched for by the ground truth</summary>
+        <ul><li><code>[OK 1.00] from http import HTTPStatus</code></li><li><code>[X 0.72] from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni</code></li><li><code>[X 0.58] from typing_extensions import Self</code></li><li><code>[X 0.71] from synapse._pydantic_compat import (</code></li></ul>
+        <small>OK = linha encontrada no fork · X = ausente · número = similaridade</small>
+      </details>
+      <label class="verdict">Seu veredito manual:
+        <select><option value=""></option><option>CONFIRMS GT</option>
+        <option>DISAGREES</option><option>UNSURE</option></select>
+      </label>
+    </div>
+</body></html>

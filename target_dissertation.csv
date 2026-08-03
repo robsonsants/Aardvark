@@ -1,0 +1,6 @@
+github_owner;github_repo;category;language;cpe_wfn_pattern
+element-hq;element-android;client;Kotlin;cpe:2.3:a:element:element:*:*:*:*:*:android:*:*
+element-hq;synapse;server;Python;cpe:2.3:a:matrix:synapse:*:*:*:*:*:*:*:*
+matrix-org;matrix-rust-sdk;sdk;Rust;cpe:2.3:a:matrix:matrix-rust-sdk:*:*:*:*:*:*:*:*
+matrix-org;matrix-appservice-irc;bridge;TypeScript;cpe:2.3:a:matrix:matrix-appservice-irc:*:*:*:*:*:*:*:*
+matrix-org;matrix-hookshot;integration;TypeScript;cpe:2.3:a:matrix:hookshot:*:*:*:*:*:*:*:*

@@ -1,0 +1,826 @@
+{
+  "headline": {
+    "n_gt_conclusivos": 34,
+    "recall": {
+      "hash_wyss": 0.147,
+      "ast_vercation": 0.676,
+      "dualref_pptfi": 0.324,
+      "embeddings_unixcoder": 0.794
+    },
+    "TP": {
+      "hash": 5,
+      "ast": 23,
+      "dualref": 11,
+      "embeddings": 27
+    },
+    "falsos_negativos_da_AST_resolvidos_por_embeddings": 11,
+    "pares_resolvidos": [
+      "element-hq/synapse::kakahu2015/synapse::CVE-2024-31208",
+      "element-hq/synapse::microchipster/synapse::CVE-2024-31208",
+      "element-hq/synapse::shcherbak/synapse::CVE-2024-31208",
+      "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2022-39252",
+      "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2024-34353",
+      "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2025-48937",
+      "matrix-org/matrix-rust-sdk::matrix-construct/matrix-rust-sdk::CVE-2022-39252",
+      "matrix-org/matrix-rust-sdk::matrix-construct/matrix-rust-sdk::CVE-2024-34353",
+      "matrix-org/matrix-rust-sdk::verji/matrix-rust-sdk::CVE-2022-39252",
+      "matrix-org/matrix-rust-sdk::verji/matrix-rust-sdk::CVE-2024-34353",
+      "matrix-org/matrix-rust-sdk::verji/matrix-rust-sdk::CVE-2025-48937"
+    ]
+  },
+  "sanity_upstream": [
+    {
+      "cve": "CVE-2024-26131",
+      "file": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.927
+    },
+    {
+      "cve": "CVE-2024-26131",
+      "file": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.927
+    },
+    {
+      "cve": "CVE-2024-26132",
+      "file": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+      "lado": "pre",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 0.988
+    },
+    {
+      "cve": "CVE-2024-26132",
+      "file": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+      "lado": "fix",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 0.988
+    },
+    {
+      "cve": "CVE-2025-27606",
+      "file": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.858
+    },
+    {
+      "cve": "CVE-2025-27606",
+      "file": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.858
+    },
+    {
+      "cve": "CVE-2024-31208",
+      "file": "synapse/storage/databases/main/events.py",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.698
+    },
+    {
+      "cve": "CVE-2024-31208",
+      "file": "synapse/storage/databases/main/events.py",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.698
+    },
+    {
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lado": "pre",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 1.0
+    },
+    {
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lado": "fix",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 1.0
+    },
+    {
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lado": "pre",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 1.0
+    },
+    {
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lado": "fix",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 1.0
+    },
+    {
+      "cve": "CVE-2023-38690",
+      "file": "src/irc/BridgedClient.ts",
+      "lado": "pre",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 0.996
+    },
+    {
+      "cve": "CVE-2023-38690",
+      "file": "src/irc/BridgedClient.ts",
+      "lado": "fix",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 0.996
+    },
+    {
+      "cve": "CVE-2023-38700",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lado": "pre",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.954
+    },
+    {
+      "cve": "CVE-2023-38700",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.954
+    },
+    {
+      "cve": "CVE-2024-39691",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.925
+    },
+    {
+      "cve": "CVE-2024-39691",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.925
+    },
+    {
+      "cve": "CVE-2024-52505",
+      "file": "src/provisioning/Schema.ts",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.838
+    },
+    {
+      "cve": "CVE-2024-52505",
+      "file": "src/provisioning/Schema.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.838
+    },
+    {
+      "cve": "CVE-2025-27146",
+      "file": "src/irc/BridgedClient.ts",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.917
+    },
+    {
+      "cve": "CVE-2025-27146",
+      "file": "src/irc/BridgedClient.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.917
+    },
+    {
+      "cve": "CVE-2023-43656",
+      "file": "src/Connections/GenericHook.ts",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.798
+    },
+    {
+      "cve": "CVE-2023-43656",
+      "file": "src/Connections/GenericHook.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.798
+    },
+    {
+      "cve": "CVE-2025-23197",
+      "file": "src/github/GithubInstance.ts",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.715
+    },
+    {
+      "cve": "CVE-2025-23197",
+      "file": "src/github/GithubInstance.ts",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.715
+    },
+    {
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lado": "pre",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.841
+    },
+    {
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.841
+    },
+    {
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lado": "pre",
+      "veredito": "ZONA_INCERTEZA",
+      "sanity": 0.951
+    },
+    {
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.951
+    },
+    {
+      "cve": "CVE-2024-34353",
+      "file": "crates/matrix-sdk/src/encryption/mod.rs",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.691
+    },
+    {
+      "cve": "CVE-2024-34353",
+      "file": "crates/matrix-sdk/src/encryption/mod.rs",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.691
+    },
+    {
+      "cve": "CVE-2025-48937",
+      "file": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.671
+    },
+    {
+      "cve": "CVE-2025-48937",
+      "file": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.671
+    },
+    {
+      "cve": "CVE-2025-66622",
+      "file": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "lado": "pre",
+      "veredito": "VULNERAVEL",
+      "sanity": 0.82
+    },
+    {
+      "cve": "CVE-2025-66622",
+      "file": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "lado": "fix",
+      "veredito": "CORRIGIDO",
+      "sanity": 0.82
+    }
+  ],
+  "detalhe_pares": [
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2024-26131",
+      "file": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+      "lang": "kotlin",
+      "target": "isValid",
+      "sim_vuln": 0.354,
+      "sim_corrigido": 0.426,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2024-26131",
+      "file": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+      "lang": "kotlin",
+      "target": "isValid",
+      "sim_vuln": 0.354,
+      "sim_corrigido": 0.426,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2024-26131",
+      "file": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+      "lang": "kotlin",
+      "target": "isValid",
+      "sim_vuln": 0.354,
+      "sim_corrigido": 0.426,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2024-26132",
+      "file": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+      "lang": "kotlin",
+      "target": "createTemporaryMediaFile",
+      "sim_vuln": 0.857,
+      "sim_corrigido": 0.867,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2024-26132",
+      "file": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+      "lang": "kotlin",
+      "target": "createTemporaryMediaFile",
+      "sim_vuln": 0.857,
+      "sim_corrigido": 0.867,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2024-26132",
+      "file": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+      "lang": "kotlin",
+      "target": "createTemporaryMediaFile",
+      "sim_vuln": 0.857,
+      "sim_corrigido": 0.867,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2025-27606",
+      "file": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+      "lang": "kotlin",
+      "target": "launchResetPinFlow",
+      "sim_vuln": 0.858,
+      "sim_corrigido": 1.0,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2025-27606",
+      "file": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+      "lang": "kotlin",
+      "target": "launchResetPinFlow",
+      "sim_vuln": 0.858,
+      "sim_corrigido": 1.0,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/element-android",
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2025-27606",
+      "file": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+      "lang": "kotlin",
+      "target": "launchResetPinFlow",
+      "sim_vuln": 0.858,
+      "sim_corrigido": 1.0,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "kakahu2015/synapse",
+      "cve": "CVE-2024-31208",
+      "file": "synapse/storage/databases/main/events.py",
+      "lang": "python",
+      "target": "exists_path_from",
+      "sim_vuln": 0.719,
+      "sim_corrigido": 0.947,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "microchipster/synapse",
+      "cve": "CVE-2024-31208",
+      "file": "synapse/storage/databases/main/events.py",
+      "lang": "python",
+      "target": "exists_path_from",
+      "sim_vuln": 0.719,
+      "sim_corrigido": 0.947,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "shcherbak/synapse",
+      "cve": "CVE-2024-31208",
+      "file": "synapse/storage/databases/main/events.py",
+      "lang": "python",
+      "target": "exists_path_from",
+      "sim_vuln": 0.719,
+      "sim_corrigido": 0.947,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "kakahu2015/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.862,
+      "sim_corrigido": 0.862,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "microchipster/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.844,
+      "sim_corrigido": 0.844,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "shcherbak/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.862,
+      "sim_corrigido": 0.862,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "kakahu2015/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.884,
+      "sim_corrigido": 0.884,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "microchipster/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.88,
+      "sim_corrigido": 0.88,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "element-hq/synapse",
+      "fork": "shcherbak/synapse",
+      "cve": "CVE-2025-61672",
+      "file": "synapse/rest/client/keys.py",
+      "lang": "python",
+      "target": "on_POST",
+      "sim_vuln": 0.884,
+      "sim_corrigido": 0.884,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "file": "src/irc/BridgedClient.ts",
+      "lang": "typescript",
+      "target": "assertConnected",
+      "sim_vuln": 0.905,
+      "sim_corrigido": 0.912,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "file": "src/irc/BridgedClient.ts",
+      "lang": "typescript",
+      "target": "assertConnected",
+      "sim_vuln": 0.905,
+      "sim_corrigido": 0.912,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2023-38700",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lang": "typescript",
+      "target": "sendIrcAction",
+      "sim_vuln": 0.76,
+      "sim_corrigido": 0.779,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2023-38700",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lang": "typescript",
+      "target": "sendIrcAction",
+      "sim_vuln": 0.76,
+      "sim_corrigido": 0.779,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2024-39691",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lang": "typescript",
+      "target": "_onMemberEvent",
+      "sim_vuln": 0.883,
+      "sim_corrigido": 0.93,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2024-39691",
+      "file": "src/bridge/MatrixHandler.ts",
+      "lang": "typescript",
+      "target": "_onMemberEvent",
+      "sim_vuln": 0.883,
+      "sim_corrigido": 0.93,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "file": "src/provisioning/Schema.ts",
+      "lang": "typescript",
+      "target": null,
+      "sim_vuln": 0.694,
+      "sim_corrigido": 0.734,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "file": "src/provisioning/Schema.ts",
+      "lang": "typescript",
+      "target": null,
+      "sim_vuln": 0.694,
+      "sim_corrigido": 0.734,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2025-27146",
+      "file": "src/irc/BridgedClient.ts",
+      "lang": "typescript",
+      "target": "setTopic",
+      "sim_vuln": 0.917,
+      "sim_corrigido": 1.0,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2025-27146",
+      "file": "src/irc/BridgedClient.ts",
+      "lang": "typescript",
+      "target": "setTopic",
+      "sim_vuln": 0.917,
+      "sim_corrigido": 1.0,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "Rath-debug/matrix-hookshot",
+      "cve": "CVE-2023-43656",
+      "file": "src/Connections/GenericHook.ts",
+      "lang": "typescript",
+      "target": "executeTransformationFunction",
+      "sim_vuln": 0.571,
+      "sim_corrigido": 0.584,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "maladesov/matrix-hookshot",
+      "cve": "CVE-2023-43656",
+      "file": "src/Connections/GenericHook.ts",
+      "lang": "typescript",
+      "target": "executeTransformationFunction",
+      "sim_vuln": 0.579,
+      "sim_corrigido": 0.621,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "yncyrydybyl/matrix-hookshot",
+      "cve": "CVE-2023-43656",
+      "file": "src/Connections/GenericHook.ts",
+      "lang": "typescript",
+      "target": "executeTransformationFunction",
+      "sim_vuln": 0.571,
+      "sim_corrigido": 0.584,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "Rath-debug/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "file": "src/github/GithubInstance.ts",
+      "lang": "typescript",
+      "target": "start",
+      "sim_vuln": 0.599,
+      "sim_corrigido": 0.934,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "maladesov/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "file": "src/github/GithubInstance.ts",
+      "lang": "typescript",
+      "target": "start",
+      "sim_vuln": 0.599,
+      "sim_corrigido": 0.934,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-hookshot",
+      "fork": "yncyrydybyl/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "file": "src/github/GithubInstance.ts",
+      "lang": "typescript",
+      "target": "start",
+      "sim_vuln": 0.599,
+      "sim_corrigido": 0.934,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "SchildiChat/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "receive_supported_keys",
+      "sim_vuln": 0.755,
+      "sim_corrigido": 0.859,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "receive_supported_keys",
+      "sim_vuln": 0.755,
+      "sim_corrigido": 0.859,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "verji/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "receive_supported_keys",
+      "sim_vuln": 0.755,
+      "sim_corrigido": 0.859,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "SchildiChat/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "reject_forward_from_another_user",
+      "sim_vuln": 0.821,
+      "sim_corrigido": 0.834,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "reject_forward_from_another_user",
+      "sim_vuln": 0.821,
+      "sim_corrigido": 0.834,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "verji/matrix-rust-sdk",
+      "cve": "CVE-2022-39252",
+      "file": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+      "lang": "rust",
+      "target": "reject_forward_from_another_user",
+      "sim_vuln": 0.821,
+      "sim_corrigido": 0.834,
+      "veredito": "ZONA_INCERTEZA"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "SchildiChat/matrix-rust-sdk",
+      "cve": "CVE-2024-34353",
+      "file": "crates/matrix-sdk/src/encryption/mod.rs",
+      "lang": "rust",
+      "target": "test_generation_counter_invalidates_olm_machine",
+      "sim_vuln": 0.866,
+      "sim_corrigido": 0.941,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2024-34353",
+      "file": "crates/matrix-sdk/src/encryption/mod.rs",
+      "lang": "rust",
+      "target": "test_generation_counter_invalidates_olm_machine",
+      "sim_vuln": 0.866,
+      "sim_corrigido": 0.941,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "verji/matrix-rust-sdk",
+      "cve": "CVE-2024-34353",
+      "file": "crates/matrix-sdk/src/encryption/mod.rs",
+      "lang": "rust",
+      "target": "test_generation_counter_invalidates_olm_machine",
+      "sim_vuln": 0.866,
+      "sim_corrigido": 0.941,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "SchildiChat/matrix-rust-sdk",
+      "cve": "CVE-2025-48937",
+      "file": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+      "lang": "rust",
+      "target": "get_room_event_verification_state",
+      "sim_vuln": 0.739,
+      "sim_corrigido": 0.892,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2025-48937",
+      "file": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+      "lang": "rust",
+      "target": "get_room_event_verification_state",
+      "sim_vuln": 0.739,
+      "sim_corrigido": 0.892,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "verji/matrix-rust-sdk",
+      "cve": "CVE-2025-48937",
+      "file": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+      "lang": "rust",
+      "target": "get_room_event_verification_state",
+      "sim_vuln": 0.739,
+      "sim_corrigido": 0.892,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "SchildiChat/matrix-rust-sdk",
+      "cve": "CVE-2025-66622",
+      "file": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "lang": "rust",
+      "target": "handle_state_event",
+      "sim_vuln": 0.673,
+      "sim_corrigido": 0.74,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2025-66622",
+      "file": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "lang": "rust",
+      "target": "handle_state_event",
+      "sim_vuln": 0.676,
+      "sim_corrigido": 0.72,
+      "veredito": "CORRIGIDO"
+    },
+    {
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "fork": "verji/matrix-rust-sdk",
+      "cve": "CVE-2025-66622",
+      "file": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "lang": "rust",
+      "target": "handle_state_event",
+      "sim_vuln": 0.676,
+      "sim_corrigido": 0.72,
+      "veredito": "CORRIGIDO"
+    }
+  ]
+}

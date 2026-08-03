@@ -1,0 +1,33 @@
+{
+  "n_negativos_auditados": 51,
+  "n_reclassificados_corrigido": 33,
+  "metodos": {
+    "embeddings": {
+      "TP": 69,
+      "FP": 2,
+      "FN": 8,
+      "TN": 16,
+      "precision": 0.972,
+      "recall": 0.896,
+      "f1": 0.932
+    },
+    "ast2a": {
+      "TP": 74,
+      "FP": 7,
+      "FN": 3,
+      "TN": 11,
+      "precision": 0.914,
+      "recall": 0.961,
+      "f1": 0.937
+    },
+    "comb": {
+      "TP": 77,
+      "FP": 8,
+      "FN": 0,
+      "TN": 10,
+      "precision": 0.906,
+      "recall": 1.0,
+      "f1": 0.951
+    }
+  }
+}

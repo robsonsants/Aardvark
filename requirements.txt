@@ -1,0 +1,31 @@
+# Verification pipeline for security-patch propagation in divergent forks
+# Python 3.10+ (tested on 3.12)
+#   pip install -r requirements.txt
+
+# --- Phase 1: pipeline1.py (NVD/GHSA mining) --------------------------------
+nvdlib>=0.7.6
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.31.0
+
+# --- Phase 2: layers 1/2A/2B (pipeline_core + dissertation + ground_truth) ---
+tree-sitter>=0.23.0
+tree-sitter-python>=0.23.0
+tree-sitter-rust>=0.23.0
+tree-sitter-kotlin>=0.3.0
+tree-sitter-swift>=0.5.0
+tree-sitter-typescript>=0.23.0
+tree-sitter-go>=0.23.0
+
+# Zhang-Shasha tree edit distance (ASTs under 600 nodes)
+zss>=1.2.0
+
+# --- Semantic layer: UniXcoder embeddings -----------------------------------
+# (prototipo_ranking_embeddings/*.py; runs on CPU, GPU optional)
+torch>=2.0.0
+transformers>=4.30.0
+
+# --- Figures ----------------------------------------------------------------
+matplotlib>=3.7.0
+
+# difflib (SequenceMatcher, used in ground_truth.py) is in the standard library.

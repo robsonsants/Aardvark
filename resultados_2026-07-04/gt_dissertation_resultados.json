@@ -1,0 +1,4379 @@
+[
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2025-27606",
+    "fork": "H1d3r/element-android",
+    "fix_sha": "87d7fcdc8036a4db4da8c403f87c73a64a546304",
+    "filepath": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+    "tipo": "L1_SHA",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 0,
+    "lines_present": 0,
+    "lines_absent": 0,
+    "line_details": [],
+    "evidence_file": null
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2025-27606",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fix_sha": "87d7fcdc8036a4db4da8c403f87c73a64a546304",
+    "filepath": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+    "tipo": "L1_SHA",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 0,
+    "lines_present": 0,
+    "lines_absent": 0,
+    "line_details": [],
+    "evidence_file": null
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2025-27606",
+    "fork": "bincnc/element-android",
+    "fix_sha": "87d7fcdc8036a4db4da8c403f87c73a64a546304",
+    "filepath": "vector/src/main/java/im/vector/app/features/pin/PinFragment.kt",
+    "tipo": "L1_SHA",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 0,
+    "lines_present": 0,
+    "lines_absent": 0,
+    "line_details": [],
+    "evidence_file": null
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26132",
+    "fork": "H1d3r/element-android",
+    "fix_sha": "8f9695a9a8d944cb9b92568cbd76578c51d32e07",
+    "filepath": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26132/H1d3r_element-android_8f9695a9_library_multipicker_src_main_java_im_vector_lib_multipicker_utils_MediaFileUtils.kt"
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26132",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fix_sha": "8f9695a9a8d944cb9b92568cbd76578c51d32e07",
+    "filepath": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26132/SchildiChat_SchildiChat-android_8f9695a9_library_multipicker_src_main_java_im_vector_lib_multipicker_utils_MediaFileUtils.kt"
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26132",
+    "fork": "bincnc/element-android",
+    "fix_sha": "8f9695a9a8d944cb9b92568cbd76578c51d32e07",
+    "filepath": "library/multipicker/src/main/java/im/vector/lib/multipicker/utils/MediaFileUtils.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val storageDir: File = File(context.filesDir, \"media\").also { it.mkdirs() }"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26132/bincnc_element-android_8f9695a9_library_multipicker_src_main_java_im_vector_lib_multipicker_utils_MediaFileUtils.kt"
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26131",
+    "fork": "H1d3r/element-android",
+    "fix_sha": "53734255ec270b0814946350787393dfcaa2a5a9",
+    "filepath": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9727,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 15,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "import im.vector.app.features.home.room.detail.RoomDetailActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.detail.RoomDetailActivity"
+      },
+      {
+        "line": "import im.vector.app.features.home.room.threads.ThreadsActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.threads.ThreadsActivity"
+      },
+      {
+        "line": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity"
+      },
+      {
+        "line": "val allowList = listOf(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val allowList = listOf("
+      },
+      {
+        "line": "HomeActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "HomeActivity::class.java.name,"
+      },
+      {
+        "line": "MainActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "MainActivity::class.java.name,"
+      },
+      {
+        "line": "RoomDetailActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "RoomDetailActivity::class.java.name,"
+      },
+      {
+        "line": "ThreadsActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "ThreadsActivity::class.java.name,"
+      },
+      {
+        "line": "LiveLocationMapViewActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "LiveLocationMapViewActivity::class.java.name,"
+      },
+      {
+        "line": "?.takeIf { it.isValid() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "?.takeIf { it.isValid() }"
+      },
+      {
+        "line": "private fun Intent.isValid(): Boolean {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "private fun Intent.isValid(): Boolean {"
+      },
+      {
+        "line": "val componentName = resolveActivity(packageManager) ?: return false",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val componentName = resolveActivity(packageManager) ?: return false"
+      },
+      {
+        "line": "val packageName = componentName.packageName",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val packageName = componentName.packageName"
+      },
+      {
+        "line": "val className = componentName.className",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val className = componentName.className"
+      },
+      {
+        "line": "return packageName == buildMeta.applicationId && className in allowList",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "return packageName == buildMeta.applicationId && className in allowList"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26131/H1d3r_element-android_53734255_vector_src_main_java_im_vector_app_features_MainActivity.kt"
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26131",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fix_sha": "53734255ec270b0814946350787393dfcaa2a5a9",
+    "filepath": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9727,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 15,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "import im.vector.app.features.home.room.detail.RoomDetailActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.detail.RoomDetailActivity"
+      },
+      {
+        "line": "import im.vector.app.features.home.room.threads.ThreadsActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.threads.ThreadsActivity"
+      },
+      {
+        "line": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity"
+      },
+      {
+        "line": "val allowList = listOf(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val allowList = listOf("
+      },
+      {
+        "line": "HomeActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "HomeActivity::class.java.name,"
+      },
+      {
+        "line": "MainActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "MainActivity::class.java.name,"
+      },
+      {
+        "line": "RoomDetailActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "RoomDetailActivity::class.java.name,"
+      },
+      {
+        "line": "ThreadsActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "ThreadsActivity::class.java.name,"
+      },
+      {
+        "line": "LiveLocationMapViewActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "LiveLocationMapViewActivity::class.java.name,"
+      },
+      {
+        "line": "?.takeIf { it.isValid() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "?.takeIf { it.isValid() }"
+      },
+      {
+        "line": "private fun Intent.isValid(): Boolean {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "private fun Intent.isValid(): Boolean {"
+      },
+      {
+        "line": "val componentName = resolveActivity(packageManager) ?: return false",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val componentName = resolveActivity(packageManager) ?: return false"
+      },
+      {
+        "line": "val packageName = componentName.packageName",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val packageName = componentName.packageName"
+      },
+      {
+        "line": "val className = componentName.className",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val className = componentName.className"
+      },
+      {
+        "line": "return packageName == buildMeta.applicationId && className in allowList",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "return packageName == buildMeta.applicationId && className in allowList"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26131/SchildiChat_SchildiChat-android_53734255_vector_src_main_java_im_vector_app_features_MainActivity.kt"
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "cve": "CVE-2024-26131",
+    "fork": "bincnc/element-android",
+    "fix_sha": "53734255ec270b0814946350787393dfcaa2a5a9",
+    "filepath": "vector/src/main/java/im/vector/app/features/MainActivity.kt",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9727,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 15,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "import im.vector.app.features.home.room.detail.RoomDetailActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.detail.RoomDetailActivity"
+      },
+      {
+        "line": "import im.vector.app.features.home.room.threads.ThreadsActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.home.room.threads.ThreadsActivity"
+      },
+      {
+        "line": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import im.vector.app.features.location.live.map.LiveLocationMapViewActivity"
+      },
+      {
+        "line": "val allowList = listOf(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val allowList = listOf("
+      },
+      {
+        "line": "HomeActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "HomeActivity::class.java.name,"
+      },
+      {
+        "line": "MainActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "MainActivity::class.java.name,"
+      },
+      {
+        "line": "RoomDetailActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "RoomDetailActivity::class.java.name,"
+      },
+      {
+        "line": "ThreadsActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "ThreadsActivity::class.java.name,"
+      },
+      {
+        "line": "LiveLocationMapViewActivity::class.java.name,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "LiveLocationMapViewActivity::class.java.name,"
+      },
+      {
+        "line": "?.takeIf { it.isValid() }",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "?.takeIf { it.isValid() }"
+      },
+      {
+        "line": "private fun Intent.isValid(): Boolean {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "private fun Intent.isValid(): Boolean {"
+      },
+      {
+        "line": "val componentName = resolveActivity(packageManager) ?: return false",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val componentName = resolveActivity(packageManager) ?: return false"
+      },
+      {
+        "line": "val packageName = componentName.packageName",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val packageName = componentName.packageName"
+      },
+      {
+        "line": "val className = componentName.className",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "val className = componentName.className"
+      },
+      {
+        "line": "return packageName == buildMeta.applicationId && className in allowList",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "return packageName == buildMeta.applicationId && className in allowList"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-26131/bincnc_element-android_53734255_vector_src_main_java_im_vector_app_features_MainActivity.kt"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "microchipster/synapse",
+    "fix_sha": "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.861,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/microchipster_synapse_26aaaf9e_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "kakahu2015/synapse",
+    "fix_sha": "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8939,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/kakahu2015_synapse_26aaaf9e_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "shcherbak/synapse",
+    "fix_sha": "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8939,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/shcherbak_synapse_26aaaf9e_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "microchipster/synapse",
+    "fix_sha": "7069636c2d6d1ef2022287addf3ed8b919ef2740",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8637,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/microchipster_synapse_7069636c_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "kakahu2015/synapse",
+    "fix_sha": "7069636c2d6d1ef2022287addf3ed8b919ef2740",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8969,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/kakahu2015_synapse_7069636c_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2025-61672",
+    "fork": "shcherbak/synapse",
+    "fix_sha": "7069636c2d6d1ef2022287addf3ed8b919ef2740",
+    "filepath": "synapse/rest/client/keys.py",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8969,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 9,
+    "lines_absent": 6,
+    "line_details": [
+      {
+        "line": "from http import HTTPStatus",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from http import HTTPStatus"
+      },
+      {
+        "line": "from typing import TYPE_CHECKING, Any, Dict, List, Mapping, Optional, Tuple, Uni",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.719,
+        "match": "from typing import TYPE_CHECKING, Any, Mapping"
+      },
+      {
+        "line": "from typing_extensions import Self",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.585,
+        "match": "from collections import Counter"
+      },
+      {
+        "line": "from synapse._pydantic_compat import (",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.714,
+        "match": "from synapse.api.errors import ("
+      },
+      {
+        "line": "StrictBool,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.48,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "StrictStr,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.75,
+        "match": "key: StrictStr"
+      },
+      {
+        "line": "validator,",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.6,
+        "match": "InvalidAPICallError,"
+      },
+      {
+        "line": "Codes,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Codes,"
+      },
+      {
+        "line": "validate_json_object,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "validate_json_object,"
+      },
+      {
+        "line": "from synapse.types.rest import RequestBodyModel",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.types.rest import RequestBodyModel"
+      },
+      {
+        "line": "class KeyUploadRequestBody(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class KeyUploadRequestBody(RequestBodyModel):"
+      },
+      {
+        "line": "The body of a `POST /_matrix/client/v3/keys/upload` request.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "The body of a `POST /_matrix/client/v3/keys/upload` request."
+      },
+      {
+        "line": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Based on https://spec.matrix.org/v1.16/client-server-api/#post_matrixclientv3key"
+      },
+      {
+        "line": "class DeviceKeys(RequestBodyModel):",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "class DeviceKeys(RequestBodyModel):"
+      },
+      {
+        "line": "algorithms: List[StrictStr]",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.963,
+        "match": "algorithms: list[StrictStr]"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-61672/shcherbak_synapse_7069636c_synapse_rest_client_keys.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2024-31208",
+    "fork": "microchipster/synapse",
+    "fix_sha": "55b0aa847a61774b6a3acdc4b177a20dc019f01a",
+    "filepath": "synapse/storage/databases/main/events.py",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.6191,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "import collections",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import collections"
+      },
+      {
+        "line": "from synapse.storage.databases.main.event_federation import EventFederationStore",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.storage.databases.main.event_federation import EventFederationStore"
+      },
+      {
+        "line": "for links in EventFederationStore._get_chain_links(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for links in EventFederationStore._get_chain_links("
+      },
+      {
+        "line": "txn, {chain_id for chain_id, _ in chain_map.values()}",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "txn, {chain_id for chain_id, _ in chain_map.values()}"
+      },
+      {
+        "line": "for origin_chain_id, inner_links in links.items():",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for origin_chain_id, inner_links in links.items():"
+      },
+      {
+        "line": "for (",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for ("
+      },
+      {
+        "line": "origin_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "origin_sequence_number,"
+      },
+      {
+        "line": "target_chain_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_chain_id,"
+      },
+      {
+        "line": "target_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_sequence_number,"
+      },
+      {
+        "line": ") in inner_links:",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") in inner_links:"
+      },
+      {
+        "line": "chain_links.add_link(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "chain_links.add_link("
+      },
+      {
+        "line": "(origin_chain_id, origin_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(origin_chain_id, origin_sequence_number),"
+      },
+      {
+        "line": "(target_chain_id, target_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(target_chain_id, target_sequence_number),"
+      },
+      {
+        "line": "new=False,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "new=False,"
+      },
+      {
+        "line": "visited_chains = collections.Counter()",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.826,
+        "match": "visited_chains: dict[int, int] = collections.Counter()"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-31208/microchipster_synapse_55b0aa84_synapse_storage_databases_main_events.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2024-31208",
+    "fork": "kakahu2015/synapse",
+    "fix_sha": "55b0aa847a61774b6a3acdc4b177a20dc019f01a",
+    "filepath": "synapse/storage/databases/main/events.py",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.6191,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "import collections",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import collections"
+      },
+      {
+        "line": "from synapse.storage.databases.main.event_federation import EventFederationStore",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.storage.databases.main.event_federation import EventFederationStore"
+      },
+      {
+        "line": "for links in EventFederationStore._get_chain_links(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for links in EventFederationStore._get_chain_links("
+      },
+      {
+        "line": "txn, {chain_id for chain_id, _ in chain_map.values()}",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "txn, {chain_id for chain_id, _ in chain_map.values()}"
+      },
+      {
+        "line": "for origin_chain_id, inner_links in links.items():",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for origin_chain_id, inner_links in links.items():"
+      },
+      {
+        "line": "for (",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for ("
+      },
+      {
+        "line": "origin_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "origin_sequence_number,"
+      },
+      {
+        "line": "target_chain_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_chain_id,"
+      },
+      {
+        "line": "target_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_sequence_number,"
+      },
+      {
+        "line": ") in inner_links:",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") in inner_links:"
+      },
+      {
+        "line": "chain_links.add_link(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "chain_links.add_link("
+      },
+      {
+        "line": "(origin_chain_id, origin_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(origin_chain_id, origin_sequence_number),"
+      },
+      {
+        "line": "(target_chain_id, target_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(target_chain_id, target_sequence_number),"
+      },
+      {
+        "line": "new=False,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "new=False,"
+      },
+      {
+        "line": "visited_chains = collections.Counter()",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.826,
+        "match": "visited_chains: dict[int, int] = collections.Counter()"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-31208/kakahu2015_synapse_55b0aa84_synapse_storage_databases_main_events.py"
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "cve": "CVE-2024-31208",
+    "fork": "shcherbak/synapse",
+    "fix_sha": "55b0aa847a61774b6a3acdc4b177a20dc019f01a",
+    "filepath": "synapse/storage/databases/main/events.py",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.6191,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "import collections",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "import collections"
+      },
+      {
+        "line": "from synapse.storage.databases.main.event_federation import EventFederationStore",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "from synapse.storage.databases.main.event_federation import EventFederationStore"
+      },
+      {
+        "line": "for links in EventFederationStore._get_chain_links(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for links in EventFederationStore._get_chain_links("
+      },
+      {
+        "line": "txn, {chain_id for chain_id, _ in chain_map.values()}",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "txn, {chain_id for chain_id, _ in chain_map.values()}"
+      },
+      {
+        "line": "for origin_chain_id, inner_links in links.items():",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for origin_chain_id, inner_links in links.items():"
+      },
+      {
+        "line": "for (",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "for ("
+      },
+      {
+        "line": "origin_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "origin_sequence_number,"
+      },
+      {
+        "line": "target_chain_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_chain_id,"
+      },
+      {
+        "line": "target_sequence_number,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "target_sequence_number,"
+      },
+      {
+        "line": ") in inner_links:",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") in inner_links:"
+      },
+      {
+        "line": "chain_links.add_link(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "chain_links.add_link("
+      },
+      {
+        "line": "(origin_chain_id, origin_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(origin_chain_id, origin_sequence_number),"
+      },
+      {
+        "line": "(target_chain_id, target_sequence_number),",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "(target_chain_id, target_sequence_number),"
+      },
+      {
+        "line": "new=False,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "new=False,"
+      },
+      {
+        "line": "visited_chains = collections.Counter()",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.826,
+        "match": "visited_chains: dict[int, int] = collections.Counter()"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-31208/shcherbak_synapse_55b0aa84_synapse_storage_databases_main_events.py"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-66622",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fix_sha": "4ea0418abefab2aa93f8851a4d39c723e703e6b0",
+    "filepath": "crates/matrix-sdk-base/src/room/room_info.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5727,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 10,
+    "lines_absent": 5,
+    "line_details": [
+      {
+        "line": "AnySyncStateEvent::RoomJoinRules(c) => match c.join_rule() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.62,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      },
+      {
+        "line": "r => warn!(\"Encountered a custom join rule {}, skipping\", r.as_str()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.676,
+        "match": "warn!(join_rule = ?r.as_str(), \"Encountered a custom join rule, skipping\");"
+      },
+      {
+        "line": "AnyStrippedStateEvent::RoomJoinRules(c) => match &c.content.join_rule {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.559,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-66622/SchildiChat_matrix-rust-sdk_4ea0418a_crates_matrix-sdk-base_src_room_room_info.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-66622",
+    "fork": "verji/matrix-rust-sdk",
+    "fix_sha": "4ea0418abefab2aa93f8851a4d39c723e703e6b0",
+    "filepath": "crates/matrix-sdk-base/src/room/room_info.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5866,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 10,
+    "lines_absent": 5,
+    "line_details": [
+      {
+        "line": "AnySyncStateEvent::RoomJoinRules(c) => match c.join_rule() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.62,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      },
+      {
+        "line": "r => warn!(\"Encountered a custom join rule {}, skipping\", r.as_str()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.676,
+        "match": "warn!(join_rule = ?r.as_str(), \"Encountered a custom join rule, skipping\");"
+      },
+      {
+        "line": "AnyStrippedStateEvent::RoomJoinRules(c) => match &c.content.join_rule {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.559,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-66622/verji_matrix-rust-sdk_4ea0418a_crates_matrix-sdk-base_src_room_room_info.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-66622",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fix_sha": "4ea0418abefab2aa93f8851a4d39c723e703e6b0",
+    "filepath": "crates/matrix-sdk-base/src/room/room_info.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5866,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.6667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 10,
+    "lines_absent": 5,
+    "line_details": [
+      {
+        "line": "AnySyncStateEvent::RoomJoinRules(c) => match c.join_rule() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.62,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      },
+      {
+        "line": "r => warn!(\"Encountered a custom join rule {}, skipping\", r.as_str()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.676,
+        "match": "warn!(join_rule = ?r.as_str(), \"Encountered a custom join rule, skipping\");"
+      },
+      {
+        "line": "AnyStrippedStateEvent::RoomJoinRules(c) => match &c.content.join_rule {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.559,
+        "match": "(StateEventType::RoomJoinRules, \"\") => {"
+      },
+      {
+        "line": "JoinRule::Invite",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "JoinRule::Invite"
+      },
+      {
+        "line": "| JoinRule::Knock",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Knock"
+      },
+      {
+        "line": "| JoinRule::Private",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Private"
+      },
+      {
+        "line": "| JoinRule::Restricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::Restricted(_)"
+      },
+      {
+        "line": "| JoinRule::KnockRestricted(_)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "| JoinRule::KnockRestricted(_)"
+      },
+      {
+        "line": "| JoinRule::Public => self.join_rules = Some(c.into()),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.612,
+        "match": "self.join_rules = Some(event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-66622/matrix-construct_matrix-rust-sdk_4ea0418a_crates_matrix-sdk-base_src_room_room_info.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fix_sha": "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5386,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "async fn should_accept_forward(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "async fn should_accept_forward("
+      },
+      {
+        "line": "&self,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "&self,"
+      },
+      {
+        "line": "info: &GossipRequest,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "info: &GossipRequest,"
+      },
+      {
+        "line": "sender_key: Curve25519PublicKey,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_key: Curve25519PublicKey,"
+      },
+      {
+        "line": ") -> Result<bool, CryptoStoreError> {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") -> Result<bool, CryptoStoreError> {"
+      },
+      {
+        "line": "let device =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let device ="
+      },
+      {
+        "line": "self.store.get_device_from_curve_key(&info.request_recipient, sender_key).await?",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.964,
+        "match": "self.inner.store.get_device_from_curve_key(&info.request_recipient, sender_key)."
+      },
+      {
+        "line": "if let Some(device) = device {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if let Some(device) = device {"
+      },
+      {
+        "line": "Ok(device.user_id() == self.user_id() && device.is_verified())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(device.user_id() == self.user_id() && device.is_verified())"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      },
+      {
+        "line": "Ok(false)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(false)"
+      },
+      {
+        "line": "if self.should_accept_forward(&info, sender_key).await? {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.906,
+        "match": "if self.should_accept_forward(&request, sender_key).await? {"
+      },
+      {
+        "line": "self.accept_forwarded_room_key(&info, &event.sender, sender_key, algorithm, cont",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.711,
+        "match": "self.accept_forwarded_room_key(&request, sender_key, event).await"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/SchildiChat_matrix-rust-sdk_093fb5d0_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "verji/matrix-rust-sdk",
+    "fix_sha": "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5386,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "async fn should_accept_forward(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "async fn should_accept_forward("
+      },
+      {
+        "line": "&self,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "&self,"
+      },
+      {
+        "line": "info: &GossipRequest,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "info: &GossipRequest,"
+      },
+      {
+        "line": "sender_key: Curve25519PublicKey,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_key: Curve25519PublicKey,"
+      },
+      {
+        "line": ") -> Result<bool, CryptoStoreError> {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") -> Result<bool, CryptoStoreError> {"
+      },
+      {
+        "line": "let device =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let device ="
+      },
+      {
+        "line": "self.store.get_device_from_curve_key(&info.request_recipient, sender_key).await?",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.964,
+        "match": "self.inner.store.get_device_from_curve_key(&info.request_recipient, sender_key)."
+      },
+      {
+        "line": "if let Some(device) = device {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if let Some(device) = device {"
+      },
+      {
+        "line": "Ok(device.user_id() == self.user_id() && device.is_verified())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(device.user_id() == self.user_id() && device.is_verified())"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      },
+      {
+        "line": "Ok(false)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(false)"
+      },
+      {
+        "line": "if self.should_accept_forward(&info, sender_key).await? {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.906,
+        "match": "if self.should_accept_forward(&request, sender_key).await? {"
+      },
+      {
+        "line": "self.accept_forwarded_room_key(&info, &event.sender, sender_key, algorithm, cont",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.711,
+        "match": "self.accept_forwarded_room_key(&request, sender_key, event).await"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/verji_matrix-rust-sdk_093fb5d0_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fix_sha": "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5386,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.9333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 14,
+    "lines_absent": 1,
+    "line_details": [
+      {
+        "line": "async fn should_accept_forward(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "async fn should_accept_forward("
+      },
+      {
+        "line": "&self,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "&self,"
+      },
+      {
+        "line": "info: &GossipRequest,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "info: &GossipRequest,"
+      },
+      {
+        "line": "sender_key: Curve25519PublicKey,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_key: Curve25519PublicKey,"
+      },
+      {
+        "line": ") -> Result<bool, CryptoStoreError> {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ") -> Result<bool, CryptoStoreError> {"
+      },
+      {
+        "line": "let device =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let device ="
+      },
+      {
+        "line": "self.store.get_device_from_curve_key(&info.request_recipient, sender_key).await?",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.964,
+        "match": "self.inner.store.get_device_from_curve_key(&info.request_recipient, sender_key)."
+      },
+      {
+        "line": "if let Some(device) = device {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if let Some(device) = device {"
+      },
+      {
+        "line": "Ok(device.user_id() == self.user_id() && device.is_verified())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(device.user_id() == self.user_id() && device.is_verified())"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      },
+      {
+        "line": "Ok(false)",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Ok(false)"
+      },
+      {
+        "line": "if self.should_accept_forward(&info, sender_key).await? {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.906,
+        "match": "if self.should_accept_forward(&request, sender_key).await? {"
+      },
+      {
+        "line": "self.accept_forwarded_room_key(&info, &event.sender, sender_key, algorithm, cont",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.711,
+        "match": "self.accept_forwarded_room_key(&request, sender_key, event).await"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": "} else {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} else {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/matrix-construct_matrix-rust-sdk_093fb5d0_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fix_sha": "41449d2cc360e347f5d4e1c154ec1e3185f11acd",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.556,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 12,
+    "lines_absent": 3,
+    "line_details": [
+      {
+        "line": "other_machine_owner: &UserId,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "other_machine_owner: &UserId,"
+      },
+      {
+        "line": "let bob_machine = test_gossip_machine(other_machine_owner);",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.824,
+        "match": "let bob_machine = gossip_machine_test_helper(other_machine_owner).await;"
+      },
+      {
+        "line": "let second_device = ReadOnlyDevice::from_account(&alice_2_account()).await;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.871,
+        "match": "let second_device = DeviceData::from_account(&alice_2_account());"
+      },
+      {
+        "line": "second_device.set_trust_state(LocalTrust::Verified);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "second_device.set_trust_state(LocalTrust::Verified);"
+      },
+      {
+        "line": "alice_machine.store.save_devices(&[bob_device, second_device]).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.928,
+        "match": "alice_machine.inner.store.save_device_data(&[bob_device, second_device]).await.u"
+      },
+      {
+        "line": "machines_for_key_share(alice_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.803,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "async fn reject_forward_from_another_user() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.947,
+        "match": "async fn test_reject_forward_from_another_user() {"
+      },
+      {
+        "line": "let (alice_machine, alice_account, group_session, bob_machine) =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.867,
+        "match": "let (alice_machine, group_session, bob_machine) ="
+      },
+      {
+        "line": "machines_for_key_share(bob_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.73,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();"
+      },
+      {
+        "line": "let request = &requests[0];",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let request = &requests[0];"
+      },
+      {
+        "line": "let event = request_to_event(alice_id(), alice_id(), request);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let event = request_to_event(alice_id(), alice_id(), request);"
+      },
+      {
+        "line": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();"
+      },
+      {
+        "line": "assert!(bob_machine.outgoing_requests.is_empty());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.885,
+        "match": "assert!(bob_machine.inner.outgoing_requests.read().is_empty());"
+      },
+      {
+        "line": "bob_machine.receive_incoming_key_request(&event);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "bob_machine.receive_incoming_key_request(&event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/SchildiChat_matrix-rust-sdk_41449d2c_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "verji/matrix-rust-sdk",
+    "fix_sha": "41449d2cc360e347f5d4e1c154ec1e3185f11acd",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.556,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 12,
+    "lines_absent": 3,
+    "line_details": [
+      {
+        "line": "other_machine_owner: &UserId,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "other_machine_owner: &UserId,"
+      },
+      {
+        "line": "let bob_machine = test_gossip_machine(other_machine_owner);",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.824,
+        "match": "let bob_machine = gossip_machine_test_helper(other_machine_owner).await;"
+      },
+      {
+        "line": "let second_device = ReadOnlyDevice::from_account(&alice_2_account()).await;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.871,
+        "match": "let second_device = DeviceData::from_account(&alice_2_account());"
+      },
+      {
+        "line": "second_device.set_trust_state(LocalTrust::Verified);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "second_device.set_trust_state(LocalTrust::Verified);"
+      },
+      {
+        "line": "alice_machine.store.save_devices(&[bob_device, second_device]).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.928,
+        "match": "alice_machine.inner.store.save_device_data(&[bob_device, second_device]).await.u"
+      },
+      {
+        "line": "machines_for_key_share(alice_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.803,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "async fn reject_forward_from_another_user() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.947,
+        "match": "async fn test_reject_forward_from_another_user() {"
+      },
+      {
+        "line": "let (alice_machine, alice_account, group_session, bob_machine) =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.867,
+        "match": "let (alice_machine, group_session, bob_machine) ="
+      },
+      {
+        "line": "machines_for_key_share(bob_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.73,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();"
+      },
+      {
+        "line": "let request = &requests[0];",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let request = &requests[0];"
+      },
+      {
+        "line": "let event = request_to_event(alice_id(), alice_id(), request);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let event = request_to_event(alice_id(), alice_id(), request);"
+      },
+      {
+        "line": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();"
+      },
+      {
+        "line": "assert!(bob_machine.outgoing_requests.is_empty());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.885,
+        "match": "assert!(bob_machine.inner.outgoing_requests.read().is_empty());"
+      },
+      {
+        "line": "bob_machine.receive_incoming_key_request(&event);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "bob_machine.receive_incoming_key_request(&event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/verji_matrix-rust-sdk_41449d2c_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2022-39252",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fix_sha": "41449d2cc360e347f5d4e1c154ec1e3185f11acd",
+    "filepath": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.556,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 12,
+    "lines_absent": 3,
+    "line_details": [
+      {
+        "line": "other_machine_owner: &UserId,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "other_machine_owner: &UserId,"
+      },
+      {
+        "line": "let bob_machine = test_gossip_machine(other_machine_owner);",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.824,
+        "match": "let bob_machine = gossip_machine_test_helper(other_machine_owner).await;"
+      },
+      {
+        "line": "let second_device = ReadOnlyDevice::from_account(&alice_2_account()).await;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.871,
+        "match": "let second_device = DeviceData::from_account(&alice_2_account());"
+      },
+      {
+        "line": "second_device.set_trust_state(LocalTrust::Verified);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "second_device.set_trust_state(LocalTrust::Verified);"
+      },
+      {
+        "line": "alice_machine.store.save_devices(&[bob_device, second_device]).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.928,
+        "match": "alice_machine.inner.store.save_device_data(&[bob_device, second_device]).await.u"
+      },
+      {
+        "line": "machines_for_key_share(alice_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.803,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "async fn reject_forward_from_another_user() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.947,
+        "match": "async fn test_reject_forward_from_another_user() {"
+      },
+      {
+        "line": "let (alice_machine, alice_account, group_session, bob_machine) =",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.867,
+        "match": "let (alice_machine, group_session, bob_machine) ="
+      },
+      {
+        "line": "machines_for_key_share(bob_id(), true).await;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.73,
+        "match": "machines_for_key_share_test_helper(alice_id(), true, algorithm).await;"
+      },
+      {
+        "line": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let requests = alice_machine.outgoing_to_device_requests().await.unwrap();"
+      },
+      {
+        "line": "let request = &requests[0];",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let request = &requests[0];"
+      },
+      {
+        "line": "let event = request_to_event(alice_id(), alice_id(), request);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let event = request_to_event(alice_id(), alice_id(), request);"
+      },
+      {
+        "line": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "alice_machine.mark_outgoing_request_as_sent(&request.request_id).await.unwrap();"
+      },
+      {
+        "line": "assert!(bob_machine.outgoing_requests.is_empty());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.885,
+        "match": "assert!(bob_machine.inner.outgoing_requests.read().is_empty());"
+      },
+      {
+        "line": "bob_machine.receive_incoming_key_request(&event);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "bob_machine.receive_incoming_key_request(&event);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2022-39252/matrix-construct_matrix-rust-sdk_41449d2c_crates_matrix-sdk-crypto_src_gossiping_machine.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-48937",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fix_sha": "13c1d2048286bbabf5e7bc6b015aafee98f04d55",
+    "filepath": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.8,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "let (verification_state, device_id) = match sender_data.user_id() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let (verification_state, device_id) = match sender_data.user_id() {"
+      },
+      {
+        "line": "Some(i) if i != sender => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(i) if i != sender => {"
+      },
+      {
+        "line": "VerificationState::Unverified(VerificationLevel::None(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "VerificationState::Unverified(VerificationLevel::None("
+      },
+      {
+        "line": "DeviceLinkProblem::MissingDevice,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.985,
+        "match": "DeviceLinkProblem::MissingDevice"
+      },
+      {
+        "line": "None,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "None,"
+      },
+      {
+        "line": "Some(_) | None => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(_) | None => {"
+      },
+      {
+        "line": "sender_data_to_verification_state(sender_data, session.has_been_imported())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_data_to_verification_state(sender_data, session.has_been_imported())"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-48937/SchildiChat_matrix-rust-sdk_13c1d204_crates_matrix-sdk-crypto_src_machine_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-48937",
+    "fork": "verji/matrix-rust-sdk",
+    "fix_sha": "13c1d2048286bbabf5e7bc6b015aafee98f04d55",
+    "filepath": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.8,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "let (verification_state, device_id) = match sender_data.user_id() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let (verification_state, device_id) = match sender_data.user_id() {"
+      },
+      {
+        "line": "Some(i) if i != sender => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(i) if i != sender => {"
+      },
+      {
+        "line": "VerificationState::Unverified(VerificationLevel::None(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "VerificationState::Unverified(VerificationLevel::None("
+      },
+      {
+        "line": "DeviceLinkProblem::MissingDevice,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.985,
+        "match": "DeviceLinkProblem::MissingDevice"
+      },
+      {
+        "line": "None,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "None,"
+      },
+      {
+        "line": "Some(_) | None => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(_) | None => {"
+      },
+      {
+        "line": "sender_data_to_verification_state(sender_data, session.has_been_imported())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_data_to_verification_state(sender_data, session.has_been_imported())"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-48937/verji_matrix-rust-sdk_13c1d204_crates_matrix-sdk-crypto_src_machine_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2025-48937",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fix_sha": "13c1d2048286bbabf5e7bc6b015aafee98f04d55",
+    "filepath": "crates/matrix-sdk-crypto/src/machine/mod.rs",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.8181,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "let (verification_state, device_id) = match sender_data.user_id() {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let (verification_state, device_id) = match sender_data.user_id() {"
+      },
+      {
+        "line": "Some(i) if i != sender => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(i) if i != sender => {"
+      },
+      {
+        "line": "VerificationState::Unverified(VerificationLevel::None(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "VerificationState::Unverified(VerificationLevel::None("
+      },
+      {
+        "line": "DeviceLinkProblem::MissingDevice,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.985,
+        "match": "DeviceLinkProblem::MissingDevice"
+      },
+      {
+        "line": "None,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "None,"
+      },
+      {
+        "line": "Some(_) | None => {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "Some(_) | None => {"
+      },
+      {
+        "line": "sender_data_to_verification_state(sender_data, session.has_been_imported())",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender_data_to_verification_state(sender_data, session.has_been_imported())"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-48937/matrix-construct_matrix-rust-sdk_13c1d204_crates_matrix-sdk-crypto_src_machine_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2024-34353",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fix_sha": "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+    "filepath": "crates/matrix-sdk/src/encryption/mod.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5102,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 13,
+    "lines_absent": 2,
+    "line_details": [
+      {
+        "line": "self.client.encryption().backups().setup_and_resume().await?;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.744,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.952,
+        "match": "let decryption_key = matrix_sdk_base::crypto::store::types::BackupDecryptionKey:"
+      },
+      {
+        "line": ".expect(\"Can't create new recovery key\");",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.543,
+        "match": "error!(\"Couldn't setup and resume recovery {e:?}\");"
+      },
+      {
+        "line": "let backup_key = decryption_key.megolm_v1_public_key();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key = decryption_key.megolm_v1_public_key();"
+      },
+      {
+        "line": "backup_key.set_version(\"1\".to_owned());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "backup_key.set_version(\"1\".to_owned());"
+      },
+      {
+        "line": "initial_olm_machine",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine"
+      },
+      {
+        "line": ".backup_machine()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".backup_machine()"
+      },
+      {
+        "line": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": ".expect(\"Should save\");",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".expect(\"Should save\");"
+      },
+      {
+        "line": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await."
+      },
+      {
+        "line": "assert!(client1.encryption().backups().are_enabled().await);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap"
+      },
+      {
+        "line": "assert!(backup_key_new.decryption_key.is_some());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(backup_key_new.decryption_key.is_some());"
+      },
+      {
+        "line": "assert_eq!(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert_eq!("
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-34353/SchildiChat_matrix-rust-sdk_71136e44_crates_matrix-sdk_src_encryption_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2024-34353",
+    "fork": "verji/matrix-rust-sdk",
+    "fix_sha": "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+    "filepath": "crates/matrix-sdk/src/encryption/mod.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5102,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 13,
+    "lines_absent": 2,
+    "line_details": [
+      {
+        "line": "self.client.encryption().backups().setup_and_resume().await?;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.744,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.952,
+        "match": "let decryption_key = matrix_sdk_base::crypto::store::types::BackupDecryptionKey:"
+      },
+      {
+        "line": ".expect(\"Can't create new recovery key\");",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.543,
+        "match": "error!(\"Couldn't setup and resume recovery {e:?}\");"
+      },
+      {
+        "line": "let backup_key = decryption_key.megolm_v1_public_key();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key = decryption_key.megolm_v1_public_key();"
+      },
+      {
+        "line": "backup_key.set_version(\"1\".to_owned());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "backup_key.set_version(\"1\".to_owned());"
+      },
+      {
+        "line": "initial_olm_machine",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine"
+      },
+      {
+        "line": ".backup_machine()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".backup_machine()"
+      },
+      {
+        "line": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": ".expect(\"Should save\");",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".expect(\"Should save\");"
+      },
+      {
+        "line": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await."
+      },
+      {
+        "line": "assert!(client1.encryption().backups().are_enabled().await);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap"
+      },
+      {
+        "line": "assert!(backup_key_new.decryption_key.is_some());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(backup_key_new.decryption_key.is_some());"
+      },
+      {
+        "line": "assert_eq!(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert_eq!("
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-34353/verji_matrix-rust-sdk_71136e44_crates_matrix-sdk_src_encryption_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "cve": "CVE-2024-34353",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fix_sha": "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+    "filepath": "crates/matrix-sdk/src/encryption/mod.rs",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5103,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 0.8667,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 13,
+    "lines_absent": 2,
+    "line_details": [
+      {
+        "line": "self.client.encryption().backups().setup_and_resume().await?;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.744,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let decryption_key = matrix_sdk_base::crypto::store::BackupDecryptionKey::new()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.952,
+        "match": "let decryption_key = matrix_sdk_base::crypto::store::types::BackupDecryptionKey:"
+      },
+      {
+        "line": ".expect(\"Can't create new recovery key\");",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.543,
+        "match": "error!(\"Couldn't setup and resume recovery {e:?}\");"
+      },
+      {
+        "line": "let backup_key = decryption_key.megolm_v1_public_key();",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key = decryption_key.megolm_v1_public_key();"
+      },
+      {
+        "line": "backup_key.set_version(\"1\".to_owned());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "backup_key.set_version(\"1\".to_owned());"
+      },
+      {
+        "line": "initial_olm_machine",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine"
+      },
+      {
+        "line": ".backup_machine()",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".backup_machine()"
+      },
+      {
+        "line": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".save_decryption_key(Some(decryption_key.to_owned()), Some(\"1\".to_owned()))"
+      },
+      {
+        "line": ".await",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".await"
+      },
+      {
+        "line": ".expect(\"Should save\");",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": ".expect(\"Should save\");"
+      },
+      {
+        "line": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await.",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "initial_olm_machine.backup_machine().enable_backup_v1(backup_key.clone()).await."
+      },
+      {
+        "line": "assert!(client1.encryption().backups().are_enabled().await);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(client1.encryption().backups().are_enabled().await);"
+      },
+      {
+        "line": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let backup_key_new = olm_machine.backup_machine().get_backup_keys().await.unwrap"
+      },
+      {
+        "line": "assert!(backup_key_new.decryption_key.is_some());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert!(backup_key_new.decryption_key.is_some());"
+      },
+      {
+        "line": "assert_eq!(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "assert_eq!("
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-34353/matrix-construct_matrix-rust-sdk_71136e44_crates_matrix-sdk_src_encryption_mod.rs"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2023-38690",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fix_sha": "0afb064635d37e039067b5b3d6423448b93026d3",
+    "filepath": "src/irc/BridgedClient.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9961,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "public assertConnected(): Client {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "public assertConnected(): Client {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-38690/oI0ck_matrix-appservice-irc_0afb0646_src_irc_BridgedClient.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2023-38690",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fix_sha": "0afb064635d37e039067b5b3d6423448b93026d3",
+    "filepath": "src/irc/BridgedClient.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9961,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "public assertConnected(): Client {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "public assertConnected(): Client {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-38690/jamesjen_matrix-appservice-irc_0afb0646_src_irc_BridgedClient.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2023-38700",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fix_sha": "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75",
+    "filepath": "src/bridge/MatrixHandler.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9561,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 15,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "private readonly processingInvitesForRooms: {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "private readonly processingInvitesForRooms: {"
+      },
+      {
+        "line": "[roomIdUserId: string]: Promise<unknown>;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "[roomIdUserId: string]: Promise<unknown>;"
+      },
+      {
+        "line": "} = {};",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} = {};"
+      },
+      {
+        "line": "[metricName: string]: number;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "[metricName: string]: number;"
+      },
+      {
+        "line": "};} = {};",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "};} = {};"
+      },
+      {
+        "line": "let originalBody = this.getCachedEvent(event.room_id, originalEventId)?.body;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let originalBody = this.getCachedEvent(event.room_id, originalEventId)?.body;"
+      },
+      {
+        "line": "this.cacheEvent(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.cacheEvent("
+      },
+      {
+        "line": "event.room_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.room_id,"
+      },
+      {
+        "line": "event.event_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.event_id,"
+      },
+      {
+        "line": "body: cacheBody,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "body: cacheBody,"
+      },
+      {
+        "line": "sender: event.sender,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender: event.sender,"
+      },
+      {
+        "line": "timestamp: event.origin_server_ts,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "timestamp: event.origin_server_ts,"
+      },
+      {
+        "line": "let cachedEvent = this.getCachedEvent(event.room_id, replyEventId);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let cachedEvent = this.getCachedEvent(event.room_id, replyEventId);"
+      },
+      {
+        "line": "event.room_id, replyEventId",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.room_id, replyEventId"
+      },
+      {
+        "line": "this.cacheEvent(eventContent.room_id, eventContent.event_id, cachedEvent);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.cacheEvent(eventContent.room_id, eventContent.event_id, cachedEvent);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-38700/oI0ck_matrix-appservice-irc_8bbd2b69_src_bridge_MatrixHandler.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2023-38700",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fix_sha": "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75",
+    "filepath": "src/bridge/MatrixHandler.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9561,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 15,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "private readonly processingInvitesForRooms: {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "private readonly processingInvitesForRooms: {"
+      },
+      {
+        "line": "[roomIdUserId: string]: Promise<unknown>;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "[roomIdUserId: string]: Promise<unknown>;"
+      },
+      {
+        "line": "} = {};",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} = {};"
+      },
+      {
+        "line": "[metricName: string]: number;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "[metricName: string]: number;"
+      },
+      {
+        "line": "};} = {};",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "};} = {};"
+      },
+      {
+        "line": "let originalBody = this.getCachedEvent(event.room_id, originalEventId)?.body;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let originalBody = this.getCachedEvent(event.room_id, originalEventId)?.body;"
+      },
+      {
+        "line": "this.cacheEvent(",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.cacheEvent("
+      },
+      {
+        "line": "event.room_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.room_id,"
+      },
+      {
+        "line": "event.event_id,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.event_id,"
+      },
+      {
+        "line": "body: cacheBody,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "body: cacheBody,"
+      },
+      {
+        "line": "sender: event.sender,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "sender: event.sender,"
+      },
+      {
+        "line": "timestamp: event.origin_server_ts,",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "timestamp: event.origin_server_ts,"
+      },
+      {
+        "line": "let cachedEvent = this.getCachedEvent(event.room_id, replyEventId);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "let cachedEvent = this.getCachedEvent(event.room_id, replyEventId);"
+      },
+      {
+        "line": "event.room_id, replyEventId",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "event.room_id, replyEventId"
+      },
+      {
+        "line": "this.cacheEvent(eventContent.room_id, eventContent.event_id, cachedEvent);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.cacheEvent(eventContent.room_id, eventContent.event_id, cachedEvent);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-38700/jamesjen_matrix-appservice-irc_8bbd2b69_src_bridge_MatrixHandler.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2024-39691",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fix_sha": "1835e047f269001054be4c68867797aa12372a0f",
+    "filepath": "src/bridge/MatrixHandler.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9942,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-39691/oI0ck_matrix-appservice-irc_1835e047_src_bridge_MatrixHandler.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2024-39691",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fix_sha": "1835e047f269001054be4c68867797aa12372a0f",
+    "filepath": "src/bridge/MatrixHandler.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9942,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "this.memberJoinTs.set(`${event.room_id}/${event.state_key}`, Date.now());"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-39691/jamesjen_matrix-appservice-irc_1835e047_src_bridge_MatrixHandler.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2024-52505",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fix_sha": "4a024eae1a992b1ea67e71a998e0b833b54221e2",
+    "filepath": "src/provisioning/Schema.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9944,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "pattern: \"^#([^:\\\\x00-\\\\x1F\\\\s,]){1,199}$\",",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "pattern: \"^#([^:\\\\x00-\\\\x1F\\\\s,]){1,199}$\","
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-52505/oI0ck_matrix-appservice-irc_4a024eae_src_provisioning_Schema.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2024-52505",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fix_sha": "4a024eae1a992b1ea67e71a998e0b833b54221e2",
+    "filepath": "src/provisioning/Schema.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9944,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 1,
+    "lines_present": 1,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "pattern: \"^#([^:\\\\x00-\\\\x1F\\\\s,]){1,199}$\",",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "pattern: \"^#([^:\\\\x00-\\\\x1F\\\\s,]){1,199}$\","
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2024-52505/jamesjen_matrix-appservice-irc_4a024eae_src_provisioning_Schema.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2025-27146",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fix_sha": "74f02c8e11f16ed1b355700092c1aa9c036a11bd",
+    "filepath": "src/irc/BridgedClient.ts",
+    "tipo": "L1_SHA",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 0,
+    "lines_present": 0,
+    "lines_absent": 0,
+    "line_details": [],
+    "evidence_file": null
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "cve": "CVE-2025-27146",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fix_sha": "74f02c8e11f16ed1b355700092c1aa9c036a11bd",
+    "filepath": "src/irc/BridgedClient.ts",
+    "tipo": "L1_SHA",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 1.0,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 0,
+    "lines_present": 0,
+    "lines_absent": 0,
+    "line_details": [],
+    "evidence_file": null
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2025-23197",
+    "fork": "maladesov/matrix-hookshot",
+    "fix_sha": "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802",
+    "filepath": "src/github/GithubInstance.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9502,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "if (install.suspended_at) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (install.suspended_at) {"
+      },
+      {
+        "line": "log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.948,
+        "match": "`GitHub app install ${install.id} was suspended. GitHub connections using this i"
+      },
+      {
+        "line": "continue;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "continue;"
+      },
+      {
+        "line": "try {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "try {"
+      },
+      {
+        "line": "await this.addInstallation(install);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "await this.addInstallation(install);"
+      },
+      {
+        "line": "} catch (ex) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} catch (ex) {"
+      },
+      {
+        "line": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-23197/maladesov_matrix-hookshot_e51d8210_src_github_GithubInstance.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2025-23197",
+    "fork": "yncyrydybyl/matrix-hookshot",
+    "fix_sha": "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802",
+    "filepath": "src/github/GithubInstance.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9502,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "if (install.suspended_at) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (install.suspended_at) {"
+      },
+      {
+        "line": "log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.948,
+        "match": "`GitHub app install ${install.id} was suspended. GitHub connections using this i"
+      },
+      {
+        "line": "continue;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "continue;"
+      },
+      {
+        "line": "try {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "try {"
+      },
+      {
+        "line": "await this.addInstallation(install);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "await this.addInstallation(install);"
+      },
+      {
+        "line": "} catch (ex) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} catch (ex) {"
+      },
+      {
+        "line": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-23197/yncyrydybyl_matrix-hookshot_e51d8210_src_github_GithubInstance.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2025-23197",
+    "fork": "Rath-debug/matrix-hookshot",
+    "fix_sha": "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802",
+    "filepath": "src/github/GithubInstance.ts",
+    "tipo": "L2_CORRIGIDO",
+    "auto_status": "CORRIGIDO",
+    "sim_ast": 0.9502,
+    "gt_label": "CONFIRMED_PATCHED",
+    "gt_confidence": 1.0,
+    "is_removal_patch": false,
+    "lines_checked": 7,
+    "lines_present": 7,
+    "lines_absent": 0,
+    "line_details": [
+      {
+        "line": "if (install.suspended_at) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (install.suspended_at) {"
+      },
+      {
+        "line": "log.warn(`GitHub app install ${install.id} was suspended. GitHub connections usi",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.948,
+        "match": "`GitHub app install ${install.id} was suspended. GitHub connections using this i"
+      },
+      {
+        "line": "continue;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "continue;"
+      },
+      {
+        "line": "try {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "try {"
+      },
+      {
+        "line": "await this.addInstallation(install);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "await this.addInstallation(install);"
+      },
+      {
+        "line": "} catch (ex) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "} catch (ex) {"
+      },
+      {
+        "line": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "log.info(`Failed to handle GitHub installation ${install.id}`, ex);"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2025-23197/Rath-debug_matrix-hookshot_e51d8210_src_github_GithubInstance.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2023-43656",
+    "fork": "maladesov/matrix-hookshot",
+    "fix_sha": "dc126afa6af86d66aefcd23a825326f405bcc894",
+    "filepath": "src/Connections/GenericHook.ts",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5136,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.3333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 5,
+    "lines_absent": 10,
+    "line_details": [
+      {
+        "line": "import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.379,
+        "match": "import { formatDuration, isMatch, millisecondsToHours } from \"date-fns\";"
+      },
+      {
+        "line": "private static quickModule?: QuickJSWASMModule;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.409,
+        "match": "private warnOnExpiryInterval?: NodeJS.Timeout;"
+      },
+      {
+        "line": "public static async initialiseQuickJS() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.576,
+        "match": "public async onRemove() {"
+      },
+      {
+        "line": "GenericHookConnection.quickModule = await newQuickJSWASMModule();",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.528,
+        "match": "GenericHookConnection.CanonicalEventType,"
+      },
+      {
+        "line": "static validateState(state: Record<string, unknown>): GenericHookConnectionState",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.613,
+        "match": "private state: GenericHookConnectionState,"
+      },
+      {
+        "line": "if (transformationFunction != undefined) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (transformationFunction != undefined) {"
+      },
+      {
+        "line": "if (!this.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.636,
+        "match": "if (this.isStatic) {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions are not allowed', ErrCode.DisabledF",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.626,
+        "match": "\"Transformation functions are not allowed\","
+      },
+      {
+        "line": "if (typeof transformationFunction !== \"string\") {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (typeof transformationFunction !== \"string\") {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions must be a string', ErrCode.BadValue",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.773,
+        "match": "throw new ApiError(\"Expiration date must be set\", ErrCode.BadValue);"
+      },
+      {
+        "line": "...(transformationFunction && {transformationFunction}),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.807,
+        "match": "transformationFunction: this.state.transformationFunction,"
+      },
+      {
+        "line": "const validState = GenericHookConnection.validateState(data);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "const validState = GenericHookConnection.validateState(data);"
+      },
+      {
+        "line": "private transformationFunction?: string;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.889,
+        "match": "transformationFunction?: string;"
+      },
+      {
+        "line": "* @param state Should be a pre-validated state object returned by {@link validat",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "* @param state Should be a pre-validated state object returned by {@link validat"
+      },
+      {
+        "line": "if (state.transformationFunction && GenericHookConnection.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.662,
+        "match": "if (state.transformationFunction && WebhookTransformer.canTransform) {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-43656/maladesov_matrix-hookshot_dc126afa_src_Connections_GenericHook.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2023-43656",
+    "fork": "yncyrydybyl/matrix-hookshot",
+    "fix_sha": "dc126afa6af86d66aefcd23a825326f405bcc894",
+    "filepath": "src/Connections/GenericHook.ts",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5457,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.3333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 5,
+    "lines_absent": 10,
+    "line_details": [
+      {
+        "line": "import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.39,
+        "match": "import { Appservice, Intent, StateEvent, UserID } from \"matrix-bot-sdk\";"
+      },
+      {
+        "line": "private static quickModule?: QuickJSWASMModule;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.409,
+        "match": "private warnOnExpiryInterval?: NodeJS.Timeout;"
+      },
+      {
+        "line": "public static async initialiseQuickJS() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.576,
+        "match": "public async onRemove() {"
+      },
+      {
+        "line": "GenericHookConnection.quickModule = await newQuickJSWASMModule();",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.528,
+        "match": "GenericHookConnection.CanonicalEventType,"
+      },
+      {
+        "line": "static validateState(state: Record<string, unknown>): GenericHookConnectionState",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.613,
+        "match": "private state: GenericHookConnectionState,"
+      },
+      {
+        "line": "if (transformationFunction != undefined) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (transformationFunction != undefined) {"
+      },
+      {
+        "line": "if (!this.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.636,
+        "match": "if (this.isStatic) {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions are not allowed', ErrCode.DisabledF",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.626,
+        "match": "\"Transformation functions are not allowed\","
+      },
+      {
+        "line": "if (typeof transformationFunction !== \"string\") {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (typeof transformationFunction !== \"string\") {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions must be a string', ErrCode.BadValue",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.773,
+        "match": "throw new ApiError(\"Expiration date must be set\", ErrCode.BadValue);"
+      },
+      {
+        "line": "...(transformationFunction && {transformationFunction}),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.807,
+        "match": "transformationFunction: this.state.transformationFunction,"
+      },
+      {
+        "line": "const validState = GenericHookConnection.validateState(data);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "const validState = GenericHookConnection.validateState(data);"
+      },
+      {
+        "line": "private transformationFunction?: string;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.889,
+        "match": "transformationFunction?: string;"
+      },
+      {
+        "line": "* @param state Should be a pre-validated state object returned by {@link validat",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "* @param state Should be a pre-validated state object returned by {@link validat"
+      },
+      {
+        "line": "if (state.transformationFunction && GenericHookConnection.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.662,
+        "match": "if (state.transformationFunction && WebhookTransformer.canTransform) {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-43656/yncyrydybyl_matrix-hookshot_dc126afa_src_Connections_GenericHook.ts"
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "cve": "CVE-2023-43656",
+    "fork": "Rath-debug/matrix-hookshot",
+    "fix_sha": "dc126afa6af86d66aefcd23a825326f405bcc894",
+    "filepath": "src/Connections/GenericHook.ts",
+    "tipo": "ZONA_INCERTEZA",
+    "auto_status": "ZONA_INCERTEZA",
+    "sim_ast": 0.5457,
+    "gt_label": "AMBIGUOUS",
+    "gt_confidence": 0.3333,
+    "is_removal_patch": false,
+    "lines_checked": 15,
+    "lines_present": 5,
+    "lines_absent": 10,
+    "line_details": [
+      {
+        "line": "import { QuickJSRuntime, QuickJSWASMModule, newQuickJSWASMModule, shouldInterrup",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.39,
+        "match": "import { Appservice, Intent, StateEvent, UserID } from \"matrix-bot-sdk\";"
+      },
+      {
+        "line": "private static quickModule?: QuickJSWASMModule;",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.409,
+        "match": "private warnOnExpiryInterval?: NodeJS.Timeout;"
+      },
+      {
+        "line": "public static async initialiseQuickJS() {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.576,
+        "match": "public async onRemove() {"
+      },
+      {
+        "line": "GenericHookConnection.quickModule = await newQuickJSWASMModule();",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.528,
+        "match": "GenericHookConnection.CanonicalEventType,"
+      },
+      {
+        "line": "static validateState(state: Record<string, unknown>): GenericHookConnectionState",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.613,
+        "match": "private state: GenericHookConnectionState,"
+      },
+      {
+        "line": "if (transformationFunction != undefined) {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (transformationFunction != undefined) {"
+      },
+      {
+        "line": "if (!this.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.636,
+        "match": "if (this.isStatic) {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions are not allowed', ErrCode.DisabledF",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.626,
+        "match": "\"Transformation functions are not allowed\","
+      },
+      {
+        "line": "if (typeof transformationFunction !== \"string\") {",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "if (typeof transformationFunction !== \"string\") {"
+      },
+      {
+        "line": "throw new ApiError('Transformation functions must be a string', ErrCode.BadValue",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.773,
+        "match": "throw new ApiError(\"Expiration date must be set\", ErrCode.BadValue);"
+      },
+      {
+        "line": "...(transformationFunction && {transformationFunction}),",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.807,
+        "match": "transformationFunction: this.state.transformationFunction,"
+      },
+      {
+        "line": "const validState = GenericHookConnection.validateState(data);",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "const validState = GenericHookConnection.validateState(data);"
+      },
+      {
+        "line": "private transformationFunction?: string;",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 0.889,
+        "match": "transformationFunction?: string;"
+      },
+      {
+        "line": "* @param state Should be a pre-validated state object returned by {@link validat",
+        "type": "added",
+        "present_in_fork": true,
+        "score": 1.0,
+        "match": "* @param state Should be a pre-validated state object returned by {@link validat"
+      },
+      {
+        "line": "if (state.transformationFunction && GenericHookConnection.quickModule) {",
+        "type": "added",
+        "present_in_fork": false,
+        "score": 0.662,
+        "match": "if (state.transformationFunction && WebhookTransformer.canTransform) {"
+      }
+    ],
+    "evidence_file": "evidencias_gt_dissertacao/CVE-2023-43656/Rath-debug_matrix-hookshot_dc126afa_src_Connections_GenericHook.ts"
+  }
+]

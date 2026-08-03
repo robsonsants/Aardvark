@@ -1,0 +1,39 @@
+﻿fork,cve,adotou_no_HEAD,score,evidencia
+SchildiChat/matrix-rust-sdk,CVE-2022-39252,INDETERMINADO,0.477,sim_pos=0.28 sim_pre=0.48 (refs fracas)
+matrix-construct/matrix-rust-sdk,CVE-2022-39252,INDETERMINADO,0.477,sim_pos=0.28 sim_pre=0.48 (refs fracas)
+verji/matrix-rust-sdk,CVE-2022-39252,INDETERMINADO,0.477,sim_pos=0.28 sim_pre=0.48 (refs fracas)
+jamesjen/matrix-appservice-irc,CVE-2023-38690,INDETERMINADO,0.026,sim_pos=1.00 sim_pre=0.97 (empate)
+oI0ck/matrix-appservice-irc,CVE-2023-38690,INDETERMINADO,0.026,sim_pos=1.00 sim_pre=0.97 (empate)
+jamesjen/matrix-appservice-irc,CVE-2023-38700,CORRIGIDO,0.298,sim_pos=1.00 sim_pre=0.70
+oI0ck/matrix-appservice-irc,CVE-2023-38700,CORRIGIDO,0.298,sim_pos=1.00 sim_pre=0.70
+Rath-debug/matrix-hookshot,CVE-2023-43656,INDETERMINADO,0.123,sim_pos=0.09 sim_pre=0.12 (refs fracas)
+maladesov/matrix-hookshot,CVE-2023-43656,INDETERMINADO,0.123,sim_pos=0.09 sim_pre=0.12 (refs fracas)
+yncyrydybyl/matrix-hookshot,CVE-2023-43656,INDETERMINADO,0.123,sim_pos=0.09 sim_pre=0.12 (refs fracas)
+H1d3r/element-android,CVE-2024-26132,INDETERMINADO,0.022,sim_pos=1.00 sim_pre=0.98 (empate)
+SchildiChat/SchildiChat-android,CVE-2024-26132,INDETERMINADO,0.022,sim_pos=1.00 sim_pre=0.98 (empate)
+bincnc/element-android,CVE-2024-26132,INDETERMINADO,0.022,sim_pos=1.00 sim_pre=0.98 (empate)
+kakahu2015/synapse,CVE-2024-31208,CORRIGIDO,0.47,sim_pos=1.00 sim_pre=0.53
+microchipster/synapse,CVE-2024-31208,CORRIGIDO,0.47,sim_pos=1.00 sim_pre=0.53
+shcherbak/synapse,CVE-2024-31208,CORRIGIDO,0.47,sim_pos=1.00 sim_pre=0.53
+jamesjen/matrix-appservice-irc,CVE-2024-39691,CORRIGIDO,0.047,sim_pos=1.00 sim_pre=0.95
+oI0ck/matrix-appservice-irc,CVE-2024-39691,CORRIGIDO,0.047,sim_pos=1.00 sim_pre=0.95
+Rath-debug/matrix-hookshot,CVE-2025-23197,CORRIGIDO,0.087,sim_pos=0.82 sim_pre=0.74
+maladesov/matrix-hookshot,CVE-2025-23197,CORRIGIDO,0.087,sim_pos=0.82 sim_pre=0.74
+yncyrydybyl/matrix-hookshot,CVE-2025-23197,CORRIGIDO,0.087,sim_pos=0.82 sim_pre=0.74
+jamesjen/matrix-appservice-irc,CVE-2025-27146,CORRIGIDO,0.245,sim_pos=1.00 sim_pre=0.75
+oI0ck/matrix-appservice-irc,CVE-2025-27146,CORRIGIDO,0.245,sim_pos=1.00 sim_pre=0.75
+H1d3r/element-android,CVE-2025-27606,CORRIGIDO,0.198,sim_pos=1.00 sim_pre=0.80
+SchildiChat/SchildiChat-android,CVE-2025-27606,CORRIGIDO,0.198,sim_pos=1.00 sim_pre=0.80
+bincnc/element-android,CVE-2025-27606,CORRIGIDO,0.198,sim_pos=1.00 sim_pre=0.80
+SchildiChat/matrix-rust-sdk,CVE-2025-48937,CORRIGIDO,0.313,sim_pos=0.77 sim_pre=0.46
+matrix-construct/matrix-rust-sdk,CVE-2025-48937,CORRIGIDO,0.313,sim_pos=0.77 sim_pre=0.46
+verji/matrix-rust-sdk,CVE-2025-48937,CORRIGIDO,0.313,sim_pos=0.77 sim_pre=0.46
+kakahu2015/synapse,CVE-2025-61672,CORRIGIDO,0.179,sim_pos=0.77 sim_pre=0.59
+microchipster/synapse,CVE-2025-61672,CORRIGIDO,0.179,sim_pos=0.77 sim_pre=0.59
+shcherbak/synapse,CVE-2025-61672,CORRIGIDO,0.179,sim_pos=0.77 sim_pre=0.59
+SchildiChat/matrix-rust-sdk,CVE-2025-66622,INDETERMINADO,0.211,sim_pos=0.11 sim_pre=0.21 (refs fracas)
+matrix-construct/matrix-rust-sdk,CVE-2025-66622,INDETERMINADO,0.211,sim_pos=0.11 sim_pre=0.21 (refs fracas)
+verji/matrix-rust-sdk,CVE-2025-66622,INDETERMINADO,0.211,sim_pos=0.11 sim_pre=0.21 (refs fracas)
+SchildiChat/matrix-rust-sdk,CVE-2024-34353,CORRIGIDO,0.52,sim_pos=0.94 sim_pre=0.42
+matrix-construct/matrix-rust-sdk,CVE-2024-34353,CORRIGIDO,0.52,sim_pos=0.94 sim_pre=0.42
+verji/matrix-rust-sdk,CVE-2024-34353,CORRIGIDO,0.52,sim_pos=0.94 sim_pre=0.42

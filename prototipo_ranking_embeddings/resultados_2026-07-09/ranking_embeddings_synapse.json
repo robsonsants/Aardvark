@@ -1,0 +1,130 @@
+[
+  {
+    "cve": "CVE-2024-31208",
+    "arquivo": "synapse/storage/databases/main/events.py",
+    "alvo_metodo": "_LinkMap::exists_path_from",
+    "fix_sha": "55b0aa847a61774b6a3acdc4b177a20dc019f01a",
+    "parent_sha": "fbb2573525090f18b0f8aa10317a61e8cf819e8d",
+    "margem": 0.02,
+    "trecho_vuln_linhas": 9,
+    "trecho_corrigido_linhas": 24,
+    "sanity_sim_vuln_vs_corrigido": 0.698,
+    "resultados": [
+      {
+        "alvo": "UPSTREAM@pre (vulnerável)",
+        "sim_vuln": 0.901,
+        "sim_corrigido": 0.748,
+        "delta": -0.153,
+        "status": "VULNERAVEL",
+        "tendencia": "→vuln",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "UPSTREAM@fix (corrigido)",
+        "sim_vuln": 0.75,
+        "sim_corrigido": 0.929,
+        "delta": 0.179,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "microchipster/synapse",
+        "sim_vuln": 0.744,
+        "sim_corrigido": 0.929,
+        "delta": 0.185,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "kakahu2015/synapse",
+        "sim_vuln": 0.744,
+        "sim_corrigido": 0.929,
+        "delta": 0.185,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "shcherbak/synapse",
+        "sim_vuln": 0.744,
+        "sim_corrigido": 0.929,
+        "delta": 0.185,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      }
+    ],
+    "ranking_forks_por_sim_vuln": [
+      "microchipster/synapse",
+      "kakahu2015/synapse",
+      "shcherbak/synapse"
+    ],
+    "ground_truth": "GT=CONFIRMED_PATCHED nos 3 forks; AST=ZONA_INCERTEZA (falsos negativos)"
+  },
+  {
+    "cve": "CVE-2025-61672",
+    "arquivo": "synapse/rest/client/keys.py",
+    "alvo_metodo": "KeyUploadServlet::on_POST",
+    "fix_sha": "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+    "parent_sha": "4a37c4d87aaa92ad62853ca8b79b84e8c934b4a2",
+    "margem": 0.02,
+    "trecho_vuln_linhas": 8,
+    "trecho_corrigido_linhas": 31,
+    "sanity_sim_vuln_vs_corrigido": 0.64,
+    "resultados": [
+      {
+        "alvo": "UPSTREAM@pre (vulnerável)",
+        "sim_vuln": 0.847,
+        "sim_corrigido": 0.769,
+        "delta": -0.078,
+        "status": "VULNERAVEL",
+        "tendencia": "→vuln",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "UPSTREAM@fix (corrigido)",
+        "sim_vuln": 0.796,
+        "sim_corrigido": 0.747,
+        "delta": -0.049,
+        "status": "VULNERAVEL",
+        "tendencia": "→vuln",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "microchipster/synapse",
+        "sim_vuln": 0.796,
+        "sim_corrigido": 0.862,
+        "delta": 0.066,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "kakahu2015/synapse",
+        "sim_vuln": 0.796,
+        "sim_corrigido": 0.862,
+        "delta": 0.066,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      },
+      {
+        "alvo": "shcherbak/synapse",
+        "sim_vuln": 0.796,
+        "sim_corrigido": 0.862,
+        "delta": 0.066,
+        "status": "CORRIGIDO",
+        "tendencia": "→corr",
+        "alinhamento": "metodo"
+      }
+    ],
+    "ranking_forks_por_sim_vuln": [
+      "microchipster/synapse",
+      "kakahu2015/synapse",
+      "shcherbak/synapse"
+    ],
+    "ground_truth": "GT inconclusivo no experimento anterior"
+  }
+]

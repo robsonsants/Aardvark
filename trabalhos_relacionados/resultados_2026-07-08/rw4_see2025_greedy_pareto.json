@@ -1,0 +1,51 @@
+{
+  "trabalho": "See et al. (2025) — otimização gulosa / Curva de Pareto (diagnóstico macro)",
+  "papel_na_proposta": "Matriz de cobertura + set-cover guloso (§3.4, §4.5)",
+  "n_vulnerabilidades_universo": 16,
+  "n_vulnerabilidades_resolviveis": 11,
+  "n_forks_com_alguma_correcao": 12,
+  "teto_cobertura_pct": 68.8,
+  "forks_para_o_teto": 5,
+  "curva_pareto": [
+    {
+      "k": 1,
+      "fork": "oI0ck/matrix-appservice-irc",
+      "ganho": 5,
+      "acumulado": 5,
+      "cobertura_universo_pct": 31.2,
+      "cobertura_resolvivel_pct": 45.5
+    },
+    {
+      "k": 2,
+      "fork": "H1d3r/element-android",
+      "ganho": 3,
+      "acumulado": 8,
+      "cobertura_universo_pct": 50.0,
+      "cobertura_resolvivel_pct": 72.7
+    },
+    {
+      "k": 3,
+      "fork": "microchipster/synapse",
+      "ganho": 1,
+      "acumulado": 9,
+      "cobertura_universo_pct": 56.2,
+      "cobertura_resolvivel_pct": 81.8
+    },
+    {
+      "k": 4,
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "ganho": 1,
+      "acumulado": 10,
+      "cobertura_universo_pct": 62.5,
+      "cobertura_resolvivel_pct": 90.9
+    },
+    {
+      "k": 5,
+      "fork": "maladesov/matrix-hookshot",
+      "ganho": 1,
+      "acumulado": 11,
+      "cobertura_universo_pct": 68.8,
+      "cobertura_resolvivel_pct": 100.0
+    }
+  ]
+}

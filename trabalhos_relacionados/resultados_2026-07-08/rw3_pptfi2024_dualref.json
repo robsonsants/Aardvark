@@ -1,0 +1,32 @@
+{
+  "trabalho": "He et al. (2024) PPTFI / Xu et al. (2023) PatchDiscovery — PPT dupla referência",
+  "papel_na_proposta": "Camada 2B / referência dupla (discriminador de incerteza)",
+  "metodo": "delta = sim(fork,pos) - sim(fork,pre); |delta|<=0.05 -> ZONA_INCERTEZA",
+  "distribuicao_vereditos": {
+    "CORRIGIDO": 14,
+    "ZONA_INCERTEZA": 29
+  },
+  "n_pares_fork_cve": 43,
+  "n_detectados_corrigidos": 14,
+  "gt_conclusivos": 34,
+  "TP": 11,
+  "FN_como_zona_incerteza": 23,
+  "FN_total": 23,
+  "recall": 0.3235,
+  "detectados": [
+    "element-hq/element-android::H1d3r/element-android::CVE-2024-26131",
+    "element-hq/element-android::H1d3r/element-android::CVE-2024-26132",
+    "element-hq/element-android::H1d3r/element-android::CVE-2025-27606",
+    "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2024-26131",
+    "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2024-26132",
+    "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2025-27606",
+    "element-hq/element-android::bincnc/element-android::CVE-2024-26131",
+    "element-hq/element-android::bincnc/element-android::CVE-2024-26132",
+    "element-hq/element-android::bincnc/element-android::CVE-2025-27606",
+    "element-hq/synapse::kakahu2015/synapse::CVE-2025-61672",
+    "element-hq/synapse::microchipster/synapse::CVE-2025-61672",
+    "element-hq/synapse::shcherbak/synapse::CVE-2025-61672",
+    "matrix-org/matrix-appservice-irc::jamesjen/matrix-appservice-irc::CVE-2025-27146",
+    "matrix-org/matrix-appservice-irc::oI0ck/matrix-appservice-irc::CVE-2025-27146"
+  ]
+}

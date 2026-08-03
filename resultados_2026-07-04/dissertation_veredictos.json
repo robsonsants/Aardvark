@@ -1,0 +1,708 @@
+[
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2025-27606",
+    "fork": "H1d3r/element-android",
+    "fork_pushed": "2026-06-24T10:43:21Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304"
+    ],
+    "status_por_commit": {
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2025-27606",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fork_pushed": "2026-06-11T09:14:06Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304"
+    ],
+    "status_por_commit": {
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2025-27606",
+    "fork": "bincnc/element-android",
+    "fork_pushed": "2026-05-23T16:19:37Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304"
+    ],
+    "status_por_commit": {
+      "87d7fcdc8036a4db4da8c403f87c73a64a546304": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26132",
+    "fork": "H1d3r/element-android",
+    "fork_pushed": "2026-06-24T10:43:21Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07"
+    ],
+    "status_por_commit": {
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26132",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fork_pushed": "2026-06-11T09:14:06Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07"
+    ],
+    "status_por_commit": {
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26132",
+    "fork": "bincnc/element-android",
+    "fork_pushed": "2026-05-23T16:19:37Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07"
+    ],
+    "status_por_commit": {
+      "8f9695a9a8d944cb9b92568cbd76578c51d32e07": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26131",
+    "fork": "H1d3r/element-android",
+    "fork_pushed": "2026-06-24T10:43:21Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "53734255ec270b0814946350787393dfcaa2a5a9"
+    ],
+    "status_por_commit": {
+      "53734255ec270b0814946350787393dfcaa2a5a9": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26131",
+    "fork": "SchildiChat/SchildiChat-android",
+    "fork_pushed": "2026-06-11T09:14:06Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "53734255ec270b0814946350787393dfcaa2a5a9"
+    ],
+    "status_por_commit": {
+      "53734255ec270b0814946350787393dfcaa2a5a9": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "cve_id": "CVE-2024-26131",
+    "fork": "bincnc/element-android",
+    "fork_pushed": "2026-05-23T16:19:37Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "53734255ec270b0814946350787393dfcaa2a5a9"
+    ],
+    "status_por_commit": {
+      "53734255ec270b0814946350787393dfcaa2a5a9": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2025-61672",
+    "fork": "microchipster/synapse",
+    "fork_pushed": "2026-07-03T02:42:08Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740"
+    ],
+    "status_por_commit": {
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1": "CORRIGIDO",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2025-61672",
+    "fork": "kakahu2015/synapse",
+    "fork_pushed": "2026-07-01T18:54:17Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740"
+    ],
+    "status_por_commit": {
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1": "CORRIGIDO",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2025-61672",
+    "fork": "shcherbak/synapse",
+    "fork_pushed": "2026-06-26T21:06:43Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740"
+    ],
+    "status_por_commit": {
+      "26aaaf9e48fff80cf67a20c691c75d670034b3c1": "CORRIGIDO",
+      "7069636c2d6d1ef2022287addf3ed8b919ef2740": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2024-31208",
+    "fork": "microchipster/synapse",
+    "fork_pushed": "2026-07-03T02:42:08Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a"
+    ],
+    "status_por_commit": {
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2024-31208",
+    "fork": "kakahu2015/synapse",
+    "fork_pushed": "2026-07-01T18:54:17Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a"
+    ],
+    "status_por_commit": {
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "cve_id": "CVE-2024-31208",
+    "fork": "shcherbak/synapse",
+    "fork_pushed": "2026-06-26T21:06:43Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a"
+    ],
+    "status_por_commit": {
+      "55b0aa847a61774b6a3acdc4b177a20dc019f01a": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-66622",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fork_pushed": "2026-07-03T08:49:00Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0"
+    ],
+    "status_por_commit": {
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-66622",
+    "fork": "verji/matrix-rust-sdk",
+    "fork_pushed": "2026-07-02T07:12:40Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0"
+    ],
+    "status_por_commit": {
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-66622",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fork_pushed": "2026-06-30T07:08:44Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0"
+    ],
+    "status_por_commit": {
+      "4ea0418abefab2aa93f8851a4d39c723e703e6b0": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2022-39252",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fork_pushed": "2026-07-03T08:49:00Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd"
+    ],
+    "status_por_commit": {
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb": "ZONA_INCERTEZA",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2022-39252",
+    "fork": "verji/matrix-rust-sdk",
+    "fork_pushed": "2026-07-02T07:12:40Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd"
+    ],
+    "status_por_commit": {
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb": "ZONA_INCERTEZA",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2022-39252",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fork_pushed": "2026-06-30T07:08:44Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd"
+    ],
+    "status_por_commit": {
+      "093fb5d0aa21c0b5eaea6ec96b477f1075271cbb": "ZONA_INCERTEZA",
+      "41449d2cc360e347f5d4e1c154ec1e3185f11acd": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-48937",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fork_pushed": "2026-07-03T08:49:00Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55"
+    ],
+    "status_por_commit": {
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-48937",
+    "fork": "verji/matrix-rust-sdk",
+    "fork_pushed": "2026-07-02T07:12:40Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55"
+    ],
+    "status_por_commit": {
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2025-48937",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fork_pushed": "2026-06-30T07:08:44Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55"
+    ],
+    "status_por_commit": {
+      "13c1d2048286bbabf5e7bc6b015aafee98f04d55": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2024-34353",
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "fork_pushed": "2026-07-03T08:49:00Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0"
+    ],
+    "status_por_commit": {
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067": "ZONA_INCERTEZA",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2024-34353",
+    "fork": "verji/matrix-rust-sdk",
+    "fork_pushed": "2026-07-02T07:12:40Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0"
+    ],
+    "status_por_commit": {
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067": "ZONA_INCERTEZA",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "cve_id": "CVE-2024-34353",
+    "fork": "matrix-construct/matrix-rust-sdk",
+    "fork_pushed": "2026-06-30T07:08:44Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 2,
+    "fix_shas": [
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0"
+    ],
+    "status_por_commit": {
+      "71136e44c03c79f80d6d1a2446673bc4d53a2067": "ZONA_INCERTEZA",
+      "fa10bbb5dd0f9120a51aa1854cec752e25790bb0": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2023-38690",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fork_pushed": "2025-08-05T11:02:52Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "0afb064635d37e039067b5b3d6423448b93026d3"
+    ],
+    "status_por_commit": {
+      "0afb064635d37e039067b5b3d6423448b93026d3": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2023-38690",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fork_pushed": "2025-07-31T21:47:42Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "0afb064635d37e039067b5b3d6423448b93026d3"
+    ],
+    "status_por_commit": {
+      "0afb064635d37e039067b5b3d6423448b93026d3": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2023-38700",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fork_pushed": "2025-08-05T11:02:52Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75"
+    ],
+    "status_por_commit": {
+      "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2023-38700",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fork_pushed": "2025-07-31T21:47:42Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75"
+    ],
+    "status_por_commit": {
+      "8bbd2b69a16cbcbeffdd9b5c973fd89d61498d75": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2024-39691",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fork_pushed": "2025-08-05T11:02:52Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "1835e047f269001054be4c68867797aa12372a0f"
+    ],
+    "status_por_commit": {
+      "1835e047f269001054be4c68867797aa12372a0f": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2024-39691",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fork_pushed": "2025-07-31T21:47:42Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "1835e047f269001054be4c68867797aa12372a0f"
+    ],
+    "status_por_commit": {
+      "1835e047f269001054be4c68867797aa12372a0f": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2024-52505",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fork_pushed": "2025-08-05T11:02:52Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "4a024eae1a992b1ea67e71a998e0b833b54221e2"
+    ],
+    "status_por_commit": {
+      "4a024eae1a992b1ea67e71a998e0b833b54221e2": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2024-52505",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fork_pushed": "2025-07-31T21:47:42Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "4a024eae1a992b1ea67e71a998e0b833b54221e2"
+    ],
+    "status_por_commit": {
+      "4a024eae1a992b1ea67e71a998e0b833b54221e2": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2025-27146",
+    "fork": "oI0ck/matrix-appservice-irc",
+    "fork_pushed": "2025-08-05T11:02:52Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "74f02c8e11f16ed1b355700092c1aa9c036a11bd"
+    ],
+    "status_por_commit": {
+      "74f02c8e11f16ed1b355700092c1aa9c036a11bd": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-appservice-irc",
+    "category": "bridge",
+    "language": "typescript",
+    "cve_id": "CVE-2025-27146",
+    "fork": "jamesjen/matrix-appservice-irc",
+    "fork_pushed": "2025-07-31T21:47:42Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "74f02c8e11f16ed1b355700092c1aa9c036a11bd"
+    ],
+    "status_por_commit": {
+      "74f02c8e11f16ed1b355700092c1aa9c036a11bd": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2025-23197",
+    "fork": "maladesov/matrix-hookshot",
+    "fork_pushed": "2026-05-26T20:13:41Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802"
+    ],
+    "status_por_commit": {
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2025-23197",
+    "fork": "yncyrydybyl/matrix-hookshot",
+    "fork_pushed": "2026-04-22T00:28:48Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802"
+    ],
+    "status_por_commit": {
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2025-23197",
+    "fork": "Rath-debug/matrix-hookshot",
+    "fork_pushed": "2026-03-12T08:30:35Z",
+    "status": "CORRIGIDO",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802"
+    ],
+    "status_por_commit": {
+      "e51d8210233ac759e7f7dfebc2c4f1bf6ce94802": "CORRIGIDO"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2023-43656",
+    "fork": "maladesov/matrix-hookshot",
+    "fork_pushed": "2026-05-26T20:13:41Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "dc126afa6af86d66aefcd23a825326f405bcc894"
+    ],
+    "status_por_commit": {
+      "dc126afa6af86d66aefcd23a825326f405bcc894": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2023-43656",
+    "fork": "yncyrydybyl/matrix-hookshot",
+    "fork_pushed": "2026-04-22T00:28:48Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "dc126afa6af86d66aefcd23a825326f405bcc894"
+    ],
+    "status_por_commit": {
+      "dc126afa6af86d66aefcd23a825326f405bcc894": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "upstream": "matrix-org/matrix-hookshot",
+    "category": "integration",
+    "language": "typescript",
+    "cve_id": "CVE-2023-43656",
+    "fork": "Rath-debug/matrix-hookshot",
+    "fork_pushed": "2026-03-12T08:30:35Z",
+    "status": "ZONA_INCERTEZA",
+    "n_fix_commits": 1,
+    "fix_shas": [
+      "dc126afa6af86d66aefcd23a825326f405bcc894"
+    ],
+    "status_por_commit": {
+      "dc126afa6af86d66aefcd23a825326f405bcc894": "ZONA_INCERTEZA"
+    }
+  }
+]

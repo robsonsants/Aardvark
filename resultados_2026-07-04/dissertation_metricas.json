@@ -1,0 +1,47 @@
+{
+  "n_upstreams": 5,
+  "n_forks_total": 14,
+  "n_cves_verificadas": 16,
+  "n_verificacoes": 43,
+  "n_corrigidas": 26,
+  "n_vulneraveis": 0,
+  "n_zona_incerteza": 17,
+  "cobertura_media_pct": 58.9,
+  "por_categoria": {
+    "client": {
+      "n_verificacoes": 9,
+      "n_corrigidas": 9,
+      "n_vulneraveis": 0,
+      "n_incertas": 0,
+      "cobertura_media_pct": 100.0
+    },
+    "server": {
+      "n_verificacoes": 6,
+      "n_corrigidas": 3,
+      "n_vulneraveis": 0,
+      "n_incertas": 3,
+      "cobertura_media_pct": 50.0
+    },
+    "sdk": {
+      "n_verificacoes": 12,
+      "n_corrigidas": 1,
+      "n_vulneraveis": 0,
+      "n_incertas": 11,
+      "cobertura_media_pct": 8.3
+    },
+    "bridge": {
+      "n_verificacoes": 10,
+      "n_corrigidas": 10,
+      "n_vulneraveis": 0,
+      "n_incertas": 0,
+      "cobertura_media_pct": 100.0
+    },
+    "integration": {
+      "n_verificacoes": 6,
+      "n_corrigidas": 3,
+      "n_vulneraveis": 0,
+      "n_incertas": 3,
+      "cobertura_media_pct": 50.0
+    }
+  }
+}

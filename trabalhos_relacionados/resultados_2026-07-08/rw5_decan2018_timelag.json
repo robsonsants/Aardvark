@@ -1,0 +1,331 @@
+{
+  "trabalho": "Decan et al. (2018) Technical Lag / Ponta et al. (2020) Window of Vulnerability",
+  "papel_na_proposta": "Time Lag — velocidade de reação da rede (§5.4.2, Fig.6/Tab.8)",
+  "metodo": "lag(dias) = data_ultimo_commit_no_arquivo(fork) - data_commit_correcao(upstream)",
+  "observacao": "Aproximação de 'último toque' no arquivo do patch (mesma heurística do §5.4.2).",
+  "estatisticas_dias": {
+    "n": 29,
+    "min": -14,
+    "max": 578,
+    "mediana": 244,
+    "media": 245.2
+  },
+  "mais_ageis": [
+    {
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-11-14",
+      "data_adocao_fork": "2024-11-14",
+      "lag_dias": 0
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-11-14",
+      "data_adocao_fork": "2024-11-14",
+      "lag_dias": 0
+    }
+  ],
+  "maior_inercia": [
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-28",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 578
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-28",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 578
+    },
+    {
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    },
+    {
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    },
+    {
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    }
+  ],
+  "detalhe": [
+    {
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2025-27606",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2025-03-13",
+      "data_adocao_fork": "2025-02-28",
+      "lag_dias": -14
+    },
+    {
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2024-26132",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-01-14",
+      "lag_dias": 332
+    },
+    {
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2024-26132",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-01-14",
+      "lag_dias": 332
+    },
+    {
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2024-26132",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-01-14",
+      "lag_dias": 332
+    },
+    {
+      "fork": "H1d3r/element-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    },
+    {
+      "fork": "SchildiChat/SchildiChat-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    },
+    {
+      "fork": "bincnc/element-android",
+      "cve": "CVE-2024-26131",
+      "upstream": "element-hq/element-android",
+      "data_fix_upstream": "2024-02-16",
+      "data_adocao_fork": "2025-07-16",
+      "lag_dias": 516
+    },
+    {
+      "fork": "microchipster/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-07-02",
+      "lag_dias": 268
+    },
+    {
+      "fork": "kakahu2015/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-06-09",
+      "lag_dias": 244
+    },
+    {
+      "fork": "shcherbak/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-06-09",
+      "lag_dias": 244
+    },
+    {
+      "fork": "microchipster/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-07-02",
+      "lag_dias": 268
+    },
+    {
+      "fork": "kakahu2015/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-06-09",
+      "lag_dias": 244
+    },
+    {
+      "fork": "shcherbak/synapse",
+      "cve": "CVE-2025-61672",
+      "upstream": "element-hq/synapse",
+      "data_fix_upstream": "2025-10-07",
+      "data_adocao_fork": "2026-06-09",
+      "lag_dias": 244
+    },
+    {
+      "fork": "matrix-construct/matrix-rust-sdk",
+      "cve": "CVE-2025-48937",
+      "upstream": "matrix-org/matrix-rust-sdk",
+      "data_fix_upstream": "2025-06-10",
+      "data_adocao_fork": "2026-04-24",
+      "lag_dias": 318
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-28",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 578
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2023-38690",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-28",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 578
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2023-38700",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-31",
+      "data_adocao_fork": "2024-09-02",
+      "lag_dias": 399
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2023-38700",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2023-07-31",
+      "data_adocao_fork": "2024-09-02",
+      "lag_dias": 399
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2024-39691",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-05-21",
+      "data_adocao_fork": "2024-09-02",
+      "lag_dias": 104
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2024-39691",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-05-21",
+      "data_adocao_fork": "2024-09-02",
+      "lag_dias": 104
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-11-14",
+      "data_adocao_fork": "2024-11-14",
+      "lag_dias": 0
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2024-52505",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2024-11-14",
+      "data_adocao_fork": "2024-11-14",
+      "lag_dias": 0
+    },
+    {
+      "fork": "oI0ck/matrix-appservice-irc",
+      "cve": "CVE-2025-27146",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2025-02-25",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 0
+    },
+    {
+      "fork": "jamesjen/matrix-appservice-irc",
+      "cve": "CVE-2025-27146",
+      "upstream": "matrix-org/matrix-appservice-irc",
+      "data_fix_upstream": "2025-02-25",
+      "data_adocao_fork": "2025-02-25",
+      "lag_dias": 0
+    },
+    {
+      "fork": "maladesov/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "upstream": "matrix-org/matrix-hookshot",
+      "data_fix_upstream": "2025-01-23",
+      "data_adocao_fork": "2025-05-14",
+      "lag_dias": 111
+    },
+    {
+      "fork": "yncyrydybyl/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "upstream": "matrix-org/matrix-hookshot",
+      "data_fix_upstream": "2025-01-23",
+      "data_adocao_fork": "2025-05-14",
+      "lag_dias": 111
+    },
+    {
+      "fork": "Rath-debug/matrix-hookshot",
+      "cve": "CVE-2025-23197",
+      "upstream": "matrix-org/matrix-hookshot",
+      "data_fix_upstream": "2025-01-23",
+      "data_adocao_fork": "2026-02-22",
+      "lag_dias": 395
+    }
+  ]
+}
