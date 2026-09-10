@@ -1,5 +1,15 @@
 # Ground-truth validation — human audit + anchored ground truth (GT v2)
 
+> ## ⚠ Dated document — July 2026 run
+>
+> This validation belongs to `resultados_2026-07-04/`, which was produced by the pipeline
+> that silently discarded the test-file evidence and therefore **underestimates the method**
+> (see `CHANGELOG.md` §1). Its ground truth also contains **no natural negatives**, which is
+> why every pair here is conclusive-and-patched.
+>
+> The current ground truth, with 33 positives and 7 negatives plus an independent human
+> audit, is described in [`../RESULTS_2026-08-31.md`](../RESULTS_2026-08-31.md) §2.
+
 > Summarises the human audit and the automatic re-verification anchored on the line
 > that **actually fixes** the vulnerability (rather than on imports).
 > Artefacts: `gt_v2_resultados.json`, `gt_v2_metricas.json`, `auditoria_manual_gt.*`.

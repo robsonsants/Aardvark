@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
 """
-Shared core for reproducing the related-work methodologies ON the same Matrix
-ecosystem fork data, so each one becomes a measurable baseline rather than a citation.
+Núcleo compartilhado para reproduzir as metodologias dos trabalhos relacionados
+(Tabela 3 da proposta) SOBRE os mesmos dados de forks do ecossistema Matrix.
 
-Idea: the main pipeline already records, per (upstream, fork, CVE, file), the signal
-each state-of-the-art technique relies on. Here we ISOLATE each technique and evaluate
-it as an independent baseline, producing the empirical comparison (false-negative
-reduction, macro coverage, time lag).
+Ideia: o pipeline da dissertação já registra, por (upstream, fork, CVE, arquivo),
+os sinais de cada técnica do estado da arte. Aqui nós ISOLAMOS cada técnica e a
+avaliamos como uma linha de base independente, para produzir a comparação empírica
+que a proposta descreve (redução de falsos negativos, cobertura macro, time lag).
 
-Signal source: resultados_2026-07-04/dissertation_resultados.json
-  sha_match            -> Wyss et al. 2022  (whole-file hash)
-  sim_2a / label_2a    -> VERCATION, Cheng et al. 2025 (AST + edit distance)
-  sim_patch/sim_vuln/delta/label_2b -> PPTFI/PatchDiscovery (dual-reference PPT)
-  status (final union) -> coverage matrix -> See et al. 2025 (greedy set cover/Pareto)
+Fonte dos sinais: resultados_2026-07-04/dissertation_resultados.json
+  sha_match            -> Wyss et al. 2022  (hash de arquivo inteiro)
+  sim_2a / label_2a    -> VERCATION, Cheng et al. 2025 (AST + distancia de edicao)
+  sim_patch/sim_vuln/delta/label_2b -> PPTFI/PatchDiscovery (PPT dupla referencia)
+  status (uniao final) -> matriz de cobertura -> See et al. 2025 (guloso/Pareto)
 """
 import json, os, sys, datetime
 
@@ -23,7 +23,10 @@ for _s in (sys.stdout, sys.stderr):
         pass
 
 PROJ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESULTS_DIR = os.path.join(PROJ, "resultados_2026-07-04")
+# Pasta do run avaliado. Padrao: o run oficial corrigido. Sobrescreva com a env
+# var RW_RUN=<pasta> para reproduzir as linhas de base sobre outro run — e note
+# que as metricas so sao comparaveis entre si quando TODAS saem do mesmo run.
+RESULTS_DIR = os.path.join(PROJ, os.getenv("RW_RUN", "resultados_2026-08-31_v2"))
 DEFAULT_RESULTS = os.path.join(RESULTS_DIR, "dissertation_resultados.json")
 DEFAULT_GT_METRICS = os.path.join(RESULTS_DIR, "gt_dissertation_metricas.json")
 
@@ -79,9 +82,22 @@ def agg_by_key(rows):
 
 
 def load_gt_pairs(path=DEFAULT_GT_METRICS):
-    """Pares fork×CVE com ground truth conclusivo (todos CONFIRMED_PATCHED aqui)."""
+    """Pares fork×CVE que o ground truth confirma CORRIGIDOS.
+
+    ATENCAO — mudanca de premissa. Ate o run de julho, TODO par conclusivo era
+    CONFIRMED_PATCHED (nao havia negativos; era por isso que o Kappa dava ~0), e a
+    versao antiga desta funcao devolvia a lista inteira. Com o pipeline corrigido
+    surgiram CONFIRMED_VULNERABLE: no run 2026-08-31_v2 sao 33 corrigidos e 7
+    vulneraveis entre os 40 conclusivos.
+
+    Recall e "das correcoes que existem, quantas a tecnica achou" — o denominador
+    tem de ser so os CORRIGIDOS. Devolver os 40 inflava o FN e rebaixava o recall
+    de todas as linhas de base.
+    """
     m = json.load(open(path, encoding="utf-8"))
-    return {p["chave"]: p for p in m.get("pares", [])}, m
+    pares = [p for p in m.get("pares", [])
+             if p.get("gt", "CONFIRMED_PATCHED") == "CONFIRMED_PATCHED"]
+    return {p["chave"]: p for p in pares}, m
 
 
 def out_path(script_file, name="resultado.json"):

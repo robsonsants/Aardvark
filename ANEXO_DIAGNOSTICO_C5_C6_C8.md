@@ -1,5 +1,17 @@
 # Appendix — thresholds, fix-commit provenance, and computational cost
 
+> ## ⚠ Dated document — July 2026 state
+>
+> The threshold analysis in this appendix was produced by `sensibilidade_limiares.py`, which
+> has since been **removed** — it covered Layer 2A only and read the embedding prototype
+> (which has not run since July 2026). It is replaced by `sensibilidade_regras.py`, whose
+> sweep also covers the Layer 2B margin and the guard-B floor.
+>
+> The precision figures quoted here come from the **constructed** 44-positive / 56-negative
+> set, which is abandoned: the current run has a single real population with **7 natural
+> negatives**. See [`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) §5 for the current
+> sensitivity analysis.
+
 > Derived from the artefacts already in this repository; no new data collection.
 > Scripts: `sensibilidade_limiares.py` (thresholds), `bench_custo_embeddings.py` (cost).
 > Sources: `prototipo_ranking_embeddings/resultados_2026-07-09/precision_eval.json`

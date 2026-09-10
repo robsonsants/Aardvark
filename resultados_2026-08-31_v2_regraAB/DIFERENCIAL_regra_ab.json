@@ -1,0 +1,147 @@
+{
+  "run_base": "resultados_2026-08-31_v2",
+  "run_regra_ab": "resultados_2026-08-31_v2_regraAB",
+  "sim_minima_2b": 0.6,
+  "n_linhas": 84,
+  "n_linhas_alteradas": 3,
+  "qd1_base": {
+    "n_upstreams": 7,
+    "n_forks_total": 21,
+    "n_cves_verificadas": 17,
+    "n_verificacoes": 51,
+    "n_corrigidas": 33,
+    "n_vulneraveis": 3,
+    "n_zona_incerteza": 5,
+    "cobertura_media_pct": 61.5,
+    "por_categoria": {
+      "server": {
+        "n_verificacoes": 12,
+        "n_corrigidas": 11,
+        "n_vulneraveis": 1,
+        "n_incertas": 0,
+        "cobertura_media_pct": 91.7
+      },
+      "support": {
+        "n_verificacoes": 6,
+        "n_corrigidas": 6,
+        "n_vulneraveis": 0,
+        "n_incertas": 0,
+        "cobertura_media_pct": 100.0
+      },
+      "client": {
+        "n_verificacoes": 12,
+        "n_corrigidas": 9,
+        "n_vulneraveis": 0,
+        "n_incertas": 0,
+        "cobertura_media_pct": 50.0
+      },
+      "sdk": {
+        "n_verificacoes": 21,
+        "n_corrigidas": 7,
+        "n_vulneraveis": 2,
+        "n_incertas": 5,
+        "cobertura_media_pct": 19.4
+      }
+    }
+  },
+  "qd1_regra_ab": {
+    "n_upstreams": 7,
+    "n_forks_total": 21,
+    "n_cves_verificadas": 17,
+    "n_verificacoes": 51,
+    "n_corrigidas": 30,
+    "n_vulneraveis": 3,
+    "n_zona_incerteza": 8,
+    "cobertura_media_pct": 59.1,
+    "por_categoria": {
+      "server": {
+        "n_verificacoes": 12,
+        "n_corrigidas": 11,
+        "n_vulneraveis": 1,
+        "n_incertas": 0,
+        "cobertura_media_pct": 91.7
+      },
+      "support": {
+        "n_verificacoes": 6,
+        "n_corrigidas": 6,
+        "n_vulneraveis": 0,
+        "n_incertas": 0,
+        "cobertura_media_pct": 100.0
+      },
+      "client": {
+        "n_verificacoes": 12,
+        "n_corrigidas": 9,
+        "n_vulneraveis": 0,
+        "n_incertas": 0,
+        "cobertura_media_pct": 50.0
+      },
+      "sdk": {
+        "n_verificacoes": 21,
+        "n_corrigidas": 4,
+        "n_vulneraveis": 2,
+        "n_incertas": 8,
+        "cobertura_media_pct": 11.1
+      }
+    }
+  },
+  "qd2": {
+    "base": {
+      "TP": 30,
+      "FP": 2,
+      "FN": 3,
+      "TN": 5,
+      "n_pares": 40,
+      "precision": 0.9375,
+      "recall": 0.9091,
+      "f1": 0.9231,
+      "accuracy": 0.875
+    },
+    "regra_ab": {
+      "TP": 30,
+      "FP": 0,
+      "FN": 3,
+      "TN": 7,
+      "n_pares": 40,
+      "precision": 1.0,
+      "recall": 0.9091,
+      "f1": 0.9524,
+      "accuracy": 0.925
+    },
+    "n_rotulos_gt": 40
+  },
+  "linhas_alteradas": [
+    {
+      "fork": "tchapgouv/matrix-rust-sdk",
+      "cve": "CVE-2025-66622",
+      "arquivo": "crates/matrix-sdk-base/src/room/room_info.rs",
+      "de": "CORRIGIDO",
+      "para": "ZONA_INCERTEZA",
+      "sim_2a": 0.8961,
+      "delta": -0.012,
+      "label_2a": "CORRIGIDO",
+      "label_2b": "ZONA_INCERTEZA"
+    },
+    {
+      "fork": "tchapgouv/matrix-rust-sdk",
+      "cve": "CVE-2025-53549",
+      "arquivo": "crates/matrix-sdk-sqlite/src/event_cache_store.rs",
+      "de": "CORRIGIDO",
+      "para": "ZONA_INCERTEZA",
+      "sim_2a": 0.9308,
+      "delta": -0.0209,
+      "label_2a": "CORRIGIDO",
+      "label_2b": "ZONA_INCERTEZA"
+    },
+    {
+      "fork": "tchapgouv/matrix-rust-sdk",
+      "cve": "CVE-2024-40648",
+      "arquivo": "crates/matrix-sdk-crypto/src/identities/user.rs",
+      "de": "CORRIGIDO",
+      "para": "ZONA_INCERTEZA",
+      "sim_2a": 0.5559,
+      "delta": 0.0539,
+      "label_2a": "ZONA_INCERTEZA",
+      "label_2b": "CORRIGIDO"
+    }
+  ]
+}

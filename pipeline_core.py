@@ -1,6 +1,6 @@
 """
-pipeline_core.py  —  Shared module: AST parsing, similarity and classification
-=============================================================================
+pipeline_core.py  -  Shared module: AST parsing, similarity and classification
+==========================================================================
 Structural core of the verification pipeline, reused by every layer.
 Imported by:
   - pipeline_dissertation.py  (Layer 2A single reference + Layer 2B dual reference)
@@ -22,6 +22,14 @@ Exported constants:
   THRESHOLD_HIGH    float -- upper threshold for CORRIGIDO / patched (0.80)
   THRESHOLD_LOW     float -- lower threshold for NAO_CORRIGIDO / not patched (0.35)
   MARGIN_ZI         float -- default uncertainty-zone margin for Layer 2B (0.05)
+
+Supported languages: python, rust, kotlin, swift, typescript, tsx, go.
+
+Performance note (changed since the July snapshot): levenshtein() delegates to
+rapidfuzz (C++, bit-parallel Myers) when the package is installed. The distance is
+exactly the same (unit costs 1/1/1); the pure-Python O(n x m) loop is kept as a
+fallback. On monolithic files (e.g. src/client.ts of matrix-js-sdk, ~1e5 tokens)
+that loop took ~40 min per comparison and made the wider Phase 2 unfeasible.
 
 Verdict labels are kept in Portuguese because they are literal values stored in
 every versioned result file; see the glossary in README.md.
@@ -238,11 +246,25 @@ def patch_subtree(before: ASTNode, after: ASTNode) -> ASTNode:
 
 
 # ─── Distâncias ──────────────────────────────────────────────────────────────
+try:
+    from rapidfuzz.distance import Levenshtein as _RF_LEV
+except ImportError:            # ambiente sem rapidfuzz → cai no laço puro
+    _RF_LEV = None
+
+
 def levenshtein(a: list, b: list) -> int:
     """
     Distância de Levenshtein sobre listas de tokens (serialização in-order).
-    Complexidade: O(n × m).
+
+    Usa rapidfuzz (C++, bit-paralelo de Myers) quando disponível: o resultado é
+    a MESMA distância de edição (custos 1/1/1), só que ~10³× mais rápido. O laço
+    O(n × m) em Python puro fica como fallback — em arquivos grandes (ex.:
+    src/client.ts do matrix-js-sdk, ~10⁵ tokens) ele levava ~40 min por
+    comparação, o que inviabilizava a Fase 2 no ecossistema ampliado.
     """
+    if _RF_LEV is not None:
+        return int(_RF_LEV.distance(a, b))
+
     m, n = len(a), len(b)
     dp = list(range(n + 1))
     for i in range(1, m + 1):

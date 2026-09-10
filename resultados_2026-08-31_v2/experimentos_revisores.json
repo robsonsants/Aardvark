@@ -1,0 +1,1945 @@
+{
+  "run": "resultados_2026-08-31_v2",
+  "n_linhas": 84,
+  "n_pares_gt_auto": 40,
+  "n_pares_humano": 40,
+  "E1_baselines": {
+    "automatico": {
+      "trivial: sempre CORRIGIDO": {
+        "TP": 33,
+        "FP": 7,
+        "FN": 0,
+        "TN": 0,
+        "n": 40,
+        "P": 0.825,
+        "R": 1.0,
+        "F1": 0.9041,
+        "acc": 0.825,
+        "p_obs": 0.825,
+        "p_esperado_acaso": 0.825,
+        "kappa": 0.0
+      },
+      "trivial: sempre VULNERAVEL": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 33,
+        "TN": 7,
+        "n": 40,
+        "P": null,
+        "R": 0.0,
+        "F1": null,
+        "acc": 0.175,
+        "p_obs": 0.175,
+        "p_esperado_acaso": 0.175,
+        "kappa": 0.0
+      },
+      "Camada 1 (hash)": {
+        "TP": 3,
+        "FP": 0,
+        "FN": 30,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.0909,
+        "F1": 0.1667,
+        "acc": 0.25,
+        "p_obs": 0.25,
+        "p_esperado_acaso": 0.2238,
+        "kappa": 0.0338
+      },
+      "Camada 2A isolada": {
+        "TP": 29,
+        "FP": 2,
+        "FN": 4,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9355,
+        "R": 0.8788,
+        "F1": 0.9062,
+        "acc": 0.85,
+        "p_obs": 0.85,
+        "p_esperado_acaso": 0.6787,
+        "kappa": 0.5331
+      },
+      "Camada 2B isolada": {
+        "TP": 25,
+        "FP": 1,
+        "FN": 8,
+        "TN": 6,
+        "n": 40,
+        "P": 0.9615,
+        "R": 0.7576,
+        "F1": 0.8475,
+        "acc": 0.775,
+        "p_obs": 0.775,
+        "p_esperado_acaso": 0.5975,
+        "kappa": 0.441
+      },
+      "PIPELINE: uniao das camadas": {
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902
+      },
+      "PIPELINE: Regra A+B": {
+        "TP": 30,
+        "FP": 0,
+        "FN": 3,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.9091,
+        "F1": 0.9524,
+        "acc": 0.925,
+        "p_obs": 0.925,
+        "p_esperado_acaso": 0.6625,
+        "kappa": 0.7778
+      }
+    },
+    "humano": {
+      "trivial: sempre CORRIGIDO": {
+        "TP": 33,
+        "FP": 7,
+        "FN": 0,
+        "TN": 0,
+        "n": 40,
+        "P": 0.825,
+        "R": 1.0,
+        "F1": 0.9041,
+        "acc": 0.825,
+        "p_obs": 0.825,
+        "p_esperado_acaso": 0.825,
+        "kappa": 0.0
+      },
+      "trivial: sempre VULNERAVEL": {
+        "TP": 0,
+        "FP": 0,
+        "FN": 33,
+        "TN": 7,
+        "n": 40,
+        "P": null,
+        "R": 0.0,
+        "F1": null,
+        "acc": 0.175,
+        "p_obs": 0.175,
+        "p_esperado_acaso": 0.175,
+        "kappa": 0.0
+      },
+      "Camada 1 (hash)": {
+        "TP": 3,
+        "FP": 0,
+        "FN": 30,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.0909,
+        "F1": 0.1667,
+        "acc": 0.25,
+        "p_obs": 0.25,
+        "p_esperado_acaso": 0.2238,
+        "kappa": 0.0338
+      },
+      "Camada 2A isolada": {
+        "TP": 28,
+        "FP": 3,
+        "FN": 5,
+        "TN": 4,
+        "n": 40,
+        "P": 0.9032,
+        "R": 0.8485,
+        "F1": 0.875,
+        "acc": 0.8,
+        "p_obs": 0.8,
+        "p_esperado_acaso": 0.6787,
+        "kappa": 0.3774
+      },
+      "Camada 2B isolada": {
+        "TP": 26,
+        "FP": 0,
+        "FN": 7,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.7879,
+        "F1": 0.8814,
+        "acc": 0.825,
+        "p_obs": 0.825,
+        "p_esperado_acaso": 0.5975,
+        "kappa": 0.5652
+      },
+      "PIPELINE: uniao das camadas": {
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902
+      },
+      "PIPELINE: Regra A+B": {
+        "TP": 29,
+        "FP": 0,
+        "FN": 4,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.8788,
+        "F1": 0.9355,
+        "acc": 0.9,
+        "p_obs": 0.9,
+        "p_esperado_acaso": 0.6462,
+        "kappa": 0.7173
+      }
+    }
+  },
+  "E2_validacao_cruzada": {
+    "automatico": {
+      "leave-one-upstream-out · criterio de selecao no treino: maximo F1": {
+        "fora_da_amostra": {
+          "TP": 33,
+          "FP": 3,
+          "FN": 0,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9167,
+          "R": 1.0,
+          "F1": 0.9565,
+          "acc": 0.925,
+          "p_obs": 0.925,
+          "p_esperado_acaso": 0.76,
+          "kappa": 0.6875
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 1
+      },
+      "leave-one-upstream-out · criterio de selecao no treino: cobertura maxima com FP=0": {
+        "fora_da_amostra": {
+          "TP": 33,
+          "FP": 3,
+          "FN": 0,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9167,
+          "R": 1.0,
+          "F1": 0.9565,
+          "acc": 0.925,
+          "p_obs": 0.925,
+          "p_esperado_acaso": 0.76,
+          "kappa": 0.6875
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 2
+      },
+      "k-fold estratificado (k=5) · criterio de selecao no treino: maximo F1": {
+        "fora_da_amostra": {
+          "TP": 32,
+          "FP": 4,
+          "FN": 1,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8889,
+          "R": 0.9697,
+          "F1": 0.9275,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.76,
+          "kappa": 0.4792
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 3
+      },
+      "k-fold estratificado (k=5) · criterio de selecao no treino: cobertura maxima com FP=0": {
+        "fora_da_amostra": {
+          "TP": 29,
+          "FP": 2,
+          "FN": 4,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9355,
+          "R": 0.8788,
+          "F1": 0.9062,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.6787,
+          "kappa": 0.5331
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.75,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.06,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 3
+      }
+    },
+    "humano": {
+      "leave-one-upstream-out · criterio de selecao no treino: maximo F1": {
+        "fora_da_amostra": {
+          "TP": 32,
+          "FP": 3,
+          "FN": 1,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9143,
+          "R": 0.9697,
+          "F1": 0.9412,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7438,
+          "kappa": 0.6098
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 2
+      },
+      "leave-one-upstream-out · criterio de selecao no treino: cobertura maxima com FP=0": {
+        "fora_da_amostra": {
+          "TP": 32,
+          "FP": 3,
+          "FN": 1,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9143,
+          "R": 0.9697,
+          "F1": 0.9412,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7438,
+          "kappa": 0.6098
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 2
+      },
+      "k-fold estratificado (k=5) · criterio de selecao no treino: maximo F1": {
+        "fora_da_amostra": {
+          "TP": 31,
+          "FP": 2,
+          "FN": 2,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9394,
+          "R": 0.9394,
+          "F1": 0.9394,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7113,
+          "kappa": 0.6537
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.6,
+            "margin": 0.03,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 2
+      },
+      "k-fold estratificado (k=5) · criterio de selecao no treino: cobertura maxima com FP=0": {
+        "fora_da_amostra": {
+          "TP": 31,
+          "FP": 1,
+          "FN": 2,
+          "TN": 6,
+          "n": 40,
+          "P": 0.9688,
+          "R": 0.9394,
+          "F1": 0.9538,
+          "acc": 0.925,
+          "p_obs": 0.925,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.7541
+        },
+        "limiares_fixos": {
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        "escolhas": [
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.75,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          },
+          {
+            "thr_high": 0.9,
+            "margin": 0.02,
+            "sim_min_2b": 0.6
+          }
+        ],
+        "n_configuracoes_distintas": 2
+      }
+    }
+  },
+  "E3_tamanho_patch": {
+    "pares": [
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2024-40648",
+        "categoria": "sdk",
+        "churn": 95,
+        "linhas_arquivo": 1109,
+        "razao_patch_arquivo": 0.085663,
+        "sim_2a": 0.5559,
+        "delta": 0.0539,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "zecakeh/matrix-rust-sdk::CVE-2024-40648",
+        "categoria": "sdk",
+        "churn": 95,
+        "linhas_arquivo": 1109,
+        "razao_patch_arquivo": 0.085663,
+        "sim_2a": 0.6897,
+        "delta": -0.091,
+        "predito_corrigido": false,
+        "rotulo_corrigido": false,
+        "acertou": true
+      },
+      {
+        "par": "Hywan/matrix-rust-sdk::CVE-2024-40648",
+        "categoria": "sdk",
+        "churn": 95,
+        "linhas_arquivo": 1109,
+        "razao_patch_arquivo": 0.085663,
+        "sim_2a": 1.0,
+        "delta": 0.1178,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2025-53549",
+        "categoria": "sdk",
+        "churn": 101,
+        "linhas_arquivo": 2770,
+        "razao_patch_arquivo": 0.036462,
+        "sim_2a": 0.9308,
+        "delta": -0.0209,
+        "predito_corrigido": true,
+        "rotulo_corrigido": false,
+        "acertou": false
+      },
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2025-66622",
+        "categoria": "sdk",
+        "churn": 84,
+        "linhas_arquivo": 1908,
+        "razao_patch_arquivo": 0.044025,
+        "sim_2a": 0.7463,
+        "delta": -0.0265,
+        "predito_corrigido": true,
+        "rotulo_corrigido": false,
+        "acertou": false
+      },
+      {
+        "par": "Hywan/matrix-rust-sdk::CVE-2025-66622",
+        "categoria": "sdk",
+        "churn": 84,
+        "linhas_arquivo": 1908,
+        "razao_patch_arquivo": 0.044025,
+        "sim_2a": 0.6604,
+        "delta": -0.0236,
+        "predito_corrigido": false,
+        "rotulo_corrigido": true,
+        "acertou": false
+      },
+      {
+        "par": "zecakeh/matrix-rust-sdk::CVE-2025-66622",
+        "categoria": "sdk",
+        "churn": 84,
+        "linhas_arquivo": 1908,
+        "razao_patch_arquivo": 0.044025,
+        "sim_2a": 0.2757,
+        "delta": -0.0045,
+        "predito_corrigido": false,
+        "rotulo_corrigido": false,
+        "acertou": true
+      },
+      {
+        "par": "zecakeh/matrix-rust-sdk::CVE-2024-34353",
+        "categoria": "sdk",
+        "churn": 78,
+        "linhas_arquivo": 4140,
+        "razao_patch_arquivo": 0.018841,
+        "sim_2a": 0.7097,
+        "delta": -0.0129,
+        "predito_corrigido": false,
+        "rotulo_corrigido": false,
+        "acertou": true
+      },
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2024-34353",
+        "categoria": "sdk",
+        "churn": 78,
+        "linhas_arquivo": 4140,
+        "razao_patch_arquivo": 0.018841,
+        "sim_2a": null,
+        "delta": null,
+        "predito_corrigido": false,
+        "rotulo_corrigido": false,
+        "acertou": true
+      },
+      {
+        "par": "Buzzlabs/synapse::CVE-2026-45078",
+        "categoria": "server",
+        "churn": 130,
+        "linhas_arquivo": 256,
+        "razao_patch_arquivo": 0.507812,
+        "sim_2a": 0.5412,
+        "delta": -0.4588,
+        "predito_corrigido": false,
+        "rotulo_corrigido": false,
+        "acertou": true
+      },
+      {
+        "par": "AliAbutorabi/Synapse::CVE-2026-45078",
+        "categoria": "server",
+        "churn": 130,
+        "linhas_arquivo": 256,
+        "razao_patch_arquivo": 0.507812,
+        "sim_2a": 0.9307,
+        "delta": 0.4226,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "guillemo12/synapse::CVE-2026-45078",
+        "categoria": "server",
+        "churn": 130,
+        "linhas_arquivo": 256,
+        "razao_patch_arquivo": 0.507812,
+        "sim_2a": 0.8738,
+        "delta": 0.3626,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Hywan/matrix-rust-sdk::CVE-2022-39252",
+        "categoria": "sdk",
+        "churn": 64,
+        "linhas_arquivo": 1815,
+        "razao_patch_arquivo": 0.035262,
+        "sim_2a": 0.6499,
+        "delta": 0.0202,
+        "predito_corrigido": false,
+        "rotulo_corrigido": true,
+        "acertou": false
+      },
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2022-39252",
+        "categoria": "sdk",
+        "churn": 64,
+        "linhas_arquivo": 1815,
+        "razao_patch_arquivo": 0.035262,
+        "sim_2a": 0.6425,
+        "delta": 0.02,
+        "predito_corrigido": false,
+        "rotulo_corrigido": true,
+        "acertou": false
+      },
+      {
+        "par": "zecakeh/matrix-rust-sdk::CVE-2022-39252",
+        "categoria": "sdk",
+        "churn": 64,
+        "linhas_arquivo": 1815,
+        "razao_patch_arquivo": 0.035262,
+        "sim_2a": 0.841,
+        "delta": 0.0255,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "H1d3r/element-android::CVE-2024-26131",
+        "categoria": "client",
+        "churn": 19,
+        "linhas_arquivo": 402,
+        "razao_patch_arquivo": 0.047264,
+        "sim_2a": 0.9727,
+        "delta": 0.0644,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "luki-ev/synod-android::CVE-2024-26131",
+        "categoria": "client",
+        "churn": 19,
+        "linhas_arquivo": 402,
+        "razao_patch_arquivo": 0.047264,
+        "sim_2a": 0.9727,
+        "delta": 0.0644,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "validkanaheiuser/element-android::CVE-2024-26131",
+        "categoria": "client",
+        "churn": 19,
+        "linhas_arquivo": 402,
+        "razao_patch_arquivo": 0.047264,
+        "sim_2a": 0.9109,
+        "delta": 0.0627,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "H1d3r/element-android::CVE-2024-26132",
+        "categoria": "client",
+        "churn": 2,
+        "linhas_arquivo": 42,
+        "razao_patch_arquivo": 0.047619,
+        "sim_2a": 1.0,
+        "delta": 0.0511,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "luki-ev/synod-android::CVE-2024-26132",
+        "categoria": "client",
+        "churn": 2,
+        "linhas_arquivo": 42,
+        "razao_patch_arquivo": 0.047619,
+        "sim_2a": 1.0,
+        "delta": 0.0511,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "validkanaheiuser/element-android::CVE-2024-26132",
+        "categoria": "client",
+        "churn": 2,
+        "linhas_arquivo": 42,
+        "razao_patch_arquivo": 0.047619,
+        "sim_2a": 1.0,
+        "delta": 0.0511,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "AliAbutorabi/Synapse::CVE-2024-31208",
+        "categoria": "server",
+        "churn": 108,
+        "linhas_arquivo": 2476,
+        "razao_patch_arquivo": 0.043619,
+        "sim_2a": 0.6191,
+        "delta": 0.0173,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Buzzlabs/synapse::CVE-2024-31208",
+        "categoria": "server",
+        "churn": 108,
+        "linhas_arquivo": 2476,
+        "razao_patch_arquivo": 0.043619,
+        "sim_2a": 0.6364,
+        "delta": 0.0178,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "guillemo12/synapse::CVE-2024-31208",
+        "categoria": "server",
+        "churn": 108,
+        "linhas_arquivo": 2476,
+        "razao_patch_arquivo": 0.043619,
+        "sim_2a": 0.6036,
+        "delta": 0.0169,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "CommE2E/vodozemac::CVE-2024-40640",
+        "categoria": "support",
+        "churn": 16,
+        "linhas_arquivo": 382,
+        "razao_patch_arquivo": 0.041885,
+        "sim_2a": 0.9956,
+        "delta": 0.016,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "tangowhisky-dev/vodozemac::CVE-2024-40640",
+        "categoria": "support",
+        "churn": 16,
+        "linhas_arquivo": 382,
+        "razao_patch_arquivo": 0.041885,
+        "sim_2a": 0.9956,
+        "delta": 0.016,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "xsanm/vodozemac::CVE-2024-40640",
+        "categoria": "support",
+        "churn": 16,
+        "linhas_arquivo": 382,
+        "razao_patch_arquivo": 0.041885,
+        "sim_2a": 0.9956,
+        "delta": 0.016,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "AliAbutorabi/Synapse::CVE-2025-30355",
+        "categoria": "server",
+        "churn": 26,
+        "linhas_arquivo": 133,
+        "razao_patch_arquivo": 0.195489,
+        "sim_2a": 0.9724,
+        "delta": 0.2259,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Buzzlabs/synapse::CVE-2025-30355",
+        "categoria": "server",
+        "churn": 26,
+        "linhas_arquivo": 133,
+        "razao_patch_arquivo": 0.195489,
+        "sim_2a": 0.9724,
+        "delta": 0.2259,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "guillemo12/synapse::CVE-2025-30355",
+        "categoria": "server",
+        "churn": 26,
+        "linhas_arquivo": 133,
+        "razao_patch_arquivo": 0.195489,
+        "sim_2a": 0.9724,
+        "delta": 0.2259,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "tchapgouv/matrix-rust-sdk::CVE-2025-48937",
+        "categoria": "sdk",
+        "churn": 63,
+        "linhas_arquivo": 673,
+        "razao_patch_arquivo": 0.093611,
+        "sim_2a": 0.9627,
+        "delta": 0.072,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "AliAbutorabi/Synapse::CVE-2025-61672",
+        "categoria": "server",
+        "churn": 150,
+        "linhas_arquivo": 680,
+        "razao_patch_arquivo": 0.220588,
+        "sim_2a": 0.861,
+        "delta": 0.1342,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Buzzlabs/synapse::CVE-2025-61672",
+        "categoria": "server",
+        "churn": 150,
+        "linhas_arquivo": 680,
+        "razao_patch_arquivo": 0.220588,
+        "sim_2a": 0.9611,
+        "delta": 0.1685,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "guillemo12/synapse::CVE-2025-61672",
+        "categoria": "server",
+        "churn": 150,
+        "linhas_arquivo": 680,
+        "razao_patch_arquivo": 0.220588,
+        "sim_2a": 0.861,
+        "delta": 0.1342,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Gua-ra/gua-auth-service::CVE-2025-62425",
+        "categoria": "support",
+        "churn": 305,
+        "linhas_arquivo": 1080,
+        "razao_patch_arquivo": 0.282407,
+        "sim_2a": 0.9933,
+        "delta": 0.3012,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "Tween-IM/tween-authentication-service::CVE-2025-62425",
+        "categoria": "support",
+        "churn": 305,
+        "linhas_arquivo": 1080,
+        "razao_patch_arquivo": 0.282407,
+        "sim_2a": 0.659,
+        "delta": 0.1997,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "tchapgouv/matrix-authentication-service::CVE-2025-62425",
+        "categoria": "support",
+        "churn": 305,
+        "linhas_arquivo": 1080,
+        "razao_patch_arquivo": 0.282407,
+        "sim_2a": 0.9933,
+        "delta": 0.3012,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "H1d3r/element-android::CVE-2025-27606",
+        "categoria": "client",
+        "churn": 8,
+        "linhas_arquivo": 173,
+        "razao_patch_arquivo": 0.046243,
+        "sim_2a": 1.0,
+        "delta": null,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "luki-ev/synod-android::CVE-2025-27606",
+        "categoria": "client",
+        "churn": 8,
+        "linhas_arquivo": 173,
+        "razao_patch_arquivo": 0.046243,
+        "sim_2a": 1.0,
+        "delta": null,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      },
+      {
+        "par": "validkanaheiuser/element-android::CVE-2025-27606",
+        "categoria": "client",
+        "churn": 8,
+        "linhas_arquivo": 173,
+        "razao_patch_arquivo": 0.046243,
+        "sim_2a": 1.0,
+        "delta": null,
+        "predito_corrigido": true,
+        "rotulo_corrigido": true,
+        "acertou": true
+      }
+    ],
+    "varredura_corte": [
+      {
+        "corte": 0.0,
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902,
+        "pct_para_auditoria": 0.0
+      },
+      {
+        "corte": 0.005,
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902,
+        "pct_para_auditoria": 0.0
+      },
+      {
+        "corte": 0.01,
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902,
+        "pct_para_auditoria": 0.0
+      },
+      {
+        "corte": 0.02,
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902,
+        "pct_para_auditoria": 0.0
+      },
+      {
+        "corte": 0.03,
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902,
+        "pct_para_auditoria": 0.0
+      },
+      {
+        "corte": 0.05,
+        "TP": 14,
+        "FP": 0,
+        "FN": 19,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.4242,
+        "F1": 0.5957,
+        "acc": 0.525,
+        "p_obs": 0.525,
+        "p_esperado_acaso": 0.4025,
+        "kappa": 0.205,
+        "pct_para_auditoria": 45.0
+      },
+      {
+        "corte": 0.08,
+        "TP": 14,
+        "FP": 0,
+        "FN": 19,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.4242,
+        "F1": 0.5957,
+        "acc": 0.525,
+        "p_obs": 0.525,
+        "p_esperado_acaso": 0.4025,
+        "kappa": 0.205,
+        "pct_para_auditoria": 45.0
+      },
+      {
+        "corte": 0.12,
+        "TP": 11,
+        "FP": 0,
+        "FN": 22,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.3333,
+        "F1": 0.5,
+        "acc": 0.45,
+        "p_obs": 0.45,
+        "p_esperado_acaso": 0.3538,
+        "kappa": 0.1489,
+        "pct_para_auditoria": 52.5
+      },
+      {
+        "corte": 0.2,
+        "TP": 8,
+        "FP": 0,
+        "FN": 25,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.2424,
+        "F1": 0.3902,
+        "acc": 0.375,
+        "p_obs": 0.375,
+        "p_esperado_acaso": 0.305,
+        "kappa": 0.1007,
+        "pct_para_auditoria": 60.0
+      },
+      {
+        "corte": 0.4,
+        "TP": 2,
+        "FP": 0,
+        "FN": 31,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.0606,
+        "F1": 0.1143,
+        "acc": 0.225,
+        "p_obs": 0.225,
+        "p_esperado_acaso": 0.2075,
+        "kappa": 0.0221,
+        "pct_para_auditoria": 75.0
+      }
+    ],
+    "comparacao_discriminantes": [
+      {
+        "discriminante": "razao patch/arquivo < 0,05",
+        "movidos": 18,
+        "TP": 14,
+        "FP": 0,
+        "FN": 19,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.4242,
+        "F1": 0.5957,
+        "acc": 0.525,
+        "p_obs": 0.525,
+        "p_esperado_acaso": 0.4025,
+        "kappa": 0.205
+      },
+      {
+        "discriminante": "delta < 0 (guarda A)",
+        "movidos": 2,
+        "TP": 30,
+        "FP": 0,
+        "FN": 3,
+        "TN": 7,
+        "n": 40,
+        "P": 1.0,
+        "R": 0.9091,
+        "F1": 0.9524,
+        "acc": 0.925,
+        "p_obs": 0.925,
+        "p_esperado_acaso": 0.6625,
+        "kappa": 0.7778
+      }
+    ],
+    "pipeline_sem_discriminante": {
+      "TP": 30,
+      "FP": 2,
+      "FN": 3,
+      "TN": 5,
+      "n": 40,
+      "P": 0.9375,
+      "R": 0.9091,
+      "F1": 0.9231,
+      "acc": 0.875,
+      "p_obs": 0.875,
+      "p_esperado_acaso": 0.695,
+      "kappa": 0.5902
+    }
+  },
+  "E4_incerteza": {
+    "automatico": {
+      "metricas": {
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902
+      },
+      "ic95": {
+        "P": {
+          "ic95_baixo": 0.8438,
+          "ic95_alto": 1.0,
+          "n_amostras": 10000
+        },
+        "R": {
+          "ic95_baixo": 0.8,
+          "ic95_alto": 1.0,
+          "n_amostras": 10000
+        },
+        "F1": {
+          "ic95_baixo": 0.8475,
+          "ic95_alto": 0.9841,
+          "n_amostras": 10000
+        },
+        "kappa": {
+          "ic95_baixo": 0.2157,
+          "ic95_alto": 0.8947,
+          "n_amostras": 10000
+        }
+      },
+      "mcnemar": {
+        "uniao x Camada 2A isolada": {
+          "b01": 2,
+          "b10": 1,
+          "n_discordancias": 3,
+          "p_valor": 1.0
+        },
+        "uniao x Camada 2B isolada": {
+          "b01": 5,
+          "b10": 1,
+          "n_discordancias": 6,
+          "p_valor": 0.2188
+        },
+        "uniao x trivial (sempre CORRIGIDO)": {
+          "b01": 5,
+          "b10": 3,
+          "n_discordancias": 8,
+          "p_valor": 0.7266
+        },
+        "uniao x Regra A+B": {
+          "b01": 0,
+          "b10": 2,
+          "n_discordancias": 2,
+          "p_valor": 0.5
+        }
+      }
+    },
+    "humano": {
+      "metricas": {
+        "TP": 30,
+        "FP": 2,
+        "FN": 3,
+        "TN": 5,
+        "n": 40,
+        "P": 0.9375,
+        "R": 0.9091,
+        "F1": 0.9231,
+        "acc": 0.875,
+        "p_obs": 0.875,
+        "p_esperado_acaso": 0.695,
+        "kappa": 0.5902
+      },
+      "ic95": {
+        "P": {
+          "ic95_baixo": 0.8387,
+          "ic95_alto": 1.0,
+          "n_amostras": 10000
+        },
+        "R": {
+          "ic95_baixo": 0.8,
+          "ic95_alto": 1.0,
+          "n_amostras": 10000
+        },
+        "F1": {
+          "ic95_baixo": 0.8421,
+          "ic95_alto": 0.9846,
+          "n_amostras": 10000
+        },
+        "kappa": {
+          "ic95_baixo": 0.1964,
+          "ic95_alto": 0.875,
+          "n_amostras": 10000
+        }
+      },
+      "mcnemar": {
+        "uniao x Camada 2A isolada": {
+          "b01": 3,
+          "b10": 0,
+          "n_discordancias": 3,
+          "p_valor": 0.25
+        },
+        "uniao x Camada 2B isolada": {
+          "b01": 4,
+          "b10": 2,
+          "n_discordancias": 6,
+          "p_valor": 0.6875
+        },
+        "uniao x trivial (sempre CORRIGIDO)": {
+          "b01": 5,
+          "b10": 3,
+          "n_discordancias": 8,
+          "p_valor": 0.7266
+        },
+        "uniao x Regra A+B": {
+          "b01": 1,
+          "b10": 2,
+          "n_discordancias": 3,
+          "p_valor": 1.0
+        }
+      }
+    }
+  },
+  "E5_falhas": {
+    "oraculo": "humano",
+    "casos": [
+      {
+        "tipo": "FP (falsa seguranca)",
+        "fork": "tchapgouv/matrix-rust-sdk",
+        "cve": "CVE-2025-53549",
+        "categoria": "sdk",
+        "linguagem": "rust",
+        "status_pipeline": "CORRIGIDO",
+        "rotulo": "VULNERAVEL",
+        "sim_2a": 0.9308,
+        "delta": -0.0209,
+        "label_2a": "CORRIGIDO",
+        "label_2b": "ZONA_INCERTEZA",
+        "churn": 101,
+        "arquivo": "crates/matrix-sdk-sqlite/src/event_cache_store.rs",
+        "regra_ab_corrige": true
+      },
+      {
+        "tipo": "FP (falsa seguranca)",
+        "fork": "tchapgouv/matrix-rust-sdk",
+        "cve": "CVE-2025-66622",
+        "categoria": "sdk",
+        "linguagem": "rust",
+        "status_pipeline": "CORRIGIDO",
+        "rotulo": "VULNERAVEL",
+        "sim_2a": 0.8961,
+        "delta": -0.012,
+        "label_2a": "CORRIGIDO",
+        "label_2b": "ZONA_INCERTEZA",
+        "churn": 24,
+        "arquivo": "crates/matrix-sdk-base/src/room/room_info.rs",
+        "regra_ab_corrige": true
+      },
+      {
+        "tipo": "FN (perdeu a correcao)",
+        "fork": "Hywan/matrix-rust-sdk",
+        "cve": "CVE-2025-66622",
+        "categoria": "sdk",
+        "linguagem": "rust",
+        "status_pipeline": "ZONA_INCERTEZA",
+        "rotulo": "CORRIGIDO",
+        "sim_2a": 0.6604,
+        "delta": -0.0236,
+        "label_2a": "ZONA_INCERTEZA",
+        "label_2b": "ZONA_INCERTEZA",
+        "churn": 84,
+        "arquivo": "crates/matrix-sdk/tests/integration/client.rs",
+        "regra_ab_corrige": false
+      },
+      {
+        "tipo": "FN (perdeu a correcao)",
+        "fork": "Hywan/matrix-rust-sdk",
+        "cve": "CVE-2022-39252",
+        "categoria": "sdk",
+        "linguagem": "rust",
+        "status_pipeline": "ZONA_INCERTEZA",
+        "rotulo": "CORRIGIDO",
+        "sim_2a": 0.6499,
+        "delta": 0.0202,
+        "label_2a": "ZONA_INCERTEZA",
+        "label_2b": "ZONA_INCERTEZA",
+        "churn": 64,
+        "arquivo": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+        "regra_ab_corrige": false
+      },
+      {
+        "tipo": "FN (perdeu a correcao)",
+        "fork": "tchapgouv/matrix-rust-sdk",
+        "cve": "CVE-2022-39252",
+        "categoria": "sdk",
+        "linguagem": "rust",
+        "status_pipeline": "ZONA_INCERTEZA",
+        "rotulo": "CORRIGIDO",
+        "sim_2a": 0.6425,
+        "delta": 0.02,
+        "label_2a": "ZONA_INCERTEZA",
+        "label_2b": "ZONA_INCERTEZA",
+        "churn": 64,
+        "arquivo": "crates/matrix-sdk-crypto/src/gossiping/machine.rs",
+        "regra_ab_corrige": false
+      }
+    ],
+    "por_categoria": {
+      "server": {
+        "CORRIGIDO": 11,
+        "VULNERAVEL": 1
+      },
+      "support": {
+        "CORRIGIDO": 6
+      },
+      "client": {
+        "CORRIGIDO": 9,
+        "FILE_NOT_FOUND": 3
+      },
+      "sdk": {
+        "FILE_NOT_FOUND": 7,
+        "NAO_CORRIGIDO": 1,
+        "CORRIGIDO": 7,
+        "ZONA_INCERTEZA": 5,
+        "VULNERAVEL": 1
+      }
+    }
+  },
+  "E6_curva": {
+    "automatico": {
+      "trivial": {
+        "TP": 33,
+        "FP": 7,
+        "FN": 0,
+        "TN": 0,
+        "n": 40,
+        "P": 0.825,
+        "R": 1.0,
+        "F1": 0.9041,
+        "acc": 0.825,
+        "p_obs": 0.825,
+        "p_esperado_acaso": 0.825,
+        "kappa": 0.0
+      },
+      "curva": [
+        {
+          "thr_high": 0.5,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.55,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.6,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.65,
+          "TP": 31,
+          "FP": 4,
+          "FN": 2,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8857,
+          "R": 0.9394,
+          "F1": 0.9118,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.7438,
+          "kappa": 0.4146
+        },
+        {
+          "thr_high": 0.7,
+          "TP": 30,
+          "FP": 3,
+          "FN": 3,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9091,
+          "R": 0.9091,
+          "F1": 0.9091,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.7113,
+          "kappa": 0.4805
+        },
+        {
+          "thr_high": 0.75,
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        {
+          "thr_high": 0.8,
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        {
+          "thr_high": 0.85,
+          "TP": 28,
+          "FP": 2,
+          "FN": 5,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9333,
+          "R": 0.8485,
+          "F1": 0.8889,
+          "acc": 0.825,
+          "p_obs": 0.825,
+          "p_esperado_acaso": 0.6625,
+          "kappa": 0.4815
+        },
+        {
+          "thr_high": 0.9,
+          "TP": 28,
+          "FP": 1,
+          "FN": 5,
+          "TN": 6,
+          "n": 40,
+          "P": 0.9655,
+          "R": 0.8485,
+          "F1": 0.9032,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.6462,
+          "kappa": 0.576
+        },
+        {
+          "thr_high": 0.95,
+          "TP": 28,
+          "FP": 1,
+          "FN": 5,
+          "TN": 6,
+          "n": 40,
+          "P": 0.9655,
+          "R": 0.8485,
+          "F1": 0.9032,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.6462,
+          "kappa": 0.576
+        }
+      ]
+    },
+    "humano": {
+      "trivial": {
+        "TP": 33,
+        "FP": 7,
+        "FN": 0,
+        "TN": 0,
+        "n": 40,
+        "P": 0.825,
+        "R": 1.0,
+        "F1": 0.9041,
+        "acc": 0.825,
+        "p_obs": 0.825,
+        "p_esperado_acaso": 0.825,
+        "kappa": 0.0
+      },
+      "curva": [
+        {
+          "thr_high": 0.5,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.55,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.6,
+          "TP": 33,
+          "FP": 4,
+          "FN": 0,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8919,
+          "R": 1.0,
+          "F1": 0.9429,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.7762,
+          "kappa": 0.5531
+        },
+        {
+          "thr_high": 0.65,
+          "TP": 31,
+          "FP": 4,
+          "FN": 2,
+          "TN": 3,
+          "n": 40,
+          "P": 0.8857,
+          "R": 0.9394,
+          "F1": 0.9118,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.7438,
+          "kappa": 0.4146
+        },
+        {
+          "thr_high": 0.7,
+          "TP": 30,
+          "FP": 3,
+          "FN": 3,
+          "TN": 4,
+          "n": 40,
+          "P": 0.9091,
+          "R": 0.9091,
+          "F1": 0.9091,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.7113,
+          "kappa": 0.4805
+        },
+        {
+          "thr_high": 0.75,
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        {
+          "thr_high": 0.8,
+          "TP": 30,
+          "FP": 2,
+          "FN": 3,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9375,
+          "R": 0.9091,
+          "F1": 0.9231,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.695,
+          "kappa": 0.5902
+        },
+        {
+          "thr_high": 0.85,
+          "TP": 29,
+          "FP": 2,
+          "FN": 4,
+          "TN": 5,
+          "n": 40,
+          "P": 0.9355,
+          "R": 0.8788,
+          "F1": 0.9062,
+          "acc": 0.85,
+          "p_obs": 0.85,
+          "p_esperado_acaso": 0.6787,
+          "kappa": 0.5331
+        },
+        {
+          "thr_high": 0.9,
+          "TP": 29,
+          "FP": 1,
+          "FN": 4,
+          "TN": 6,
+          "n": 40,
+          "P": 0.9667,
+          "R": 0.8788,
+          "F1": 0.9206,
+          "acc": 0.875,
+          "p_obs": 0.875,
+          "p_esperado_acaso": 0.6625,
+          "kappa": 0.6296
+        },
+        {
+          "thr_high": 0.95,
+          "TP": 29,
+          "FP": 0,
+          "FN": 4,
+          "TN": 7,
+          "n": 40,
+          "P": 1.0,
+          "R": 0.8788,
+          "F1": 0.9355,
+          "acc": 0.9,
+          "p_obs": 0.9,
+          "p_esperado_acaso": 0.6462,
+          "kappa": 0.7173
+        }
+      ]
+    }
+  }
+}

@@ -1,5 +1,22 @@
 # Consolidated report — experiments, related work and methodology
 
+> ## ⚠ Dated document — July 2026 state
+>
+> This report reflects the project **up to the July 2026 run** and is kept for the record.
+> It was written before the defect that discarded the test-file evidence was found, so the
+> figures it quotes — in particular the recalls **0.147 / 0.324 / 0.676** — have been
+> **superseded**. On the current run those same baselines measure **0.091 / 0.758 / 0.879**
+> against the correct denominator, and the pipeline reaches **0.909**.
+>
+> It also predates the natural-negative population, so any statement here about Kappa being
+> zero *by property of the population* is **refuted** (see `CHANGELOG.md` §1).
+>
+> **Current numbers:** [`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) ·
+> **what changed:** [`CHANGELOG.md`](CHANGELOG.md)
+>
+> What remains valid and useful here: the methodology at procedure level, the reproduction
+> of the related work, the process flow and the threats to validity.
+
 > **Purpose.** A single document explaining (1) the related work and how we reproduced it,
 > (2) every experiment carried out and its methodology, (3) the research methodology we
 > present (the target *to-be* process), (4) the process flow and (5) the process diagram.

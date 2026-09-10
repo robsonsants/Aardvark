@@ -1,0 +1,67 @@
+{
+  "trabalho": "See et al. (2025) — otimização gulosa / Curva de Pareto (diagnóstico macro)",
+  "papel_na_proposta": "Matriz de cobertura + set-cover guloso (§3.4, §4.5)",
+  "n_vulnerabilidades_universo": 17,
+  "n_vulnerabilidades_resolviveis": 15,
+  "n_forks_com_alguma_correcao": 15,
+  "teto_cobertura_pct": 88.2,
+  "forks_para_o_teto": 7,
+  "curva_pareto": [
+    {
+      "k": 1,
+      "fork": "guillemo12/synapse",
+      "ganho": 4,
+      "acumulado": 4,
+      "cobertura_universo_pct": 23.5,
+      "cobertura_resolvivel_pct": 26.7
+    },
+    {
+      "k": 2,
+      "fork": "tchapgouv/matrix-rust-sdk",
+      "ganho": 4,
+      "acumulado": 8,
+      "cobertura_universo_pct": 47.1,
+      "cobertura_resolvivel_pct": 53.3
+    },
+    {
+      "k": 3,
+      "fork": "luki-ev/synod-android",
+      "ganho": 3,
+      "acumulado": 11,
+      "cobertura_universo_pct": 64.7,
+      "cobertura_resolvivel_pct": 73.3
+    },
+    {
+      "k": 4,
+      "fork": "CommE2E/vodozemac",
+      "ganho": 1,
+      "acumulado": 12,
+      "cobertura_universo_pct": 70.6,
+      "cobertura_resolvivel_pct": 80.0
+    },
+    {
+      "k": 5,
+      "fork": "Gua-ra/gua-auth-service",
+      "ganho": 1,
+      "acumulado": 13,
+      "cobertura_universo_pct": 76.5,
+      "cobertura_resolvivel_pct": 86.7
+    },
+    {
+      "k": 6,
+      "fork": "Hywan/matrix-rust-sdk",
+      "ganho": 1,
+      "acumulado": 14,
+      "cobertura_universo_pct": 82.4,
+      "cobertura_resolvivel_pct": 93.3
+    },
+    {
+      "k": 7,
+      "fork": "zecakeh/matrix-rust-sdk",
+      "ganho": 1,
+      "acumulado": 15,
+      "cobertura_universo_pct": 88.2,
+      "cobertura_resolvivel_pct": 100.0
+    }
+  ]
+}

@@ -1,9 +1,13 @@
 """
-ground_truth.py  —  Automated ground-truth construction and validation
+ground_truth.py  -  Automated ground-truth construction and validation
 ==========================================================================
 Validates Layer 2 (AST) by measuring Precision/Recall/F1/Kappa against an
 INDEPENDENT ground truth, built by searching the patch KEY LINES in the fork's code.
 Being independent of the method under test is what makes it a valid reference.
+
+This is the AUTOMATED oracle. It is not the only one: auditoria_manual.py builds the
+HUMAN oracle over the same pairs, and every reported figure names which oracle it came
+from. Agreement between the two on the published run is 36/41 = 87.8%.
 
 How the pairs are chosen:
   - The forks to validate are NOT a fixed list. They are read dynamically from
@@ -16,7 +20,7 @@ How the pairs are chosen:
 Ground-truth strategy (independent of the AST method):
   - Extract the lines added/removed by the fix commit (real upstream diff)
   - Normalise whitespace, tabs and comments
-  - Search each key line in the fork's file (normalised exact match + fuzzy)
+  - Search each key line in the fork's file (normalised exact match + fuzzy, 0.85)
   - Label per (fork, CVE): CONFIRMED_PATCHED / CONFIRMED_VULNERABLE / AMBIGUOUS
 
 Ground truth x automatic classifier (for each fork x CVE with a conclusive label):
@@ -27,12 +31,14 @@ Ground truth x automatic classifier (for each fork x CVE with a conclusive label
 
 Known limitation: the first lines of a diff are often imports/docstrings/context, so
 confidence can be contaminated by noise. This motivated ground truth v2, which anchors
-on the corrective line; see VALIDACAO_GROUND_TRUTH.md.
+on the corrective line; see resultados_2026-07-04/VALIDACAO_GROUND_TRUTH.md.
 
 Usage:
     python ground_truth.py --token YOUR_TOKEN
     python ground_truth.py --token YOUR_TOKEN --upstream element-hq/synapse
-    python ground_truth.py --token YOUR_TOKEN --results dissertation_resultados.json
+    python ground_truth.py --token YOUR_TOKEN \
+        --results resultados_YYYY-MM-DD/dissertation_resultados.json \
+        --outdir  resultados_YYYY-MM-DD
 
 Outputs:
     gt_dissertation_resultados.json   -- ground truth per (fork, CVE, fix_sha) + evidence
