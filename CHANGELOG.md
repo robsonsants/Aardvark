@@ -83,7 +83,25 @@ reproduced — there is no conditional compilation in the languages of this ecos
 
 Side effect worth reporting on its own: at file scope, 116 of 125 comparisons fell back to
 `lev_only` because the trees exceeded `ZSS_NODE_LIMIT = 600`. That limit was deciding
-*which metric was used* in 93% of cases, not merely capping memory.
+*which metric was used* in 93% of cases, not merely capping memory. (Those two figures come
+from the 2026-08-17 run, which is not shipped here.)
+
+**Re-measured on the current run** (`--run resultados_2026-08-31_v2`, automated oracle,
+output in `trabalhos_relacionados/resultados_2026-09-10/`):
+
+| Scope | TP | FP | FN | TN | P | R | F1 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| file (current pipeline) | 30 | 2 | 3 | 5 | 0.938 | 0.909 | 0.923 |
+| **hunk / declaration (PatchLens)** | 31 | **0** | 2 | 7 | **1.000** | **0.939** | **0.969** |
+| hunk + guard A (delta >= 0) | 31 | 0 | 2 | 7 | 1.000 | 0.939 | 0.969 |
+
+It removes both false positives **and** recovers one true positive — better on both axes,
+which neither the A+B rule nor a higher threshold achieves. Two caveats: it was measured
+under the **automated** oracle only (whose false positives are a different pair of cases
+from the human oracle's), and it introduces a failure mode of its own — in 8 pairs the
+patched declaration does not exist in the fork at all, so no hunk can be located. Adopting
+declaration scope is now a candidate change to the method, not a settled one; see
+`REVIEW_RESPONSE_AND_ROADMAP.md` §4.
 
 ## 6. New offline experiments
 

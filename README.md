@@ -54,7 +54,7 @@ pairs, of which 40 conclusive (**33 positive, 7 negative**).
 
 | Layer | What it does |
 |---|---|
-| **L1** | literal content comparison against the post-patch file (baseline; nothing is hashed — see `REVIEW_RESPONSE_AND_ROADMAP.md` §4.4) |
+| **L1** | literal content comparison against the post-patch file (baseline; nothing is hashed — see `REVIEW_RESPONSE_AND_ROADMAP.md` §4, item 5) |
 | **L2A** | normalised AST + edit distance (Levenshtein + Zhang-Shasha) against the **post-patch** reference |
 | **L2B** | **dual reference**: similarity to post-patch minus similarity to pre-patch. This is what catches patches that *remove* code, where L2A alone is blind |
 
@@ -84,6 +84,13 @@ Baselines re-measured **on this same run**, recall against the 33 `CONFIRMED_PAT
 | patch-presence test, dual reference (rw3) | 0.758 |
 | AST, single reference (rw2) | 0.879 |
 | **union of the layers** | **0.909** |
+
+One reproduced baseline **beats the pipeline**: comparing at declaration scope instead of
+file scope (rw6, after PatchLens/FSE 2026) reaches P 1.000 · R 0.939 · F1 0.969 on this run
+under the automated oracle, removing both false positives and recovering a true positive.
+It brings a failure mode of its own — in 8 pairs the patched declaration is absent from the
+fork entirely — so it is a candidate change to the method, not a settled one. Detail in
+[`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) §3.
 
 RQ2 — propagation: **mean coverage 61.5%**, ranging from 100% (support) and 91.7% (server)
 down to **19.4% (sdk)**.

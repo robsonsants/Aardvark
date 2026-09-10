@@ -65,8 +65,8 @@ the test-file evidence in every earlier run (`CHANGELOG.md` §1). Fixing it move
 
 | Criticism | | Status |
 |---|---|---|
-| **Layer 1 is not SHA-256; it is a string comparison** | **P** | **Confirmed in the code.** `layer1_sha()` evaluates `upstream_post == fork_content`. Nothing is hashed. See §4, item 4 |
-| The "semantic" layer is not semantic | **P** | Correct, and worse than the reviewer could see: the embedding layer **has not run since July 2026**. See §4, item 5 |
+| **Layer 1 is not SHA-256; it is a string comparison** | **P** | **Confirmed in the code.** `layer1_sha()` evaluates `upstream_post == fork_content`. Nothing is hashed. See §4, item 5 |
+| The "semantic" layer is not semantic | **P** | Correct, and worse than the reviewer could see: the embedding layer **has not run since July 2026**. See §4, item 6 |
 | "The uncertainty zone is absent from existing approaches" overstates novelty | **P** | Classification **with a reject option** is classical. The claim goes; the mechanism stays |
 | Inconsistent attribution of the dual-reference principle | **P** | A real inconsistency between two passages. Fixed in the text |
 
@@ -84,7 +84,7 @@ the test-file evidence in every earlier run (`CHANGELOG.md` §1). Fixing it move
 |---|---|---|
 | Undefined symbols, poorly formatted tables, the pipeline figure shows no flow | **P** | Editorial, all valid |
 | Method and experimental setup interleaved | **P** | Structural: setup separated from method, thresholds after their derivation |
-| Vocabulary drifts (`NOT PATCHED`/`VULNERABLE`, `UNCERTAINTY ZONE`/`AMBIGUOUS`) | **P** | One vocabulary, defined once — see §4, item 6 |
+| Vocabulary drifts (`NOT PATCHED`/`VULNERABLE`, `UNCERTAINTY ZONE`/`AMBIGUOUS`) | **P** | One vocabulary, defined once — see §4, item 7 |
 
 ---
 
@@ -146,7 +146,20 @@ sample — a temporal replication, not validation on unseen forks. `--top 10` br
 43 previously unseen forks. Cost: ~15 minutes of machine time plus API budget. It changes
 whether the rule can be *recommended* or only *described*.
 
-### 4. Rename Layer 1 to what it is
+### 4. Evaluate declaration scope as a change to the method
+
+The PatchLens reproduction (`rw6`) compares inside the declaration containing the patch
+rather than across the whole file, and on this run it reaches **P 1.000 · R 0.939 ·
+F1 0.969** against the pipeline's 0.938 / 0.909 / 0.923 — removing both false positives and
+recovering a true positive. It is the only variant measured that improves precision and
+recall together.
+
+Before it can be adopted it needs: measurement under the **human** oracle (it was run
+against the automated one), and a decision about its own failure mode — in 8 pairs the
+patched declaration is absent from the fork, so there is no hunk to anchor on. That case
+must map to a verdict deliberately, not by accident.
+
+### 5. Rename Layer 1 to what it is
 
 `layer1_sha()` performs `upstream_post == fork_content`. Either rename it to literal
 content comparison — which is what it does, and it works exactly as well — or actually
@@ -154,40 +167,40 @@ hash. **We will rename.** Hashing adds nothing here, and a name that misdescribe
 is free ammunition for the next reviewer. The rename lands in the code and in every figure
 and table caption that mentions "SHA".
 
-### 5. Take the embedding layer out of the method
+### 6. Take the embedding layer out of the method
 
 It measures proximity in a vector space, not semantic equivalence, and **it has not run
 since July 2026**. Two honest options: remove it from the method and present it as future
 work, or reintegrate it and re-measure everything. **We will remove it.** The current run
 is defensible without it, and bringing it back would reopen the whole validation.
 
-### 6. One vocabulary, defined once
+### 7. One vocabulary, defined once
 
 Choose between `NAO_CORRIGIDO` and `VULNERAVEL`, and between `ZONA_INCERTEZA` and
 `AMBIGUOUS`. Today the first of each pair is a pipeline verdict and the second a
 ground-truth label; if both are kept, the text must say so explicitly the first time each
 appears.
 
-### 7. Rewrite the method chapter without the overstated claims
+### 8. Rewrite the method chapter without the overstated claims
 
 No "SHA-256", no "semantic layer", no novelty claim for the uncertainty zone. Thresholds
 presented as a policy choice, with E2 and E6 supporting them, and separated from the
 experimental setup.
 
-### 8. Related work: add FIBER, VUDDY, Movery, V1scan
+### 9. Related work: add FIBER, VUDDY, Movery, V1scan
 
 With the reason each one is or is not a direct baseline. Fix the citations that do not
 support their sentences, and complete the language column of the comparison table — that
 column actually **favours** this work, since operating across six languages is a real
 differentiator.
 
-### 9. Fold E1–E6 into the results chapter
+### 10. Fold E1–E6 into the results chapter
 
 The experiments are already written and reproducible offline. The trivial baseline belongs
 in the **main** table, not an appendix; the confidence intervals accompany every headline
 figure; the failure analysis becomes a section of its own.
 
-### 10. Reopen the decision on the A+B rule, with Kappa on the table
+### 11. Reopen the decision on the A+B rule, with Kappa on the table
 
 The current project position — "it buys precision at the cost of one true positive" — is
 true but incomplete: the rule has the **best Kappa under both oracles** (0.778 / 0.717) and
