@@ -1,0 +1,40 @@
+{
+  "n_upstreams": 7,
+  "n_forks_total": 21,
+  "n_cves_verificadas": 17,
+  "n_verificacoes": 51,
+  "n_corrigidas": 30,
+  "n_vulneraveis": 3,
+  "n_zona_incerteza": 8,
+  "cobertura_media_pct": 59.1,
+  "por_categoria": {
+    "server": {
+      "n_verificacoes": 12,
+      "n_corrigidas": 11,
+      "n_vulneraveis": 1,
+      "n_incertas": 0,
+      "cobertura_media_pct": 91.7
+    },
+    "support": {
+      "n_verificacoes": 6,
+      "n_corrigidas": 6,
+      "n_vulneraveis": 0,
+      "n_incertas": 0,
+      "cobertura_media_pct": 100.0
+    },
+    "client": {
+      "n_verificacoes": 12,
+      "n_corrigidas": 9,
+      "n_vulneraveis": 0,
+      "n_incertas": 0,
+      "cobertura_media_pct": 50.0
+    },
+    "sdk": {
+      "n_verificacoes": 21,
+      "n_corrigidas": 4,
+      "n_vulneraveis": 2,
+      "n_incertas": 8,
+      "cobertura_media_pct": 11.1
+    }
+  }
+}

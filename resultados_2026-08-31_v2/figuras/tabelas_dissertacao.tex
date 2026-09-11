@@ -1,0 +1,35 @@
+% Table RQ1 - coverage per category
+\begin{table}[ht]\centering
+\caption{Security coverage per Matrix ecosystem category.}
+\label{tab:cobertura}
+\begin{tabular}{lllrrr}
+\hline
+Category & Project & Language & CVEs & Forks & Coverage (\%) \\ \hline
+client & element-x-android & kotlin & 1 & 6 & 50.0 \\
+server & synapse & python & 4 & 3 & 91.7 \\
+sdk & matrix-nio & python & 1 & 6 & 19.4 \\
+\hline
+\textbf{Mean} & & & & & \textbf{61.5} \\
+\hline
+\end{tabular}
+\end{table}
+
+% Table RQ2 - reliability metrics
+\begin{table}[ht]\centering
+\caption{Reliability of Layer 2 (AST) against the ground truth.}
+\label{tab:metricas}
+\begin{tabular}{lr}
+\hline
+Metric & Value \\ \hline
+True positives (TP) & 30 \\
+False positives (FP) & 2 \\
+False negatives (FN) & 3 \\
+True negatives (TN) & 5 \\
+Precision & 0.938 \\
+Recall & 0.909 \\
+F1-score & 0.923 \\
+Accuracy & 0.875 \\
+Cohen's Kappa & 0.590 \\
+\hline
+\end{tabular}
+\end{table}

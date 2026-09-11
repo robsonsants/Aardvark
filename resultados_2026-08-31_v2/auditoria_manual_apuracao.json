@@ -1,0 +1,40 @@
+{
+  "n_revisados": 41,
+  "concordancia": {
+    "diverge": 5,
+    "concorda": 36
+  },
+  "sondas_nao_corretivas": 7,
+  "divergencias": [
+    {
+      "par": "tchapgouv/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": ""
+    },
+    {
+      "par": "tchapgouv/matrix-rust-sdk::CVE-2025-53549",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": ""
+    },
+    {
+      "par": "Hywan/matrix-rust-sdk::CVE-2025-66622",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": ""
+    },
+    {
+      "par": "tchapgouv/matrix-rust-sdk::CVE-2024-34353",
+      "gt": "CONFIRMED_PATCHED",
+      "humano": "VULNERAVEL",
+      "obs": ""
+    },
+    {
+      "par": "Hywan/matrix-rust-sdk::CVE-2024-34353",
+      "gt": "CONFIRMED_PATCHED",
+      "humano": "INCONCLUSIVO",
+      "obs": ""
+    }
+  ]
+}

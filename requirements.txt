@@ -20,8 +20,14 @@ tree-sitter-go>=0.23.0
 # Zhang-Shasha tree edit distance (ASTs under 600 nodes)
 zss>=1.2.0
 
-# --- Semantic layer: UniXcoder embeddings -----------------------------------
-# (prototipo_ranking_embeddings/*.py; runs on CPU, GPU optional)
+# Exact Levenshtein in C++ (bit-parallel Myers). Without it pipeline_core falls back
+# to the pure-Python loop, which is orders of magnitude slower on monolithic files.
+rapidfuzz>=3.0.0
+
+# --- Embedding prototype: UniXcoder ------------------------------------------
+# NOT part of the method as reported. The prototype under prototipo_ranking_embeddings/
+# has not run since July 2026 and no published figure depends on it; it is kept as
+# future work (see REVIEW_RESPONSE_AND_ROADMAP.md, §4 item 6). Install only to re-run it.
 torch>=2.0.0
 transformers>=4.30.0
 

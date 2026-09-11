@@ -1,32 +1,58 @@
 """
-pipeline_dissertation.py — Phase 2: security coverage of Matrix ecosystem forks
+pipeline_dissertation.py - Phase 2: security coverage of Matrix ecosystem forks
 ==================================================================================
 Runs the layered verification over every fork and answers the two research questions:
 
-  RQ1: How many of the upstream CVEs are detected as fixed in each fork?
-  RQ2: How reliable is that detection, per ecosystem category?
+  RQ1: How reliable is the automatic verification? (precision/recall/F1/Kappa,
+       measured by ground_truth.py over the records produced here)
+  RQ2: How much of the upstream CVE set is detected as fixed in each fork?
+       (coverage per fork and per ecosystem category)
 
 What it does:
   - Processes ALL CVEs of each upstream (not a hand-picked subset)
-  - Selects the TOP 3 most active DIVERGENT forks per upstream (ahead_by > 0)
+  - Selects the TOP 3 most active DIVERGENT forks per upstream (ahead_by > 0,
+    measured through the compare API, not merely "most recent push")
   - Aggregates security coverage per fork: how many CVEs are patched?
   - Emits a consolidated report per Matrix ecosystem category
-  - Applies Layer 1 (file SHA) + Layer 2A (AST) + Layer 2B (dual reference)
+
+The layers:
+  L1   literal content comparison. layer1_sha() evaluates
+       `upstream_post == fork_content`; NOTHING IS HASHED - the function name is
+       historical and is scheduled to be renamed (see REVIEW_RESPONSE_AND_ROADMAP.md).
+  L2A  normalised AST + edit distance against the POST-patch reference only.
+  L2B  dual reference: similarity to POST minus similarity to PRE (delta). This is
+       what catches patches that REMOVE code, where L2A alone is blind.
+
+Evidence selection: for each fix commit the highest-churn PRODUCTION file AND the
+highest-churn TEST file are both evaluated, and their verdicts are unioned (a fix and
+its regression test usually travel together). NOTE: until 2026-08-31 a deduplication
+bug silently dropped the test-file record; impacto_evidencia_teste.py measures what
+that cost, and every result folder dated before 2026-08-31_v2 carries the bug.
 
 Aggregation rule: a (upstream, fork, CVE) triple counts as patched if it matches the
 post-patch reference of ANY fix commit of that CVE (backports/cherry-picks count).
+
+Optional decision rule (--regra-ab, OFF by default so the original methodology is
+preserved): two guards that refuse a doubtful CORRIGIDO instead of inverting it -
+  A) L2A only counts as patched when delta >= 0 (the fork is not closer to PRE);
+  B) L2B only decides when sim_2a >= SIM_MINIMA_2B (0.60), i.e. a delta measured
+     between two very distant files is treated as noise.
+Refused verdicts fall into the uncertainty zone and escalate to human audit.
 
 Usage:
     python pipeline_dissertation.py --token YOUR_TOKEN
     python pipeline_dissertation.py --token YOUR_TOKEN --upstream element-hq/synapse
     python pipeline_dissertation.py --token YOUR_TOKEN --top 5
-    python pipeline_dissertation.py --token YOUR_TOKEN --fresh   # recompute from scratch
+    python pipeline_dissertation.py --token YOUR_TOKEN --fresh    # recompute from scratch
+    python pipeline_dissertation.py --token YOUR_TOKEN --regra-ab # A+B variant
+    python pipeline_dissertation.py --token YOUR_TOKEN --outdir resultados_YYYY-MM-DD
 
-Outputs (verdict labels stay in Portuguese — see the glossary in README.md):
+Outputs (verdict labels stay in Portuguese - see the glossary in README.md):
     dissertation_resultados.json     -- one record per fork/CVE/file
     dissertation_resultados.csv      -- flat table for analysis
     dissertation_cobertura.json      -- coverage per fork (% of CVEs patched)
     dissertation_metricas.json       -- metrics aggregated per category and overall
+    evidencias_dissertacao/          -- every file actually compared, for offline audit
 """
 
 import argparse
@@ -78,6 +104,7 @@ DAYS_WINDOW      = 730   # forks ativos nos últimos N dias
 MAX_FORKS_API    = 300   # limite de forks paginados pela API
 API_DELAY        = 0.3   # delay entre chamadas API (segundos)
 FORK_PROBE_LIMIT = 80    # máx. de forks comparados (ahead/behind) por upstream
+REGRA_AB         = False # ativado por --regra-ab (ver decidir_status)
 
 # Mapeamento extensão → linguagem de PARSING (nome do parser em pipeline_core).
 # .tsx usa o parser TSX (superset com JSX); .ts usa o parser TypeScript puro.
@@ -486,12 +513,8 @@ def process_upstream(api: GitHubAPI, target: dict, fix_commits: list, top_n: int
                     sim_patch, sim_vuln, delta, label_2b = None, None, None, "NO_PRE_PATCH"
 
                 # Status final: preferir 2B quando disponível e conclusivo
-                if label_2b in ("CORRIGIDO", "VULNERAVEL"):
-                    status = label_2b
-                elif label_2a in ("CORRIGIDO", "NAO_CORRIGIDO"):
-                    status = label_2a
-                else:
-                    status = "ZONA_INCERTEZA"
+                # (com --regra-ab, ver decidir_status/SIM_MINIMA_2B)
+                status = decidir_status(label_2a, label_2b, sim_2a, delta, REGRA_AB)
 
                 sim_str   = f"{sim_2a:.3f}" if sim_2a is not None else "N/A"
                 delta_str = f"{delta:.3f}"  if delta  is not None else "N/A"
@@ -507,6 +530,46 @@ def process_upstream(api: GitHubAPI, target: dict, fix_commits: list, top_n: int
                 ))
 
     return results
+
+
+# ─── Regra A+B (opcional, --regra-ab) ────────────────────────────────────────
+# Diagnostico do run 2026-08-17: nos 7 falsos positivos as duas camadas SEMPRE
+# discordaram, e a decisao caiu no lado errado. Dois mecanismos:
+#   A) 2A alta com delta NEGATIVO (arquivo-monolito: o patch e minusculo perto do
+#      arquivo, sim_2a chega a 0,987 com o fork sem a correcao). O sinal certo
+#      estava na 2B — o fork esta mais proximo do PRE-patch.
+#   B) 2B decidindo na borda da margem em fork muito divergente (sim_2a 0,47-0,56,
+#      delta 0,0516 contra margem 0,05): sem piso de similaridade absoluta, o
+#      delta e ruido.
+# A regra NAO inverte veredito: ela apenas RECUSA o "CORRIGIDO" nesses dois casos
+# e manda o par para a zona de incerteza (auditoria humana).
+SIM_MINIMA_2B = 0.60   # piso de similaridade absoluta para a 2B poder decidir
+
+
+def decidir_status(label_2a, label_2b, sim_2a, delta, regra_ab: bool = False) -> str:
+    """
+    Combina os vereditos das camadas 2A e 2B em um status de linha.
+
+    Padrao (metodologia original): a 2B tem prioridade quando conclusiva; senao
+    vale a 2A; senao, zona de incerteza.
+
+    Com regra_ab=True, dois guardas sao adicionados (ver comentario acima).
+    """
+    if regra_ab:
+        # (B) 2B so decide CORRIGIDO com similaridade absoluta minima
+        if label_2b == "CORRIGIDO" and (sim_2a is None or sim_2a < SIM_MINIMA_2B):
+            return "ZONA_INCERTEZA"
+        # (A) 2A so vale como CORRIGIDO se o fork nao estiver mais perto do pre-patch
+        if (label_2b not in ("CORRIGIDO", "VULNERAVEL")
+                and label_2a == "CORRIGIDO"
+                and delta is not None and delta < 0):
+            return "ZONA_INCERTEZA"
+
+    if label_2b in ("CORRIGIDO", "VULNERAVEL"):
+        return label_2b
+    if label_2a in ("CORRIGIDO", "NAO_CORRIGIDO"):
+        return label_2a
+    return "ZONA_INCERTEZA"
 
 
 def _build_row(owner, repo, category, lang, cve_id, fix_sha, filepath,
@@ -729,12 +792,17 @@ def load_existing() -> list:
 
 
 def already_processed(existing: list, upstream: str, cve_id: str,
-                      fork: str, fix_sha: str) -> bool:
+                      fork: str, fix_sha: str, filepath: str) -> bool:
     # A chave inclui fix_sha: um CVE com vários fix commits (backports/
     # follow-ups) é avaliado por commit, não colapsado no primeiro.
+    # A chave TAMBÉM inclui filepath: select_patch_files() devolve o arquivo de
+    # produção e o de teste do mesmo commit, e sem o filepath a linha de teste
+    # era descartada como "já processada" — a união produção+teste descrita na
+    # metodologia nunca chegava a acontecer (corrigido em 2026-08-31).
     return any(
         r["upstream"] == upstream and r["cve_id"] == cve_id
         and r["fork"] == fork and r.get("fix_sha") == fix_sha
+        and r.get("filepath") == filepath
         for r in existing
     )
 
@@ -747,6 +815,10 @@ def main():
                         help="Filtrar por upstream específico (ex: element-hq/synapse)")
     parser.add_argument("--top", type=int, default=TOP_FORKS,
                         help=f"Número de forks por upstream (padrão: {TOP_FORKS})")
+    parser.add_argument("--regra-ab", action="store_true",
+                        help="ativa os guardas A (2A so vale com delta >= 0) e "
+                             "B (2B so decide com sim_2a >= SIM_MINIMA_2B): recusa "
+                             "o CORRIGIDO duvidoso e manda para a zona de incerteza")
     parser.add_argument("--fresh", action="store_true",
                         help="Ignora resultados anteriores e recalcula tudo do zero "
                              "(use após mudanças de metodologia)")
@@ -756,6 +828,11 @@ def main():
                              "(JSON/CSV/evidências) vão para o outdir. Útil para "
                              "separar execuções por data sem misturar resultados.")
     args = parser.parse_args()
+
+    global REGRA_AB
+    REGRA_AB = args.regra_ab
+    if REGRA_AB:
+        log.info(f"Regra A+B ATIVA (sim minima da 2B = {SIM_MINIMA_2B})")
 
     top_n = args.top
 
@@ -801,7 +878,7 @@ def main():
         new_results = process_upstream(api, target, fix_commits, top_n)
         for row in new_results:
             if not already_processed(all_results, row["upstream"], row["cve_id"],
-                                     row["fork"], row["fix_sha"]):
+                                     row["fork"], row["fix_sha"], row["filepath"]):
                 all_results.append(row)
 
     if not all_results:

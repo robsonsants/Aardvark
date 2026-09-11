@@ -1,0 +1,347 @@
+[
+  {
+    "fork": "guillemo12/synapse",
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "n_cves_total": 4,
+    "n_corrigidas": 4,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2026-45078": "CORRIGIDO",
+      "CVE-2025-61672": "CORRIGIDO",
+      "CVE-2025-30355": "CORRIGIDO",
+      "CVE-2024-31208": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "AliAbutorabi/Synapse",
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "n_cves_total": 4,
+    "n_corrigidas": 4,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2026-45078": "CORRIGIDO",
+      "CVE-2025-61672": "CORRIGIDO",
+      "CVE-2025-30355": "CORRIGIDO",
+      "CVE-2024-31208": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "CommE2E/vodozemac",
+    "upstream": "matrix-org/vodozemac",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2024-40640": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "xsanm/vodozemac",
+    "upstream": "matrix-org/vodozemac",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2024-40640": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "tangowhisky-dev/vodozemac",
+    "upstream": "matrix-org/vodozemac",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2024-40640": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "Gua-ra/gua-auth-service",
+    "upstream": "element-hq/matrix-authentication-service",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-62425": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "tchapgouv/matrix-authentication-service",
+    "upstream": "element-hq/matrix-authentication-service",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-62425": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "Tween-IM/tween-authentication-service",
+    "upstream": "element-hq/matrix-authentication-service",
+    "category": "support",
+    "language": "rust",
+    "n_cves_total": 1,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-62425": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "luki-ev/synod-android",
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 3,
+    "n_corrigidas": 3,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-27606": "CORRIGIDO",
+      "CVE-2024-26132": "CORRIGIDO",
+      "CVE-2024-26131": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "H1d3r/element-android",
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 3,
+    "n_corrigidas": 3,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-27606": "CORRIGIDO",
+      "CVE-2024-26132": "CORRIGIDO",
+      "CVE-2024-26131": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "validkanaheiuser/element-android",
+    "upstream": "element-hq/element-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 3,
+    "n_corrigidas": 3,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 100.0,
+    "por_cve": {
+      "CVE-2025-27606": "CORRIGIDO",
+      "CVE-2024-26132": "CORRIGIDO",
+      "CVE-2024-26131": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "Buzzlabs/synapse",
+    "upstream": "element-hq/synapse",
+    "category": "server",
+    "language": "python",
+    "n_cves_total": 4,
+    "n_corrigidas": 3,
+    "n_vulneraveis": 1,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 75.0,
+    "por_cve": {
+      "CVE-2026-45078": "VULNERAVEL",
+      "CVE-2025-61672": "CORRIGIDO",
+      "CVE-2025-30355": "CORRIGIDO",
+      "CVE-2024-31208": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "tchapgouv/matrix-rust-sdk",
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "n_cves_total": 6,
+    "n_corrigidas": 4,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 2,
+    "n_sem_arquivo": 0,
+    "cobertura_pct": 66.7,
+    "por_cve": {
+      "CVE-2025-66622": "CORRIGIDO",
+      "CVE-2025-53549": "CORRIGIDO",
+      "CVE-2025-48937": "CORRIGIDO",
+      "CVE-2024-40648": "CORRIGIDO",
+      "CVE-2024-34353": "ZONA_INCERTEZA",
+      "CVE-2022-39252": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "fork": "Hywan/matrix-rust-sdk",
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "n_cves_total": 6,
+    "n_corrigidas": 2,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 2,
+    "n_sem_arquivo": 2,
+    "cobertura_pct": 33.3,
+    "por_cve": {
+      "CVE-2025-66622": "ZONA_INCERTEZA",
+      "CVE-2025-53549": "FILE_NOT_FOUND",
+      "CVE-2025-48937": "FILE_NOT_FOUND",
+      "CVE-2024-40648": "CORRIGIDO",
+      "CVE-2024-34353": "CORRIGIDO",
+      "CVE-2022-39252": "ZONA_INCERTEZA"
+    }
+  },
+  {
+    "fork": "zecakeh/matrix-rust-sdk",
+    "upstream": "matrix-org/matrix-rust-sdk",
+    "category": "sdk",
+    "language": "rust",
+    "n_cves_total": 6,
+    "n_corrigidas": 1,
+    "n_vulneraveis": 2,
+    "n_zona_incerteza": 1,
+    "n_sem_arquivo": 2,
+    "cobertura_pct": 16.7,
+    "por_cve": {
+      "CVE-2025-66622": "NAO_CORRIGIDO",
+      "CVE-2025-53549": "FILE_NOT_FOUND",
+      "CVE-2025-48937": "FILE_NOT_FOUND",
+      "CVE-2024-40648": "VULNERAVEL",
+      "CVE-2024-34353": "ZONA_INCERTEZA",
+      "CVE-2022-39252": "CORRIGIDO"
+    }
+  },
+  {
+    "fork": "Gua-ra/gua-android",
+    "upstream": "element-hq/element-x-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2025-27599": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "fork": "jekahu/element-x-android",
+    "upstream": "element-hq/element-x-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2025-27599": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "fork": "hayaksi1/element-x-android",
+    "upstream": "element-hq/element-x-android",
+    "category": "client",
+    "language": "kotlin",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2025-27599": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "fork": "mindroom-ai/mindroom-nio",
+    "upstream": "matrix-nio/matrix-nio",
+    "category": "sdk",
+    "language": "python",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2022-39254": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "fork": "pangeachat/matrix-nio",
+    "upstream": "matrix-nio/matrix-nio",
+    "category": "sdk",
+    "language": "python",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2022-39254": "FILE_NOT_FOUND"
+    }
+  },
+  {
+    "fork": "eleanor-clifford/matrix-nio",
+    "upstream": "matrix-nio/matrix-nio",
+    "category": "sdk",
+    "language": "python",
+    "n_cves_total": 1,
+    "n_corrigidas": 0,
+    "n_vulneraveis": 0,
+    "n_zona_incerteza": 0,
+    "n_sem_arquivo": 1,
+    "cobertura_pct": 0.0,
+    "por_cve": {
+      "CVE-2022-39254": "FILE_NOT_FOUND"
+    }
+  }
+]

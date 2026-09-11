@@ -2,19 +2,35 @@
 
 Reproducibility package (**anonymised version**) for a study on automatically verifying
 whether upstream security fixes (CVE patches) have propagated to *divergent forks* of the
-Matrix ecosystem. It contains **only** the scripts, input data, results and evidence that
-support the final methodology and results reported in the paper.
+Matrix ecosystem. It contains the scripts, input data, results and archived evidence
+behind the reported methodology and results.
 
 No file here identifies authors or institution, and no credentials are included
 (see [Security](#security)).
+
+> **Current run: `resultados_2026-08-31_v2/`.** Everything dated before it — including the
+> whole of `resultados_2026-07-04/` — was produced by a pipeline that silently discarded
+> the test-file evidence, and therefore **underestimates the method**. See
+> [`CHANGELOG.md`](CHANGELOG.md) §1 for the defect and its measured effect.
 
 > **Language note.** Documentation and script docstrings are in English. Some **file and
 > directory names**, the **verdict labels** inside the data (`CORRIGIDO`, `ZONA_INCERTEZA`,
 > `FILE_NOT_FOUND`) and the **CSV column names** are **kept in Portuguese on purpose** —
 > they are literal values written in every versioned result file and compared against by
 > the code, so translating them would desynchronise code from data. Everything you need to
-> read them is in the [Glossary](#glossary-portuguese-identifiers-kept-in-the-data). A few
-> inline comments inside function bodies also remain in Portuguese.
+> read them is in the [Glossary](#glossary-portuguese-identifiers-kept-in-the-data). Some
+> inline comments and console output inside function bodies also remain in Portuguese.
+
+---
+
+## Where to start
+
+| If you want | Read |
+|---|---|
+| the current numbers and the answers to both research questions | [`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) |
+| what changed since the first published snapshot, and why | [`CHANGELOG.md`](CHANGELOG.md) |
+| the peer-review feedback and the improvements planned from it | [`REVIEW_RESPONSE_AND_ROADMAP.md`](REVIEW_RESPONSE_AND_ROADMAP.md) |
+| the methodology at procedure level (July state, superseded figures) | `RELATORIO_EXPERIMENTOS_E_METODOLOGIA.md` |
 
 ---
 
@@ -23,43 +39,72 @@ No file here identifies authors or institution, and no credentials are included
 **Goal.** Automatically verify whether security fixes (CVE patches) from an upstream
 project have propagated to its divergent forks, and characterise that propagation.
 
-**Final scope.** 5 categories of the Matrix ecosystem (client, server, sdk, bridge,
-integration), **one upstream per category**, the **top 3 active divergent forks**
-(`ahead_by > 0`) of each, and **every CVE with a locatable fix commit**:
-**16 CVEs · 14 forks · 43 fork×CVE pairs**.
+**Research questions.**
 
-**Method.** A layered pipeline: **L1** literal file hash (baseline / motivation) →
-**L2A** normalised AST + edit distance (Levenshtein + Zhang-Shasha) → **L2B** dual
-reference (pre- vs post-patch) → **semantic layer** using code embeddings (UniXcoder).
+- **RQ1 — reliability:** how trustworthy is the automatic verdict? (precision, recall, F1,
+  Cohen's Kappa against a ground truth)
+- **RQ2 — propagation:** how much of each upstream's CVE set is fixed in its forks, and how
+  does that vary across the ecosystem? (coverage per fork and per category)
+
+**Scope of the current run.** 7 upstreams · 21 forks (the top 3 active **divergent** forks
+per upstream, `ahead_by > 0`) · 17 CVEs · **51 fork×CVE verifications** · 41 ground-truth
+pairs, of which 40 conclusive (**33 positive, 7 negative**).
+
+**Method.** A layered pipeline:
+
+| Layer | What it does |
+|---|---|
+| **L1** | literal content comparison against the post-patch file (baseline; nothing is hashed — see `REVIEW_RESPONSE_AND_ROADMAP.md` §4, item 5) |
+| **L2A** | normalised AST + edit distance (Levenshtein + Zhang-Shasha) against the **post-patch** reference |
+| **L2B** | **dual reference**: similarity to post-patch minus similarity to pre-patch. This is what catches patches that *remove* code, where L2A alone is blind |
+
 Verdicts are `CORRIGIDO` (patched) / `VULNERAVEL` (vulnerable) / `ZONA_INCERTEZA`
-(uncertainty zone), where uncertainty escalates to human audit rather than forcing a
-binary decision.
+(uncertainty zone) / `FILE_NOT_FOUND`. An ambiguous pair escalates to human audit instead
+of being forced into a binary decision — classification with a reject option, applied to
+this problem.
 
-**Headline results** (full detail in `RELATORIO_EXPERIMENTOS_E_METODOLOGIA.md`):
+**Evidence per patch.** Both the highest-churn **production** file and the highest-churn
+**test** file of the fix commit are evaluated, and their verdicts are unioned.
 
-| Method | Recall (34 conclusive pairs) |
-|---|:---:|
-| file hash (baseline) | 0.147 |
-| patch-presence test, dual reference | 0.324 |
-| AST | 0.676 |
-| **embeddings (UniXcoder)** | **0.794** |
-| **union AST ∪ embeddings** | **1.000** |
+### Headline results
 
-**Precision.** On the raw two-class set (44 positives / 56 constructed negatives) every
-method lands at **P ≈ 0.5**. A content-based audit of those negatives then showed the set
-was contaminated: **33 of the 56 "negatives" already contained the patch verbatim**,
-because cherry-picks preserve the upstream committer date and the date-based cut-off let
-the fix commit through. Over the corrected labels:
+RQ1 — reliability, 40 conclusive pairs, automated ground truth:
 
-| Method | P | R | F1 |
-|---|:---:|:---:|:---:|
-| Embeddings (UniXcoder) | **0.972** | 0.896 | 0.932 |
-| AST 2A | 0.914 | 0.961 | 0.937 |
-| Combiner (AST ∪ embeddings) | 0.906 | **1.000** | **0.951** |
+| | FP | P | R | F1 | κ |
+|---|---:|---:|---:|---:|---:|
+| trivial classifier (always "patched") | 7 | 0.825 | 1.000 | 0.904 | 0.000 |
+| union of the layers (**adopted**) | 2 | **0.938** | **0.909** | **0.923** | **0.590** |
+| A+B rule (`--regra-ab`, optional) | 0 | 1.000 | 0.909 | 0.952 | 0.778 |
 
-Ground truth v2 (anchored on the corrective line): 43/43 conclusive pairs, 0 ambiguous,
-all patched. **Adoption at HEAD:** of 38 pairs, 24 confirm adoption, 14 are indeterminate
-(patch too small to discriminate) and **0 remain demonstrably vulnerable**.
+Baselines re-measured **on this same run**, recall against the 33 `CONFIRMED_PATCHED` pairs:
+
+| Approach | Recall |
+|---|---:|
+| whole-file hash (rw1) | 0.091 |
+| patch-presence test, dual reference (rw3) | 0.758 |
+| AST, single reference (rw2) | 0.879 |
+| **union of the layers** | **0.909** |
+
+One reproduced baseline **beats the pipeline**: comparing at declaration scope instead of
+file scope (rw6, after PatchLens/FSE 2026) reaches P 1.000 · R 0.939 · F1 0.969 on this run
+under the automated oracle, removing both false positives and recovering a true positive.
+It brings a failure mode of its own — in 8 pairs the patched declaration is absent from the
+fork entirely — so it is a candidate change to the method, not a settled one. Detail in
+[`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) §3.
+
+RQ2 — propagation: **mean coverage 61.5%**, ranging from 100% (support) and 91.7% (server)
+down to **19.4% (sdk)**.
+
+**Three caveats that travel with these numbers, and are results in their own right:**
+
+1. **Nothing is statistically significant at n=40.** Exact McNemar puts the union against
+   the trivial classifier at p=0.727; the 95% CI of Kappa is [0.196 · 0.875].
+2. **The difficulty is concentrated in one upstream.** 6 of the 7 negatives and 5 of the 5
+   errors are in `matrix-org/matrix-rust-sdk`. The other four upstreams give P=1.000 and
+   R=1.000 with *any* threshold. The effective sample of the hard problem is 13, not 40.
+3. **Coverage mixes propagation with inheritance.** In 31 of the 51 pairs the fork was
+   created *after* the fix commit, so it never carried the flaw. Only about 10 of the 33
+   `CORRIGIDO` verdicts are propagation in the strict sense.
 
 ---
 
@@ -68,62 +113,83 @@ all patched. **Adoption at HEAD:** of 38 pairs, 24 confirm adoption, 14 are inde
 ```
 .
 ├── pipeline1.py                    Phase 1 — mine CVEs/CWEs/fix commits (NVD + GHSA)
+├── fase1_fix_commits.py            Phase 1 (light) — GHSA first, NVD only as fallback
 ├── pipeline_core.py                Core: tree-sitter, AST normalisation, similarity
-├── pipeline_dissertation.py        Phase 2 — per-fork verification (layers 1, 2A, 2B)
-├── ground_truth.py                 Ground truth v1 + metrics (P/R/F1/Kappa)
-├── gt_v2_anchors.py                Ground truth v2, anchored on the corrective line (offline)
-├── sensibilidade_limiares.py       Threshold sensitivity sweep (offline)
-├── bench_custo_embeddings.py       Cost micro-benchmark for the semantic layer
+├── pipeline_dissertation.py        Phase 2 — per-fork verification (L1, L2A, L2B)
+├── ground_truth.py                 Automated oracle + metrics (P/R/F1/Kappa)
+├── auditoria_manual.py             Human oracle — audit worklist and tally
+├── gt_v2_anchors.py                Ground truth v2 anchored on the corrective line (July run)
+│
+├── experimentos_revisores.py       E1–E6 validation experiments        (offline)
+├── experimento_regra_ab.py         A+B rule re-derived from raw records (offline)
+├── sensibilidade_regras.py         Threshold sensitivity sweep          (offline)
+├── impacto_evidencia_teste.py      Cost of the test-evidence defect     (offline)
+├── dataset_temporal.py             Adoption lag, fork dates, inheritance vs propagation
+│
 ├── gerar_figuras_dissertacao.py    Figures: coverage / verdicts / confusion matrix
-├── gerar_diagrama_processo.py      Process diagram (to-be)
+├── gerar_diagrama_processo.py      Process diagram
+├── bench_custo_embeddings.py       Cost micro-benchmark (embedding prototype only)
 │
 ├── target.csv                      Phase 1 input (owner;repo;cpe;dependency)
-├── target_dissertation.csv         The 5 upstreams, one per category
+├── target_dissertation.csv         The upstreams, one per ecosystem category
 ├── cves-fixing-commits-dataset.csv Phase 2 input — CVE → fix commit
 ├── cpe-nvd-dataset.csv             Phase 1 outputs (mined CPEs, CVEs, GHSAs)
 ├── cve-nvd-dataset.csv
 ├── ghsa-dataset.csv
 ├── ghsa-cve-nvd-dataset.csv
 │
-├── prototipo_ranking_embeddings/   Semantic layer (UniXcoder)
-│   ├── unixcoder_embed.py          Embeddings (<encoder-only> + normalised mean pooling)
-│   ├── treesit_extract.py          Function/snippet extraction via tree-sitter
-│   ├── run.py                      Single-CVE prototype
-│   ├── run_ecosystem.py            Scale-up: all CVEs × forks across the 5 categories
-│   ├── run_precision_eval.py       Precision evaluation (two-class set)
-│   ├── montar_worklist_auditoria.py / calcular_auditoria.py / auditar_worklist_automatico.py
-│   │                               Build audit worklist / recompute metrics / auto-audit
-│   └── resultados_2026-07-09/      ecossistema_embeddings.json, precision_eval.json, summaries
+├── resultados_2026-08-31_v2/       ***CURRENT RUN — source of every published figure***
+│   ├── dissertation_resultados.json/.csv     Per fork × CVE × file record (everything derives from this)
+│   ├── dissertation_cobertura.json           Coverage % per fork          (RQ2)
+│   ├── dissertation_metricas.json            Metrics per category         (RQ2)
+│   ├── gt_dissertation_resultados.json/.csv  Automated ground truth
+│   ├── gt_dissertation_metricas.json         P/R/F1/Accuracy/Kappa        (RQ1)
+│   ├── auditoria_manual.html/.csv            Human audit worklist (41 pairs)
+│   ├── auditoria_manual_preenchida.csv       The reviewer's filled-in verdicts
+│   ├── auditoria_manual_apuracao.json        Human-oracle metrics + agreement (36/41)
+│   ├── experimentos_revisores.json           E1–E6 output
+│   ├── sensibilidade_limiares.json           Threshold sweep output
+│   ├── dataset_temporal.json / _pares.csv / _forks.csv   Dates, lag, ahead/behind
+│   ├── figuras/                              Figures and tables (.png, .md, .tex)
+│   ├── evidencias_dissertacao/               Every file actually compared (offline audit)
+│   └── evidencias_gt_dissertacao/            Fork files downloaded for the ground truth
+│
+├── resultados_2026-08-31_v2_regraAB/  Same run re-derived under the A+B rule (offline output)
+├── resultados_2026-07-04/          July run — SUPERSEDED, kept for the record
 │
 ├── trabalhos_relacionados/         Reproduced state-of-the-art baselines
+│   ├── _common.py                  Shared loader; RW_RUN=<folder> picks the run
 │   ├── rw1_wyss2022_hash/          whole-file hash
-│   ├── rw2_vercation2025_ast/      normalised AST + edit distance
+│   ├── rw2_vercation2025_ast/      normalised AST + edit distance, single reference
 │   ├── rw3_pptfi2024_dualref/      patch-presence test with dual reference
 │   ├── rw4_see2025_greedy_pareto/  greedy set cover → Pareto curve
-│   ├── rw5_decan2018_timelag/      technical lag / window of vulnerability
-│   └── resultados_2026-07-08/      JSON results + RESUMO.md (summary)
+│   ├── rw5_decan2018_timelag/      technical lag / window of vulnerability (needs network)
+│   ├── rw6_patchlens2026_hunk/     PatchLens (FSE 2026): hunk → AST subtree, declaration scope
+│   ├── resultados_2026-09-02/      baselines re-measured on the current run
+│   └── resultados_2026-07-08/      baselines on the July run (superseded)
 │
-├── resultados_2026-07-04/          Final Phase 2 results + ground truth
-│   ├── dissertation_resultados.json/.csv    Per fork × CVE verdict (source of everything)
-│   ├── dissertation_cobertura.json          Coverage % per fork
-│   ├── dissertation_metricas.json           Metrics per category
-│   ├── gt_dissertation_resultados.json/.csv Ground truth v1 (raw patch lines)
-│   ├── gt_v2_resultados.json / _metricas    Ground truth v2 (anchored corrective line)
-│   ├── VALIDACAO_GROUND_TRUTH.md            GT v1 vs v2, anchor table, findings
-│   ├── auditoria_manual_gt.html/.csv        Human audit worklist (43 pairs)
-│   ├── figuras/                             Final figures and tables (.png, .md, .tex)
-│   ├── evidencias_gt_dissertacao/           Downloaded source — lets you re-validate GT v2 offline
-│   └── evidencias_dissertacao/              Downloaded source — Phase 2 evidence
-│
+├── prototipo_ranking_embeddings/   Embedding prototype (UniXcoder) — NOT part of the method;
+│                                   has not run since July 2026, kept as future work
 ├── figuras/                        Process diagram (.png, .svg)
-├── RELATORIO_EXPERIMENTOS_E_METODOLOGIA.md  Main document: experiments and methodology (PT)
-├── ANEXO_DIAGNOSTICO_C5_C6_C8.md            Threshold sensitivity, fix-commit provenance, cost (PT)
-└── estudo_ferramentas_deteccao_clones.md    Clone-detection tool study (PT)
+├── CHANGELOG.md                    What changed since the first snapshot, and why
+├── RESULTS_2026-08-31.md           Current results; answers to RQ1 and RQ2
+├── REVIEW_RESPONSE_AND_ROADMAP.md  Peer-review feedback → planned improvements
+├── RELATORIO_EXPERIMENTOS_E_METODOLOGIA.md  Methodology at procedure level (July state)
+├── ANEXO_DIAGNOSTICO_C5_C6_C8.md   Threshold sensitivity, fix-commit provenance, cost (July)
+└── estudo_ferramentas_deteccao_clones.md    Clone-detection tool study
 ```
 
 ---
 
 ## Reproducing the results
+
+**Order matters.** Steps 5–8 all read the JSON files written by steps 3 and 4. Metrics are
+only comparable when every one of them comes from the **same run** — that is why the
+baselines take `RW_RUN`. If you redo the run, redo all of them.
+
+Steps 5, 6 and 8 are **fully offline**: no network, no token. They re-derive their results
+from the raw records that are already versioned here, so anyone can reproduce every number
+in `RESULTS_2026-08-31.md` without a GitHub account.
 
 ### 0. Dependencies
 
@@ -131,8 +197,9 @@ all patched. **Adoption at HEAD:** of 38 pairs, 24 confirm adoption, 14 are inde
 pip install -r requirements.txt
 ```
 
-Python 3.10+ (tested on 3.12). The semantic layer downloads `microsoft/unixcoder-base`
-from Hugging Face on first run (~500 MB). It runs on CPU; a GPU is optional.
+Python 3.10+ (tested on 3.12). `rapidfuzz` is not strictly required but the pure-Python
+fallback is orders of magnitude slower on large files. `torch`/`transformers` are needed
+only to run the embedding prototype, which is not part of the method.
 
 ### 1. Credentials
 
@@ -141,63 +208,100 @@ cp .env.example .env      # fill in GITHUB_TOKEN and, optionally, NVD_TOKEN
 ```
 
 The GitHub token only needs public-read scope. Phase 1 works without `NVD_TOKEN` but is
-much slower and prone to HTTP 503 errors from the NVD API.
+much slower and prone to HTTP 503 from the NVD API.
 
 ### 2. Phase 1 — mining (slow; optional)
 
 ```bash
-python pipeline1.py NVD_TOKEN GITHUB_TOKEN
+python pipeline1.py NVD_TOKEN GITHUB_TOKEN          # full mining, NVD-first
+python fase1_fix_commits.py --entrada fase2.csv \
+    --saida cves-fixing-commits-dataset.csv --token YOUR_TOKEN   # light, GHSA-first
 ```
 
 Only needed to redo collection from scratch. **The outputs are already versioned**
-(`cve-nvd-dataset.csv`, `cves-fixing-commits-dataset.csv`, …), so the later steps run
+(`cve-nvd-dataset.csv`, `cves-fixing-commits-dataset.csv`, …), so every later step runs
 without repeating this one.
 
-### 3. Phase 2 — per-fork verification (layers 1, 2A, 2B)
+### 3. Phase 2 — per-fork verification
 
 ```bash
-python pipeline_dissertation.py --token YOUR_TOKEN --fresh
-# or one upstream at a time:
+python pipeline_dissertation.py --token YOUR_TOKEN --fresh \
+    --outdir resultados_YYYY-MM-DD
+# one upstream at a time:
 python pipeline_dissertation.py --token YOUR_TOKEN --upstream element-hq/synapse
+# optional variant with the two guards:
+python pipeline_dissertation.py --token YOUR_TOKEN --fresh --regra-ab
 ```
+
+`--fresh` recomputes from scratch; without it the script **accumulates** and skips what it
+has already processed.
 
 > Forks are selected **dynamically** through the GitHub API (most active with
-> `ahead_by > 0`), so the set can change between runs. To reproduce the published numbers
-> exactly, use the versioned results in `resultados_2026-07-04/`.
+> `ahead_by > 0`), so the set changes between runs. To reproduce the published numbers
+> exactly, use the versioned run in `resultados_2026-08-31_v2/`.
 
-### 4. Ground truth and metrics
-
-```bash
-python ground_truth.py --token YOUR_TOKEN     # ground truth v1 (needs network)
-python gt_v2_anchors.py --check               # ground truth v2, offline, verifies the
-                                              # published labels reproduce exactly
-```
-
-`gt_v2_anchors.py` rebuilds ground truth v2 from the per-CVE corrective anchors and the
-archived evidence files, with no network access. 40 of the 43 labels follow directly from
-files in this repository; the other 3 (CVE-2023-43656) rest on a documented manual
-cross-file check, and `--no-manual` shows the result without them.
-
-### 5. Semantic layer (embeddings)
+### 4. Ground truth and metrics (the automated oracle)
 
 ```bash
-python prototipo_ranking_embeddings/run_ecosystem.py       # scale-up + baseline comparison
-python prototipo_ranking_embeddings/run_precision_eval.py  # precision on the two-class set
+python ground_truth.py --token YOUR_TOKEN \
+    --results resultados_YYYY-MM-DD/dissertation_resultados.json \
+    --outdir  resultados_YYYY-MM-DD
 ```
 
-### 6. State-of-the-art baselines
+Reads the pairs dynamically from the Phase 2 records and searches the patch key lines in
+each fork's file. Being independent of the AST method is what makes it a valid reference.
+
+### 5. Human audit (the independent oracle) — offline
 
 ```bash
-python trabalhos_relacionados/rw1_wyss2022_hash/run.py
-# ... likewise rw2 … rw5
+python auditoria_manual.py gerar  --run resultados_YYYY-MM-DD   # build HTML+CSV worklist
+#   ... review in a browser, export auditoria_manual_preenchida.csv ...
+python auditoria_manual.py apurar --run resultados_YYYY-MM-DD   # recompute P/R/F1 + agreement
 ```
 
-### 7. Offline analyses (no network, no token required)
+The filled-in worklist of the published run is versioned, so `apurar` reproduces the human
+oracle immediately: **agreement 36/41 = 87.8%**.
+
+### 6. Offline analyses — no network, no token
 
 ```bash
-python sensibilidade_limiares.py      # threshold sweep over the versioned results
-python bench_custo_embeddings.py      # per-window cost and scale projection
+python experimentos_revisores.py --run resultados_YYYY-MM-DD   # E1-E6, ~40 s
+python experimento_regra_ab.py   --run resultados_YYYY-MM-DD   # A+B differential
+python sensibilidade_regras.py   --run resultados_YYYY-MM-DD   # threshold sweep
+python impacto_evidencia_teste.py --run resultados_2026-08-18  # cost of the fixed defect
 ```
+
+### 7. Temporal dataset (needs the API)
+
+```bash
+python dataset_temporal.py --run resultados_YYYY-MM-DD --token YOUR_TOKEN
+```
+
+~138 API calls for this run. Produces adoption lag, fork creation dates and ahead/behind,
+which is what separates **inheritance** from **propagation**.
+
+### 8. State-of-the-art baselines, on the same run
+
+```bash
+RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw1_wyss2022_hash/run.py
+RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw2_vercation2025_ast/run.py
+RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw3_pptfi2024_dualref/run.py
+RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw4_see2025_greedy_pareto/run.py
+python trabalhos_relacionados/rw6_patchlens2026_hunk/run.py --run resultados_YYYY-MM-DD
+```
+
+rw1–rw4 and rw6 are offline. **rw5 (technical lag) needs an authenticated network
+connection** and will stop with a clear message if `GITHUB_TOKEN` is absent.
+
+### 9. Figures
+
+```bash
+python gerar_figuras_dissertacao.py --dir resultados_YYYY-MM-DD
+python gerar_diagrama_processo.py
+```
+
+Writes `figuras/` inside the run folder: coverage per category, verdicts per category,
+confusion matrix, and the same tables in Markdown and LaTeX.
 
 ---
 
@@ -214,67 +318,81 @@ by the code, so translating them would desynchronise code from data:
 | `FILE_NOT_FOUND` | the patched file no longer exists at that path in the fork's HEAD |
 | `CONFIRMED_PATCHED` / `CONFIRMED_VULNERABLE` / `AMBIGUOUS` | ground-truth labels |
 | `sim_2a`, `sim_patch`, `sim_vuln`, `delta` | AST similarity to the patched/vulnerable reference and their difference |
+| `veredito_humano` / `veredito_ia` | human verdict / automatic verdict (audit worklist) |
+| `lag_confiavel` | whether the adoption lag of that row is trustworthy (`sim`/`nao`) |
+| `apto_fase2` | repository eligible for Phase 2 (has a CVE, a divergent fork and a supported language) |
 
 CSV column names and file names use the same vocabulary:
 
 | Portuguese | English |
 |---|---|
-| `cobertura` | coverage |
-| `resultados` | results |
-| `metricas` | metrics |
-| `evidencias` | evidence |
-| `veredito` / `vereditos` | verdict / verdicts |
-| `veredito_humano` / `veredito_ia` | human verdict / automatic verdict |
-| `funcao_alvo` | target function |
-| `observacao` | note |
-| `arquivo` | file · `linguagem` language · `categoria` category |
-| `prioridade` | priority · `origem` origin · `instancia` instance |
-| `adotou_no_HEAD` | adopted at HEAD · `evidencia` evidence |
-| `RESUMO*` | summary document |
-| `VALIDACAO_GROUND_TRUTH.md` | ground-truth validation |
-| `ANEXO_DIAGNOSTICO_*` | diagnostic appendix |
-| `RELATORIO_*` | consolidated report |
-| `trabalhos_relacionados/` | related work · `prototipo_ranking_embeddings/` embedding ranking prototype |
+| `cobertura` | coverage · `resultados` results · `metricas` metrics |
+| `evidencias` | evidence · `veredito`/`vereditos` verdict/verdicts |
+| `auditoria_manual` | manual audit · `apuracao` tally · `preenchida` filled in |
+| `sensibilidade` | sensitivity · `experimento`/`experimentos` experiment(s) |
+| `regra_ab` / `regraAB` | the A+B decision rule |
+| `dataset_temporal` | temporal dataset · `pares` pairs · `forks` forks |
+| `impacto_evidencia_teste` | impact of the test-evidence defect |
+| `funcao_alvo` | target function · `arquivo` file · `linguagem` language · `categoria` category |
+| `prioridade` | priority · `origem` origin · `observacao` note |
+| `trabalhos_relacionados/` | related work · `prototipo_ranking_embeddings/` embedding prototype |
+| `RESUMO*` | summary document · `RELATORIO_*` consolidated report · `ANEXO_*` appendix |
 
 ---
 
 ## Fixed parameters
 
-| Parameter | Value |
-|---|---|
-| PATCHED threshold (L2A) | sim ≥ 0.80 |
-| NOT-PATCHED threshold (L2A) | sim ≤ 0.35 |
-| Uncertainty-zone margin (L2B) | \|δ\| ≤ 0.05 |
-| Zhang-Shasha node limit | 600 |
-| Embeddings | UniXcoder `<encoder-only>`, 16-line window |
-| Top forks per upstream | 3 (active divergent, `ahead_by > 0`) |
-| Fork activity window | 730 days |
+| Parameter | Value | Where |
+|---|---|---|
+| PATCHED threshold (L2A) | sim ≥ 0.80 | `pipeline_core.py` |
+| NOT-PATCHED threshold (L2A) | sim ≤ 0.35 | `pipeline_core.py` |
+| Uncertainty-zone margin (L2B) | \|δ\| ≤ 0.05 | `pipeline_core.py` |
+| Combined similarity weights | 0.45·lev + 0.55·zss | `pipeline_core.py` |
+| Zhang-Shasha node limit | 600 | `pipeline_core.py` |
+| Absolute similarity floor for L2B (guard B) | 0.60 | `pipeline_dissertation.py` |
+| Line-match threshold (ground truth) | 0.85 | `ground_truth.py` |
+| Top forks per upstream | 3 (active divergent, `ahead_by > 0`) | `pipeline_dissertation.py` |
+| Fork activity window | 730 days | `pipeline_dissertation.py` |
 
-Sensitivity of these thresholds is measured in `ANEXO_DIAGNOSTICO_C5_C6_C8.md`: the L2A
-thresholds are robust by plateau (±0.05 changes no pair's verdict), and the sensitive
-parameter is the L2B margin, which controls how much is escalated to human audit.
+**How these values should be read.** Cross-validation (E2) shows they are **not
+overfitted** — thresholds learned out of sample perform the same. It also shows they are
+**not identifiable**: every fold selects `thr_high = 0.60` when the training labels come
+from the automated oracle, and four of five select `0.90` when they come from the human
+one — opposite ends of the grid. At this sample size the thresholds are a **policy choice**, not a
+derivation, and the operating curve (E6) is the honest way to present them.
+
+`ZSS_NODE_LIMIT = 600` deserves separate mention: it decides *which* metric is computed,
+not merely memory. In the file-scope measurement, 60 of 63 comparisons (95%) fell back to
+Levenshtein because the trees exceeded it.
 
 ---
 
 ## Known limitations
 
-- **Precision on small patches.** At function granularity, vulnerable ≈ patched code →
-  false positives. Neither the margin nor the combiner fixes this; what fixed it here was
-  correcting the labels, which does not generalise automatically.
-- **Date-based negative sets are unreliable.** Cherry-picks preserve the upstream committer
-  date, so a "pre-adoption" snapshot can already contain the fix. Any future negative set
-  must be validated by content, not by date.
-- **Three of the 43 ground-truth-v2 labels rest on a manual cross-file check**
-  (CVE-2023-43656), because only the pre-migration file was archived as evidence.
+- **Sample size.** At n=40 conclusive pairs, no difference between configurations is
+  statistically distinguishable (exact McNemar; union vs trivial classifier p=0.727). Every
+  headline figure should be read with its confidence interval.
+- **The difficulty is concentrated.** 6 of 7 negatives and 5 of 5 errors are in one
+  upstream. Pooled metrics flatter the method; the hard subset is 13 pairs.
+- **A single human annotator.** Two complete passes, three verdicts revised on the second,
+  but no inter-rater agreement. This is the largest open gap in the work.
+- **Coverage mixes inheritance with propagation.** 31 of 51 pairs are forks created after
+  the fix. `created_at` is the GitHub repository date, not the divergence point, so that
+  count is a floor.
 - **File restructuring** between the fix commit and the fork's HEAD (monorepo migration,
-  moved file) breaks fixed-path verification → `FILE_NOT_FOUND` or false-vulnerable.
-- **512-token truncation** in UniXcoder, mitigated by a sliding window.
-- **Fix-commit location.** 9 of the 16 CVEs were resolved automatically from NVD/GHSA
-  references; 7 required manual search (all confirmed correct by the corrective anchor).
-  Detail in `ANEXO_DIAGNOSTICO_C5_C6_C8.md`.
-- **Kappa 0** is a property of the population (active divergent forks track upstream, so
-  there are no natural negatives), not a failure of the method — which is why real
-  precision is measured on constructed negatives.
+  moved file) breaks fixed-path verification → `FILE_NOT_FOUND` (10 of 51 here).
+- **Precision on small patches.** On a monolithic file a tiny patch leaves L2A reading very
+  high similarity even when the fix is absent; the corrective signal is the L2B delta.
+- **Dynamic fork selection.** The top-3 divergent forks are resolved through the API at run
+  time, so an identical command run later will not select an identical set. Reproduce
+  published numbers from the versioned run folder.
+- **Fix-commit availability bounds the corpus.** Only CVEs whose fix commit can be located
+  from NVD/GHSA references are verifiable at all — the corpus is what survived, not a
+  sample. (The same limitation is declared by PatchLens, FSE 2026.)
+- **The embedding prototype is not part of the method** and has not run since July 2026.
+
+Retired claims — statements that appeared in earlier versions of this package and are now
+known to be wrong — are listed in [`REVIEW_RESPONSE_AND_ROADMAP.md`](REVIEW_RESPONSE_AND_ROADMAP.md) §5.
 
 ---
 
@@ -284,11 +402,12 @@ parameter is the L2B margin, which controls how much is escalated to human audit
   as the template.
 - Scripts read the token from `.env` or from the `GITHUB_TOKEN` environment variable. No
   token appears in any versioned code, data or log.
-- Execution logs (`*.log`) were omitted because they may contain local paths.
+- Execution logs (`*.log`) are excluded by `.gitignore` because they may contain local
+  paths.
 
 ## Third-party data
 
-`resultados_2026-07-04/evidencias_*/` contains source-code excerpts from public Matrix
-ecosystem projects and their forks, downloaded through the GitHub API so that the ground
-truth can be audited and re-validated **offline**. Each file remains under its project's
-original licence and is redistributed here solely for scientific verification.
+`resultados_*/evidencias_*/` contains source-code excerpts from public Matrix ecosystem
+projects and their forks, downloaded through the GitHub API so that the ground truth can be
+audited and re-validated **offline**. Each file remains under its project's original licence
+and is redistributed here solely for scientific verification.
