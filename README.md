@@ -85,11 +85,11 @@ Baselines re-measured **on this same run**, recall against the 33 `CONFIRMED_PAT
 | AST, single reference (rw2) | 0.879 |
 | **union of the layers** | **0.909** |
 
-One reproduced baseline **beats the pipeline**: comparing at declaration scope instead of
-file scope (rw6, after PatchLens/FSE 2026) reaches P 1.000 · R 0.939 · F1 0.969 on this run
-under the automated oracle, removing both false positives and recovering a true positive.
-It brings a failure mode of its own — in 8 pairs the patched declaration is absent from the
-fork entirely — so it is a candidate change to the method, not a settled one. Detail in
+One reproduced baseline is worth singling out: comparing at **declaration scope** instead
+of file scope (rw6, after PatchLens/FSE 2026). Under the automated oracle it dominates the
+pipeline (P 1.000 · R 0.939 · F1 0.969); **under the human oracle it does not** (P 0.967 ·
+R 0.879 · F1 0.921) — it makes the same precision-for-recall trade as the A+B rule. The
+reversal comes down to a single contested pair. Detail in
 [`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) §3.
 
 RQ2 — propagation: **mean coverage 61.5%**, ranging from 100% (support) and 91.7% (server)
@@ -100,8 +100,10 @@ down to **19.4% (sdk)**.
 1. **Nothing is statistically significant at n=40.** Exact McNemar puts the union against
    the trivial classifier at p=0.727; the 95% CI of Kappa is [0.196 · 0.875].
 2. **The difficulty is concentrated in one upstream.** 6 of the 7 negatives and 5 of the 5
-   errors are in `matrix-org/matrix-rust-sdk`. The other four upstreams give P=1.000 and
-   R=1.000 with *any* threshold. The effective sample of the hard problem is 13, not 40.
+   errors are in `matrix-org/matrix-rust-sdk`. Split by that boundary, the pipeline scores
+   **F1 0.615 · κ 0.235 on those 13 pairs** and **1.000 on the other 27**. The pooled 0.923
+   is mostly the easy majority showing through — and on the hard subset the trivial
+   classifier beats the pipeline on F1 (0.700), with only Kappa separating them.
 3. **Coverage mixes propagation with inheritance.** In 31 of the 51 pairs the fork was
    created *after* the fix commit, so it never carried the flaw. Only about 10 of the 33
    `CORRIGIDO` verdicts are propagation in the strict sense.
@@ -125,6 +127,7 @@ down to **19.4% (sdk)**.
 ├── sensibilidade_regras.py         Threshold sensitivity sweep          (offline)
 ├── impacto_evidencia_teste.py      Cost of the test-evidence defect     (offline)
 ├── dataset_temporal.py             Adoption lag, fork dates, inheritance vs propagation
+├── metricas_subconjunto_dificil.py Metrics split by upstream difficulty  (offline)
 │
 ├── gerar_figuras_dissertacao.py    Figures: coverage / verdicts / confusion matrix
 ├── gerar_diagrama_processo.py      Process diagram
@@ -147,6 +150,7 @@ down to **19.4% (sdk)**.
 │   ├── auditoria_manual.html/.csv            Human audit worklist (41 pairs)
 │   ├── auditoria_manual_preenchida.csv       The reviewer's filled-in verdicts
 │   ├── auditoria_manual_apuracao.json        Human-oracle metrics + agreement (36/41)
+│   ├── metricas_subconjunto_dificil.json     Metrics split hard vs easy, both oracles
 │   ├── experimentos_revisores.json           E1–E6 output
 │   ├── sensibilidade_limiares.json           Threshold sweep output
 │   ├── dataset_temporal.json / _pares.csv / _forks.csv   Dates, lag, ahead/behind
@@ -269,6 +273,7 @@ python experimentos_revisores.py --run resultados_YYYY-MM-DD   # E1-E6, ~40 s
 python experimento_regra_ab.py   --run resultados_YYYY-MM-DD   # A+B differential
 python sensibilidade_regras.py   --run resultados_YYYY-MM-DD   # threshold sweep
 python impacto_evidencia_teste.py --run resultados_2026-08-18  # cost of the fixed defect
+python metricas_subconjunto_dificil.py --run resultados_YYYY-MM-DD  # hard vs easy split
 ```
 
 ### 7. Temporal dataset (needs the API)
@@ -288,6 +293,8 @@ RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw2_vercation2025_ast
 RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw3_pptfi2024_dualref/run.py
 RW_RUN=resultados_YYYY-MM-DD python trabalhos_relacionados/rw4_see2025_greedy_pareto/run.py
 python trabalhos_relacionados/rw6_patchlens2026_hunk/run.py --run resultados_YYYY-MM-DD
+# and the same measurement against the human labels, reusing the ASTs already computed:
+python trabalhos_relacionados/rw6_patchlens2026_hunk/run.py --run resultados_YYYY-MM-DD     --oraculo humano --refazer-metricas
 ```
 
 rw1–rw4 and rw6 are offline. **rw5 (technical lag) needs an authenticated network

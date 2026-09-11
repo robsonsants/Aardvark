@@ -95,15 +95,40 @@ output in `trabalhos_relacionados/resultados_2026-09-10/`):
 | **hunk / declaration (PatchLens)** | 31 | **0** | 2 | 7 | **1.000** | **0.939** | **0.969** |
 | hunk + guard A (delta >= 0) | 31 | 0 | 2 | 7 | 1.000 | 0.939 | 0.969 |
 
-It removes both false positives **and** recovers one true positive — better on both axes,
-which neither the A+B rule nor a higher threshold achieves. Two caveats: it was measured
-under the **automated** oracle only (whose false positives are a different pair of cases
-from the human oracle's), and it introduces a failure mode of its own — in 8 pairs the
-patched declaration does not exist in the fork at all, so no hunk can be located. Adopting
-declaration scope is now a candidate change to the method, not a settled one; see
-`REVIEW_RESPONSE_AND_ROADMAP.md` §4.
+Under the automated oracle it removes both false positives **and** recovers one true
+positive. **Under the human oracle it does not** (added 2026-09-11, `--oraculo humano`):
 
-## 6. New offline experiments
+| Oracle | Scope | TP | FP | FN | TN | P | R | F1 | κ |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| human | file (pipeline) | 30 | 2 | 3 | 5 | 0.938 | 0.909 | 0.923 | 0.590 |
+| human | hunk / declaration | 29 | 1 | 4 | 6 | 0.967 | 0.879 | 0.921 | 0.630 |
+
+Against the human labels it makes the same trade the A+B rule makes — precision up, recall
+down, F1 flat — and the difference between the two oracles comes down to **one contested
+pair**: `tchapgouv/matrix-rust-sdk` on CVE-2024-40648, which the automated ground truth
+calls vulnerable and the reviewer calls patched. What survives both oracles is the Kappa
+gain (0.590 → 0.844 automated, → 0.630 human).
+
+It also brings a failure mode of its own: in 8 pairs the patched declaration does not exist
+in the fork at all, so no hunk can be located. Declaration scope is a candidate change to
+the method, not a settled one; see `REVIEW_RESPONSE_AND_ROADMAP.md` §4.
+
+## 6. Metrics split by difficulty
+
+`metricas_subconjunto_dificil.py` (new, offline) reports every metric separately for
+`matrix-org/matrix-rust-sdk` and for the other four upstreams, under both oracles. The
+pooled figure turns out to describe a mostly-trivial population:
+
+| Subset | n | P | R | F1 | κ |
+|---|---:|---:|---:|---:|---:|
+| hard (`matrix-rust-sdk`) | 13 | 0.667 | 0.571 | **0.615** | **0.235** |
+| the other four upstreams | 27 | 1.000 | 1.000 | 1.000 | 1.000 |
+| pooled | 40 | 0.938 | 0.909 | 0.923 | 0.590 |
+
+On the hard subset the **trivial classifier beats the pipeline on F1** (0.700 vs 0.615);
+only Kappa separates them (0.000 vs 0.235). Detail in `RESULTS_2026-08-31.md` §4.
+
+## 7. New offline experiments
 
 | Script | What it answers |
 |---|---|
@@ -111,11 +136,12 @@ declaration scope is now a candidate change to the method, not a settled one; se
 | `experimento_regra_ab.py` | the A+B rule re-derived from the same raw records |
 | `sensibilidade_regras.py` | threshold sweep (replaces `sensibilidade_limiares.py`, removed) |
 | `impacto_evidencia_teste.py` | the cost of the defect in item 1 |
+| `metricas_subconjunto_dificil.py` | metrics split by upstream difficulty, under both oracles |
 | `dataset_temporal.py` | adoption lag, fork creation dates, inheritance vs propagation |
 | `auditoria_manual.py` | the human oracle |
 | `fase1_fix_commits.py` | Phase 1 through the GitHub Advisory DB, with NVD as fallback only |
 
-## 7. Two findings that change what the coverage metric means
+## 8. Two findings that change what the coverage metric means
 
 **Inheritance is not propagation.** In **31 of the 51 pairs** the fork was created *after*
 the fix commit: it never carried the flaw, it inherited already-fixed code. 23 of those
@@ -128,19 +154,19 @@ GitHub, not the divergence point, so 31 is a floor.)
 Spearman = +0.135 at n=21 — contradictory signs, no detectable monotonic relation. A
 negative result, and worth reporting as one.
 
-## 8. Performance
+## 9. Performance
 
 `pipeline_core.levenshtein()` now delegates to **rapidfuzz** (C++, bit-parallel Myers) when
 available, with the pure-Python loop as fallback. Same exact distance. On
 `src/client.ts` of matrix-js-sdk (~1e5 tokens) the old loop took ~40 min per comparison and
 made the wider Phase 2 unfeasible; Phase 2 now runs in ~20 min.
 
-## 9. Language and parsers
+## 10. Language and parsers
 
 TypeScript, TSX and Go parsers registered in `pipeline_core.py`; `.tsx` files are parsed
 with the TSX grammar. Supported: python, rust, kotlin, swift, typescript, tsx, go.
 
-## 10. Documentation
+## 11. Documentation
 
 - `README.md` rewritten around the current run; the July headline table is gone.
 - `RESULTS_2026-08-31.md` — the current results, and the answers to RQ1 and RQ2.

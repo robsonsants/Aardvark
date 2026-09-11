@@ -1,7 +1,7 @@
 {
   "trabalho": "Paixao et al. (2026) — PatchLens (PACMSE/FSE, DOI 10.1145/3808126)",
   "run_analisado": "resultados_2026-08-31_v2",
-  "oraculo": "ground truth automatico",
+  "oraculo": "revisor humano (auditoria_manual_preenchida.csv)",
   "reproduzido": "mapeamento hunk -> subarvore da AST; comparacao no escopo da declaracao que contem o patch; hunks unidos por disjuncao",
   "nao_reproduzido": "Vulnerability Impact Condition (VIC): exige C/C++ nao-preprocessado com #ifdef e analise de build system; nao ha variabilidade de compilacao no ecossistema Matrix",
   "n_linhas_analisadas": 66,
@@ -18,30 +18,32 @@
     "kappa": 0.5902
   },
   "metricas_escopo_hunk (PatchLens)": {
-    "TP": 31,
-    "FP": 0,
-    "FN": 2,
-    "TN": 7,
-    "precision": 1.0,
-    "recall": 0.9394,
-    "f1": 0.9688,
-    "kappa": 0.8444
+    "TP": 29,
+    "FP": 1,
+    "FN": 4,
+    "TN": 6,
+    "precision": 0.9667,
+    "recall": 0.8788,
+    "f1": 0.9206,
+    "kappa": 0.6296
   },
   "metricas_escopo_hunk + regra A (delta>=0)": {
-    "TP": 31,
-    "FP": 0,
-    "FN": 2,
-    "TN": 7,
-    "precision": 1.0,
-    "recall": 0.9394,
-    "f1": 0.9688,
-    "kappa": 0.8444
+    "TP": 29,
+    "FP": 1,
+    "FN": 4,
+    "TN": 6,
+    "precision": 0.9667,
+    "recall": 0.8788,
+    "f1": 0.9206,
+    "kappa": 0.6296
   },
   "falsos_positivos_corrigidos_pelo_escopo_de_hunk": [
-    "tchapgouv/matrix-rust-sdk :: CVE-2024-40648",
+    "tchapgouv/matrix-rust-sdk :: CVE-2025-53549",
     "tchapgouv/matrix-rust-sdk :: CVE-2025-66622"
   ],
-  "verdadeiros_positivos_perdidos": [],
+  "verdadeiros_positivos_perdidos": [
+    "tchapgouv/matrix-rust-sdk :: CVE-2024-40648"
+  ],
   "motivos_de_nao_localizacao": {
     "declaracao do patch ausente no fork": 8
   },

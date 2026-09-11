@@ -133,11 +133,21 @@ about two hours of a second person's time, using the worklist
 `auditoria_manual.py` already produces. Everything else on this list is our own writing
 time.
 
-### 2. Report metrics on the hard subset as well as the whole
+### 2. Report metrics on the hard subset as well as the whole — **done (2026-09-11)**
 
-Four of the five upstreams give P=1.000 and R=1.000 **with any threshold**. Reporting only
-the pooled figure hides that the effective sample of the difficult problem is 13. Both
-numbers go in: the pooled one and the hard-subset one. The data already exists.
+`metricas_subconjunto_dificil.py`. The split is worse than expected and it belongs in the
+results chapter exactly as measured:
+
+| Subset | n | P | R | F1 | κ |
+|---|---:|---:|---:|---:|---:|
+| hard (`matrix-rust-sdk`) | 13 | 0.667 | 0.571 | **0.615** | **0.235** |
+| the other four upstreams | 27 | 1.000 | 1.000 | 1.000 | 1.000 |
+| pooled | 40 | 0.938 | 0.909 | 0.923 | 0.590 |
+
+**On the hard subset the trivial classifier beats the pipeline on F1** (0.700 vs 0.615),
+and only Kappa separates them (0.000 vs 0.235). This is the reviewers' single-class
+objection in its strongest form, and the answer to it is the framing in §3: the
+contribution is not a better score, it is knowing which pairs fall on which side.
 
 ### 3. A robustness run with `--top 10`
 
@@ -154,10 +164,16 @@ F1 0.969** against the pipeline's 0.938 / 0.909 / 0.923 — removing both false 
 recovering a true positive. It is the only variant measured that improves precision and
 recall together.
 
-Before it can be adopted it needs: measurement under the **human** oracle (it was run
-against the automated one), and a decision about its own failure mode — in 8 pairs the
-patched declaration is absent from the fork, so there is no hunk to anchor on. That case
-must map to a verdict deliberately, not by accident.
+**Measured under the human oracle on 2026-09-11, and the result reverses:** P 0.967 ·
+R 0.879 · F1 0.921 · κ 0.630 — the same trade the A+B rule makes, not a domination. The
+difference between the two oracles is **one contested pair** (`tchapgouv` on
+CVE-2024-40648, which the automated ground truth calls vulnerable and the reviewer calls
+patched). What survives both oracles is the Kappa gain.
+
+So declaration scope stays a candidate, and it now depends on the same thing as everything
+else: a second annotator on the hard pairs (item 1). It also needs a deliberate decision
+about its own failure mode — in 8 pairs the patched declaration is absent from the fork, so
+there is no hunk to anchor on.
 
 ### 5. Rename Layer 1 to what it is
 

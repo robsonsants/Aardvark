@@ -257,6 +257,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", default="resultados_2026-08-17",
                     help="pasta datada com dissertation_resultados.json e evidencias")
+    ap.add_argument("--oraculo", choices=["auto", "humano"], default="auto",
+                    help="qual rotulo usar como verdade: o ground truth automatico "
+                         "(gt_dissertation_resultados.json) ou o do revisor humano "
+                         "(auditoria_manual_preenchida.csv)")
     ap.add_argument("--refazer-metricas", action="store_true",
                     help="recalcula as metricas a partir do JSON ja gravado, sem "
                          "refazer o trabalho de AST (~30s por comparacao)")
@@ -274,6 +278,25 @@ def main():
         for g in json.load(open(gt_path, encoding="utf-8")):
             if g["gt_label"] in ("CONFIRMED_PATCHED", "CONFIRMED_VULNERABLE"):
                 gt[(g["fork"], g["cve"])] = g["gt_label"]
+
+    # Oraculo humano: os vereditos do revisor, na worklist ja preenchida. Os dois
+    # oraculos NAO sao intercambiaveis — discordam em 5 dos 41 pares deste run —,
+    # entao a escolha fica explicita na linha de comando e vai gravada na saida.
+    if args.oraculo == "humano":
+        import csv
+        csv_path = os.path.join(run_dir, "auditoria_manual_preenchida.csv")
+        if not os.path.exists(csv_path):
+            raise SystemExit("--oraculo humano exige %s" % csv_path)
+        traduz = {"CORRIGIDO": "CONFIRMED_PATCHED",
+                  "VULNERAVEL": "CONFIRMED_VULNERABLE",
+                  "NAO_CORRIGIDO": "CONFIRMED_VULNERABLE"}
+        gt = {}
+        with open(csv_path, encoding="utf-8-sig", newline="") as fh:
+            for linha in csv.DictReader(fh, delimiter=";"):
+                rotulo = traduz.get((linha.get("veredito_humano") or "").strip())
+                if not rotulo:            # INCONCLUSIVO e vazios ficam de fora
+                    continue
+                gt[(linha["fork"], linha["cve"])] = rotulo
 
     detalhes = []
     por_par_hunk, por_par_arq = defaultdict(str), defaultdict(str)
@@ -369,10 +392,17 @@ def main():
         prec = tp / (tp + fp_) if tp + fp_ else None
         rec = tp / (tp + fn) if tp + fn else None
         f1 = (2 * prec * rec / (prec + rec)) if prec and rec else None
+        n = tp + fp_ + fn + tn
+        kappa = None
+        if n:
+            p_obs = (tp + tn) / n
+            p_aca = ((tp + fp_) * (tp + fn) + (fn + tn) * (fp_ + tn)) / (n * n)
+            kappa = (p_obs - p_aca) / (1 - p_aca) if p_aca != 1 else 0.0
         return {"TP": tp, "FP": fp_, "FN": fn, "TN": tn,
                 "precision": None if prec is None else round(prec, 4),
                 "recall": None if rec is None else round(rec, 4),
-                "f1": None if f1 is None else round(f1, 4)}
+                "f1": None if f1 is None else round(f1, 4),
+                "kappa": None if kappa is None else round(kappa, 4)}
 
     # Variante: escopo de hunk + "Regra A" (o 2A so vale como CORRIGIDO se o
     # fork estiver ao menos tao proximo do pos-patch quanto do pre-patch).
@@ -401,6 +431,8 @@ def main():
     out = {
         "trabalho": "Paixao et al. (2026) — PatchLens (PACMSE/FSE, DOI 10.1145/3808126)",
         "run_analisado": args.run,
+        "oraculo": ("ground truth automatico" if args.oraculo == "auto"
+                    else "revisor humano (auditoria_manual_preenchida.csv)"),
         "reproduzido": "mapeamento hunk -> subarvore da AST; comparacao no escopo "
                        "da declaracao que contem o patch; hunks unidos por disjuncao",
         "nao_reproduzido": "Vulnerability Impact Condition (VIC): exige C/C++ "
@@ -417,7 +449,9 @@ def main():
         "motivos_de_nao_localizacao": dict(motivos),
         "detalhes": detalhes,
     }
-    p = dump_dated("rw6_patchlens_hunk.json", out)
+    nome_saida = ("rw6_patchlens_hunk.json" if args.oraculo == "auto"
+                  else "rw6_patchlens_hunk_oraculo_humano.json")
+    p = dump_dated(nome_saida, out)
 
     print("=== rw6 PatchLens / Paixao et al. 2026 (escopo de hunk) ===")
     print("Run analisado            : %s" % args.run)
