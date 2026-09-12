@@ -28,6 +28,7 @@ No file here identifies authors or institution, and no credentials are included
 | If you want | Read |
 |---|---|
 | the current numbers and the answers to both research questions | [`RESULTS_2026-08-31.md`](RESULTS_2026-08-31.md) |
+| **every experiment, in the order it ran, and what survived** | [`EXPERIMENTS.md`](EXPERIMENTS.md) |
 | what changed since the first published snapshot, and why | [`CHANGELOG.md`](CHANGELOG.md) |
 | the peer-review feedback and the improvements planned from it | [`REVIEW_RESPONSE_AND_ROADMAP.md`](REVIEW_RESPONSE_AND_ROADMAP.md) |
 | the methodology at procedure level (July state, superseded figures) | `RELATORIO_EXPERIMENTOS_E_METODOLOGIA.md` |
@@ -175,6 +176,7 @@ down to **19.4% (sdk)**.
 ├── prototipo_ranking_embeddings/   Embedding prototype (UniXcoder) — NOT part of the method;
 │                                   has not run since July 2026, kept as future work
 ├── figuras/                        Process diagram (.png, .svg)
+├── EXPERIMENTS.md                  The experimental arc in order: Exp 0-9, E1-E6, and after
 ├── CHANGELOG.md                    What changed since the first snapshot, and why
 ├── RESULTS_2026-08-31.md           Current results; answers to RQ1 and RQ2
 ├── REVIEW_RESPONSE_AND_ROADMAP.md  Peer-review feedback → planned improvements
