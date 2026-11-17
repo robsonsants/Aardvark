@@ -1,0 +1,34 @@
+{
+ "slug": "finogeeks/Ligase",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 30,
+  "stars": 141,
+  "watchers": 10,
+  "tamanho_kb": 23161,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2020-05-20T06:03:14Z",
+  "push_em": "2023-10-08T03:19:33Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:52+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 30,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 0,
+  "divergentes": 0,
+  "detalhe": [],
+  "forks_declarados": 30
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

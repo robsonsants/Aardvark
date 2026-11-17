@@ -1,0 +1,42 @@
+{
+ "slug": "pixlwave/Watch-The-Matrix",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 4,
+  "stars": 96,
+  "watchers": 5,
+  "tamanho_kb": 922,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2021-02-25T19:58:07Z",
+  "push_em": "2026-06-15T15:25:24Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:40+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 5,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 1,
+  "divergentes": 0,
+  "detalhe": [
+   {
+    "fork": "th0mcat/Watch-The-Matrix",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-05-27T20:49:12Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 4
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

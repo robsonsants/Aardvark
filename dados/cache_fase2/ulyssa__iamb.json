@@ -1,0 +1,245 @@
+{
+ "slug": "ulyssa/iamb",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 106,
+  "stars": 1260,
+  "watchers": 10,
+  "tamanho_kb": 1167,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2021-08-25T21:47:16Z",
+  "push_em": "2026-08-17T01:58:11Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:35+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 106,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 10,
+  "detalhe": [
+   {
+    "fork": "VAWVAW/iamb",
+    "ahead_by": 156,
+    "behind_by": 25,
+    "push_em": "2026-08-16T19:54:43Z",
+    "stars": 9
+   },
+   {
+    "fork": "AppleHair/iamb",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-15T09:21:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "hanzpo/iamb",
+    "ahead_by": 5,
+    "behind_by": 13,
+    "push_em": "2026-08-13T20:06:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "lytedev/iamb-matrix-tui",
+    "ahead_by": 92,
+    "behind_by": 13,
+    "push_em": "2026-08-13T16:59:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "Neo-Oli/iamb",
+    "ahead_by": 0,
+    "behind_by": 14,
+    "push_em": "2026-08-10T18:40:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "Nightchicken/iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-08-09T20:12:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "azizsayfiddin/iamb",
+    "ahead_by": 3,
+    "behind_by": 18,
+    "push_em": "2026-07-30T14:25:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "stevenpollack/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-07-30T02:23:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "xsa-dev/iamb",
+    "ahead_by": 2,
+    "behind_by": 44,
+    "push_em": "2026-07-26T22:13:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "eclairevoyant/iamb",
+    "ahead_by": 8,
+    "behind_by": 39,
+    "push_em": "2026-07-26T03:40:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "titaniumtraveler/iamb",
+    "ahead_by": 0,
+    "behind_by": 70,
+    "push_em": "2026-07-25T21:57:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "zivarah/iamb",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-07-24T17:50:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "pavelzw/iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-07-24T15:12:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "demaledetti/iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-07-24T15:11:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "Asynonymous/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-07-14T06:06:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "codegax/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-07-01T16:07:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "simnalamburt/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-06-09T05:02:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "troublemaker-dev/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-06-04T01:54:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "immae/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-05-30T10:44:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "aclindsa/iamb",
+    "ahead_by": 1,
+    "behind_by": 39,
+    "push_em": "2026-05-29T23:49:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "DimitriiTrater/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-04-20T12:23:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "Teemuerik/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-04-17T01:40:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "ConYel/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-04-17T01:40:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "demian-welt/iamb",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-04-17T01:40:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "KaraZajac/iamb",
+    "ahead_by": 3,
+    "behind_by": 43,
+    "push_em": "2026-04-15T13:57:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hedgehogo/demetrix",
+    "ahead_by": 2,
+    "behind_by": 44,
+    "push_em": "2026-04-04T17:04:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "davidmreed/iamb",
+    "ahead_by": 8,
+    "behind_by": 44,
+    "push_em": "2026-03-30T18:29:17Z",
+    "stars": 0
+   },
+   {
+    "fork": "SDKAAA/ulyssa-iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-03-26T09:49:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "UnbreakableMJ/iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-02-22T13:27:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "byteskeptical/iamb",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-02-02T02:53:13Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 106
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

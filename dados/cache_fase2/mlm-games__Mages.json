@@ -1,0 +1,119 @@
+{
+ "slug": "mlm-games/Mages",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 12,
+  "stars": 159,
+  "watchers": 4,
+  "tamanho_kb": 6390,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-09-25T02:18:40Z",
+  "push_em": "2026-08-17T03:35:21Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:35+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 12,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 12,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "theotheroracle/Mages",
+    "ahead_by": 4,
+    "behind_by": 351,
+    "push_em": "2026-07-01T04:18:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "baddyallen/Mages",
+    "ahead_by": 0,
+    "behind_by": 95,
+    "push_em": "2026-06-26T07:32:43Z",
+    "stars": 1
+   },
+   {
+    "fork": "Elec3137/Mages",
+    "ahead_by": 0,
+    "behind_by": 136,
+    "push_em": "2026-06-04T19:38:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "scm-repo-mirror/mlm-games_Mages",
+    "ahead_by": 4,
+    "behind_by": 598,
+    "push_em": "2026-05-01T02:10:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "i-sign/Mages",
+    "ahead_by": 0,
+    "behind_by": 516,
+    "push_em": "2026-03-03T03:20:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "Shiho-Patch/Mages",
+    "ahead_by": 0,
+    "behind_by": 544,
+    "push_em": "2026-02-25T11:43:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "Lingikaushikreddy/Mages",
+    "ahead_by": 0,
+    "behind_by": 742,
+    "push_em": "2026-01-11T10:50:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "RomanK2311/Mages",
+    "ahead_by": 0,
+    "behind_by": 877,
+    "push_em": "2025-12-29T06:30:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "jahway603/Mages",
+    "ahead_by": 0,
+    "behind_by": 884,
+    "push_em": "2025-12-28T18:12:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "kink6336-ui/Mages",
+    "ahead_by": 0,
+    "behind_by": 891,
+    "push_em": "2025-12-22T08:40:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "ayanarshad/Mages",
+    "ahead_by": 0,
+    "behind_by": 892,
+    "push_em": "2025-12-20T16:55:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "sub314xxl/Mages",
+    "ahead_by": 0,
+    "behind_by": 893,
+    "push_em": "2025-12-19T06:24:52Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 12
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

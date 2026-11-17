@@ -1,0 +1,63 @@
+{
+ "slug": "beeper/line",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 4,
+  "stars": 33,
+  "watchers": 2,
+  "tamanho_kb": 3495,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-12-11T01:22:52Z",
+  "push_em": "2026-08-14T14:01:41Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:21+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 4,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 4,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "YUYA-Miracle/line",
+    "ahead_by": 6,
+    "behind_by": 4,
+    "push_em": "2026-08-15T12:31:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "Detch-m/line",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-07-20T17:03:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "clins1994/beeper-line",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-07-20T14:50:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "Adri11334/line",
+    "ahead_by": 0,
+    "behind_by": 59,
+    "push_em": "2026-06-29T19:43:40Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 4
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

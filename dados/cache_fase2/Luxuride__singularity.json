@@ -1,0 +1,29 @@
+{
+ "slug": "Luxuride/singularity",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 0,
+  "stars": 13,
+  "watchers": 0,
+  "tamanho_kb": 1296,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2026-03-13T12:04:21Z",
+  "push_em": "2026-08-16T11:13:55Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:39+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "ativos": 0,
+  "divergentes": 0,
+  "detalhe": [],
+  "nota": "sem forks"
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

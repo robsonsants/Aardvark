@@ -1,0 +1,50 @@
+{
+ "slug": "matrix-org/matrix-ios-sdk",
+ "meta": {
+  "linguagem": "Objective-C",
+  "forks": 226,
+  "stars": 483,
+  "watchers": 39,
+  "tamanho_kb": 23220,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2014-09-30T10:06:39Z",
+  "push_em": "2026-05-27T08:57:20Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:54+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-qxr3-5jmq-xcf4",
+    "cve": "CVE-2022-39257",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-28T16:05:04Z",
+    "resumo": "Impersonation via forwarded Megolm sessions"
+   },
+   {
+    "ghsa": "GHSA-hw6g-j8v6-9hcm",
+    "cve": "CVE-2022-39255",
+    "severidade": "critical",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-28T16:03:15Z",
+    "resumo": "Olm/Megolm protocol confusion"
+   },
+   {
+    "ghsa": "GHSA-fxvm-7vhj-wj98",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-02-16T09:15:07Z",
+    "resumo": "Sending blank `m.room.encryption` on iOS will disable encryption"
+   }
+  ]
+ }
+}

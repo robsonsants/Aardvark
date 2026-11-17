@@ -1,17 +1,17 @@
-# Segredos — NUNCA versionar
+# Credenciais: nunca versionar
 .env
-*.token
+.env.*
+!.env.example
 
-# Ambientes e caches
-venv/
-.venv/
+# Python
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints/
+venv/
+.venv/
 
-# Logs de execução
-*.log
+# Históricos git clonados para a validação externa (~1 GB)
+patchlens_repos/
 
-# Artefatos do SO
-.DS_Store
-Thumbs.db
+# Saídas de teste dos comandos do README
+*_teste.csv
+repos_git/

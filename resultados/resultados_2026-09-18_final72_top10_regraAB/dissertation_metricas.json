@@ -1,0 +1,54 @@
+{
+  "n_upstreams": 16,
+  "n_forks_total": 109,
+  "n_cves_verificadas": 64,
+  "n_verificacoes": 460,
+  "n_corrigidas": 191,
+  "n_vulneraveis": 7,
+  "n_zona_incerteza": 135,
+  "cobertura_media_pct": 50.1,
+  "por_categoria": {
+    "server": {
+      "n_verificacoes": 190,
+      "n_corrigidas": 63,
+      "n_vulneraveis": 3,
+      "n_incertas": 69,
+      "cobertura_media_pct": 38.4
+    },
+    "support": {
+      "n_verificacoes": 38,
+      "n_corrigidas": 28,
+      "n_vulneraveis": 2,
+      "n_incertas": 8,
+      "cobertura_media_pct": 79.3
+    },
+    "client": {
+      "n_verificacoes": 90,
+      "n_corrigidas": 39,
+      "n_vulneraveis": 0,
+      "n_incertas": 1,
+      "cobertura_media_pct": 42.0
+    },
+    "sdk": {
+      "n_verificacoes": 110,
+      "n_corrigidas": 34,
+      "n_vulneraveis": 2,
+      "n_incertas": 52,
+      "cobertura_media_pct": 26.1
+    },
+    "bridge": {
+      "n_verificacoes": 18,
+      "n_corrigidas": 18,
+      "n_vulneraveis": 0,
+      "n_incertas": 0,
+      "cobertura_media_pct": 100.0
+    },
+    "integration": {
+      "n_verificacoes": 14,
+      "n_corrigidas": 9,
+      "n_vulneraveis": 0,
+      "n_incertas": 5,
+      "cobertura_media_pct": 68.8
+    }
+  }
+}

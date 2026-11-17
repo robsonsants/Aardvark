@@ -1,0 +1,22 @@
+{
+ "slug": "the-draupnir-project/Draupnir",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 28,
+  "stars": 241,
+  "watchers": 7,
+  "tamanho_kb": 4796,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-01-14T18:23:18Z",
+  "push_em": "2026-08-14T18:35:55Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:14+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,171 @@
+{
+ "slug": "matrix-org/sydent",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 87,
+  "stars": 318,
+  "watchers": 7,
+  "tamanho_kb": 2142,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2014-08-11T15:52:07Z",
+  "push_em": "2025-07-21T15:21:16Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:42+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 93,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 12,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "NICO-SOLUTIONS/sydent",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-09-12T15:10:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "ai-project-cal-hack/target-ecvebench-sydent-001-b59186d01c1f",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-21T15:21:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "shijianus/sydent",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-21T15:21:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "NightShadow777/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-07-04T16:14:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "wblessen/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-05-19T13:52:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "Pdeeti/sydent",
+    "ahead_by": 3,
+    "behind_by": 6,
+    "push_em": "2024-12-19T10:37:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "DsTansice/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "bingocatlion/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "vxtls/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "paiir/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "bihua-ai/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "MarchCraft/sydent",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2024-08-29T11:58:42Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 87
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-p6hw-wm59-3g5g",
+    "cve": "CVE-2023-38686",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [
+     "CWE-295"
+    ],
+    "publicado_em": "2023-07-31T11:08:47Z",
+    "resumo": "Sydent does not verify email server certificates"
+   },
+   {
+    "ghsa": "GHSA-pw4v-gr34-2553",
+    "cve": "CVE-2021-29433",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [
+     "CWE-20"
+    ],
+    "publicado_em": "2021-04-15T11:08:40Z",
+    "resumo": " Denial of service (via resource exhaustion) due to improper input validation"
+   },
+   {
+    "ghsa": "GHSA-mh74-4m5g-fcjx",
+    "cve": "CVE-2021-29432",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2021-04-15T11:08:33Z",
+    "resumo": "Malicious users could control the content of invitation emails"
+   },
+   {
+    "ghsa": "GHSA-wmg4-8cp2-hpg9",
+    "cve": "CVE-2021-29430",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2021-04-15T11:08:52Z",
+    "resumo": "Denial of service attack via disk space or memory exhaustion"
+   },
+   {
+    "ghsa": "GHSA-9jhm-8m8c-c3f4",
+    "cve": "CVE-2021-29431",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [
+     "CWE-918"
+    ],
+    "publicado_em": "2021-04-15T11:08:47Z",
+    "resumo": "SSRF due to missing validation of hostnames"
+   }
+  ]
+ }
+}

@@ -1,0 +1,193 @@
+﻿[1/4] Data dos 70 commits de correção...
+    dendrite                         2792d049  2022-09-12T12:30:51Z
+    dendrite                         723fd495  2022-08-15T09:19:47Z
+    element-android                  53734255  2024-02-16T10:51:16Z
+    element-android                  87d7fcdc  2025-03-13T14:32:19Z
+    element-android                  8f9695a9  2024-02-16T10:51:56Z
+    element-web                      231073c5  2024-11-12T09:08:32Z
+    element-web                      7949980a  2026-06-15T12:58:56Z
+    element-web                      8d7f2b5c  2024-10-15T11:37:21Z
+    element-web                      8e9a43d7  2025-09-16T11:43:49Z
+    element-web                      a00c3434  2024-11-12T09:07:39Z
+    element-x-android                dc058544  2025-04-17T09:58:13Z
+    matrix-authentication-service    bce99edb  2025-10-16T14:23:39Z
+    synapse                          03318a76  2021-05-11T09:47:23Z
+    synapse                          2277df2a  2025-03-26T18:44:45Z
+    synapse                          26aaaf9e  2025-10-07T10:34:07Z
+    synapse                          2d488514  2026-05-07T12:26:43Z
+    synapse                          30fba621  2020-12-02T16:09:24Z
+    synapse                          33f469ba  2018-05-01T16:54:19Z
+    synapse                          3ce2f303  2020-12-09T10:38:39Z
+    synapse                          3f58bc50  2026-05-05T13:40:17Z
+    synapse                          55b0aa84  2024-04-23T14:25:49Z
+    synapse                          7069636c  2025-10-07T10:41:00Z
+    synapse                          91f2bd09  2021-11-19T13:39:15Z
+    synapse                          cb35df94  2021-08-31T10:24:09Z
+    synapse                          daec55e1  2023-10-31T13:59:09Z
+    synapse                          e54746bd  2021-01-27T15:59:50Z
+    synapse                          fa130806  2022-06-28T13:29:08Z
+    synapse                          ff5c4da1  2020-12-16T22:25:24Z
+    matrix-nio                       b1cbf234  2022-09-28T14:02:39Z
+    matrix-appservice-bridge         4c6723a5  2023-07-31T07:48:56Z
+    matrix-appservice-bridge         b69e7455  2021-05-28T09:32:25Z
+    matrix-appservice-irc            0afb0646  2023-07-28T09:06:42Z
+    matrix-appservice-irc            1835e047  2024-05-21T09:16:52Z
+    matrix-appservice-irc            4a024eae  2024-11-14T09:34:22Z
+    matrix-appservice-irc            4af7d300  2024-03-27T09:39:26Z
+    matrix-appservice-irc            74f02c8e  2025-02-25T14:16:02Z
+    matrix-appservice-irc            8bbd2b69  2023-07-31T08:40:04Z
+    matrix-hookshot                  dc126afa  2023-09-25T14:55:15Z
+    matrix-hookshot                  e51d8210  2025-01-23T07:55:20Z
+    matrix-js-sdk                    2fb1e659  2024-10-15T10:48:16Z
+    matrix-js-sdk                    43c72d5b  2025-09-16T11:36:14Z
+    matrix-js-sdk                    894c2488  2021-09-13T11:34:48Z
+    matrix-js-sdk                    a0efed8b  2024-08-20T10:27:28Z
+    matrix-js-sdk                    a587d7c3  2022-09-28T12:55:15Z
+    matrix-rust-sdk                  093fb5d0  2022-09-28T14:03:17Z
+    matrix-rust-sdk                  13c1d204  2025-06-10T10:07:10Z
+    matrix-rust-sdk                  41449d2c  2022-09-28T14:03:17Z
+    matrix-rust-sdk                  4ea0418a  2025-12-03T15:54:58Z
+    matrix-rust-sdk                  71136e44  2023-12-20T15:38:54Z
+    matrix-rust-sdk                  76a70521  2024-07-18T14:20:47Z
+    matrix-rust-sdk                  d0c01006  2025-07-10T11:55:02Z
+    matrix-rust-sdk                  fa10bbb5  2024-05-13T10:31:26Z
+    mjolnir                          b437fa16  2025-01-21T19:09:31Z
+    mjolnir                          d0ef527a  2024-12-17T21:45:59Z
+    sydent                           0523511d  2021-03-17T16:23:06Z
+    sydent                           0f004120  2021-04-06T12:38:32Z
+    sydent                           1cd74830  2023-07-31T10:21:28Z
+    sydent                           3175fd35  2021-04-12T15:32:03Z
+    sydent                           3d531ed5  2021-04-06T12:49:29Z
+    sydent                           4469d1d4  2021-04-09T12:20:45Z
+    sydent                           4e1cfff5  2019-04-18T16:20:03Z
+    sydent                           89071a1a  2021-04-06T14:10:08Z
+    sydent                           8936925f  2021-03-31T15:42:23Z
+    sydent                           9e573348  2021-03-24T13:50:40Z
+    sydent                           f56eee31  2021-03-17T16:45:31Z
+    vodozemac                        734b6c69  2024-05-20T11:52:45Z
+    vodozemac                        77765dac  2024-05-20T14:19:30Z
+    matrix-media-repo                77ec2354  2023-09-05T19:09:04Z
+    matrix-media-repo                96d23d40  2021-04-16T02:19:05Z
+    matrix-media-repo                bf8abdd7  2023-09-05T22:14:13Z
+
+[2/4] Metadados de 109 forks...
+    AC-Lover/matrix-authentication-service       criado 2025-12-29  ahead=2 behind=1482
+    AlaisterLeung/element-web                    criado None  ahead=None behind=None
+    AliAbutorabi/Synapse                         criado 2026-07-07  ahead=5 behind=347
+    Buzzlabs/element-web                         criado 2026-06-11  ahead=79 behind=1071
+    Buzzlabs/synapse                             criado 2025-12-05  ahead=187 behind=771
+    CatCraftYT/matrix-js-sdk                     criado None  ahead=None behind=None
+    CharmanderV123/synapse                       criado 2026-04-24  ahead=1 behind=503
+    CommE2E/vodozemac                            criado 2025-11-12  ahead=25 behind=151
+    EricEisaman/sig-hq                           criado 2026-02-15  ahead=1 behind=2
+    Gua-ra/gua-android                           criado 2026-06-20  ahead=238 behind=1797
+    Gua-ra/gua-auth-service                      criado 2026-06-11  ahead=86 behind=668
+    H1d3r/element-android                        criado 2025-08-01  ahead=35 behind=93
+    JoFrost/matrix-rust-sdk                      criado 2025-02-03  ahead=3 behind=748
+    KaitoTLex/vodozemac                          criado 2025-08-13  ahead=4 behind=201
+    Lykos153/matrix-media-repo                   criado 2023-02-21  ahead=1 behind=480
+    Mukhammadali/dendrite                        criado 2025-12-13  ahead=30 behind=6
+    PC-Admin/mjolnir                             criado 2024-10-09  ahead=4 behind=7
+    PancakeTAS/dendrite                          criado 2026-08-18  ahead=2 behind=0
+    Pdeeti/sydent                                criado 2024-12-19  ahead=3 behind=6
+    Protofy-xyz/dendrite                         criado 2025-11-16  ahead=6 behind=9
+    PseudoResonance/matrix-hookshot              criado 2024-04-03  ahead=2 behind=353
+    Rath-debug/matrix-hookshot                   criado 2026-02-09  ahead=110 behind=163
+    RocketChat/matrix-appservice-bridge          criado 2022-04-26  ahead=3 behind=154
+    SCJ-Victory/matrix-media-repo                criado 2025-12-28  ahead=5 behind=0
+    Satoshi-NaAkokwa/ejemma-matrix-android       criado 2026-09-08  ahead=27 behind=604
+    SchildiChat/SchildiChat-android              criado 2020-05-12  ahead=2178 behind=2
+    SchildiChat/matrix-rust-sdk                  criado 2023-11-05  ahead=188 behind=351
+    SilentCautious/element-x-android             criado 2026-09-10  ahead=24 behind=580
+    SpiritCroc/matrix-hookshot                   criado 2022-04-09  ahead=17 behind=325
+    Srylax/vodozemac                             criado 2025-02-06  ahead=3 behind=238
+    Stanislav1975/matrix-nio                     criado 2021-11-17  ahead=2 behind=200
+    Start9Labs/element-web                       criado 2026-09-02  ahead=43 behind=471
+    StrajnarFilip/element-android                criado 2026-08-13  ahead=1 behind=23
+    Tween-IM/tween-authentication-service        criado 2026-04-17  ahead=21 behind=263
+    WhiteBirchForumTeam/matrix-rust-sdk          criado 2026-09-10  ahead=2 behind=435
+    alessblaze/matrix-authentication-service     criado 2025-09-28  ahead=26 behind=563
+    anton-molyboha/matrix-nio                    criado 2024-05-22  ahead=5 behind=6
+    ashnigam/matrix-js-sdk                       criado 2026-07-16  ahead=1 behind=197
+    auqgen91-hub/element-x-android               criado 2026-09-18  ahead=4 behind=517
+    bincnc/element-android                       criado 2026-05-22  ahead=11 behind=56
+    bxdxnn/element-x-android                     criado 2026-03-15  ahead=1 behind=2820
+    bxdxnn/synapse                               criado 2026-05-29  ahead=4 behind=432
+    cleverunicornz/poda-web                      criado 2026-09-07  ahead=287 behind=332
+    codyfinn/matrix-rust-sdk                     criado 2026-08-07  ahead=7 behind=169
+    colgrave34/mjolnir                           criado 2025-04-18  ahead=3 behind=50
+    cyberb/dendrite                              criado 2025-06-10  ahead=7 behind=2
+    davidmcarati/element-capacitor               criado 2026-07-07  ahead=21 behind=329
+    dblsaiko/matrix-authentication-service       criado 2025-04-04  ahead=2 behind=1262
+    denisovvsh/synapse                           criado 2026-08-26  ahead=1 behind=213
+    dsp-testing/matrix-authentication-service    criado 2025-08-13  ahead=1 behind=2446
+    eleanor-clifford/matrix-nio                  criado 2025-07-09  ahead=24 behind=4
+    elukashenk-dev/element-x-android             criado 2026-08-11  ahead=6 behind=655
+    etnperlong/matrix-media-repo                 criado 2026-05-01  ahead=27 behind=0
+    gamesguru/dendrite                           criado 2026-08-04  ahead=797 behind=0
+    go-i2p/dendrite                              criado 2025-10-17  ahead=1 behind=12
+    gordnhoo/matrix-authentication-service       criado 2026-06-12  ahead=1 behind=668
+    guillemo12/synapse                           criado 2026-08-13  ahead=9 behind=80
+    ibwc/element-android                         criado 2026-08-04  ahead=2 behind=29
+    jackklika/matrix-nio                         criado 2023-12-23  ahead=2 behind=6
+    jackmaninov/dendrite                         criado 2025-11-26  ahead=5 behind=8
+    jamesjen/matrix-appservice-irc               criado 2025-07-31  ahead=1 behind=2
+    jekahu/element-x-android                     criado 2026-05-12  ahead=124 behind=0
+    kakahu2015/synapse                           criado 2026-04-04  ahead=2 behind=387
+    liuzifa1/element-web                         criado 2026-07-13  ahead=2 behind=332
+    luki-ev/synod-android                        criado 2020-03-25  ahead=280 behind=2
+    maladesov/matrix-hookshot                    criado 2026-05-26  ahead=3 behind=98
+    markovsdima/matrix-rust-sdk                  criado 2026-05-14  ahead=41 behind=1324
+    maunium/matrix-js-sdk                        criado 2019-02-04  ahead=1 behind=376
+    maxgithubprofile/matrix-js-sdk               criado 2023-01-25  ahead=38 behind=1225
+    mindroom-ai/mindroom-nio                     criado 2026-04-28  ahead=85 behind=0
+    mindroom-ai/mindroom-synapse                 criado 2026-02-23  ahead=7 behind=643
+    morlinbrot/matrix-rust-sdk                   criado 2026-09-02  ahead=3 behind=528
+    natheihei/matrix-rust-sdk                    criado 2026-08-08  ahead=5 behind=595
+    nbuechner/matrix-appservice-bridge           criado 2026-07-09  ahead=3 behind=6
+    nbuechner/matrix-appservice-irc              criado 2026-07-09  ahead=6 behind=0
+    nicholasarvelo/dendrite                      criado 2026-04-02  ahead=2 behind=2
+    nickfaces/nfchat-android                     criado 2026-08-28  ahead=4 behind=530
+    oI0ck/matrix-appservice-irc                  criado 2025-08-05  ahead=1 behind=2
+    pangeachat/matrix-nio                        criado 2024-02-28  ahead=8 behind=7
+    parham6996/element-web                       criado 2026-09-17  ahead=1 behind=296
+    pecherskiy-v/matrix-media-repo               criado 2024-10-02  ahead=1 behind=31
+    prex-ru/pressgram-mas                        criado 2026-04-14  ahead=9 behind=1148
+    qdii/matrix-hookshot                         criado 2026-03-07  ahead=1 behind=142
+    remarny/element-android_praktic_test         criado 2026-06-25  ahead=10 behind=43
+    ricardo-duarte-av/matrix-media-repo          criado 2026-07-19  ahead=18 behind=0
+    seventwos-app/usr-workspace-android          criado 2026-09-16  ahead=36 behind=541
+    seventwos-app/usr-workspace-desktop          criado 2026-09-16  ahead=40 behind=322
+    shcherbak/synapse                            criado 2025-12-06  ahead=7 behind=73
+    shing-yu/matrix-authentication-service       criado 2026-03-10  ahead=16 behind=299
+    sorydima/vodozemac                           criado 2025-08-09  ahead=1 behind=201
+    spball/element-web                           criado 2026-06-27  ahead=9 behind=259
+    ssingh55/element-android                     criado 2026-09-08  ahead=5 behind=17
+    starcraft66/matrix-media-repo                criado 2024-03-26  ahead=3 behind=35
+    stickyfran/fluffybeep-x                      criado 2026-09-18  ahead=1 behind=522
+    tangowhisky-dev/vodozemac                    criado 2025-08-29  ahead=28 behind=196
+    tchapgouv/matrix-authentication-service      criado 2024-10-11  ahead=151 behind=131
+    tchapgouv/matrix-media-repo                  criado 2023-08-29  ahead=34 behind=0
+    tchapgouv/matrix-rust-sdk                    criado 2024-09-02  ahead=6 behind=3975
+    thetayloredman/lognapse                      criado 2026-07-13  ahead=15 behind=72
+    toger5/matrix-rust-sdk                       criado 2023-07-12  ahead=37 behind=9938
+    tsuiio/matrix-media-repo                     criado 2024-12-25  ahead=23 behind=0
+    unstableneutron/element-web                  criado 2026-07-15  ahead=36 behind=29
+    usbssdhdd-gif/gapandishe2                    criado 2026-09-17  ahead=11 behind=7
+    validkanaheiuser/element-android             criado 2026-05-16  ahead=41 behind=23
+    verji/matrix-js-sdk-v2                       criado 2024-12-18  ahead=31 behind=1371
+    verji/matrix-rust-sdk                        criado 2024-08-07  ahead=93 behind=351
+    vialucis1597/dendrite                        criado 2025-08-23  ahead=1 behind=12
+    xsanm/vodozemac                              criado 2025-10-31  ahead=1 behind=174
+    yncyrydybyl/matrix-hookshot                  criado 2022-07-23  ahead=6 behind=140
+
+[3/4] Último toque em 413 pares (fork, arquivo)...
+
+[4/4] Montando o dataset...
+    -> resultados_2026-09-18_final72_top10\dataset_temporal_pares.csv  (770 linhas)
+    -> resultados_2026-09-18_final72_top10\dataset_temporal_forks.csv  (109 linhas)
+    -> resultados_2026-09-18_final72_top10\dataset_temporal.json
+
+Chamadas à API: 810
+Lag de adoção (n=460 confiáveis): mediana 516.1 dias · min 0.0 · max 2927.0
+Descartados por lag negativo ou data ausente: 310

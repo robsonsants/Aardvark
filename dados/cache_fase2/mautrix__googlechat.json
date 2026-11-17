@@ -1,0 +1,112 @@
+{
+ "slug": "mautrix/googlechat",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 36,
+  "stars": 126,
+  "watchers": 7,
+  "tamanho_kb": 1659,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2019-05-09T17:57:59Z",
+  "push_em": "2026-04-22T17:55:36Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:18+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 37,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 11,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "catscandrive/googlechat",
+    "ahead_by": 2,
+    "behind_by": 0,
+    "push_em": "2026-06-16T20:46:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "naoki747/googlechat",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "push_em": "2026-06-04T13:19:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "durin42/googlechat",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-04-01T03:13:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "michaelphagen/matrix-googlechat-bridge",
+    "ahead_by": 4,
+    "behind_by": 0,
+    "push_em": "2025-11-13T17:13:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "kokomo123/googlechat",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-11T14:06:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "cryguy/googlechat-selfbot",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-16T10:48:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "redshodan/googlechat",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-16T10:48:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "meson800/googlechat",
+    "ahead_by": 5,
+    "behind_by": 3,
+    "push_em": "2025-04-16T15:01:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "sajeelH/googlechat",
+    "ahead_by": 0,
+    "behind_by": 3,
+    "push_em": "2025-01-21T12:04:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "rnons/googlechat",
+    "ahead_by": 0,
+    "behind_by": 3,
+    "push_em": "2025-01-03T02:30:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "zaosoula/mautrix-kchat",
+    "ahead_by": 0,
+    "behind_by": 3,
+    "push_em": "2024-12-09T14:03:51Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 36
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

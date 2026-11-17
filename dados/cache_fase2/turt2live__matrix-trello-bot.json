@@ -1,0 +1,22 @@
+{
+ "slug": "turt2live/matrix-trello-bot",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 6,
+  "stars": 24,
+  "watchers": 2,
+  "tamanho_kb": 420,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-04-24T00:36:21Z",
+  "push_em": "2023-02-27T22:41:53Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:10+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

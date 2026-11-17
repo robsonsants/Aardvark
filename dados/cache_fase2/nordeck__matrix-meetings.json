@@ -1,0 +1,22 @@
+{
+ "slug": "nordeck/matrix-meetings",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 12,
+  "stars": 108,
+  "watchers": 5,
+  "tamanho_kb": 6475,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-02-24T10:05:37Z",
+  "push_em": "2026-08-17T01:12:52Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:13+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "JojiiOfficial/Matrix-ClientServer-API-java",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 12,
+  "stars": 47,
+  "watchers": 5,
+  "tamanho_kb": 142,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2019-08-13T18:13:21Z",
+  "push_em": "2023-11-15T10:57:39Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:53+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/emm",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 3,
+  "stars": 23,
+  "watchers": 3,
+  "tamanho_kb": 5549,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-11T20:06:22Z",
+  "push_em": "2026-08-16T12:48:23Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:07+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

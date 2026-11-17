@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/baibot",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 41,
+  "stars": 239,
+  "watchers": 5,
+  "tamanho_kb": 4025,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-09-12T10:22:11Z",
+  "push_em": "2026-08-16T21:42:23Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:07+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

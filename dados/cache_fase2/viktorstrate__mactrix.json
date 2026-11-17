@@ -1,0 +1,22 @@
+{
+ "slug": "viktorstrate/mactrix",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 19,
+  "stars": 241,
+  "watchers": 9,
+  "tamanho_kb": 4441,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-11-08T11:56:50Z",
+  "push_em": "2026-07-23T13:59:04Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:04+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

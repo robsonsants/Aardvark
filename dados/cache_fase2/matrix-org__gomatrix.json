@@ -1,0 +1,49 @@
+{
+ "slug": "matrix-org/gomatrix",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 52,
+  "stars": 288,
+  "watchers": 10,
+  "tamanho_kb": 133,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2016-11-29T16:35:31Z",
+  "push_em": "2022-09-26T10:26:14Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:57+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 53,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 2,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "AVENTER-UG/gomatrix",
+    "ahead_by": 17,
+    "behind_by": 0,
+    "push_em": "2025-04-17T07:58:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "donomii/gomatrix",
+    "ahead_by": 21,
+    "behind_by": 5,
+    "push_em": "2025-02-11T16:32:42Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 52
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

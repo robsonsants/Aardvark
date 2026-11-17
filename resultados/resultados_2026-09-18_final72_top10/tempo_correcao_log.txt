@@ -1,0 +1,123 @@
+﻿55 pares de propagacao verificaveis
+
+[element-hq/element-android] 2 forks
+    fetch element-hq/element-android (develop)
+    fetch SchildiChat/SchildiChat-android (sc)
+    fetch luki-ev/synod-android (synodim)
+    SchildiChat/SchildiChat-android            CVE-2024-26131   humano=CORRIGIDO  merge_ou_rebase            4.1 d
+    SchildiChat/SchildiChat-android            CVE-2024-26132   humano=CORRIGIDO  merge_ou_rebase            4.1 d
+    SchildiChat/SchildiChat-android            CVE-2025-27606   humano=CORRIGIDO  merge_ou_rebase            0.1 d
+    luki-ev/synod-android                      CVE-2024-26131   humano=CORRIGIDO  merge_ou_rebase            4.2 d
+    luki-ev/synod-android                      CVE-2024-26132   humano=CORRIGIDO  merge_ou_rebase            4.2 d
+    luki-ev/synod-android                      CVE-2025-27606   humano=CORRIGIDO  merge_ou_rebase            57.1 d
+
+[element-hq/element-web] 1 forks
+    fetch element-hq/element-web (develop)
+    fetch Buzzlabs/element-web (develop)
+    Buzzlabs/element-web                       CVE-2026-55850   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 131.5 d
+
+[element-hq/matrix-authentication-service] 4 forks
+    fetch element-hq/matrix-authentication-service (main)
+    fetch alessblaze/matrix-authentication-service (main)
+    fetch dblsaiko/matrix-authentication-service (saiko/tip)
+    fetch dsp-testing/matrix-authentication-service (main)
+    fetch tchapgouv/matrix-authentication-service (main_tchap)
+    alessblaze/matrix-authentication-service   CVE-2025-62425   humano=CORRIGIDO  merge_ou_rebase            1.3 d
+    dblsaiko/matrix-authentication-service     CVE-2025-62425   humano=CORRIGIDO  merge_ou_rebase            122.6 d
+    dsp-testing/matrix-authentication-service  CVE-2025-62425   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 373.4 d
+    tchapgouv/matrix-authentication-service    CVE-2025-62425   humano=CORRIGIDO  merge_ou_rebase            28.0 d
+
+[element-hq/synapse] 5 forks
+    fetch element-hq/synapse (develop)
+    fetch Buzzlabs/synapse (develop)
+    fetch CharmanderV123/synapse (develop)
+    fetch kakahu2015/synapse (develop)
+    fetch mindroom-ai/mindroom-synapse (develop)
+    fetch shcherbak/synapse (develop)
+    Buzzlabs/synapse                           CVE-2026-45076   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 170.5 d
+    Buzzlabs/synapse                           CVE-2026-45078   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 172.5 d
+    CharmanderV123/synapse                     CVE-2026-45076   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 170.5 d
+    CharmanderV123/synapse                     CVE-2026-45078   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 172.5 d
+    kakahu2015/synapse                         CVE-2026-45076   humano=CORRIGIDO  merge_ou_rebase            43.7 d
+    kakahu2015/synapse                         CVE-2026-45078   humano=CORRIGIDO  merge_ou_rebase            45.6 d
+    mindroom-ai/mindroom-synapse               CVE-2026-45076   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 170.5 d
+    mindroom-ai/mindroom-synapse               CVE-2026-45078   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 172.5 d
+    shcherbak/synapse                          CVE-2026-45076   humano=CORRIGIDO  merge_ou_rebase            5.3 d
+    shcherbak/synapse                          CVE-2026-45078   humano=CORRIGIDO  merge_ou_rebase            7.2 d
+
+[matrix-nio/matrix-nio] 1 forks
+    fetch matrix-nio/matrix-nio (main)
+    fetch Stanislav1975/matrix-nio (master)
+    Stanislav1975/matrix-nio                   CVE-2022-39254   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 1487.5 d
+
+[matrix-org/matrix-appservice-bridge] 1 forks
+    fetch matrix-org/matrix-appservice-bridge (develop)
+    fetch RocketChat/matrix-appservice-bridge (fork-for-tmp-release)
+    RocketChat/matrix-appservice-bridge        CVE-2023-38691   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 1181.7 d
+
+[matrix-org/matrix-hookshot] 3 forks
+    fetch matrix-org/matrix-hookshot (main)
+    fetch PseudoResonance/matrix-hookshot (main)
+    fetch SpiritCroc/matrix-hookshot (sc)
+    fetch yncyrydybyl/matrix-hookshot (main)
+    PseudoResonance/matrix-hookshot            CVE-2025-23197   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 639.7 d
+    SpiritCroc/matrix-hookshot                 CVE-2023-43656   humano=CORRIGIDO  merge_ou_rebase            1.1 d
+    SpiritCroc/matrix-hookshot                 CVE-2025-23197   humano=CORRIGIDO  merge_ou_rebase            0.0 d
+    yncyrydybyl/matrix-hookshot                CVE-2023-43656   humano=CORRIGIDO  merge_ou_rebase            914.2 d
+    yncyrydybyl/matrix-hookshot                CVE-2025-23197   humano=CORRIGIDO  merge_ou_rebase            428.5 d
+
+[matrix-org/matrix-js-sdk] 3 forks
+    fetch matrix-org/matrix-js-sdk (develop)
+    fetch maunium/matrix-js-sdk (develop)
+    fetch maxgithubprofile/matrix-js-sdk (develop)
+    fetch verji/matrix-js-sdk-v2 (verji-develop)
+    maunium/matrix-js-sdk                      CVE-2024-42369   humano=CORRIGIDO  merge_ou_rebase            587.1 d
+    maunium/matrix-js-sdk                      CVE-2024-47080   humano=CORRIGIDO  merge_ou_rebase            531.0 d
+    maunium/matrix-js-sdk                      CVE-2025-59160   humano=CORRIGIDO  merge_ou_rebase            195.0 d
+    maxgithubprofile/matrix-js-sdk             CVE-2024-42369   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 795.6 d
+    maxgithubprofile/matrix-js-sdk             CVE-2024-47080   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 739.6 d
+    maxgithubprofile/matrix-js-sdk             CVE-2025-59160   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 403.6 d
+    verji/matrix-js-sdk-v2                     CVE-2025-59160   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 403.6 d
+
+[matrix-org/matrix-rust-sdk] 5 forks
+    fetch matrix-org/matrix-rust-sdk (main)
+    fetch JoFrost/matrix-rust-sdk (main)
+    fetch SchildiChat/matrix-rust-sdk (main)
+    fetch tchapgouv/matrix-rust-sdk (main)
+    fetch toger5/matrix-rust-sdk (client-widget-api)
+    fetch verji/matrix-rust-sdk (verji-main)
+    JoFrost/matrix-rust-sdk                    CVE-2025-48937   humano=CORRIGIDO  merge_ou_rebase            416.4 d
+    JoFrost/matrix-rust-sdk                    CVE-2025-53549   humano=CORRIGIDO  merge_ou_rebase            386.3 d
+    JoFrost/matrix-rust-sdk                    CVE-2025-66622   humano=CORRIGIDO  merge_ou_rebase            240.1 d
+    SchildiChat/matrix-rust-sdk                CVE-2024-34353   humano=CORRIGIDO  merge_ou_rebase            76.1 d
+    SchildiChat/matrix-rust-sdk                CVE-2024-40648   humano=CORRIGIDO  merge_ou_rebase            9.9 d
+    SchildiChat/matrix-rust-sdk                CVE-2025-48937   humano=CORRIGIDO  merge_ou_rebase            0.4 d
+    SchildiChat/matrix-rust-sdk                CVE-2025-53549   humano=CORRIGIDO  merge_ou_rebase            8.3 d
+    SchildiChat/matrix-rust-sdk                CVE-2025-66622   humano=CORRIGIDO  merge_ou_rebase            51.7 d
+    tchapgouv/matrix-rust-sdk                  CVE-2025-48937   humano=CORRIGIDO  merge_ou_rebase            31.4 d
+    tchapgouv/matrix-rust-sdk                  CVE-2025-53549   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 471.5 d
+    tchapgouv/matrix-rust-sdk                  CVE-2025-66622   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 325.4 d
+    toger5/matrix-rust-sdk                     CVE-2024-34353   humano=CORRIGIDO  nao_encontrado_no_grafo    exposto 1039.4 d
+    toger5/matrix-rust-sdk                     CVE-2024-40648   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 828.4 d
+    toger5/matrix-rust-sdk                     CVE-2025-66622   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 325.4 d
+    verji/matrix-rust-sdk                      CVE-2025-48937   humano=CORRIGIDO  merge_ou_rebase            384.5 d
+    verji/matrix-rust-sdk                      CVE-2025-53549   humano=CORRIGIDO  merge_ou_rebase            354.5 d
+    verji/matrix-rust-sdk                      CVE-2025-66622   humano=CORRIGIDO  merge_ou_rebase            208.3 d
+
+[matrix-org/mjolnir] 1 forks
+    fetch matrix-org/mjolnir (main)
+    fetch PC-Admin/mjolnir (main)
+    PC-Admin/mjolnir                           CVE-2025-24024   humano=CORRIGIDO  merge_ou_rebase            560.7 d
+
+[t2bot/matrix-media-repo] 2 forks
+    fetch t2bot/matrix-media-repo (main)
+    fetch Lykos153/matrix-media-repo (master)
+    fetch tchapgouv/matrix-media-repo (tchap)
+    Lykos153/matrix-media-repo                 CVE-2023-41318   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 1145.2 d
+    tchapgouv/matrix-media-repo                CVE-2023-41318   humano=CORRIGIDO  merge_ou_rebase            1036.6 d
+
+-> resultados_2026-09-18_final72_top10\tempo_correcao.csv
+-> resultados_2026-09-18_final72_top10\tempo_correcao.json
+Corrigidos (humano) com data de adocao: {'n': 34, 'mediana': 48.7, 'q1': 4.2, 'q3': 384.9, 'min': 0.0, 'max': 1036.6}
+Vulneraveis (humano), dias expostos ate hoje: {'n': 20, 'mediana': 388.5, 'q1': 172.5, 'q3': 781.6, 'min': 131.5, 'max': 1487.5}
+Via: {'nao_encontrado_no_grafo': 21, 'merge_ou_rebase': 34}

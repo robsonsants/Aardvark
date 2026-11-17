@@ -1,0 +1,255 @@
+{
+ "slug": "matrix-nio/matrix-nio",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 180,
+  "stars": 706,
+  "watchers": 17,
+  "tamanho_kb": 8410,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2018-04-06T11:32:18Z",
+  "push_em": "2026-08-08T08:23:09Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:58+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 179,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 6,
+  "detalhe": [
+   {
+    "fork": "mindroom-ai/mindroom-nio",
+    "ahead_by": 54,
+    "behind_by": 0,
+    "push_em": "2026-08-16T23:03:38Z",
+    "stars": 2
+   },
+   {
+    "fork": "faithCD/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-01T12:16:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "xtexx/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-23T10:13:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "troglodyne-bot/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-05-24T01:25:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "Alcaro/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-05-14T16:29:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "pangeachat/matrix-nio",
+    "ahead_by": 8,
+    "behind_by": 7,
+    "push_em": "2026-05-06T17:26:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "WhyNotHugo/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-04-22T15:44:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "hax0rbana-adam/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-03-12T06:43:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "nishantvr/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-02-16T11:33:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "PashaHatsune/sekai-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-02-16T11:33:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "chatsapp-labs/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-02-16T11:33:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "ConnextVivendi/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-02-16T11:33:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "timegrid/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-01-20T22:17:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "n-peugnet/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-12-18T18:16:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "jspricke/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2025-09-21T15:42:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "eleanor-clifford/matrix-nio",
+    "ahead_by": 24,
+    "behind_by": 4,
+    "push_em": "2025-09-19T11:36:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "anton-molyboha/matrix-nio",
+    "ahead_by": 5,
+    "behind_by": 6,
+    "push_em": "2025-09-17T21:35:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "RaghavaAlajangi/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-08-28T17:48:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "predefine/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-08-28T08:13:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "Stanislav1975/matrix-nio",
+    "ahead_by": 2,
+    "behind_by": 200,
+    "push_em": "2025-07-10T18:29:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "Adam-s-tech/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-05-28T07:11:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "joefromct/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-05-28T07:11:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "Bert4242/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-05-28T07:11:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "muazhari/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-05-28T07:11:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "webclinic017/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-05-28T07:11:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "AntonMulder/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2025-05-21T12:18:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "viiru-/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-04-28T08:03:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "jackklika/matrix-nio",
+    "ahead_by": 2,
+    "behind_by": 6,
+    "push_em": "2025-03-28T20:40:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "TheJJ/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-03-25T23:30:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "StrajnarFilip/matrix-nio",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-03-21T23:02:50Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 180
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-w4pr-4vjg-hffh",
+    "cve": "CVE-2022-39254",
+    "severidade": "low",
+    "cvss": 2.7,
+    "cwes": [],
+    "publicado_em": "2022-09-29T10:23:57Z",
+    "resumo": " When receiving forwarded room keys, we don't check that the forwarder device matches the device we requested from"
+   }
+  ]
+ }
+}

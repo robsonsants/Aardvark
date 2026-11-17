@@ -1,0 +1,265 @@
+{
+ "slug": "cinnyapp/cinny",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 568,
+  "stars": 3842,
+  "watchers": 17,
+  "tamanho_kb": 13040,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "dev",
+  "criado_em": "2021-04-18T13:50:13Z",
+  "push_em": "2026-08-14T12:33:27Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:30+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 544,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 15,
+  "detalhe": [
+   {
+    "fork": "mocki-toki/lumiere",
+    "ahead_by": 93,
+    "behind_by": 45,
+    "push_em": "2026-08-17T03:03:11Z",
+    "stars": 1
+   },
+   {
+    "fork": "iszkq/cinny",
+    "ahead_by": 1460,
+    "behind_by": 54,
+    "push_em": "2026-08-17T01:28:05Z",
+    "stars": 2
+   },
+   {
+    "fork": "coffeegrind123/prinny",
+    "ahead_by": 299,
+    "behind_by": 1,
+    "push_em": "2026-08-16T15:25:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "mindroom-ai/mindroom-chat",
+    "ahead_by": 351,
+    "behind_by": 18,
+    "push_em": "2026-08-16T03:50:32Z",
+    "stars": 1
+   },
+   {
+    "fork": "schadin/harrier",
+    "ahead_by": 14,
+    "behind_by": 0,
+    "push_em": "2026-08-15T20:10:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "largelanguagemeowing/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T16:13:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "Yashh56/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T14:44:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hifumorenko/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T14:10:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "RoyalWart/koot_cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T12:33:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "chickensandwhich/cinny-for-phones",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T12:33:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "SeanPedersen/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-12T20:41:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "poctek/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-12T12:35:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "samjaninf/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T08:54:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "CrazyForks/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T07:35:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "PFM-PowerForMe/Frontend-Cinny",
+    "erro": 404
+   },
+   {
+    "fork": "nicole-jf/cinny",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T04:23:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "wjaaaaaaat/fix-emoji-overwrite",
+    "ahead_by": 3,
+    "behind_by": 1,
+    "push_em": "2026-08-10T23:15:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "melodysdreamj/cinny",
+    "ahead_by": 4,
+    "behind_by": 1,
+    "push_em": "2026-08-09T20:35:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "kennelrest/cinny",
+    "ahead_by": 5,
+    "behind_by": 1,
+    "push_em": "2026-08-09T14:30:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "tyr7z/cinny",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-08-06T12:22:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "chagai95/cinny",
+    "ahead_by": 13,
+    "behind_by": 44,
+    "push_em": "2026-08-05T20:03:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "iiith-online/matrix",
+    "ahead_by": 56,
+    "behind_by": 3,
+    "push_em": "2026-08-04T19:09:49Z",
+    "stars": 1
+   },
+   {
+    "fork": "dynst/cinny",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-03T19:33:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "ti9w/cinny",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-03T02:55:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "smokku/cinny",
+    "ahead_by": 81,
+    "behind_by": 1,
+    "push_em": "2026-08-02T15:40:25Z",
+    "stars": 2
+   },
+   {
+    "fork": "LeaPhant/cinny",
+    "ahead_by": 17,
+    "behind_by": 1,
+    "push_em": "2026-08-02T12:22:37Z",
+    "stars": 2
+   },
+   {
+    "fork": "Kx501/cinny-i18n",
+    "ahead_by": 56,
+    "behind_by": 1,
+    "push_em": "2026-08-02T10:36:16Z",
+    "stars": 5
+   },
+   {
+    "fork": "Vladexy88x/cinny",
+    "ahead_by": 3,
+    "behind_by": 3,
+    "push_em": "2026-07-28T21:19:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "ZeroShugan/shuchat",
+    "ahead_by": 99,
+    "behind_by": 57,
+    "push_em": "2026-07-28T12:15:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "liziyang168/cinny",
+    "ahead_by": 0,
+    "behind_by": 3,
+    "push_em": "2026-07-28T00:29:13Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 568
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-mxfq-g77w-7668",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-494",
+     "CWE-829",
+     "CWE-862"
+    ],
+    "publicado_em": "2026-05-14T10:16:29Z",
+    "resumo": "deploy-pull-request workflow publishes fork PR artifacts with Cinny Netlify credentials"
+   },
+   {
+    "ghsa": "GHSA-j944-w549-3453",
+    "cve": "CVE-2026-42553",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-05-07T10:47:46Z",
+    "resumo": "Access token disclosure via invalidated emoji pack avatar URL in service worker"
+   }
+  ]
+ }
+}

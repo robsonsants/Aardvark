@@ -1,0 +1,245 @@
+{
+ "slug": "mautrix/whatsapp",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 268,
+  "stars": 1864,
+  "watchers": 48,
+  "tamanho_kb": 8541,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2018-08-12T19:26:15Z",
+  "push_em": "2026-08-16T13:17:16Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:28+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 268,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 6,
+  "detalhe": [
+   {
+    "fork": "aminebalti55/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-15T16:59:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "tuvens/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-08-14T00:14:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "gondeabdoulfatah-spec/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-08-10T12:12:53Z",
+    "stars": 1
+   },
+   {
+    "fork": "marcelmanz/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-08-09T15:14:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "Giacomo213342/mautrix-whatsapp",
+    "ahead_by": 10,
+    "behind_by": 12,
+    "push_em": "2026-08-05T06:05:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "iKonoTelecomunicaciones/whatsapp",
+    "ahead_by": 79,
+    "behind_by": 164,
+    "push_em": "2026-07-29T16:36:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "beenim-labs/whatsapp-bridge-go",
+    "ahead_by": 2,
+    "behind_by": 13,
+    "push_em": "2026-07-29T10:51:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "HuddleChat/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-07-29T10:32:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "yevgenii-miadelets-movius-ai/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-07-28T07:54:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "valvularseparate37-ai/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-07-23T15:58:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "natheihei/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-07-23T15:58:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "SilverBirchh/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 14,
+    "push_em": "2026-07-23T09:57:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "korokteam/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 83,
+    "push_em": "2026-07-22T19:03:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "adhamchakohi/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-07-21T23:14:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "above7sky/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-07-20T14:02:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "lunks/whatsapp",
+    "ahead_by": 1,
+    "behind_by": 17,
+    "push_em": "2026-07-19T14:26:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "wlongo/mautrix-whatsapp",
+    "ahead_by": 26,
+    "behind_by": 17,
+    "push_em": "2026-07-18T23:54:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "ironashram/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 18,
+    "push_em": "2026-07-15T21:54:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "stjordanis/whatsapp-",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2026-07-13T11:30:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "it-pal-net/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 28,
+    "push_em": "2026-07-10T11:02:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "biaogeai006/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 28,
+    "push_em": "2026-07-02T12:40:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "mtrxinc-cloud/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-30T21:19:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "TrimmerOrg/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-30T05:50:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "dvcrn/matrix-whatsapp-nodelete",
+    "ahead_by": 2,
+    "behind_by": 31,
+    "push_em": "2026-06-28T04:38:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "cocode32/mautrix-whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-24T15:50:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "iuribrito/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-24T02:21:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "Benink89/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-22T12:56:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "prabhasdubbakaa/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-22T12:56:53Z",
+    "stars": 1
+   },
+   {
+    "fork": "Tetty10121986/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 34,
+    "push_em": "2026-06-18T18:53:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "wickes1/whatsapp",
+    "ahead_by": 0,
+    "behind_by": 41,
+    "push_em": "2026-06-06T07:16:31Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 268
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

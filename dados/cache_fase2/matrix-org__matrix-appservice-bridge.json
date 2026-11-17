@@ -1,0 +1,126 @@
+{
+ "slug": "matrix-org/matrix-appservice-bridge",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 76,
+  "stars": 183,
+  "watchers": 20,
+  "tamanho_kb": 7952,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-08-19T14:36:53Z",
+  "push_em": "2026-07-30T15:06:54Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:57+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 81,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 10,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "nbuechner/matrix-appservice-bridge",
+    "ahead_by": 2,
+    "behind_by": 1,
+    "push_em": "2026-07-09T19:40:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "Ardynai/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-04-29T05:19:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "aliscco/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 379,
+    "push_em": "2026-02-13T11:10:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "alpinebuster/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-11-08T08:59:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "RocketChat/matrix-appservice-bridge",
+    "ahead_by": 3,
+    "behind_by": 149,
+    "push_em": "2024-10-10T15:19:08Z",
+    "stars": 2
+   },
+   {
+    "fork": "mattaylor/vibex",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2024-09-19T13:37:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "monje001/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2024-09-19T13:37:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "aubrey0000055/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2024-09-19T13:37:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "ronnyaa/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 18,
+    "push_em": "2024-09-05T14:14:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "scantist-ossops-m2/matrix-appservice-bridge",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2024-08-29T06:44:08Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 76
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-vc7j-h8xg-fv5x",
+    "cve": "CVE-2023-38691",
+    "severidade": "medium",
+    "cvss": 5.0,
+    "cwes": [
+     "CWE-287"
+    ],
+    "publicado_em": "2023-08-04T10:24:28Z",
+    "resumo": "matrix-appservice-bridge doesn't verify the sub parameter of an openId token exchange, allowing unauthorized access to provisioning APIs"
+   },
+   {
+    "ghsa": "GHSA-35g4-qx3c-vjhx",
+    "cve": "CVE-2021-32659",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2021-06-16T10:30:35Z",
+    "resumo": "Automatic room upgrade handling can be used maliciously to bridge a room non-consentually "
+   }
+  ]
+ }
+}

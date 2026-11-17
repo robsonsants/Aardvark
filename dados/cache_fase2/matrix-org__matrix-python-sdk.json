@@ -1,0 +1,42 @@
+{
+ "slug": "matrix-org/matrix-python-sdk",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 118,
+  "stars": 266,
+  "watchers": 46,
+  "tamanho_kb": 2849,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2015-01-06T09:17:45Z",
+  "push_em": "2022-10-16T09:13:19Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:00+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 115,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 1,
+  "divergentes": 0,
+  "detalhe": [
+   {
+    "fork": "loimy/matrix-python-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2024-08-28T06:39:25Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 118
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

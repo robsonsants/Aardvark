@@ -1,0 +1,476 @@
+slug;cve;aceito;motivo
+Nheko-Reborn/nheko;CVE-2022-39264;sim;referencia aponta para o repo
+cinnyapp/cinny;CVE-2021-44538;sim;vendor CPE = matrix
+element-hq/dendrite;CVE-2022-36009;sim;vendor CPE = matrix
+element-hq/dendrite;CVE-2022-39200;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2018-10657;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2018-12291;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2018-12423;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2018-16515;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2019-11842;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2019-18835;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2019-5885;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2020-26257;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2020-26890;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2020-26891;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21273;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21274;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21332;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21333;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21392;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21393;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-21394;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-29471;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-39163;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-39164;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2021-41281;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2022-31052;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2022-31152;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2022-39335;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2022-39374;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2022-41952;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-32323;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-32682;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-32683;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-41335;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-42453;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-43796;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2023-45129;sim;vendor CPE = matrix
+element-hq/synapse;CVE-2024-31208;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2024-37302;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2024-37303;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2024-52805;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2024-52815;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2024-53863;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2025-30355;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2026-45076;sim;referencia aponta para o repo
+element-hq/synapse;CVE-2026-45078;sim;referencia aponta para o repo
+matrix-org/matrix-appservice-bridge;CVE-2021-32659;sim;referencia aponta para o repo
+matrix-org/matrix-appservice-bridge;CVE-2023-38691;sim;referencia aponta para o repo
+matrix-org/matrix-rust-sdk;CVE-2022-39252;sim;referencia aponta para o repo
+matrix-org/matrix-rust-sdk;CVE-2025-66622;sim;referencia aponta para o repo
+matrix-org/olm;CVE-2021-34813;sim;vendor CPE = matrix
+matrix-org/olm;CVE-2021-44538;sim;vendor CPE = matrix
+matrix-org/olm;CVE-2024-45191;sim;vendor CPE = matrix
+matrix-org/olm;CVE-2024-45192;sim;vendor CPE = matrix
+matrix-org/olm;CVE-2024-45193;sim;vendor CPE = matrix
+matrix-org/sydent;CVE-2019-11340;sim;referencia aponta para o repo
+matrix-org/sydent;CVE-2019-11842;sim;vendor CPE = matrix
+matrix-org/sydent;CVE-2021-29430;sim;referencia aponta para o repo
+matrix-org/sydent;CVE-2021-29431;sim;referencia aponta para o repo
+matrix-org/sydent;CVE-2021-29432;sim;referencia aponta para o repo
+matrix-org/sydent;CVE-2021-29433;sim;referencia aponta para o repo
+matrix-org/sydent;CVE-2023-38686;sim;referencia aponta para o repo
+t2bot/matrix-media-repo;CVE-2024-36402;sim;referencia aponta para o repo
+t2bot/matrix-media-repo;CVE-2024-36403;sim;referencia aponta para o repo
+t2bot/matrix-media-repo;CVE-2024-52602;sim;referencia aponta para o repo
+t2bot/matrix-media-repo;CVE-2024-52791;sim;referencia aponta para o repo
+t2bot/matrix-media-repo;CVE-2024-56515;sim;referencia aponta para o repo
+Luxuride/singularity;CVE-2018-12021;nao;vendors: sylabs
+Luxuride/singularity;CVE-2018-19295;nao;vendors: sylabs
+Luxuride/singularity;CVE-2019-11328;nao;vendors: fedoraproject,opensuse,sylabs
+Luxuride/singularity;CVE-2019-19724;nao;vendors: sylabs
+Luxuride/singularity;CVE-2020-13845;nao;vendors: sylabs
+Luxuride/singularity;CVE-2020-13846;nao;vendors: sylabs
+Luxuride/singularity;CVE-2020-13847;nao;vendors: sylabs
+Luxuride/singularity;CVE-2020-15229;nao;vendors: opensuse,sylabs
+Luxuride/singularity;CVE-2020-25039;nao;vendors: opensuse,sylabs
+Luxuride/singularity;CVE-2020-25040;nao;vendors: opensuse,sylabs
+Luxuride/singularity;CVE-2021-29136;nao;vendors: linuxfoundation,sylabs
+Luxuride/singularity;CVE-2021-32635;nao;vendors: sylabs
+Luxuride/singularity;CVE-2021-33027;nao;vendors: sylabs
+Luxuride/singularity;CVE-2021-33622;nao;vendors: sylabs
+Luxuride/singularity;CVE-2023-30549;nao;vendors: lfprojects,redhat,sylabs
+WesR/Halcyon;CVE-2021-4300;nao;vendors: halcyon_project
+beeper/line;CVE-2013-7144;nao;vendors: apple,linecorp,microsoft
+beeper/line;CVE-2015-0897;nao;vendors: line
+beeper/line;CVE-2016-1156;nao;vendors: apple,linecorp,microsoft
+beeper/line;CVE-2016-4831;nao;vendors: linecorp
+beeper/line;CVE-2016-4850;nao;vendors: linecorp
+beeper/line;CVE-2018-0518;nao;vendors: linecorp
+beeper/line;CVE-2018-0609;nao;vendors: linecorp
+beeper/line;CVE-2018-13434;nao;vendors: linecorp
+beeper/line;CVE-2018-13435;nao;vendors: linecorp
+beeper/line;CVE-2018-13446;nao;vendors: linecorp
+beeper/line;CVE-2019-6010;nao;vendors: linecorp
+beeper/line;CVE-2021-36214;nao;vendors: linecorp
+beeper/line;CVE-2021-36215;nao;vendors: linecorp
+beeper/line;CVE-2021-36216;nao;vendors: linecorp
+beeper/line;CVE-2021-41011;nao;vendors: linecorp
+beeper/line;CVE-2022-22820;nao;vendors: linecorp
+beeper/line;CVE-2022-29505;nao;vendors: linecorp
+beeper/line;CVE-2022-41568;nao;vendors: linecorp
+beeper/line;CVE-2023-38845;nao;vendors: linecorp
+beeper/line;CVE-2023-38846;nao;vendors: linecorp
+beeper/line;CVE-2023-38847;nao;vendors: linecorp
+beeper/line;CVE-2023-38848;nao;vendors: linecorp
+beeper/line;CVE-2023-38849;nao;vendors: linecorp
+beeper/line;CVE-2023-43297;nao;vendors: linecorp
+beeper/line;CVE-2023-43298;nao;vendors: linecorp
+beeper/line;CVE-2023-43299;nao;vendors: linecorp
+beeper/line;CVE-2023-43300;nao;vendors: linecorp
+beeper/line;CVE-2023-43301;nao;vendors: linecorp
+beeper/line;CVE-2023-43302;nao;vendors: linecorp
+beeper/line;CVE-2023-43303;nao;vendors: linecorp
+beeper/line;CVE-2023-43304;nao;vendors: linecorp
+beeper/line;CVE-2023-43305;nao;vendors: linecorp
+beeper/line;CVE-2023-43988;nao;vendors: linecorp
+beeper/line;CVE-2023-43989;nao;vendors: linecorp
+beeper/line;CVE-2023-43990;nao;vendors: linecorp
+beeper/line;CVE-2023-43991;nao;vendors: linecorp
+beeper/line;CVE-2023-43992;nao;vendors: linecorp
+beeper/line;CVE-2023-43993;nao;vendors: linecorp
+beeper/line;CVE-2023-43994;nao;vendors: linecorp
+beeper/line;CVE-2023-43995;nao;vendors: linecorp
+beeper/line;CVE-2023-43996;nao;vendors: linecorp
+beeper/line;CVE-2023-43997;nao;vendors: linecorp
+beeper/line;CVE-2023-43998;nao;vendors: linecorp
+beeper/line;CVE-2023-43999;nao;vendors: linecorp
+beeper/line;CVE-2023-44000;nao;vendors: linecorp
+beeper/line;CVE-2023-44001;nao;vendors: linecorp
+beeper/line;CVE-2023-45559;nao;vendors: linecorp
+beeper/line;CVE-2023-45561;nao;vendors: linecorp
+beeper/line;CVE-2023-47363;nao;vendors: linecorp
+beeper/line;CVE-2023-47364;nao;vendors: linecorp
+beeper/line;CVE-2023-47365;nao;vendors: linecorp
+beeper/line;CVE-2023-47366;nao;vendors: linecorp
+beeper/line;CVE-2023-47367;nao;vendors: linecorp
+beeper/line;CVE-2023-47368;nao;vendors: linecorp
+beeper/line;CVE-2023-47369;nao;vendors: linecorp
+beeper/line;CVE-2023-47370;nao;vendors: linecorp
+beeper/line;CVE-2023-47372;nao;vendors: linecorp
+beeper/line;CVE-2023-47373;nao;vendors: linecorp
+beeper/line;CVE-2023-48126;nao;vendors: linecorp
+beeper/line;CVE-2023-48127;nao;vendors: linecorp
+beeper/line;CVE-2023-48128;nao;vendors: linecorp
+beeper/line;CVE-2023-48129;nao;vendors: linecorp
+beeper/line;CVE-2023-48130;nao;vendors: linecorp
+beeper/line;CVE-2023-48131;nao;vendors: linecorp
+beeper/line;CVE-2023-48132;nao;vendors: linecorp
+beeper/line;CVE-2023-48133;nao;vendors: linecorp
+beeper/line;CVE-2023-48134;nao;vendors: linecorp
+beeper/line;CVE-2023-48135;nao;vendors: linecorp
+beeper/line;CVE-2023-5554;nao;vendors: linecorp
+beeper/line;CVE-2024-5739;nao;vendors: linecorp
+beeper/line;CVE-2025-14019;nao;vendors: linecorp
+beeper/line;CVE-2025-14020;nao;vendors: linecorp
+beeper/line;CVE-2025-14021;nao;vendors: linecorp
+beeper/line;CVE-2025-14022;nao;vendors: linecorp
+beeper/line;CVE-2025-14023;nao;vendors: linecorp
+beeper/line;CVE-2026-13133;nao;vendors: 
+beeper/line;CVE-2026-16881;nao;vendors: 
+beeper/line;CVE-2026-3861;nao;vendors: linecorp
+element-hq/synapse;CVE-2010-1632;nao;vendors: apache,ibm
+element-hq/synapse;CVE-2017-11652;nao;vendors: razer
+element-hq/synapse;CVE-2017-11653;nao;vendors: razer
+element-hq/synapse;CVE-2017-14398;nao;vendors: razer
+element-hq/synapse;CVE-2017-15708;nao;vendors: apache,oracle
+element-hq/synapse;CVE-2017-9769;nao;vendors: razer
+element-hq/synapse;CVE-2021-30493;nao;vendors: razer
+element-hq/synapse;CVE-2021-30494;nao;vendors: razer
+element-hq/synapse;CVE-2021-44226;nao;vendors: microsoft,razer
+element-hq/synapse;CVE-2022-47631;nao;vendors: microsoft,razer
+element-hq/synapse;CVE-2022-47632;nao;vendors: microsoft,razer
+element-hq/synapse;CVE-2025-9869;nao;vendors: razer
+element-hq/synapse;CVE-2025-9870;nao;vendors: razer
+element-hq/synapse;CVE-2025-9871;nao;vendors: razer
+maelstrom-rs/maelstrom;CVE-2003-0325;nao;vendors: ambrosia_software
+maelstrom-rs/maelstrom;CVE-2003-0330;nao;vendors: ambrosia_software
+matrix-nio/matrix-nio;CVE-2022-39254;nao;vendors: matrix-nio_project
+matrix-org/mjolnir;CVE-2018-13710;nao;vendors: mjolnir_project
+mautrix/discord;CVE-2024-23739;nao;vendors: apple,discord
+mautrix/discord;CVE-2025-4525;nao;vendors: discord,microsoft
+mautrix/facebook;CVE-2008-0660;nao;vendors: aurigma,facebook
+mautrix/facebook;CVE-2014-6392;nao;vendors: facebook
+mautrix/facebook;CVE-2021-24217;nao;vendors: facebook
+mautrix/facebook;CVE-2021-24218;nao;vendors: facebook
+mautrix/imessage;CVE-2020-20095;nao;vendors: apple
+mautrix/instagram;CVE-2020-1895;nao;vendors: facebook
+mautrix/instagram;CVE-2020-20094;nao;vendors: facebook
+mautrix/linkedin;CVE-2017-18516;nao;vendors: bestwebsoft
+mautrix/linkedin;CVE-2017-2171;nao;vendors: bestwebsoft
+mautrix/linkedin;CVE-2025-56139;nao;vendors: linkedin
+mautrix/signal;CVE-2018-16132;nao;vendors: signal
+mautrix/signal;CVE-2018-9840;nao;vendors: signal
+mautrix/signal;CVE-2020-5753;nao;vendors: signal
+mautrix/signal;CVE-2022-28345;nao;vendors: signal
+mautrix/signal;CVE-2025-5715;nao;vendors: signal
+mautrix/telegram;CVE-2018-15542;nao;vendors: telegram
+mautrix/telegram;CVE-2018-15543;nao;vendors: telegram
+mautrix/telegram;CVE-2018-20436;nao;vendors: telegram
+mautrix/telegram;CVE-2018-3986;nao;vendors: telegram
+mautrix/telegram;CVE-2019-10044;nao;vendors: microsoft,telegram
+mautrix/telegram;CVE-2019-15514;nao;vendors: telegram
+mautrix/telegram;CVE-2019-16248;nao;vendors: telegram
+mautrix/telegram;CVE-2020-10570;nao;vendors: telegram
+mautrix/telegram;CVE-2020-12474;nao;vendors: telegram
+mautrix/telegram;CVE-2021-27204;nao;vendors: apple,telegram
+mautrix/telegram;CVE-2021-27205;nao;vendors: apple,telegram
+mautrix/telegram;CVE-2021-27351;nao;vendors: telegram
+mautrix/telegram;CVE-2021-30496;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31315;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31317;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31318;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31319;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31320;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31321;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31322;nao;vendors: telegram
+mautrix/telegram;CVE-2021-31323;nao;vendors: telegram
+mautrix/telegram;CVE-2021-36769;nao;vendors: telegram
+mautrix/telegram;CVE-2021-41861;nao;vendors: telegram
+mautrix/telegram;CVE-2022-43363;nao;vendors: telegram
+mautrix/telegram;CVE-2023-26818;nao;vendors: telegram
+mautrix/telegram;CVE-2023-34658;nao;vendors: telegram
+mautrix/telegram;CVE-2024-7014;nao;vendors: telegram
+mautrix/twitter;CVE-2012-10015;nao;vendors: bestwebsoft
+mautrix/twitter;CVE-2014-125103;nao;vendors: bestwebsoft
+mautrix/twitter;CVE-2015-7229;nao;vendors: twitter_project
+mautrix/twitter;CVE-2016-10511;nao;vendors: twitter
+mautrix/twitter;CVE-2019-10313;nao;vendors: jenkins
+mautrix/whatsapp;CVE-2017-8769;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2018-20655;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2018-6339;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2018-6344;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2018-6349;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2018-6350;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-11927;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-11931;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-11932;nao;vendors: android-gif-drawable_project,whatsapp
+mautrix/whatsapp;CVE-2019-11933;nao;vendors: libpl_droidsonroids_gif_project,whatsapp
+mautrix/whatsapp;CVE-2019-18426;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-3566;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-3568;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2019-3571;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1886;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1890;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1891;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1894;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1901;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1902;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1903;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1904;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1905;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1906;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1907;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1908;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1909;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-1910;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2020-20096;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24026;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24027;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24035;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24041;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24042;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2021-24043;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2022-27492;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2022-36934;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2023-38537;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2023-38538;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2025-30401;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2025-55177;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2025-55179;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2026-23863;nao;vendors: whatsapp
+mautrix/whatsapp;CVE-2026-23866;nao;vendors: whatsapp
+t2bot/matrix-media-repo;CVE-2021-29453;nao;vendors: matrix-media-repo_project
+t2bot/matrix-media-repo;CVE-2023-41318;nao;vendors: turt2live
+thunderbird/thunderbird-desktop;CVE-2004-0648;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0757;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0761;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0762;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0764;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0765;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0902;nao;vendors: conectiva,mozilla,redhat,suse
+thunderbird/thunderbird-desktop;CVE-2004-0903;nao;vendors: conectiva,mozilla,redhat,suse
+thunderbird/thunderbird-desktop;CVE-2004-0904;nao;vendors: conectiva,mozilla,netscape,redhat
+thunderbird/thunderbird-desktop;CVE-2004-0906;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0907;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0908;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-0909;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2004-1449;nao;vendors: firebirdsql,mozilla
+thunderbird/thunderbird-desktop;CVE-2004-2226;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0142;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0148;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0149;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0255;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0399;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-0590;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-2261;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-2353;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-2602;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-3402;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2005-4809;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0236;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0294;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0295;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0297;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0299;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0748;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0749;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0836;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-0884;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1045;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1529;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1530;nao;vendors: debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1531;nao;vendors: debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1723;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1724;nao;vendors: debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1726;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1727;nao;vendors: canonical,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1728;nao;vendors: canonical,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1730;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1731;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1732;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1733;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1734;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1735;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1736;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1737;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1738;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1739;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1740;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-1742;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2775;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2776;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2778;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2779;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2780;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2781;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2783;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2786;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-2787;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3113;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3802;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3803;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3804;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3805;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3806;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3807;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3809;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3810;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3811;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-3812;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4340;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4565;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4566;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4567;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4570;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-4571;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-5462;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-5463;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-5464;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-5747;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-5748;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6497;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6498;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6499;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6500;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6501;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6502;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6503;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2006-6505;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-0008;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-0009;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2007-0775;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-0776;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-0777;nao;vendors: canonical,mozilla
+thunderbird/thunderbird-desktop;CVE-2007-1282;nao;vendors: mozilla,redhat
+thunderbird/thunderbird-desktop;CVE-2007-2867;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-2868;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-3734;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-3735;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-3844;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-3845;nao;vendors: microsoft,mozilla
+thunderbird/thunderbird-desktop;CVE-2007-4038;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-4841;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-5339;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2007-5340;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0304;nao;vendors: linux,microsoft,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0412;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0413;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0415;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0416;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0418;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0420;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-0591;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1233;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1234;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1235;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1236;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1237;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-1380;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2785;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2798;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2799;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2802;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2803;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2806;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-2808;nao;vendors: mozilla,redhat,ubuntu
+thunderbird/thunderbird-desktop;CVE-2008-2811;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-3835;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4058;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4060;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4061;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4062;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4065;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4067;nao;vendors: canonical,debian,linux,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4068;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-4070;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5012;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5014;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5016;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5017;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5018;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5021;nao;vendors: canonical,debian,fedoraproject,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5022;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5024;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5052;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5430;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5500;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5503;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5506;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5507;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5508;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5510;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5511;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5512;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-5513;nao;vendors: canonical,debian,mozilla
+thunderbird/thunderbird-desktop;CVE-2008-6961;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0352;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0353;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0652;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0771;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0772;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0773;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0774;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0775;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0776;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-0777;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1302;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1303;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1304;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1305;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1306;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1307;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1308;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1309;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1392;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1832;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1833;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1836;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1838;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1840;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-1841;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2210;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2404;nao;vendors: aol,gnome,mozilla,pidgin
+thunderbird/thunderbird-desktop;CVE-2009-2408;nao;vendors: canonical,debian,mozilla,opensuse
+thunderbird/thunderbird-desktop;CVE-2009-2462;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2463;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2464;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2465;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2466;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-2535;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-3980;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-3981;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-3982;nao;vendors: mozilla
+thunderbird/thunderbird-desktop;CVE-2009-3983;nao;vendors: mozilla
+vector-im/hydrogen-web;CVE-2022-29230;nao;vendors: shopify

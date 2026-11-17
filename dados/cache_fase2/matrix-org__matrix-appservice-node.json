@@ -1,0 +1,63 @@
+{
+ "slug": "matrix-org/matrix-appservice-node",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 28,
+  "stars": 91,
+  "watchers": 25,
+  "tamanho_kb": 948,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-02-27T22:32:03Z",
+  "push_em": "2026-08-10T05:38:39Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:55+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 31,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 4,
+  "divergentes": 0,
+  "detalhe": [
+   {
+    "fork": "lequocbinh04/matrix-appservice-node",
+    "ahead_by": 0,
+    "behind_by": 22,
+    "push_em": "2026-07-02T17:41:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "alpinebuster/matrix-appservice-node",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2025-11-08T08:58:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "cbacc00/matrix-appservice-node",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2025-08-15T05:32:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "debdutdeb/matrix-appservice-node",
+    "ahead_by": 0,
+    "behind_by": 41,
+    "push_em": "2024-10-10T15:23:06Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 28
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

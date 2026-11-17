@@ -1,0 +1,34 @@
+{
+ "slug": "mtorials/dial-phone",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 2,
+  "stars": 9,
+  "watchers": 1,
+  "tamanho_kb": 926,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-06-15T19:28:30Z",
+  "push_em": "2022-05-24T09:24:49Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:01+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 2,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 0,
+  "divergentes": 0,
+  "detalhe": [],
+  "forks_declarados": 2
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

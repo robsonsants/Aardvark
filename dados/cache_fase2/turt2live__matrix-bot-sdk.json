@@ -1,0 +1,175 @@
+{
+ "slug": "turt2live/matrix-bot-sdk",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 91,
+  "stars": 273,
+  "watchers": 6,
+  "tamanho_kb": 4359,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2018-02-24T19:17:17Z",
+  "push_em": "2026-03-27T15:54:26Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:02+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 75,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 20,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "element-hq/matrix-bot-sdk",
+    "ahead_by": 262,
+    "behind_by": 0,
+    "push_em": "2026-08-14T18:22:49Z",
+    "stars": 26
+   },
+   {
+    "fork": "ixoworld/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-17T04:59:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "avri-schneider/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-24T19:03:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "xurgedigitallab/Briij-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-05T18:35:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "uhoreg/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-04-28T20:34:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "silverbacking/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-02-02T00:33:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "Rath-debug/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-01-16T02:13:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "reivilibre/fork-matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2025-12-18T17:21:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "SethFalco/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 67,
+    "push_em": "2025-09-07T15:25:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "alexandru-spect/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2025-07-22T21:46:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "ZioN-Sattwa/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2025-07-22T21:46:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "vibeshelter/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2025-03-30T00:48:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "CelestialArtisanBot/matrix-bot-sdk-patched",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2025-03-10T16:30:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "GuiiBarbetta/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2025-03-10T16:30:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "AIBappa/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2025-03-10T16:30:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "Techwizz-somboo/matrix-bot-sdk",
+    "ahead_by": 1,
+    "behind_by": 8,
+    "push_em": "2025-03-05T04:26:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "Gnuxie/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 203,
+    "push_em": "2025-02-02T14:10:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "f0x52/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-12-19T18:43:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "mgcm/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-12-18T20:11:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "nordeck/matrix-bot-sdk",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-12-16T16:18:43Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 91
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

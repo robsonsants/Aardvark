@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/radicale-auth-matrix",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 0,
+  "stars": 4,
+  "watchers": 2,
+  "tamanho_kb": 27,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-13T12:45:46Z",
+  "push_em": "2026-07-26T23:18:08Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:14+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

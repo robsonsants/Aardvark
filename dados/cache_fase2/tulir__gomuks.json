@@ -1,0 +1,239 @@
+{
+ "slug": "tulir/gomuks",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 149,
+  "stars": 1713,
+  "watchers": 22,
+  "tamanho_kb": 10766,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2018-02-24T16:14:57Z",
+  "push_em": "2026-08-16T13:17:39Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:33+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 150,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 11,
+  "detalhe": [
+   {
+    "fork": "buihongduc132/gomuks",
+    "ahead_by": 9,
+    "behind_by": 0,
+    "push_em": "2026-08-16T21:24:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "Edu4rdSHL/gomuks",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-16T15:09:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "thetayloredman/logmuks",
+    "ahead_by": 8,
+    "behind_by": 1,
+    "push_em": "2026-08-16T02:36:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "ricardo-duarte-av/gomuks",
+    "ahead_by": 8,
+    "behind_by": 1,
+    "push_em": "2026-08-15T04:16:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "lake-hope/gomuks",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-08-08T00:56:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "sysrq-golang-dist/gomuks",
+    "erro": 404
+   },
+   {
+    "fork": "jonhermansen/gomuks",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-08-04T20:49:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "maccn/gomuks",
+    "ahead_by": 0,
+    "behind_by": 54,
+    "push_em": "2026-07-31T08:19:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "lunks/gomuks",
+    "ahead_by": 16,
+    "behind_by": 143,
+    "push_em": "2026-07-29T21:52:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "Henry-Hiles/gomuks",
+    "ahead_by": 1,
+    "behind_by": 83,
+    "push_em": "2026-07-27T02:08:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "Doty1154/gomuks",
+    "ahead_by": 71,
+    "behind_by": 96,
+    "push_em": "2026-07-24T19:49:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "Evidlo/gomuks",
+    "ahead_by": 0,
+    "behind_by": 1943,
+    "push_em": "2026-07-18T22:04:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "jrgriffiniii/gomuks",
+    "ahead_by": 0,
+    "behind_by": 153,
+    "push_em": "2026-07-18T19:07:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "networkException/gomuks",
+    "ahead_by": 0,
+    "behind_by": 206,
+    "push_em": "2026-07-06T06:27:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "ajkessel/gomuks",
+    "ahead_by": 0,
+    "behind_by": 256,
+    "push_em": "2026-06-05T19:28:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "sumnerevans/gomuks",
+    "ahead_by": 0,
+    "behind_by": 273,
+    "push_em": "2026-05-29T02:05:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "opencaio/gomuks",
+    "ahead_by": 0,
+    "behind_by": 307,
+    "push_em": "2026-05-18T09:49:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "char-mines/gomuks",
+    "ahead_by": 0,
+    "behind_by": 319,
+    "push_em": "2026-05-17T18:34:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "chatek/gomuks",
+    "ahead_by": 1,
+    "behind_by": 323,
+    "push_em": "2026-05-17T13:00:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "andrew-glenn/gomuks",
+    "ahead_by": 0,
+    "behind_by": 319,
+    "push_em": "2026-05-16T11:02:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "JadedBlueEyes/gomuks",
+    "ahead_by": 0,
+    "behind_by": 1214,
+    "push_em": "2026-05-02T16:57:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "aiprox-org/gomuks",
+    "ahead_by": 0,
+    "behind_by": 341,
+    "push_em": "2026-04-28T16:45:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "palchrb/gomuks",
+    "ahead_by": 2,
+    "behind_by": 368,
+    "push_em": "2026-04-08T20:23:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "zachatrocity/gomuks",
+    "ahead_by": 0,
+    "behind_by": 386,
+    "push_em": "2026-04-07T15:40:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "kittyandrew/gomuks",
+    "ahead_by": 1,
+    "behind_by": 404,
+    "push_em": "2026-04-03T07:16:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "n-peugnet/gomuks",
+    "ahead_by": 0,
+    "behind_by": 1646,
+    "push_em": "2026-02-19T13:18:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "taylorbird/gomuks",
+    "ahead_by": 0,
+    "behind_by": 438,
+    "push_em": "2026-02-17T11:02:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "unboundmachinist/gomuks",
+    "ahead_by": 15,
+    "behind_by": 1612,
+    "push_em": "2026-01-23T13:10:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "cast-martin-belf/gomuks",
+    "erro": 404
+   },
+   {
+    "fork": "poetaster/gomuks",
+    "ahead_by": 7,
+    "behind_by": 1612,
+    "push_em": "2026-01-03T21:35:35Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 149
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

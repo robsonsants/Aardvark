@@ -1,0 +1,22 @@
+{
+ "slug": "bismark/matrex",
+ "meta": {
+  "linguagem": "Elixir",
+  "forks": 7,
+  "stars": 38,
+  "watchers": 4,
+  "tamanho_kb": 108,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2016-11-22T08:36:18Z",
+  "push_em": "2018-02-22T17:14:02Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:49+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

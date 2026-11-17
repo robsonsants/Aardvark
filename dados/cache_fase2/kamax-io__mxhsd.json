@@ -1,0 +1,22 @@
+{
+ "slug": "kamax-io/mxhsd",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 3,
+  "stars": 29,
+  "watchers": 1,
+  "tamanho_kb": 523,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2017-08-11T16:30:28Z",
+  "push_em": "2018-10-19T21:44:30Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:50+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

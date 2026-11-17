@@ -1,0 +1,259 @@
+{
+ "slug": "matrix-org/matrix-appservice-irc",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 152,
+  "stars": 505,
+  "watchers": 31,
+  "tamanho_kb": 10167,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-03-10T14:42:06Z",
+  "push_em": "2026-04-02T15:31:38Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:20+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 162,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 18,
+  "divergentes": 3,
+  "detalhe": [
+   {
+    "fork": "acidburn0zzz/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 150,
+    "push_em": "2026-07-27T13:53:25Z",
+    "stars": 1
+   },
+   {
+    "fork": "nbuechner/matrix-appservice-irc",
+    "ahead_by": 4,
+    "behind_by": 0,
+    "push_em": "2026-07-09T19:42:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "Strykar/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-05-10T06:19:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "terrorizer1980/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 199,
+    "push_em": "2026-01-28T18:53:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "inglor/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-24T09:45:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "3nprob/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 777,
+    "push_em": "2025-09-23T10:39:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "trinity-1686a/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-09-08T23:28:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "oI0ck/matrix-appservice-irc",
+    "ahead_by": 1,
+    "behind_by": 2,
+    "push_em": "2025-08-05T11:02:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "jamesjen/matrix-appservice-irc",
+    "ahead_by": 1,
+    "behind_by": 2,
+    "push_em": "2025-07-31T21:47:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "vecnathewhisperd0/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-02-25T14:41:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "monje001/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2025-01-08T15:47:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "f0x52/upstream-matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2024-11-28T18:07:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "tadzik/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 411,
+    "push_em": "2024-11-28T12:50:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "RonElectronica/Rmatrix-appservice-ircR",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2024-09-18T11:08:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "thomwiggers/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2024-09-02T11:06:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "jkhsjdhjs/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 29,
+    "push_em": "2024-09-02T09:56:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "funderscore1/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2024-08-31T17:56:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "scantist-ossops-m2/matrix-appservice-irc",
+    "ahead_by": 0,
+    "behind_by": 29,
+    "push_em": "2024-08-26T23:55:46Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 152
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-5mvm-89c9-9gm5",
+    "cve": "CVE-2025-27146",
+    "severidade": "low",
+    "cvss": 2.7,
+    "cwes": [
+     "CWE-77",
+     "CWE-88"
+    ],
+    "publicado_em": "2025-02-25T15:04:00Z",
+    "resumo": "IRC command injection to own puppeted user"
+   },
+   {
+    "ghsa": "GHSA-c3hj-hg7p-rrq5",
+    "cve": "CVE-2024-52505",
+    "severidade": "medium",
+    "cvss": 5.4,
+    "cwes": [
+     "CWE-20",
+     "CWE-147"
+    ],
+    "publicado_em": "2024-11-14T09:58:22Z",
+    "resumo": "IRC Command injection in provisioning API"
+   },
+   {
+    "ghsa": "GHSA-w9mh-5x8j-9754",
+    "cve": "CVE-2024-39691",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-07-04T09:36:47Z",
+    "resumo": "Malicious Matrix homeserver can leak truncated message content of messages it shouldn't have access to"
+   },
+   {
+    "ghsa": "GHSA-wm4w-7h2q-3pf7",
+    "cve": "CVE-2024-32000",
+    "severidade": "medium",
+    "cvss": 4.3,
+    "cwes": [
+     "CWE-280"
+    ],
+    "publicado_em": "2024-04-11T09:37:34Z",
+    "resumo": "Leak of truncated content of messages a user shouldn't have access to"
+   },
+   {
+    "ghsa": "GHSA-3pmj-jqqp-2mj3",
+    "cve": "CVE-2023-38690",
+    "severidade": "medium",
+    "cvss": 5.0,
+    "cwes": [
+     "CWE-20"
+    ],
+    "publicado_em": "2023-08-04T10:24:43Z",
+    "resumo": "IRC command injection via admin commands containing newlines "
+   },
+   {
+    "ghsa": "GHSA-c7hh-3v6c-fj4q",
+    "cve": "CVE-2023-38700",
+    "severidade": "low",
+    "cvss": 3.5,
+    "cwes": [],
+    "publicado_em": "2023-08-04T10:24:49Z",
+    "resumo": "Events can be crafted to leak parts of targeted messages from other bridged rooms"
+   },
+   {
+    "ghsa": "GHSA-xvqg-mv25-rwvw",
+    "cve": "CVE-2022-39203",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-266"
+    ],
+    "publicado_em": "2022-09-13T15:13:15Z",
+    "resumo": "Parsing issue in matrix-org/node-irc leading to room takeovers"
+   },
+   {
+    "ghsa": "GHSA-cq7q-5c67-w39w",
+    "cve": "CVE-2022-39202",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [
+     "CWE-266"
+    ],
+    "publicado_em": "2022-09-13T15:13:07Z",
+    "resumo": "IRC mode parameter confusion in matrix-org/node-irc"
+   },
+   {
+    "ghsa": "GHSA-37hr-348p-rmf4",
+    "cve": "CVE-2022-29166",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-93"
+    ],
+    "publicado_em": "2022-05-04T08:35:26Z",
+    "resumo": "Improper handling of multiline messages in node-irc"
+   }
+  ]
+ }
+}

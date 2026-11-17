@@ -1,0 +1,102 @@
+{
+ "slug": "matrix-org/matrix-bifrost",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 37,
+  "stars": 187,
+  "watchers": 16,
+  "tamanho_kb": 3890,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2018-10-17T23:25:38Z",
+  "push_em": "2026-08-09T12:58:02Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:28+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 37,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 10,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "kieranlane/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 11,
+    "push_em": "2026-07-23T22:43:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "cezary13k/matrix-bifrost",
+    "erro": 404
+   },
+   {
+    "fork": "terrorizer1980/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 170,
+    "push_em": "2026-02-15T19:54:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "Cointab-Software-Pvt-Ltd/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2025-10-23T17:49:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "ZKcash-IrishGov/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 40,
+    "push_em": "2025-08-27T20:11:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "Josue-T/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2025-07-21T20:06:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "vkleen/matrix-bifrost",
+    "ahead_by": 8,
+    "behind_by": 45,
+    "push_em": "2025-02-01T01:05:32Z",
+    "stars": 1
+   },
+   {
+    "fork": "mrwhalebones/matrix-b-if-ro-st",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2024-09-06T09:23:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "MatrixOnKaspa/matrix-bifrost-bridge",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2024-09-06T09:23:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "tadzik/matrix-bifrost",
+    "ahead_by": 0,
+    "behind_by": 184,
+    "push_em": "2024-09-02T12:44:42Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 37
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

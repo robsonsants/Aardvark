@@ -1,0 +1,22 @@
+{
+ "slug": "famedly/matrix-dart-sdk",
+ "meta": {
+  "linguagem": "Dart",
+  "forks": 90,
+  "stars": 120,
+  "watchers": 2,
+  "tamanho_kb": 8218,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-07-07T19:56:01Z",
+  "push_em": "2026-08-15T15:48:43Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:52+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

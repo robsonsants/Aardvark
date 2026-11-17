@@ -1,0 +1,242 @@
+{
+ "slug": "mautrix/discord",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 76,
+  "stars": 490,
+  "watchers": 10,
+  "tamanho_kb": 1200,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2022-05-20T19:36:47Z",
+  "push_em": "2026-08-16T13:17:36Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:16+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 80,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 12,
+  "detalhe": [
+   {
+    "fork": "Tommy-ASD/Mautrix-Discord",
+    "ahead_by": 5,
+    "behind_by": 6,
+    "push_em": "2026-08-16T22:40:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "LeaPhant/mautrix-discord",
+    "ahead_by": 32,
+    "behind_by": 2,
+    "push_em": "2026-08-14T16:37:17Z",
+    "stars": 2
+   },
+   {
+    "fork": "Orso2p2n/mautrix-discord",
+    "ahead_by": 1,
+    "behind_by": 5,
+    "push_em": "2026-08-13T11:13:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "keithah/mautrix-discord",
+    "ahead_by": 2,
+    "behind_by": 5,
+    "push_em": "2026-08-09T18:12:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "TomOdellSheetMusic/mautrix-discord",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-08-09T00:46:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "thesuperRL/mautrix-discord",
+    "ahead_by": 20,
+    "behind_by": 9,
+    "push_em": "2026-08-08T21:01:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "faithCD/mautrix-discord",
+    "ahead_by": 8,
+    "behind_by": 2,
+    "push_em": "2026-08-08T20:04:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "4xura/mautrix-discord",
+    "ahead_by": 27,
+    "behind_by": 9,
+    "push_em": "2026-08-08T15:55:48Z",
+    "stars": 1
+   },
+   {
+    "fork": "snowsune/discord",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-08-08T14:16:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "beenim-labs/discord-bridge-go",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-07-29T10:51:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "o018BUm8UQEEY2e5/mautrix-discord",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-07-20T12:18:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "Faraphel/mautrix-discord-bridge",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-07-15T07:12:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "QsieDev/mautrix-fluxer",
+    "ahead_by": 23,
+    "behind_by": 5,
+    "push_em": "2026-07-03T03:41:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "CloudHub-Social/discord",
+    "ahead_by": 52,
+    "behind_by": 5,
+    "push_em": "2026-07-02T17:58:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "ahdzib-maya/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-06-23T19:31:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "cabemo/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-06-19T23:14:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "iFixRobots/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-06-17T02:43:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "Adri11334/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-06-15T16:04:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "mat-1/mautrix-discord",
+    "ahead_by": 15,
+    "behind_by": 5,
+    "push_em": "2026-06-12T01:29:14Z",
+    "stars": 5
+   },
+   {
+    "fork": "berndeplo/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-05-22T05:27:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "tom130/mautrix-discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-05-19T21:14:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "Blocky-mint/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-05-13T12:09:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "Deln0r/discord",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-05-13T07:42:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "CEbbinghaus/mautrix-discord",
+    "ahead_by": 1,
+    "behind_by": 6,
+    "push_em": "2026-04-20T11:53:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "North-West-Wind/mautrix-discord-emoji",
+    "ahead_by": 16,
+    "behind_by": 21,
+    "push_em": "2026-04-14T13:57:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "shikanime/discord",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-04-09T07:05:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "svtetering/discord",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2026-03-13T02:27:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "BierDav/discord",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2026-03-08T17:29:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "0xnim/discord-bridge",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2026-03-07T05:55:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "ForkPrince/mautrix-spacebar",
+    "erro": 404
+   }
+  ],
+  "forks_declarados": 76
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

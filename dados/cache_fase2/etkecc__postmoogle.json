@@ -1,0 +1,77 @@
+{
+ "slug": "etkecc/postmoogle",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 6,
+  "stars": 87,
+  "watchers": 4,
+  "tamanho_kb": 99792,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-20T19:40:08Z",
+  "push_em": "2026-08-16T13:02:31Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:17+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 6,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 6,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "kimsokhom/postmoogle",
+    "ahead_by": 24,
+    "behind_by": 8,
+    "push_em": "2026-05-06T17:44:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "general-intelligence-systems/postmoogle-forwarder",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2026-03-16T07:52:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "ifedan-ed/postmoogle",
+    "ahead_by": 0,
+    "behind_by": 12,
+    "push_em": "2026-01-25T22:12:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "paiir/postmoogle",
+    "ahead_by": 0,
+    "behind_by": 30,
+    "push_em": "2024-11-02T17:55:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "chimingdd/postmoogle",
+    "ahead_by": 0,
+    "behind_by": 30,
+    "push_em": "2024-11-02T17:55:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "amuckstot30/postmoogle",
+    "ahead_by": 0,
+    "behind_by": 37,
+    "push_em": "2024-09-29T10:03:26Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 6
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

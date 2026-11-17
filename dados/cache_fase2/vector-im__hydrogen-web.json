@@ -1,0 +1,210 @@
+{
+ "slug": "vector-im/hydrogen-web",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 131,
+  "stars": 711,
+  "watchers": 22,
+  "tamanho_kb": 22327,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-08-07T13:14:13Z",
+  "push_em": "2026-04-09T15:12:34Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:34+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 130,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 25,
+  "divergentes": 7,
+  "detalhe": [
+   {
+    "fork": "XHawk87/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-07-15T21:37:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "Tomython/Moon-e",
+    "ahead_by": 18,
+    "behind_by": 2,
+    "push_em": "2026-06-03T17:18:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "travisaschneider/hydrogen-web",
+    "ahead_by": 8,
+    "behind_by": 0,
+    "push_em": "2026-05-12T21:30:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "p1gp1g/hydrogen-web",
+    "ahead_by": 1,
+    "behind_by": 9,
+    "push_em": "2026-04-14T13:42:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "nolim1t/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-04-09T15:36:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "kimsokhom/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-04-09T15:12:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "AriBermeki/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-11-06T10:43:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "truongntn/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-11-06T10:43:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "qookecn/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-11-06T10:43:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "mwambiladaniel-svg/hydrogen-web",
+    "ahead_by": 9,
+    "behind_by": 2,
+    "push_em": "2025-10-15T22:49:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "it-pal-net/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-10-08T15:20:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "TIEOrg/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-05-23T02:48:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "terrorizer1980/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2001,
+    "push_em": "2025-02-14T17:57:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "kkpan11/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-01-28T12:26:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "mlwood-dev/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-01-28T06:29:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "noelexjsdecode/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-01-28T06:29:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "Kaki-In/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2025-01-27T08:17:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "KhushamBansal/hydrogen-web",
+    "ahead_by": 1,
+    "behind_by": 9,
+    "push_em": "2025-01-11T21:27:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "hydrogen-sailfishos/hydrogen-web",
+    "ahead_by": 17,
+    "behind_by": 11,
+    "push_em": "2024-12-08T16:25:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "ichthyosaurus/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-12-05T16:52:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "MatMaul/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-12-02T22:49:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "mitdave95/hydrogen-web",
+    "ahead_by": 1,
+    "behind_by": 9,
+    "push_em": "2024-10-31T02:12:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "bruh-person/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-10-21T11:57:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "niskoniski/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2024-10-21T11:57:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "podimus/hydrogen-web",
+    "ahead_by": 0,
+    "behind_by": 18,
+    "push_em": "2024-08-30T07:44:19Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 131
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

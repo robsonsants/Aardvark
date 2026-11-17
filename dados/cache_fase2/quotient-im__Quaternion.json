@@ -1,0 +1,22 @@
+{
+ "slug": "quotient-im/Quaternion",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 116,
+  "stars": 702,
+  "watchers": 28,
+  "tamanho_kb": 8469,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "dev",
+  "criado_em": "2016-01-21T23:03:04Z",
+  "push_em": "2026-06-19T08:07:27Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:06+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

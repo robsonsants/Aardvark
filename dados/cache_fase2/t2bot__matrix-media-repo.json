@@ -1,0 +1,279 @@
+{
+ "slug": "t2bot/matrix-media-repo",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 88,
+  "stars": 235,
+  "watchers": 6,
+  "tamanho_kb": 122419,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2017-11-11T05:41:50Z",
+  "push_em": "2025-11-20T01:15:49Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:43+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 86,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 24,
+  "divergentes": 9,
+  "detalhe": [
+   {
+    "fork": "tsuiio/matrix-media-repo",
+    "ahead_by": 23,
+    "behind_by": 0,
+    "push_em": "2026-08-14T03:55:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "AndrewFerr/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-13T03:05:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "tchapgouv/matrix-media-repo",
+    "ahead_by": 33,
+    "behind_by": 0,
+    "push_em": "2026-08-12T14:19:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "ricardo-duarte-av/matrix-media-repo",
+    "ahead_by": 18,
+    "behind_by": 0,
+    "push_em": "2026-07-19T17:18:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "MatMaul/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-07T14:16:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "Lykos153/matrix-media-repo",
+    "ahead_by": 1,
+    "behind_by": 480,
+    "push_em": "2026-06-25T23:09:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "SCJ-Victory/matrix-media-repo",
+    "ahead_by": 5,
+    "behind_by": 0,
+    "push_em": "2026-06-07T11:27:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "etnperlong/matrix-media-repo",
+    "ahead_by": 27,
+    "behind_by": 0,
+    "push_em": "2026-05-22T00:41:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "cloud-gouv/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-04-20T12:27:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "williamkray/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-03-26T19:19:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "shcherbak/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-11-20T01:15:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "ramirezromerourieleduardo343-commits/matrix-media-master",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-11-20T01:15:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "HACK55515/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-04T06:41:26Z",
+    "stars": 1
+   },
+   {
+    "fork": "wirdes/media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-08-14T14:47:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "tgonzales/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-04-16T22:51:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "jaywink/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 126,
+    "push_em": "2025-04-08T14:10:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "PseudoResonance/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 35,
+    "push_em": "2025-01-17T09:48:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "paiir/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2024-11-18T21:47:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "starcraft66/matrix-media-repo",
+    "ahead_by": 3,
+    "behind_by": 35,
+    "push_em": "2024-11-04T02:47:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "pecherskiy-v/matrix-media-repo",
+    "ahead_by": 1,
+    "behind_by": 31,
+    "push_em": "2024-10-02T17:38:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "heurtematte/matrix-media-repo",
+    "ahead_by": 1,
+    "behind_by": 31,
+    "push_em": "2024-09-16T15:16:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "mdelapenya/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 35,
+    "push_em": "2024-08-30T18:00:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "Scrin/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 37,
+    "push_em": "2024-08-30T16:41:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "silkeh/matrix-media-repo",
+    "ahead_by": 0,
+    "behind_by": 752,
+    "push_em": "2024-08-28T16:50:32Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 88
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-rcxc-wjgw-579r",
+    "cve": "CVE-2024-56515",
+    "severidade": "medium",
+    "cvss": 6.8,
+    "cwes": [],
+    "publicado_em": "2025-01-16T18:40:09Z",
+    "resumo": "Untrusted file formats can be thumbnailed, invoking potentially further untrusted decoders"
+   },
+   {
+    "ghsa": "GHSA-gp86-q8hg-fpxj",
+    "cve": "CVE-2024-52791",
+    "severidade": "medium",
+    "cvss": 5.3,
+    "cwes": [
+     "CWE-789"
+    ],
+    "publicado_em": "2025-01-16T18:40:14Z",
+    "resumo": "Denial of service through memory exhaustion"
+   },
+   {
+    "ghsa": "GHSA-r6jg-jfv6-2fjv",
+    "cve": "CVE-2024-52602",
+    "severidade": "medium",
+    "cvss": 5.0,
+    "cwes": [
+     "CWE-918"
+    ],
+    "publicado_em": "2025-01-16T18:40:19Z",
+    "resumo": "Server-Side Request Forgery (SSRF) on redirects and federation"
+   },
+   {
+    "ghsa": "GHSA-8vmr-h7h5-cqhg",
+    "cve": "CVE-2024-36402",
+    "severidade": "medium",
+    "cvss": 5.3,
+    "cwes": [
+     "CWE-287"
+    ],
+    "publicado_em": "2025-01-16T17:15:50Z",
+    "resumo": "Unauthenticated writes to the media repository allow planting of problematic content"
+   },
+   {
+    "ghsa": "GHSA-vc2m-hw89-qjxf",
+    "cve": "CVE-2024-36403",
+    "severidade": "medium",
+    "cvss": 5.3,
+    "cwes": [
+     "CWE-770"
+    ],
+    "publicado_em": "2025-01-16T17:15:44Z",
+    "resumo": "Denial of service/high operating costs through unauthenticated downloads"
+   },
+   {
+    "ghsa": "GHSA-5crw-6j7v-xc72",
+    "cve": "CVE-2023-41318",
+    "severidade": "medium",
+    "cvss": 4.1,
+    "cwes": [
+     "CWE-79"
+    ],
+    "publicado_em": "2023-09-08T05:02:58Z",
+    "resumo": "Unsafe media served inline on download endpoints"
+   },
+   {
+    "ghsa": "GHSA-j889-h476-hh9h",
+    "cve": "CVE-2021-29453",
+    "severidade": "medium",
+    "cvss": 5.7,
+    "cwes": [
+     "CWE-20"
+    ],
+    "publicado_em": "2021-04-19T14:47:00Z",
+    "resumo": "Denial of service through memory exhaustion"
+   }
+  ]
+ }
+}

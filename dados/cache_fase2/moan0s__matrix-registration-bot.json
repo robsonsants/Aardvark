@@ -1,0 +1,22 @@
+{
+ "slug": "moan0s/matrix-registration-bot",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 14,
+  "stars": 84,
+  "watchers": 3,
+  "tamanho_kb": 182,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2022-01-14T20:23:28Z",
+  "push_em": "2023-12-18T10:21:53Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:09+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

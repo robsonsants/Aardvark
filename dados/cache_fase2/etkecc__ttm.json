@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/ttm",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 0,
+  "stars": 6,
+  "watchers": 2,
+  "tamanho_kb": 140,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-13T10:43:01Z",
+  "push_em": "2026-08-16T13:04:49Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:14+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "gergelypolonkai/matrix-glib-sdk",
+ "meta": {
+  "linguagem": "C",
+  "forks": 0,
+  "stars": 18,
+  "watchers": 6,
+  "tamanho_kb": 1071,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2015-12-10T16:36:51Z",
+  "push_em": "2018-05-14T08:13:37Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:51+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

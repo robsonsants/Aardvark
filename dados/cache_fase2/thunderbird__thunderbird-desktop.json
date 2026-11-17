@@ -1,0 +1,245 @@
+{
+ "slug": "thunderbird/thunderbird-desktop",
+ "meta": {
+  "linguagem": "JavaScript",
+  "forks": 38,
+  "stars": 110,
+  "watchers": 0,
+  "tamanho_kb": 616839,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-10-29T17:41:03Z",
+  "push_em": "2026-08-16T22:38:56Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:39+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 37,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "64kramsystem/thunderturd",
+    "ahead_by": 0,
+    "behind_by": 222,
+    "push_em": "2026-08-12T08:34:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "mozilla/enterprise-thunderbird",
+    "ahead_by": 32906,
+    "behind_by": 154560,
+    "push_em": "2026-08-10T12:39:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "deekovski/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 70,
+    "push_em": "2026-08-10T09:49:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "ndo84bw/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 71,
+    "push_em": "2026-08-10T09:04:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "aokblast/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 72,
+    "push_em": "2026-08-09T22:27:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "bhaveshpp9/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 79,
+    "push_em": "2026-08-08T10:44:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "changsongyang/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 80,
+    "push_em": "2026-08-08T06:50:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "flirt-ing/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 108,
+    "push_em": "2026-08-06T05:15:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "KhushilMistry/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 121,
+    "push_em": "2026-08-05T10:02:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "kbilic/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 121,
+    "push_em": "2026-08-05T10:02:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "yaronf/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 149,
+    "push_em": "2026-08-01T18:48:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "ddann/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 162,
+    "push_em": "2026-07-30T14:15:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "anupamme/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 183,
+    "push_em": "2026-07-29T05:50:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "MatthewCash/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 491,
+    "push_em": "2026-07-26T20:40:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "MavieLyw/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 226,
+    "push_em": "2026-07-21T22:54:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hazzer890/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 226,
+    "push_em": "2026-07-21T22:54:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "masecode67/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 250,
+    "push_em": "2026-07-20T20:20:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "nyxeiras/amadeuse-mails-manager",
+    "ahead_by": 0,
+    "behind_by": 257,
+    "push_em": "2026-07-18T18:49:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "kaan-dogan/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 359,
+    "push_em": "2026-07-08T23:00:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "bidaian/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 456,
+    "push_em": "2026-06-30T21:50:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "itagagaki/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 471,
+    "push_em": "2026-06-26T10:53:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "blank-repo/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 550,
+    "push_em": "2026-06-20T12:14:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "beedell-roke/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-05-24T22:17:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "gungwang/thunderbird-desktop",
+    "ahead_by": 7,
+    "behind_by": 1763,
+    "push_em": "2026-05-11T00:39:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "5imple/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "scm-repo-mirror/thunderbird_thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "SalvadorAgr/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "TheKaverian/AnderMail",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "masscollaborationlabs/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "cavanaughdesign/thunderbird-desktop",
+    "ahead_by": 0,
+    "behind_by": 1763,
+    "push_em": "2026-02-25T20:23:59Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 38
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

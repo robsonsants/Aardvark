@@ -1,0 +1,22 @@
+{
+ "slug": "matiaslina/perl6-matrix-client",
+ "meta": {
+  "linguagem": "Raku",
+  "forks": 3,
+  "stars": 13,
+  "watchers": 3,
+  "tamanho_kb": 147,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2017-04-04T01:15:20Z",
+  "push_em": "2021-08-25T23:52:58Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:55+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

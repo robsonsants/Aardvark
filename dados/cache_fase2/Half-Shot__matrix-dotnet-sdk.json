@@ -1,0 +1,22 @@
+{
+ "slug": "Half-Shot/matrix-dotnet-sdk",
+ "meta": {
+  "linguagem": "C#",
+  "forks": 22,
+  "stars": 62,
+  "watchers": 5,
+  "tamanho_kb": 142,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2016-03-18T23:16:36Z",
+  "push_em": "2022-12-08T04:01:44Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:51+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

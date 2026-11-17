@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/ketesa",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 35,
+  "stars": 462,
+  "watchers": 3,
+  "tamanho_kb": 14681,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-27T06:28:35Z",
+  "push_em": "2026-08-16T12:26:06Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:11+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

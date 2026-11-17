@@ -1,0 +1,367 @@
+{
+ "slug": "matrix-org/matrix-js-sdk",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 701,
+  "stars": 2168,
+  "watchers": 47,
+  "tamanho_kb": 57619,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-03-04T17:28:51Z",
+  "push_em": "2026-08-15T20:33:07Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:56+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 767,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "CloudEngineHub/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T01:05:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "uhoreg/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 3755,
+    "push_em": "2026-08-14T22:01:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "eleboucher/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 26,
+    "push_em": "2026-08-14T15:23:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "Reality2byte/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T13:18:09Z",
+    "stars": 1
+   },
+   {
+    "fork": "esinanturan/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T12:38:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "HaroldHuanrongLIU/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-14T08:02:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "ashnigam/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-08-12T17:31:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "badrito/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-06T08:58:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "escix/matrix-js-sdk",
+    "ahead_by": 7,
+    "behind_by": 14,
+    "push_em": "2026-08-05T09:20:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "yaasiinmd1/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 22,
+    "push_em": "2026-08-03T16:06:18Z",
+    "stars": 1
+   },
+   {
+    "fork": "syphernl/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 25,
+    "push_em": "2026-08-03T15:03:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "meedio/matrix-js-sdk-development",
+    "ahead_by": 0,
+    "behind_by": 132,
+    "push_em": "2026-08-02T12:20:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "onepartho/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 35,
+    "push_em": "2026-07-24T14:32:32Z",
+    "stars": 1
+   },
+   {
+    "fork": "Johennes/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 734,
+    "push_em": "2026-07-23T04:55:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "basnijholt/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 511,
+    "push_em": "2026-07-22T09:22:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "crime-think/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 52,
+    "push_em": "2026-07-17T09:42:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "gumadeiras/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 194,
+    "push_em": "2026-07-16T18:16:46Z",
+    "stars": 1
+   },
+   {
+    "fork": "thetayloredman/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-07-15T17:50:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "mvanhorn/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 64,
+    "push_em": "2026-07-13T08:52:12Z",
+    "stars": 1
+   },
+   {
+    "fork": "Black-Innovation-Collective/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 65,
+    "push_em": "2026-07-11T07:48:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "krithin/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 71,
+    "push_em": "2026-07-08T07:08:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "jlee1201/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 192,
+    "push_em": "2026-07-05T02:17:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "ZHYsfl/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 84,
+    "push_em": "2026-06-26T14:12:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "siennathesane/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 85,
+    "push_em": "2026-06-25T10:15:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "adamvy-oai/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 97,
+    "push_em": "2026-06-17T17:18:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "AY0Tgourmetart/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 702,
+    "push_em": "2026-06-17T03:47:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "qingyun-wu/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 107,
+    "push_em": "2026-06-10T21:57:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "meedio/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 132,
+    "push_em": "2026-06-10T08:06:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "elcolloff/matrix-js-sdk",
+    "erro": 404
+   },
+   {
+    "fork": "shcherbak/matrix-js-sdk",
+    "ahead_by": 0,
+    "behind_by": 117,
+    "push_em": "2026-06-06T22:17:04Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 701
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-mp7c-m3rh-r56v",
+    "cve": "CVE-2025-59160",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-09-16T13:12:53Z",
+    "resumo": "Insufficient validation when considering a room to be upgraded by another"
+   },
+   {
+    "ghsa": "GHSA-xvg8-m4x3-w6xr",
+    "cve": "CVE-2024-50336",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [
+     "CWE-352",
+     "CWE-1287"
+    ],
+    "publicado_em": "2024-11-12T10:12:07Z",
+    "resumo": "Insufficient MXC URI validation allows client-side path traversal"
+   },
+   {
+    "ghsa": "GHSA-vhr5-g3pm-49fm",
+    "cve": "CVE-2024-42369",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-674"
+    ],
+    "publicado_em": "2024-08-20T12:26:00Z",
+    "resumo": "A room with itself as a its predecessor will freeze matrix-js-sdk"
+   },
+   {
+    "ghsa": "GHSA-6g67-q39g-r79q",
+    "cve": "CVE-2023-29529",
+    "severidade": "medium",
+    "cvss": 5.0,
+    "cwes": [
+     "CWE-862"
+    ],
+    "publicado_em": "2023-04-13T17:27:09Z",
+    "resumo": "Invisible eavesdropping in group calls"
+   },
+   {
+    "ghsa": "GHSA-mwq8-fjpf-c2gr",
+    "cve": "CVE-2023-28427",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-1321"
+    ],
+    "publicado_em": "2023-03-28T15:11:17Z",
+    "resumo": "Prototype pollution in matrix-js-sdk (part 2)"
+   },
+   {
+    "ghsa": "GHSA-6263-x97c-c4gg",
+    "cve": "CVE-2022-39249",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-28T16:03:48Z",
+    "resumo": "Impersonation via forwarded Megolm sessions"
+   },
+   {
+    "ghsa": "GHSA-hvv8-5v86-r45x",
+    "cve": "CVE-2022-39236",
+    "severidade": "medium",
+    "cvss": 4.3,
+    "cwes": [],
+    "publicado_em": "2022-09-28T16:01:57Z",
+    "resumo": "Improper beacon events can cause availability issues"
+   },
+   {
+    "ghsa": "GHSA-rfv9-x7hh-xc32",
+    "cve": "CVE-2022-36059",
+    "severidade": "high",
+    "cvss": 8.2,
+    "cwes": [
+     "CWE-1321"
+    ],
+    "publicado_em": "2023-03-28T15:10:28Z",
+    "resumo": "Prototype pollution in matrix-js-sdk"
+   },
+   {
+    "ghsa": "GHSA-r48r-j8fx-mq2c",
+    "cve": "CVE-2022-39251",
+    "severidade": "critical",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-28T16:06:44Z",
+    "resumo": "Olm/Megolm protocol confusion"
+   },
+   {
+    "ghsa": "GHSA-5w8r-8pgj-5jmf",
+    "cve": "CVE-2022-39250",
+    "severidade": "critical",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-29T08:28:12Z",
+    "resumo": "Key/device identifier confusion in SAS verification"
+   },
+   {
+    "ghsa": "GHSA-4jf8-g8wp-cx7c",
+    "cve": "CVE-2024-47080",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-200",
+     "CWE-287"
+    ],
+    "publicado_em": "2024-10-15T11:25:54Z",
+    "resumo": "Keys sent via `sendSharedHistoryKeys` vulnerable to interception by malicious homeserver"
+   },
+   {
+    "ghsa": "GHSA-23cm-x6j7-6hq3",
+    "cve": "CVE-2021-40823",
+    "severidade": "critical",
+    "cvss": null,
+    "cwes": [
+     "CWE-322"
+    ],
+    "publicado_em": "2021-09-14T13:17:51Z",
+    "resumo": "matrix-js-sdk can be tricked into disclosing E2EE room keys to a participating homeserver"
+   }
+  ]
+ }
+}

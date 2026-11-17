@@ -1,0 +1,22 @@
+{
+ "slug": "krille-chan/fluffychat",
+ "meta": {
+  "linguagem": "Dart",
+  "forks": 609,
+  "stars": 3052,
+  "watchers": 25,
+  "tamanho_kb": 2595878,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-07-13T10:48:16Z",
+  "push_em": "2026-08-16T10:54:51Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:04+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

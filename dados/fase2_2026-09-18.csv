@@ -1,0 +1,161 @@
+id,camada,nome,slug,linguagem_diretorio,linguagem_github,maturidade,arquivado,forks,stars,push_em,n_cves,cves,severidade_max,forks_ativos,forks_divergentes,apto_fase2
+SRV-001,Servidor,Synapse,element-hq/synapse,Python,Python,Stable,False,578,4525,2026-08-14T14:45:47Z,11,CVE-2026-45078;CVE-2026-45076;CVE-2025-61672;CVE-2025-30355;CVE-2024-53863;CVE-2024-52815;CVE-2024-52805;CVE-2024-53867;CVE-2024-37303;CVE-2024-37302;CVE-2024-31208,high,30,5,sim
+SRV-002,Servidor,Tuwunel,matrix-construct/tuwunel,Rust,Rust,Stable,False,206,2434,2026-08-17T02:53:36Z,0,,,30,4,nao
+SRV-004,Servidor,Dendrite,element-hq/dendrite,Go,Go,Beta,False,98,957,2026-07-27T03:21:14Z,0,,,30,4,nao
+SRV-006,Servidor,Construct,matrix-construct/construct,C++,C++,Obsolete,False,41,395,2023-05-02T04:19:05Z,0,,,,,nao
+SRV-007,Servidor,Ligase,finogeeks/Ligase,Go,Go,Obsolete,False,30,141,2023-10-08T03:19:33Z,0,,,0,0,nao
+SRV-008,Servidor,bullettime,matrix-org/bullettime,Go,Go,Obsolete,False,6,32,2015-09-21T12:14:29Z,0,,,0,0,nao
+SRV-009,Servidor,Dendron,matrix-org/dendron,Go,Go,Obsolete,True,9,36,2018-02-27T14:28:33Z,0,,,0,0,nao
+SRV-010,Servidor,jSynapse,swarmcom/jSynapse,Java,Java,Obsolete,False,7,27,2015-04-24T16:05:04Z,0,,,,,nao
+SRV-011,Servidor,Maelstrom,maelstrom-rs/maelstrom,Rust,Rust,Obsolete,False,19,262,2026-04-14T07:00:05Z,0,,,1,0,nao
+SRV-012,Servidor,Matrex,bismark/matrex,Elixir,Elixir,Obsolete,False,7,38,2018-02-22T17:14:02Z,0,,,,,nao
+SRV-013,Servidor,mxhsd,kamax-io/mxhsd,Java,Java,Obsolete,True,3,29,2018-10-19T21:44:30Z,0,,,,,nao
+SRV-014,Servidor,Pallium,KoFish/pallium,Go,Go,Obsolete,False,6,44,2015-01-15T20:15:40Z,0,,,0,0,nao
+SRV-015,Servidor,Transform,bettiah/transform,TypeScript,TypeScript,Obsolete,False,2,16,2018-06-30T12:31:38Z,0,,,0,0,nao
+SRV-017,Servidor,conduwuit,girlbossceo/conduwuit,Rust,Rust,Obsolete,True,2,24,2026-05-29T13:47:00Z,0,,,2,0,nao
+SDK-001,SDK,Matrix.org AS Node SDK,matrix-org/matrix-appservice-node,JavaScript,TypeScript,Stable,False,28,91,2026-08-10T05:38:39Z,0,,,4,0,nao
+SDK-002,SDK,Matrix.org JS SDK,matrix-org/matrix-js-sdk,JavaScript,TypeScript,Stable,False,701,2168,2026-08-15T20:33:07Z,12,CVE-2025-59160;CVE-2024-50336;CVE-2024-42369;CVE-2023-29529;CVE-2023-28427;CVE-2022-39249;CVE-2022-39236;CVE-2022-36059;CVE-2022-39251;CVE-2022-39250;CVE-2024-47080;CVE-2021-40823,critical,30,1,sim
+SDK-003,SDK,MatrixBot .NET Core SDK,enimatek-nl/matrixbot-dotnet-sdk,C#,C#,Obsolete,False,0,15,2022-07-18T11:23:30Z,0,,,,,nao
+SDK-005,SDK,Ruma (core),ruma/ruma,Rust,Rust,Stable,False,199,732,2026-08-12T09:56:58Z,0,,,30,4,nao
+SDK-006,SDK,gomatrix,matrix-org/gomatrix,Go,Go,Obsolete,True,52,288,2022-09-26T10:26:14Z,0,,,2,2,nao
+SDK-007,SDK,matrix-appservice-bridge,matrix-org/matrix-appservice-bridge,TypeScript,TypeScript,Stable,False,76,183,2026-07-30T15:06:54Z,2,CVE-2023-38691;CVE-2021-32659,medium,10,2,sim
+SDK-008,SDK,matrix-nio,matrix-nio/matrix-nio,Python,Python,Stable,False,180,706,2026-08-08T08:23:09Z,1,CVE-2022-39254,low,30,6,sim
+SDK-009,SDK,mautrix-go,mautrix/go,Go,Go,Stable,False,119,649,2026-08-16T22:25:25Z,0,,,30,7,nao
+SDK-010,SDK,mautrix-python,mautrix/python,Python,Python,Stable,False,83,251,2026-07-05T20:42:21Z,0,,,23,8,nao
+SDK-012,SDK,Glitch in the Matrix,eeeeeta/glitch-in-the-matrix,Rust,Rust,Obsolete,True,5,32,2022-09-08T10:10:58Z,0,,,0,0,nao
+SDK-013,SDK,Gyr,non-Jedi/gyr,Python,Python,Obsolete,True,0,9,2019-10-23T00:46:09Z,0,,,0,0,nao
+SDK-014,SDK,Matrix .NET SDK,Half-Shot/matrix-dotnet-sdk,C#,C#,Obsolete,False,22,62,2022-12-08T04:01:44Z,0,,,,,nao
+SDK-015,SDK,Matrix C# SDK,baking-bad/matrix-dotnet-sdk,C#,C#,Beta,False,19,112,2024-06-23T11:50:10Z,0,,,,,nao
+SDK-016,SDK,Matrix Client SDK for GLib,gergelypolonkai/matrix-glib-sdk,C,C,Obsolete,False,0,18,2018-05-14T08:13:37Z,0,,,,,nao
+SDK-017,SDK,Matrix Dart SDK,famedly/matrix-dart-sdk,Dart,Dart,Stable,False,90,120,2026-08-15T15:48:43Z,0,,,,,nao
+SDK-018,SDK,Matrix Java SDK,kamax-io/matrix-java-sdk,Java,Java,Obsolete,True,13,21,2019-06-20T21:16:30Z,0,,,,,nao
+SDK-020,SDK,Matrix-ClientServer-API-java,JojiiOfficial/Matrix-ClientServer-API-java,Java,Java,Obsolete,False,12,47,2023-11-15T10:57:39Z,0,,,,,nao
+SDK-021,SDK,Matrix.org Android SDK,matrix-org/matrix-android-sdk,Java,Java,Obsolete,True,134,365,2022-02-08T09:00:16Z,0,,,,,nao
+SDK-022,SDK,Matrix.org AngularJS SDK,matrix-org/matrix-angular-sdk,JavaScript,JavaScript,Obsolete,True,23,28,2016-10-23T21:18:26Z,0,,,0,0,nao
+SDK-023,SDK,Matrix.org Python SDK,matrix-org/matrix-python-sdk,Python,Python,Obsolete,False,118,266,2022-10-16T09:13:19Z,0,,,1,0,nao
+SDK-024,SDK,Matrix.org iOS SDK,matrix-org/matrix-ios-sdk,Objective-C,Objective-C,Beta,False,226,483,2026-05-27T08:57:20Z,2,CVE-2022-39257;CVE-2022-39255,critical,,,nao
+SDK-025,SDK,Matrix::Client,matiaslina/perl6-matrix-client,Raku,Raku,Obsolete,False,3,13,2021-08-25T23:52:58Z,0,,,,,nao
+SDK-026,SDK,MatrixAPI,VRocker/MatrixAPI,C#,C#,Obsolete,False,5,39,2022-12-08T02:14:42Z,0,,,,,nao
+SDK-031,SDK,Ruby Matrix SDK,ananace/ruby-matrix-sdk,Ruby,Ruby,Beta,False,12,94,2026-01-16T15:08:14Z,0,,,,,nao
+SDK-032,SDK,Swift MatrixSDK,gperdomor/matrix-sdk,Swift,,Obsolete,,,,,0,,,0,0,nao
+SDK-035,SDK,botkit-matrix,frankgerhardt/botkit-matrix,JavaScript,JavaScript,Obsolete,False,2,7,2021-02-04T05:29:31Z,0,,,0,0,nao
+SDK-036,SDK,dial-phone,mtorials/dial-phone,Kotlin,Kotlin,Obsolete,False,2,9,2022-05-24T09:24:49Z,0,,,0,0,nao
+SDK-037,SDK,goMatrix,geir54/goMatrix,Go,Go,Obsolete,False,3,8,2016-05-31T11:46:18Z,0,,,0,0,nao
+SDK-039,SDK,jmsdk,ma1uta/jmsdk,Java,Java,Obsolete,False,14,36,2023-12-05T22:28:26Z,0,,,,,nao
+SDK-041,SDK,matrix-bot-sdk,turt2live/matrix-bot-sdk,TypeScript,TypeScript,Beta,False,91,273,2026-03-27T15:54:26Z,0,,,20,2,nao
+SDK-042,SDK,matrix-erlang-sdk,anhallbe/matrix-erlang-sdk,Erlang,Erlang,Obsolete,False,1,7,2021-09-24T08:56:11Z,0,,,,,nao
+SDK-043,SDK,matrix-kt,Dominaezzz/matrix-kt,Kotlin,Kotlin,Obsolete,True,9,31,2022-10-09T15:36:48Z,0,,,0,0,nao
+SDK-044,SDK,matrix-redux-wrap,lukebarnard1/matrix-redux-wrap,JavaScript,JavaScript,Obsolete,False,1,3,2018-06-12T19:00:31Z,0,,,0,0,nao
+SDK-045,SDK,matrix-rust-sdk,matrix-org/matrix-rust-sdk,Rust,Rust,Stable,False,479,2245,2026-08-17T00:36:03Z,10,CVE-2026-45057;CVE-2026-45056;CVE-2025-66622;CVE-2025-59047;CVE-2025-53549;CVE-2025-48937;CVE-2024-52813;CVE-2024-40648;CVE-2024-34353;CVE-2022-39252,high,30,6,sim
+SDK-046,SDK,mautrix-appservice-go,tulir/mautrix-appservice-go,Go,Go,Obsolete,True,6,10,2020-05-09T11:31:45Z,0,,,0,0,nao
+SDK-047,SDK,mtxclient,mujx/mtxclient,C++,C++,Obsolete,True,9,21,2019-03-12T21:13:52Z,0,,,,,nao
+SDK-048,SDK,newlisp-matrix-client,IngoHohmann/newlisp-matrix-client,Lisp,NewLisp,Obsolete,False,0,7,2015-05-15T15:04:23Z,0,,,,,nao
+SDK-049,SDK,smallbot-matrix,cybertim/SmallBotMatrix,TypeScript,TypeScript,Obsolete,False,2,10,2021-09-13T17:53:13Z,0,,,0,0,nao
+SDK-051,SDK,matrix-communication-client,Cosium/matrix-communication-client,Java,Java,Obsolete,False,13,47,2026-08-03T09:45:54Z,0,,,,,nao
+SDK-055,SDK,Elm SDK,noordstar/elm-matrix-sdk-beta,Elm,Elm,Beta,False,0,10,2026-04-17T15:36:39Z,0,,,,,nao
+SDK-056,SDK,Matrix.swift,circles-project/Matrix.swift,Swift,Swift,Obsolete,False,2,17,2025-02-03T20:16:17Z,0,,,2,2,nao
+SDK-059,SDK,go-msc1929,etkecc/go-msc1929,Go,Go,Stable,False,1,4,2026-08-16T13:10:08Z,0,,,1,0,nao
+SDK-060,SDK,Matrix Nim SDK,dylhack/matrix-nim-sdk,Nim,Nim,Obsolete,True,2,19,2022-08-11T09:46:36Z,0,,,,,nao
+SDK-061,SDK,matrix_bot_light,roquess/matrix_bot_light,Erlang,Erlang,Beta,False,0,1,2026-03-29T05:21:01Z,0,,,,,nao
+SDK-062,SDK,Halcyon,WesR/Halcyon,Python,Python,Beta,False,1,26,2026-04-13T03:56:52Z,0,,,0,0,nao
+INT-001,Integracao,emm,etkecc/emm,Go,Go,,False,3,23,2026-08-16T12:48:23Z,0,,,,,nao
+INT-002,Integracao,baibot,etkecc/baibot,Rust,Rust,,False,41,239,2026-08-16T21:42:23Z,0,,,,,nao
+INT-003,Integracao,Hemppa,vranki/hemppa,Python,Python,,False,37,180,2026-02-12T13:42:29Z,0,,,,,nao
+INT-004,Integracao,Honoroit,etkecc/honoroit,Go,Go,,False,1,29,2026-08-16T12:58:51Z,0,,,,,nao
+INT-005,Integracao,matrix-email-bot,t2bot/matrix-email-bot,TypeScript,TypeScript,,False,12,46,2024-02-16T00:07:10Z,0,,,,,nao
+INT-006,Integracao,matrix-eno-bot,8go/matrix-eno-bot,"Python, Bash",Shell,,False,17,101,2024-09-03T14:57:51Z,0,,,,,nao
+INT-007,Integracao,matrix-feeder,dragonchaser/matrix-feeder,JavaScript,JavaScript,,False,3,27,2026-01-16T15:11:47Z,0,,,,,nao
+INT-008,Integracao,Matrix Registration Bot,moan0s/matrix-registration-bot,Python,Python,,False,14,84,2023-12-18T10:21:53Z,0,,,,,nao
+INT-009,Integracao,Matrix Rooms Search API,etkecc/mrs,Go,Go,,False,5,38,2026-08-16T16:56:35Z,0,,,,,nao
+INT-011,Integracao,matrix-trello-bot,turt2live/matrix-trello-bot,TypeScript,TypeScript,,True,6,24,2023-02-27T22:41:53Z,0,,,,,nao
+INT-012,Integracao,maubot,maubot/maubot,Python,Python,,False,108,891,2026-07-09T08:44:30Z,0,,,,,nao
+INT-013,Integracao,opsdroid,opsdroid/opsdroid,Python,Python,,False,425,869,2026-05-05T08:46:46Z,0,,,,,nao
+INT-015,Integracao,Ketesa,etkecc/ketesa,TypeScript,TypeScript,,False,35,462,2026-08-16T12:26:06Z,0,,,,,nao
+INT-016,Integracao,matrix-hookshot,matrix-org/matrix-hookshot,"TypeScript, Rust",TypeScript,,False,93,443,2026-08-14T22:39:42Z,4,CVE-2026-81173;CVE-2026-62267;CVE-2025-23197;CVE-2023-43656,high,,,nao
+INT-017,Integracao,NeoBoard,nordeck/matrix-neoboard,TypeScript,TypeScript,,False,8,136,2026-08-14T20:07:00Z,0,,,,,nao
+INT-018,Integracao,Matrix Poll,nordeck/matrix-poll,TypeScript,TypeScript,,False,8,59,2026-08-14T20:41:28Z,0,,,,,nao
+INT-019,Integracao,Matrix Meetings,nordeck/matrix-meetings,TypeScript,TypeScript,,False,12,108,2026-08-17T01:12:52Z,0,,,,,nao
+INT-020,Integracao,Matrix BarCamp,nordeck/matrix-barcamp,TypeScript,TypeScript,,False,3,22,2026-08-15T05:01:53Z,0,,,,,nao
+INT-021,Integracao,Matrix Communication Plugin for Jenkins,jenkinsci/matrix-communication-plugin,Java,Java,,False,1,14,2026-08-03T13:04:02Z,0,,,,,nao
+INT-022,Integracao,Time-to-Matrix,etkecc/ttm,Go,Go,,False,0,6,2026-08-16T13:04:49Z,0,,,,,nao
+INT-024,Integracao,radicale-auth-matrix,etkecc/radicale-auth-matrix,Python,Python,,False,0,4,2026-07-26T23:18:08Z,0,,,,,nao
+INT-025,Integracao,Draupnir,the-draupnir-project/Draupnir,TypeScript,TypeScript,,False,28,241,2026-08-14T18:35:55Z,0,,,,,nao
+INT-026,Integracao,Mjolnir,matrix-org/mjolnir,TypeScript,TypeScript,,False,72,442,2026-08-11T23:44:36Z,1,CVE-2025-24024,critical,,,nao
+DIS-003,Distribuicao,synapse-operator,opdev/synapse-operator,,Go,Stable,False,7,31,2026-04-09T07:53:11Z,0,,,,,nao
+DIS-004,Distribuicao,ESS Community,element-hq/ess-helm,,Python,Stable,False,141,925,2026-08-14T10:20:56Z,1,CVE-2026-24044,critical,,,nao
+DIS-006,Distribuicao,matrix-docker-ansible-deploy,spantaleev/matrix-docker-ansible-deploy,,Jinja,Stable,False,1181,6462,2026-08-17T01:13:10Z,0,,,,,nao
+BRG-001,Bridge,mautrix-twitter,mautrix/twitter,Python,Go,Stable,False,33,120,2026-08-16T13:17:06Z,0,,,15,2,nao
+BRG-002,Bridge,matrix-appservice-discord,matrix-org/matrix-appservice-discord,TypeScript,TypeScript,Beta,False,155,908,2024-07-23T22:00:33Z,0,,,8,6,nao
+BRG-003,Bridge,mautrix-discord,mautrix/discord,Go,Go,Beta,False,76,490,2026-08-16T13:17:36Z,0,,,30,12,nao
+BRG-004,Bridge,matrix-discord-bridge,git-bruh/matrix-discord-bridge,Python,Python,Alpha,True,9,33,2022-09-28T12:13:06Z,0,,,0,0,nao
+BRG-006,Bridge,Postmoogle,etkecc/postmoogle,Go,Go,Stable,False,6,87,2026-08-16T13:02:31Z,0,,,6,1,nao
+BRG-007,Bridge,mautrix-meta,mautrix/meta,Go,Go,Stable,False,68,419,2026-08-16T13:17:09Z,0,,,30,6,nao
+BRG-008,Bridge,mautrix-facebook,mautrix/facebook,Python,Python,Obsolete,True,59,391,2024-03-02T12:41:26Z,0,,,0,0,nao
+BRG-009,Bridge,mautrix-googlechat,mautrix/googlechat,Python,Python,Beta,False,36,126,2026-04-22T17:55:36Z,0,,,11,4,nao
+BRG-011,Bridge,mautrix-imessage,mautrix/imessage,Go,Go,Beta,False,42,449,2026-05-14T10:57:54Z,0,,,12,5,nao
+BRG-013,Bridge,mautrix-instagram,mautrix/instagram,Python,Python,Obsolete,True,24,151,2024-03-02T12:41:28Z,0,,,2,0,nao
+BRG-014,Bridge,matrix-appservice-irc,matrix-org/matrix-appservice-irc,JavaScript,TypeScript,Stable,False,152,505,2026-04-02T15:31:38Z,9,CVE-2025-27146;CVE-2024-52505;CVE-2024-39691;CVE-2024-32000;CVE-2023-38690;CVE-2023-38700;CVE-2022-39203;CVE-2022-39202;CVE-2022-29166,high,18,3,sim
+BRG-015,Bridge,Heisenbridge,hifi/heisenbridge,Python,Python,Stable,False,42,309,2025-10-04T11:13:47Z,0,,,15,3,nao
+BRG-017,Bridge,beeper-line,beeper/line,Go,Go,Stable,False,4,33,2026-08-14T14:01:41Z,0,,,4,1,nao
+BRG-019,Bridge,mautrix-linkedin,mautrix/linkedin,Go,Go,Stable,False,6,32,2026-08-16T13:17:01Z,0,,,6,3,nao
+BRG-020,Bridge,matrix-appservice-mattermost,dalcde/matrix-appservice-mattermost,TypeScript,TypeScript,Beta,True,3,34,2025-01-23T22:04:19Z,0,,,1,0,nao
+BRG-021,Bridge,matrix-as-mm,mattermost/matrix-as-mm,TypeScript,PLpgSQL,Beta,False,4,28,2023-07-28T09:04:51Z,0,,,2,2,nao
+BRG-023,Bridge,mautrix-signal,mautrix/signal,Go,Go,Stable,False,89,667,2026-08-16T13:17:10Z,0,,,28,5,nao
+BRG-024,Bridge,go-skype-bridge,kelaresg/go-skype-bridge,Go,Go,Beta,False,19,39,2023-02-23T13:28:09Z,0,,,3,2,nao
+BRG-025,Bridge,mautrix-slack,mautrix/slack,Go,Go,Stable,False,31,101,2026-08-16T13:19:27Z,0,,,17,4,nao
+BRG-026,Bridge,matrix-appservice-slack,matrix-org/matrix-appservice-slack,TypeScript,TypeScript,Obsolete,True,76,281,2026-01-22T15:12:07Z,0,,,6,0,nao
+BRG-027,Bridge,matrix-puppet-slack,matrix-hacks/matrix-puppet-slack,JavaScript,JavaScript,Obsolete,False,17,48,2022-06-11T19:19:43Z,0,,,0,0,nao
+BRG-029,Bridge,mautrix-gmessages,mautrix/gmessages,Go,Go,Stable,False,30,165,2026-08-16T13:17:03Z,0,,,19,5,nao
+BRG-030,Bridge,matrix-sms-bridge,benkuly/matrix-sms-bridge,Kotlin,Kotlin,Beta,False,7,92,2025-10-20T18:31:08Z,0,,,2,1,nao
+BRG-033,Bridge,mautrix-telegram,mautrix/telegram,Python,Go,Beta,False,250,1720,2026-08-16T13:17:14Z,0,,,30,6,nao
+BRG-034,Bridge,matrix-qq,duo/matrix-qq,Go,Go,Alpha,False,13,172,2025-01-27T11:37:56Z,0,,,3,1,nao
+BRG-035,Bridge,matrix-wechat,duo/matrix-wechat,Go,Go,Alpha,False,14,178,2025-02-19T06:05:13Z,0,,,4,1,nao
+BRG-036,Bridge,matrix-appservice-wechaty,huan/matrix-appservice-wechaty,TypeScript,TypeScript,Alpha,False,15,147,2022-09-09T08:01:55Z,0,,,0,0,nao
+BRG-037,Bridge,mautrix-whatsapp,mautrix/whatsapp,Go,Go,Stable,False,268,1864,2026-08-16T13:17:16Z,0,,,30,6,nao
+BRG-038,Bridge,matrix-bifrost,matrix-org/matrix-bifrost,TypeScript,TypeScript,Beta,False,37,187,2026-08-09T12:58:02Z,0,,,10,1,nao
+BRG-040,Bridge,MatrixZulipBridge,GearKite/MatrixZulipBridge,Python,Python,Beta,False,5,20,2025-12-06T04:51:44Z,0,,,4,2,nao
+CLI-001,Cliente,chatrix,Automattic/chatrix,TypeScript,TypeScript,Stable,False,3,45,2026-08-08T10:40:01Z,0,,,3,0,nao
+CLI-004,Cliente,Cinny,cinnyapp/cinny,JavaScript,TypeScript,Stable,False,568,3842,2026-08-14T12:33:27Z,1,CVE-2026-42553,high,30,15,sim
+CLI-005,Cliente,Commet,commetchat/commet,Dart,Dart,Beta,False,72,1082,2026-08-06T14:17:40Z,0,,,,,nao
+CLI-006,Cliente,Element Classic (Android),element-hq/element-android,Kotlin,Kotlin,Stable,False,917,3719,2026-08-11T11:31:41Z,4,CVE-2025-27606;CVE-2024-26132;CVE-2024-26131;CVE-2021-40824,critical,30,9,sim
+CLI-007,Cliente,Element Classic (iOS),element-hq/element-ios,Swift,Swift,Stable,False,543,1839,2026-06-23T11:11:31Z,1,CVE-2022-41904,medium,30,7,sim
+CLI-008,Cliente,Element X (Android),element-hq/element-x-android,Kotlin,Kotlin,Stable,False,594,2327,2026-08-16T21:05:51Z,3,CVE-2026-55080;CVE-2025-31127;CVE-2025-27599,high,30,12,sim
+CLI-009,Cliente,Element X (iOS),element-hq/element-x-ios,Swift,Swift,Stable,False,360,919,2026-08-17T00:56:43Z,2,CVE-2026-55644;CVE-2025-31126,high,30,10,sim
+CLI-010,Cliente,Element Web / Desktop,element-hq/element-web,,TypeScript,Stable,False,2725,13382,2026-08-16T22:18:33Z,6,CVE-2026-55850;CVE-2025-59161;CVE-2025-32026;CVE-2024-51750;CVE-2024-51749;CVE-2024-47779,high,,,nao
+CLI-011,Cliente,Ement.el,alphapapa/ement.el,Emacs Lisp,Emacs Lisp,Stable,False,52,605,2025-11-18T01:18:37Z,0,,,,,nao
+CLI-012,Cliente,Extera Next,ExteraApp/Extera,Dart,Dart,Beta,False,11,98,2026-07-28T16:14:10Z,0,,,,,nao
+CLI-013,Cliente,Extera,officialdakari/Extera,TypeScript,,Obsolete,,,,,0,,,0,0,nao
+CLI-014,Cliente,FluffyChat,krille-chan/fluffychat,Flutter,Dart,Stable,False,609,3052,2026-08-16T10:54:51Z,0,,,,,nao
+CLI-016,Cliente,gomuks,tulir/gomuks,Go,Go,Beta,False,149,1713,2026-08-16T13:17:39Z,0,,,30,11,nao
+CLI-017,Cliente,gotktrix,diamondburned/gotktrix,Go,Go,Obsolete,False,6,310,2023-04-05T10:48:50Z,0,,,0,0,nao
+CLI-018,Cliente,Hydrogen,vector-im/hydrogen-web,JavaScript,TypeScript,Obsolete,False,131,711,2026-04-09T15:12:34Z,0,,,25,7,nao
+CLI-019,Cliente,iamb,ulyssa/iamb,Rust,Rust,Beta,False,106,1260,2026-08-17T01:58:11Z,0,,,30,10,nao
+CLI-022,Cliente,Mactrix,viktorstrate/mactrix,,Swift,Alpha,False,19,241,2026-07-23T13:59:04Z,0,,,,,nao
+CLI-023,Cliente,Mages,mlm-games/Mages,Kotlin,Kotlin,Alpha,False,12,159,2026-08-17T03:35:21Z,0,,,12,2,nao
+CLI-024,Cliente,matrix-commander-rs,8go/matrix-commander-rs,Rust,Rust,Stable,False,23,231,2026-08-10T05:20:46Z,0,,,23,4,nao
+CLI-025,Cliente,matrix-commander,8go/matrix-commander,Python,Python,Stable,False,69,750,2026-07-23T10:33:00Z,1,CVE-2024-45193,medium,21,2,sim
+CLI-026,Cliente,Miitrix,Sorunome/miitrix,C++,C++,Obsolete,False,3,142,2020-08-03T16:24:11Z,0,,,,,nao
+CLI-027,Cliente,mnotify,rumpelsepp/mnotify,Rust,Rust,Obsolete,False,4,77,2024-05-13T16:05:13Z,0,,,0,0,nao
+CLI-029,Cliente,Neoment,Massolari/neoment,Lua,Lua,Beta,False,4,74,2026-08-11T16:08:32Z,0,,,,,nao
+CLI-030,Cliente,Nheko,Nheko-Reborn/nheko,C++,C++,Beta,False,242,2477,2026-07-10T18:31:14Z,1,CVE-2022-39264,high,,,nao
+CLI-032,Cliente,Quadrix,alariej/quadrix,TypeScript,TypeScript,Obsolete,False,5,104,2023-11-10T14:30:02Z,0,,,0,0,nao
+CLI-033,Cliente,Quaternion,quotient-im/Quaternion,C++,C++,Beta,False,116,702,2026-06-19T08:07:27Z,0,,,,,nao
+CLI-034,Cliente,Relay,subpop/Relay,Swift,Swift,Alpha,False,4,53,2026-08-12T01:13:48Z,0,,,4,0,nao
+CLI-035,Cliente,Sable,SableClient/Sable,JavaScript,TypeScript,Beta,False,87,355,2026-08-17T01:41:39Z,0,,,30,5,nao
+CLI-036,Cliente,SchildiChat Next,SchildiChat/schildichat-android-next,,Kotlin,Beta,False,38,308,2026-08-15T08:57:27Z,0,,,,,nao
+CLI-037,Cliente,SchildiChat Revenge,SchildiChat/schildi-revenge,,Kotlin,Alpha,False,12,138,2026-08-16T12:28:10Z,0,,,,,nao
+CLI-038,Cliente,SchildiChat (Android),SchildiChat/SchildiChat-android,Kotlin,Kotlin,Stable,False,77,505,2026-07-26T11:55:46Z,0,,,30,2,nao
+CLI-039,Cliente,SchildiChat (Web),SchildiChat/schildichat-desktop,TypeScript,Shell,Stable,True,53,465,2026-03-09T16:46:59Z,0,,,17,4,nao
+CLI-040,Cliente,Singularity,Luxuride/singularity,Rust,Rust,Alpha,False,0,13,2026-08-16T11:13:55Z,0,,,0,0,nao
+CLI-041,Cliente,Syphon,syphon-org/syphon,Dart,Dart,Obsolete,False,69,1061,2024-08-05T13:09:26Z,0,,,,,nao
+CLI-044,Cliente,Tesseract,surakin/tesseract,"Rust, C++",C++,Alpha,False,0,24,2026-08-16T22:35:49Z,0,,,,,nao
+CLI-045,Cliente,Thunderbird,thunderbird/thunderbird-desktop,JavaScript,JavaScript,Beta,False,38,110,2026-08-16T22:38:56Z,0,,,30,2,nao
+CLI-046,Cliente,WanChat,lj92458/wanchat-android,,Kotlin,Beta,False,0,2,2026-04-20T01:39:48Z,0,,,,,nao
+CLI-047,Cliente,Watch The Matrix,pixlwave/Watch-The-Matrix,Swift,Swift,Alpha,False,4,96,2026-06-15T15:25:24Z,0,,,1,0,nao
+CLI-049,Cliente,Zooid,zooid-ai/clients,TypeScript,TypeScript,Alpha,False,0,0,2026-08-12T09:03:01Z,0,,,0,0,nao
+SUP-001,Suporte,olm (libolm),matrix-org/olm,C,,Deprecated,True,9,74,2026-02-23T15:55:10Z,0,,,,,nao
+SUP-002,Suporte,vodozemac,matrix-org/vodozemac,Rust,Rust,Stable,False,65,390,2026-08-13T14:29:49Z,2,CVE-2024-40640;CVE-2024-34063,low,30,3,sim
+SUP-003,Suporte,matrix-authentication-service,element-hq/matrix-authentication-service,Rust,Rust,Stable,False,106,277,2026-08-14T16:36:22Z,1,CVE-2025-62425,high,30,8,sim
+SUP-004,Suporte,sygnal,matrix-org/sygnal,Python,Python,Stable,True,156,191,2025-07-21T19:49:07Z,0,,,22,6,nao
+SUP-005,Suporte,sydent,matrix-org/sydent,Python,Python,Stable,True,87,318,2025-07-21T15:21:16Z,5,CVE-2023-38686;CVE-2021-29433;CVE-2021-29432;CVE-2021-29430;CVE-2021-29431,low,12,1,sim
+SUP-006,Suporte,matrix-media-repo,t2bot/matrix-media-repo,Go,Go,Stable,False,88,235,2025-11-20T01:15:49Z,7,CVE-2024-56515;CVE-2024-52791;CVE-2024-52602;CVE-2024-36402;CVE-2024-36403;CVE-2023-41318;CVE-2021-29453,medium,24,9,sim

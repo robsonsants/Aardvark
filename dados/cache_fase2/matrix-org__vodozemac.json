@@ -1,0 +1,261 @@
+{
+ "slug": "matrix-org/vodozemac",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 65,
+  "stars": 390,
+  "watchers": 16,
+  "tamanho_kb": 7228,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2021-12-16T21:16:53Z",
+  "push_em": "2026-08-13T14:29:49Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:41+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 66,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 3,
+  "detalhe": [
+   {
+    "fork": "U-sad/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-13T14:29:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "Fheyalabs/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2026-07-27T07:29:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "alinradut/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 27,
+    "push_em": "2026-07-16T12:52:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "adapt-toolkit/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 27,
+    "push_em": "2026-07-16T06:56:53Z",
+    "stars": 1
+   },
+   {
+    "fork": "punarinta/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 34,
+    "push_em": "2026-07-08T10:08:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "sheawinkler/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-06-14T00:00:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "smalyu/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 74,
+    "push_em": "2026-05-28T12:14:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "jhenrique04/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 64,
+    "push_em": "2026-05-16T18:35:45Z",
+    "stars": 1
+   },
+   {
+    "fork": "APOLLONLIN/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 64,
+    "push_em": "2026-05-15T11:39:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "gewitternacht/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 76,
+    "push_em": "2026-04-21T16:40:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "G-eve/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 82,
+    "push_em": "2026-04-17T12:40:39Z",
+    "stars": 1
+   },
+   {
+    "fork": "kalaine77/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 89,
+    "push_em": "2026-04-08T11:27:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "wissamblue69-dotcom/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 108,
+    "push_em": "2026-03-13T14:14:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "dim/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 108,
+    "push_em": "2026-03-13T14:14:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "hughns/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 108,
+    "push_em": "2026-03-13T09:55:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "chatsapp-labs/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 108,
+    "push_em": "2026-03-10T16:13:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "achmad-agus/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 114,
+    "push_em": "2026-03-09T19:23:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "cezary13k/vodozemac",
+    "erro": 404
+   },
+   {
+    "fork": "soatok/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 120,
+    "push_em": "2026-02-19T18:09:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "marcjermaine-pontiveros/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 120,
+    "push_em": "2026-01-26T11:23:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "Virtual0ps/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 120,
+    "push_em": "2026-01-26T11:23:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "CommE2E/vodozemac",
+    "ahead_by": 25,
+    "behind_by": 120,
+    "push_em": "2026-01-20T02:07:54Z",
+    "stars": 1
+   },
+   {
+    "fork": "ajbura/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 136,
+    "push_em": "2025-12-30T03:56:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "tulir/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 136,
+    "push_em": "2025-12-15T13:49:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "alpinebuster/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 136,
+    "push_em": "2025-12-04T05:18:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "fhilgers/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 136,
+    "push_em": "2025-12-01T11:07:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "xsanm/vodozemac",
+    "ahead_by": 1,
+    "behind_by": 143,
+    "push_em": "2025-10-31T10:51:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "WoYang/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 157,
+    "push_em": "2025-09-09T14:36:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "ebifriedrice/vodozemac",
+    "ahead_by": 0,
+    "behind_by": 157,
+    "push_em": "2025-09-09T14:36:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "tangowhisky-dev/vodozemac",
+    "ahead_by": 28,
+    "behind_by": 165,
+    "push_em": "2025-09-03T16:59:50Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 65
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-j8cm-g7r6-hfpq",
+    "cve": "CVE-2024-40640",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-07-17T14:31:02Z",
+    "resumo": "Usage of non-constant time base64 decoder could lead to leakage of secret key material"
+   },
+   {
+    "ghsa": "GHSA-c3hm-hxwf-g5c6",
+    "cve": "CVE-2024-34063",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-05-02T15:04:07Z",
+    "resumo": "Degraded secret zeroization capabilities"
+   }
+  ]
+ }
+}

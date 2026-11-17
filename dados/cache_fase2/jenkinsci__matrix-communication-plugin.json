@@ -1,0 +1,22 @@
+{
+ "slug": "jenkinsci/matrix-communication-plugin",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 1,
+  "stars": 14,
+  "watchers": 0,
+  "tamanho_kb": 146,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2023-07-03T18:13:48Z",
+  "push_em": "2026-08-03T13:04:02Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:00+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

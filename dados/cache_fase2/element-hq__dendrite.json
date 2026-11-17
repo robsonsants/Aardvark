@@ -1,0 +1,242 @@
+{
+ "slug": "element-hq/dendrite",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 98,
+  "stars": 957,
+  "watchers": 11,
+  "tamanho_kb": 44054,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-10-17T15:16:03Z",
+  "push_em": "2026-07-27T03:21:14Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:51+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 100,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "gamesguru/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-07T03:54:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "maccn/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-27T03:21:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "kennithjanderson/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-27T03:21:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "cyberb/dendrite",
+    "ahead_by": 7,
+    "behind_by": 2,
+    "push_em": "2026-07-12T14:18:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "cftsai/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-10T14:03:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "Johennes/dendrite",
+    "ahead_by": 0,
+    "behind_by": 107,
+    "push_em": "2026-07-09T08:06:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "bsmr/element-hq---dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-07T15:30:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "andypeng2015/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-23T22:12:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "camel9manc/dendrite",
+    "erro": 404
+   },
+   {
+    "fork": "skaschimer/dendrite",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-05-20T17:43:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "Mukhammadali/dendrite",
+    "ahead_by": 30,
+    "behind_by": 6,
+    "push_em": "2026-05-15T18:49:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "Deln0r/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-05-14T15:45:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "chenguohao/nexus_dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-05-10T08:12:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "Mic92/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-05-07T09:51:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "aiprox-org/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "HoangVanChau/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "chatek/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 1
+   },
+   {
+    "fork": "scalecode-solutions/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "Everwood-Technologies/dendrite-briij",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "yken-neky/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "JPisaBrony/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-08T20:12:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "nicholasarvelo/dendrite",
+    "ahead_by": 2,
+    "behind_by": 2,
+    "push_em": "2026-04-05T01:27:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "seanly/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-04-02T15:00:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "scarletdeathx/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-03-24T20:38:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "sanyaade-teachings/element-hq-dendrite-GPL",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-03-10T16:23:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "au2001-homelab/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-03-08T15:38:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "santiag0m/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-03-02T23:38:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "jackmaninov/dendrite",
+    "ahead_by": 5,
+    "behind_by": 8,
+    "push_em": "2026-02-25T14:02:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "sycy-station/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-02-23T13:49:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "tokii-doki/dendrite",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-02-20T00:29:55Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 98
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

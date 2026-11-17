@@ -1,0 +1,189 @@
+{
+ "slug": "matrix-org/sygnal",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 156,
+  "stars": 191,
+  "watchers": 5,
+  "tamanho_kb": 1044,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2014-12-18T15:48:48Z",
+  "push_em": "2025-07-21T19:49:07Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:42+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 128,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 22,
+  "divergentes": 6,
+  "detalhe": [
+   {
+    "fork": "Rezivure/sygnal",
+    "ahead_by": 14,
+    "behind_by": 10,
+    "push_em": "2026-04-24T20:14:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "pangeachat/sygnal-legacy",
+    "ahead_by": 9,
+    "behind_by": 10,
+    "push_em": "2026-03-02T19:06:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "Awesome-Technologies/sygnal",
+    "ahead_by": 0,
+    "behind_by": 277,
+    "push_em": "2026-02-23T10:16:21Z",
+    "stars": 1
+   },
+   {
+    "fork": "PhantomRay/sygnal",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-08-31T12:14:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "Lala27120/sygnal",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-08-17T14:55:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "Tetty10121986/sygnal-archive",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-21T19:49:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "ConnextVivendi/sygnal",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-21T19:49:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "kostukovic/sygnal",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-07-21T19:49:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "lmdanishirfan/sygnal",
+    "ahead_by": 0,
+    "behind_by": 16,
+    "push_em": "2025-06-18T11:42:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "FideiTech/sygnal",
+    "ahead_by": 0,
+    "behind_by": 17,
+    "push_em": "2025-06-12T15:22:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "tt6244/sygnal",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2025-02-28T20:44:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "sajeelH/sygnal",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2025-02-28T20:44:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "bingocatlion/sygnal",
+    "ahead_by": 0,
+    "behind_by": 21,
+    "push_em": "2025-02-04T00:01:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "zero-one-labs/zo-sygnal",
+    "ahead_by": 34,
+    "behind_by": 88,
+    "push_em": "2025-01-15T09:37:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "theobouwman/sygnal",
+    "ahead_by": 15,
+    "behind_by": 27,
+    "push_em": "2024-12-10T12:27:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "vecnathewhisperd0/sygnal",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2024-11-25T14:23:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "haisamMH/sygnal",
+    "ahead_by": 0,
+    "behind_by": 25,
+    "push_em": "2024-11-23T11:37:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "zeromage/sygnal",
+    "ahead_by": 0,
+    "behind_by": 27,
+    "push_em": "2024-11-20T16:44:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "paiir/sygnal",
+    "ahead_by": 0,
+    "behind_by": 27,
+    "push_em": "2024-10-09T13:41:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "V02460/sygnal",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2024-10-01T12:17:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "livilco/sygnal",
+    "ahead_by": 2,
+    "behind_by": 33,
+    "push_em": "2024-09-17T14:24:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "AnAlpaca/sygnal",
+    "ahead_by": 3,
+    "behind_by": 33,
+    "push_em": "2024-09-05T10:07:52Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 156
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

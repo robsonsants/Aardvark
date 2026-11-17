@@ -1,0 +1,22 @@
+{
+ "slug": "opdev/synapse-operator",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 7,
+  "stars": 31,
+  "watchers": 3,
+  "tamanho_kb": 14210,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2021-09-09T13:27:47Z",
+  "push_em": "2026-04-09T07:53:11Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:01+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "ma1uta/jmsdk",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 14,
+  "stars": 36,
+  "watchers": 3,
+  "tamanho_kb": 824,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-06-15T18:58:38Z",
+  "push_em": "2023-12-05T22:28:26Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:56+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "slug": "maelstrom-rs/maelstrom",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 19,
+  "stars": 262,
+  "watchers": 19,
+  "tamanho_kb": 1121,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-04-03T12:35:09Z",
+  "push_em": "2026-04-14T07:00:05Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:53+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 20,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 1,
+  "divergentes": 0,
+  "detalhe": [
+   {
+    "fork": "Monti-27/maelstrom",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2026-04-08T19:12:21Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 19
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

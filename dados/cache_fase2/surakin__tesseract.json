@@ -1,0 +1,22 @@
+{
+ "slug": "surakin/tesseract",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 0,
+  "stars": 24,
+  "watchers": 1,
+  "tamanho_kb": 48369,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2026-05-18T07:52:11Z",
+  "push_em": "2026-08-16T22:35:49Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:08+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

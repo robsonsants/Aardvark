@@ -1,0 +1,22 @@
+{
+ "slug": "lj92458/wanchat-android",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 0,
+  "stars": 2,
+  "watchers": 0,
+  "tamanho_kb": 89263,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2025-10-31T09:12:44Z",
+  "push_em": "2026-04-20T01:39:48Z",
+  "e_fork": true,
+  "upstream": "element-hq/element-x-android"
+ },
+ "coletado_em": "2026-09-18T03:50:08+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

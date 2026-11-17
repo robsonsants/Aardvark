@@ -1,0 +1,222 @@
+{
+ "slug": "mautrix/signal",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 89,
+  "stars": 667,
+  "watchers": 15,
+  "tamanho_kb": 4400,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2020-09-25T18:58:26Z",
+  "push_em": "2026-08-16T13:17:10Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:23+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 83,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 28,
+  "divergentes": 5,
+  "detalhe": [
+   {
+    "fork": "gentoo-golang-dist/signal",
+    "erro": 404
+   },
+   {
+    "fork": "surakin/signal",
+    "ahead_by": 66,
+    "behind_by": 10,
+    "push_em": "2026-08-03T11:33:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "SilverBirchh/signal",
+    "ahead_by": 0,
+    "behind_by": 18,
+    "push_em": "2026-07-23T09:57:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "kokomo123/signal",
+    "ahead_by": 0,
+    "behind_by": 12,
+    "push_em": "2026-07-20T14:29:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "apeltzer/signal",
+    "ahead_by": 0,
+    "behind_by": 12,
+    "push_em": "2026-07-20T12:16:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "stjordanis/signal-",
+    "ahead_by": 0,
+    "behind_by": 18,
+    "push_em": "2026-07-13T13:22:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "JAicewizard/signal",
+    "ahead_by": 2,
+    "behind_by": 22,
+    "push_em": "2026-06-26T20:16:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "tomaioo/signal",
+    "erro": 404
+   },
+   {
+    "fork": "x-mautrix/signal",
+    "ahead_by": 0,
+    "behind_by": 22,
+    "push_em": "2026-06-21T17:22:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "APOLLONLIN/signal",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2026-05-16T11:01:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "Kharakan/signal",
+    "ahead_by": 0,
+    "behind_by": 36,
+    "push_em": "2026-05-12T09:43:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "luisriverag/matrix_bridge-signal",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-05-10T05:48:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "rwky/signal",
+    "ahead_by": 1,
+    "behind_by": 62,
+    "push_em": "2026-04-11T11:37:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "alexandercarlis2-dotcom/signal",
+    "ahead_by": 0,
+    "behind_by": 72,
+    "push_em": "2026-03-24T19:45:59Z",
+    "stars": 1
+   },
+   {
+    "fork": "akdk7/mautrix_signal",
+    "ahead_by": 0,
+    "behind_by": 100,
+    "push_em": "2026-02-05T16:13:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "offsoc/signal",
+    "erro": 404
+   },
+   {
+    "fork": "Enzime/signal",
+    "ahead_by": 0,
+    "behind_by": 120,
+    "push_em": "2025-12-16T06:51:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "Doctor-love/mautrix-signal",
+    "ahead_by": 0,
+    "behind_by": 189,
+    "push_em": "2025-10-16T11:06:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "manmeta288/matrix-signal",
+    "ahead_by": 12,
+    "behind_by": 194,
+    "push_em": "2025-10-09T21:11:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "maltee1/mautrix-signal",
+    "ahead_by": 0,
+    "behind_by": 225,
+    "push_em": "2025-08-17T13:34:11Z",
+    "stars": 1
+   },
+   {
+    "fork": "run-my-job/signal",
+    "ahead_by": 0,
+    "behind_by": 250,
+    "push_em": "2025-07-11T19:07:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "iungere/signal",
+    "ahead_by": 0,
+    "behind_by": 252,
+    "push_em": "2025-06-17T16:54:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "NZLostboy/mautrix-signal",
+    "ahead_by": 0,
+    "behind_by": 299,
+    "push_em": "2025-04-14T08:30:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "sajeelH/signal",
+    "ahead_by": 0,
+    "behind_by": 319,
+    "push_em": "2025-02-26T17:11:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "theeternalvecna0/signal",
+    "ahead_by": 0,
+    "behind_by": 323,
+    "push_em": "2025-02-18T15:42:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "element-hq/mautrix-signal",
+    "ahead_by": 67,
+    "behind_by": 597,
+    "push_em": "2024-10-18T15:43:08Z",
+    "stars": 20
+   },
+   {
+    "fork": "Merlin-ki/signal",
+    "ahead_by": 0,
+    "behind_by": 428,
+    "push_em": "2024-09-16T15:08:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "strogo/signal",
+    "ahead_by": 0,
+    "behind_by": 456,
+    "push_em": "2024-08-27T19:15:07Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 89
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

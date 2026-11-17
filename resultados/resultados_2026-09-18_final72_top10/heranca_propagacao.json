@@ -1,0 +1,78 @@
+{
+ "top3": {
+  "n_verificaveis": 130,
+  "propagacao": 20,
+  "heranca": 107,
+  "sem_data": 3,
+  "pct_heranca": 82.3
+ },
+ "top5": {
+  "n_verificaveis": 202,
+  "heranca": 164,
+  "propagacao": 35,
+  "sem_data": 3,
+  "pct_heranca": 81.2
+ },
+ "top10": {
+  "n_verificaveis": 333,
+  "heranca": 274,
+  "propagacao": 55,
+  "sem_data": 4,
+  "pct_heranca": 82.3
+ },
+ "status_por_classe": {
+  "heranca": {
+   "CORRIGIDO": 181,
+   "ZONA_INCERTEZA": 93
+  },
+  "propagacao": {
+   "CORRIGIDO": 39,
+   "VULNERAVEL": 6,
+   "ZONA_INCERTEZA": 9,
+   "NAO_CORRIGIDO": 1
+  },
+  "sem_data": {
+   "ZONA_INCERTEZA": 1,
+   "CORRIGIDO": 3
+  }
+ },
+ "humano_por_classe": {
+  "heranca": {
+   "CORRIGIDO": 274
+  },
+  "propagacao": {
+   "CORRIGIDO": 35,
+   "VULNERAVEL": 20
+  },
+  "sem_data": {
+   "CORRIGIDO": 2,
+   "INCONCLUSIVO": 2
+  }
+ },
+ "gt_por_classe": {
+  "propagacao": {
+   "CONFIRMED_VULNERABLE": 17,
+   "CONFIRMED_PATCHED": 32
+  },
+  "heranca": {
+   "CONFIRMED_PATCHED": 240,
+   "CONFIRMED_VULNERABLE": 19
+  },
+  "sem_data": {
+   "CONFIRMED_PATCHED": 4
+  }
+ },
+ "propagacao_por_upstream": {
+  "matrix-authentication-service": 4,
+  "matrix-appservice-bridge": 1,
+  "synapse": 10,
+  "matrix-rust-sdk": 17,
+  "matrix-js-sdk": 7,
+  "element-android": 6,
+  "element-web": 1,
+  "matrix-nio": 1,
+  "matrix-hookshot": 5,
+  "matrix-media-repo": 2,
+  "mjolnir": 1
+ }
+}

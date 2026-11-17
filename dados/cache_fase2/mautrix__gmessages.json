@@ -1,0 +1,168 @@
+{
+ "slug": "mautrix/gmessages",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 30,
+  "stars": 165,
+  "watchers": 5,
+  "tamanho_kb": 1556,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-06-30T13:12:57Z",
+  "push_em": "2026-08-16T13:17:03Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:25+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 28,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 19,
+  "divergentes": 5,
+  "detalhe": [
+   {
+    "fork": "basoradev/gmessages",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-10T14:40:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "thmsmlr/gmessages",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-05T04:54:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "YuKnight/gmessages",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2026-07-20T13:59:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "mdowais/gmessages",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-07-15T05:54:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "colonelpanic8/gmessages",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-07-12T19:20:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "rusty4444/gmessages-matrix",
+    "ahead_by": 6,
+    "behind_by": 20,
+    "push_em": "2026-07-11T16:10:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "MaxGhenis/gmessages",
+    "ahead_by": 1,
+    "behind_by": 10,
+    "push_em": "2026-07-03T13:23:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "bxxd/gmessages",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-06-28T17:07:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "Interested-Deving-1896/gmessages",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-06-19T12:59:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "tacitaprivacy/gmessages",
+    "ahead_by": 4,
+    "behind_by": 12,
+    "push_em": "2026-06-16T03:23:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "iFixRobots/gmessages",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2026-04-20T22:15:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "shafqatjamil/gmessages",
+    "ahead_by": 0,
+    "behind_by": 26,
+    "push_em": "2026-04-20T09:57:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "peter-winkler-kinatrax/gmessages",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2026-03-23T12:40:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "kylemd/gmessages",
+    "ahead_by": 1,
+    "behind_by": 63,
+    "push_em": "2025-10-02T12:33:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "run-my-job/gmessages",
+    "ahead_by": 0,
+    "behind_by": 82,
+    "push_em": "2025-07-03T12:38:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "mwpcheung/gmessages",
+    "ahead_by": 0,
+    "behind_by": 101,
+    "push_em": "2025-04-02T10:26:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "sajeelH/gmessages",
+    "ahead_by": 0,
+    "behind_by": 110,
+    "push_em": "2025-02-04T10:56:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "dvcrn/gmessages",
+    "ahead_by": 1,
+    "behind_by": 116,
+    "push_em": "2025-01-10T06:08:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "ProximaCentauri1989/gmessages",
+    "ahead_by": 0,
+    "behind_by": 135,
+    "push_em": "2024-12-02T16:46:29Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 30
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

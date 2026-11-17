@@ -1,0 +1,22 @@
+{
+ "slug": "spantaleev/matrix-docker-ansible-deploy",
+ "meta": {
+  "linguagem": "Jinja",
+  "forks": 1181,
+  "stars": 6462,
+  "watchers": 94,
+  "tamanho_kb": 25049,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2017-07-31T20:09:08Z",
+  "push_em": "2026-08-17T01:13:10Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:02+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

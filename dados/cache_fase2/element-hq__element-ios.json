@@ -1,0 +1,255 @@
+{
+ "slug": "element-hq/element-ios",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 543,
+  "stars": 1839,
+  "watchers": 63,
+  "tamanho_kb": 115185,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-08-06T11:42:09Z",
+  "push_em": "2026-06-23T11:11:31Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:31+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 548,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 7,
+  "detalhe": [
+   {
+    "fork": "validkanaheiuser/element-ios",
+    "ahead_by": 13,
+    "behind_by": 0,
+    "push_em": "2026-08-16T20:06:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "shoaib196/element-ios-Master",
+    "ahead_by": 1,
+    "behind_by": 118,
+    "push_em": "2026-08-11T14:05:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "openlocal/element-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-26T02:04:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "haloscope/element-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-07-02T12:12:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "cloudsofmana/element-ios-iotb",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-23T13:34:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "elsiehupp/element-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-23T13:06:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "jiandanjian/element-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-23T11:11:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "devmuslim/element-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-23T11:11:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "RiotTranslateBot/riot-ios",
+    "ahead_by": 0,
+    "behind_by": 16512,
+    "push_em": "2026-06-23T07:36:19Z",
+    "stars": 1
+   },
+   {
+    "fork": "ASKAR115323/element-ios",
+    "ahead_by": 9,
+    "behind_by": 16,
+    "push_em": "2026-06-16T19:55:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "luki-ev/synod-ios",
+    "ahead_by": 242,
+    "behind_by": 18,
+    "push_em": "2026-05-27T15:59:04Z",
+    "stars": 2
+   },
+   {
+    "fork": "eagle050988/element-ios",
+    "ahead_by": 0,
+    "behind_by": 16,
+    "push_em": "2026-05-27T12:02:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "dmitri4222-collab/element-ios",
+    "ahead_by": 107,
+    "behind_by": 45,
+    "push_em": "2026-05-11T09:55:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "sast-playground/element-ios",
+    "ahead_by": 0,
+    "behind_by": 23,
+    "push_em": "2026-05-01T09:26:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "conubry/dixion-messenger-ios",
+    "ahead_by": 0,
+    "behind_by": 23,
+    "push_em": "2026-05-01T09:26:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "armandosds/element-ios",
+    "ahead_by": 0,
+    "behind_by": 23,
+    "push_em": "2026-05-01T09:26:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "vvlt2025/element-ios",
+    "ahead_by": 0,
+    "behind_by": 128,
+    "push_em": "2026-04-24T14:32:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "SAY-5/element-ios",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-04-16T23:09:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "eejd/element-ios",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-04-01T09:51:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "troyans9916-collab/element-ios",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-03-31T14:51:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "blackhunter9999/element-ios",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-03-23T18:03:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "Floflobel/element-ios",
+    "ahead_by": 8,
+    "behind_by": 52,
+    "push_em": "2026-03-14T00:13:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "wl4g-collect/element-ios",
+    "ahead_by": 0,
+    "behind_by": 52,
+    "push_em": "2026-03-11T10:00:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "immhrmwn/element-ios",
+    "ahead_by": 0,
+    "behind_by": 53,
+    "push_em": "2026-03-10T07:21:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "zhudebin/element-ios",
+    "ahead_by": 0,
+    "behind_by": 53,
+    "push_em": "2026-03-05T15:30:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "khloukrada/element-ios",
+    "ahead_by": 0,
+    "behind_by": 64,
+    "push_em": "2026-03-01T16:47:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "illiaokhremchuk/element-ios",
+    "ahead_by": 0,
+    "behind_by": 64,
+    "push_em": "2026-02-19T11:38:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "aliceUnhinged613/element-ios",
+    "ahead_by": 0,
+    "behind_by": 10905,
+    "push_em": "2026-02-11T11:12:01Z",
+    "stars": 1
+   },
+   {
+    "fork": "rriosgiris/skiris-ios",
+    "ahead_by": 4,
+    "behind_by": 88,
+    "push_em": "2026-01-21T14:37:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "Bennguyenru/element-ios",
+    "ahead_by": 0,
+    "behind_by": 78,
+    "push_em": "2026-01-12T16:15:04Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 543
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-fm8m-99j7-323g",
+    "cve": "CVE-2022-41904",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-11-11T09:15:11Z",
+    "resumo": "Missing decoration for events decrypted with untrusted Megolm sessions"
+   }
+  ]
+ }
+}

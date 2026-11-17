@@ -1,0 +1,251 @@
+{
+ "slug": "element-hq/matrix-authentication-service",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 106,
+  "stars": 277,
+  "watchers": 11,
+  "tamanho_kb": 29391,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-09-06T15:30:30Z",
+  "push_em": "2026-08-14T16:36:22Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:41+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 105,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 8,
+  "detalhe": [
+   {
+    "fork": "tchapgouv/matrix-authentication-service",
+    "ahead_by": 112,
+    "behind_by": 842,
+    "push_em": "2026-08-14T12:44:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "Gua-ra/gua-auth-service",
+    "ahead_by": 33,
+    "behind_by": 447,
+    "push_em": "2026-08-13T03:39:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "V02460/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 3178,
+    "push_em": "2026-08-07T00:09:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "Tween-IM/tween-authentication-service",
+    "ahead_by": 6,
+    "behind_by": 42,
+    "push_em": "2026-08-05T15:33:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "defaultdino/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 48,
+    "push_em": "2026-08-05T10:59:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "justjanne/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 52,
+    "push_em": "2026-07-31T08:16:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "KarnetK/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 48,
+    "push_em": "2026-07-31T04:51:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "shing-yu/matrix-authentication-service",
+    "ahead_by": 16,
+    "behind_by": 78,
+    "push_em": "2026-07-27T20:56:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "networkException/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 2323,
+    "push_em": "2026-07-26T15:57:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "SIG-BLAKFX/z3ro-auth",
+    "ahead_by": 0,
+    "behind_by": 109,
+    "push_em": "2026-07-13T11:46:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "prex-ru/pressgram-mas",
+    "ahead_by": 9,
+    "behind_by": 927,
+    "push_em": "2026-07-09T13:23:17Z",
+    "stars": 0
+   },
+   {
+    "fork": "dblsaiko/matrix-authentication-service",
+    "ahead_by": 2,
+    "behind_by": 1041,
+    "push_em": "2026-07-08T12:52:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "habalatomas21/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 323,
+    "push_em": "2026-07-03T06:14:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "tonkku107/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 978,
+    "push_em": "2026-06-26T11:46:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "alessblaze/matrix-authentication-service",
+    "ahead_by": 26,
+    "behind_by": 342,
+    "push_em": "2026-06-23T13:17:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "uku3lig/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 905,
+    "push_em": "2026-06-17T12:42:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "TuxCoder/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 481,
+    "push_em": "2026-06-14T20:24:17Z",
+    "stars": 0
+   },
+   {
+    "fork": "gordnhoo/matrix-authentication-service",
+    "ahead_by": 1,
+    "behind_by": 447,
+    "push_em": "2026-06-12T15:18:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "c-bg/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 753,
+    "push_em": "2026-06-10T10:18:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "samiracho/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 481,
+    "push_em": "2026-06-08T19:55:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "denetifobj/matrix-authentication-service",
+    "erro": 404
+   },
+   {
+    "fork": "Navegos/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 487,
+    "push_em": "2026-06-02T17:36:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "ppmaskaluk/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 664,
+    "push_em": "2026-06-01T09:13:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "APOLLONLIN/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 670,
+    "push_em": "2026-05-15T23:08:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "andrepintorj/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 738,
+    "push_em": "2026-05-11T01:15:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "Tonguechaude/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 753,
+    "push_em": "2026-05-05T07:02:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "vulgraph/matrix-authentication-service",
+    "erro": 404
+   },
+   {
+    "fork": "bxdxnn/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 845,
+    "push_em": "2026-04-28T18:18:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "aslanth1/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 845,
+    "push_em": "2026-04-17T23:22:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "langleyd/matrix-authentication-service",
+    "ahead_by": 0,
+    "behind_by": 845,
+    "push_em": "2026-04-17T09:07:53Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 106
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-6wfp-jq3r-j9xh",
+    "cve": "CVE-2025-62425",
+    "severidade": "high",
+    "cvss": 8.3,
+    "cwes": [
+     "CWE-620"
+    ],
+    "publicado_em": "2025-10-16T17:18:06Z",
+    "resumo": "Account password can be changed using an authenticated session without supplying the current password"
+   }
+  ]
+ }
+}

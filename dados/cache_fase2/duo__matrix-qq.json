@@ -1,0 +1,56 @@
+{
+ "slug": "duo/matrix-qq",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 13,
+  "stars": 172,
+  "watchers": 3,
+  "tamanho_kb": 164,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2022-09-07T12:21:24Z",
+  "push_em": "2025-01-27T11:37:56Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:26+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 13,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 3,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "ckgxrg-salt/matrix-qq",
+    "ahead_by": 2,
+    "behind_by": 0,
+    "push_em": "2025-04-25T12:54:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "tmptom/matrix-qq",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-01-27T11:37:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "DsTansice/matrix-qq",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-01-27T11:37:56Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 13
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

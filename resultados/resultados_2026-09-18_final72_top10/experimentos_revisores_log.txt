@@ -1,0 +1,768 @@
+==============================================================================
+EXPERIMENTOS EM RESPOSTA AOS PARECERES — run resultados_2026-09-18_final72_top10
+==============================================================================
+  770 linhas cruas · 312 pares com GT automatico conclusivo · 331 pares com veredito humano
+
+==============================================================================
+E1 — BASELINES TRIVIAIS  (Rev.1: 'add such a trivial baseline as a row')
+==============================================================================
+
+  Oraculo automatico: 312 pares (274 positivos, 38 negativos — prevalencia 87.8%)
+    metodo                           TP  FP   FN  TN  P       R       F1      acc     kappa  
+    trivial: sempre CORRIGIDO       274  38    0   0  0.8782  1.0     0.9352  0.8782  0.0    
+    trivial: sempre VULNERAVEL        0   0  274  38  None    0.0     None    0.1218  0.0    
+    Camada 1 (hash)                  26   2  248  36  0.9286  0.0949  0.1722  0.1987  0.0112 
+    Camada 2A isolada               166  15  108  23  0.9171  0.6058  0.7297  0.6058  0.1028 
+    Camada 2B isolada               141   6  133  32  0.9592  0.5146  0.6698  0.5545  0.1462 
+    PIPELINE: uniao das camadas     195  16   79  22  0.9242  0.7117  0.8041  0.6955  0.1696 
+    PIPELINE: Regra A+B             178   4   96  34  0.978   0.6496  0.7807  0.6795  0.2665 
+
+  Oraculo humano: 331 pares (311 positivos, 20 negativos — prevalencia 94.0%)
+    metodo                           TP  FP   FN  TN  P       R       F1      acc     kappa  
+    trivial: sempre CORRIGIDO       311  20    0   0  0.9396  1.0     0.9688  0.9396  0.0    
+    trivial: sempre VULNERAVEL        0   0  311  20  None    0.0     None    0.0604  0.0    
+    Camada 1 (hash)                  28   0  283  20  1.0     0.09    0.1652  0.145   0.0118 
+    Camada 2A isolada               175  16  136   4  0.9162  0.5627  0.6972  0.5408  -0.0623
+    Camada 2B isolada               146   0  165  20  1.0     0.4695  0.6389  0.5015  0.0966 
+    PIPELINE: uniao das camadas     208  13  103   7  0.9412  0.6688  0.782   0.6495  0.0061 
+    PIPELINE: Regra A+B             187   2  124  18  0.9894  0.6013  0.748   0.6193  0.1301 
+
+  LEITURA (oraculo automatico):
+    F1     trivial 0.9352  vs  uniao 0.8041  (delta -0.1311)
+    Kappa  trivial 0.0  vs  uniao 0.1696   <-- e AQUI que o metodo se separa do trivial
+    FP     trivial 38    vs  uniao 16    (falso positivo = falsa sensacao de seguranca)
+
+  LEITURA (oraculo humano):
+    F1     trivial 0.9688  vs  uniao 0.782  (delta -0.1868)
+    Kappa  trivial 0.0  vs  uniao 0.0061   <-- e AQUI que o metodo se separa do trivial
+    FP     trivial 20    vs  uniao 13    (falso positivo = falsa sensacao de seguranca)
+
+==============================================================================
+E2 — VALIDACAO CRUZADA DOS LIMIARES  (Rev.2: 'cardinal sin ... no holdout')
+==============================================================================
+
+  --- oraculo automatico (312 pares) ---
+
+  leave-one-upstream-out · criterio de selecao no treino: maximo F1
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    element-hq/matrix-authentication-s thr0.60 m0.020 piso0.60         9   0    0   0  1.0     1.0    
+    element-hq/element-web             thr0.60 m0.020 piso0.60         8   1    0   0  0.8889  1.0    
+    element-hq/synapse                 thr0.60 m0.060 piso0.60        82   2   27  12  0.9762  0.7523 
+    matrix-org/matrix-js-sdk           thr0.60 m0.020 piso0.60        19   4    0   0  0.8261  1.0    
+    matrix-org/vodozemac               thr0.60 m0.020 piso0.60         6   0    0   0  1.0     1.0    
+    element-hq/element-android         thr0.60 m0.020 piso0.60        30   0    0   0  1.0     1.0    
+    matrix-org/matrix-rust-sdk         thr0.60 m0.020 piso0.60        20  11   24   2  0.6452  0.4545 
+    t2bot/matrix-media-repo            thr0.60 m0.020 piso0.60        15   0    0   1  1.0     1.0    
+    matrix-org/mjolnir                 thr0.60 m0.020 piso0.60         0   2    0   0  0.0     None   
+    matrix-org/sydent                  thr0.60 m0.020 piso0.60         5   0    0   1  1.0     1.0    
+    matrix-org/matrix-hookshot         thr0.60 m0.020 piso0.60         7   0    0   1  1.0     1.0    
+    matrix-org/matrix-appservice-bridg thr0.60 m0.020 piso0.60         3   0    0   1  1.0     1.0    
+    element-hq/element-x-android       thr0.60 m0.020 piso0.60         1   0    0   0  1.0     1.0    
+    matrix-org/matrix-appservice-irc   thr0.60 m0.020 piso0.60        18   0    0   0  1.0     1.0    
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          223  20   51  18  0.9177  0.8139 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       195  16   79  22  0.9242  0.7117 
+      F1 fora da amostra 0.8627  ·  F1 com os limiares fixos 0.8041
+      estabilidade dos limiares entre folds: 2 configuracao(oes) distinta(s)
+        13x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+        1x  {'margin': 0.06, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  leave-one-upstream-out · criterio de selecao no treino: cobertura maxima com FP=0
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    element-hq/matrix-authentication-s thr0.60 m0.020 piso0.60         9   0    0   0  1.0     1.0    
+    element-hq/element-web             thr0.60 m0.020 piso0.60         8   1    0   0  0.8889  1.0    
+    element-hq/synapse                 thr0.60 m0.020 piso0.60        91   2   18  12  0.9785  0.8349 
+    matrix-org/matrix-js-sdk           thr0.60 m0.020 piso0.60        19   4    0   0  0.8261  1.0    
+    matrix-org/vodozemac               thr0.60 m0.020 piso0.60         6   0    0   0  1.0     1.0    
+    element-hq/element-android         thr0.60 m0.020 piso0.60        30   0    0   0  1.0     1.0    
+    matrix-org/matrix-rust-sdk         thr0.60 m0.020 piso0.60        20  11   24   2  0.6452  0.4545 
+    t2bot/matrix-media-repo            thr0.60 m0.020 piso0.60        15   0    0   1  1.0     1.0    
+    matrix-org/mjolnir                 thr0.60 m0.020 piso0.60         0   2    0   0  0.0     None   
+    matrix-org/sydent                  thr0.60 m0.020 piso0.60         5   0    0   1  1.0     1.0    
+    matrix-org/matrix-hookshot         thr0.60 m0.020 piso0.60         7   0    0   1  1.0     1.0    
+    matrix-org/matrix-appservice-bridg thr0.60 m0.020 piso0.60         3   0    0   1  1.0     1.0    
+    element-hq/element-x-android       thr0.60 m0.020 piso0.60         1   0    0   0  1.0     1.0    
+    matrix-org/matrix-appservice-irc   thr0.60 m0.020 piso0.60        18   0    0   0  1.0     1.0    
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          232  20   42  18  0.9206  0.8467 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       195  16   79  22  0.9242  0.7117 
+      F1 fora da amostra 0.8821  ·  F1 com os limiares fixos 0.8041
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        14x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  k-fold estratificado (k=5) · criterio de selecao no treino: maximo F1
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    fold 1                             thr0.60 m0.020 piso0.60        49   4    6   4  0.9245  0.8909 
+    fold 2                             thr0.60 m0.020 piso0.60        50   5    5   3  0.9091  0.9091 
+    fold 3                             thr0.60 m0.020 piso0.60        46   5    9   3  0.902   0.8364 
+    fold 4                             thr0.60 m0.020 piso0.60        39   4   16   3  0.907   0.7091 
+    fold 5                             thr0.60 m0.020 piso0.60        48   2    6   5  0.96    0.8889 
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          232  20   42  18  0.9206  0.8467 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       195  16   79  22  0.9242  0.7117 
+      F1 fora da amostra 0.8821  ·  F1 com os limiares fixos 0.8041
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        5x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  k-fold estratificado (k=5) · criterio de selecao no treino: cobertura maxima com FP=0
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    fold 1                             thr0.60 m0.020 piso0.60        49   4    6   4  0.9245  0.8909 
+    fold 2                             thr0.60 m0.020 piso0.60        50   5    5   3  0.9091  0.9091 
+    fold 3                             thr0.60 m0.020 piso0.60        46   5    9   3  0.902   0.8364 
+    fold 4                             thr0.60 m0.020 piso0.60        39   4   16   3  0.907   0.7091 
+    fold 5                             thr0.60 m0.020 piso0.60        48   2    6   5  0.96    0.8889 
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          232  20   42  18  0.9206  0.8467 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       195  16   79  22  0.9242  0.7117 
+      F1 fora da amostra 0.8821  ·  F1 com os limiares fixos 0.8041
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        5x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  --- oraculo humano (331 pares) ---
+
+  leave-one-upstream-out · criterio de selecao no treino: maximo F1
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    element-hq/matrix-authentication-s thr0.60 m0.020 piso0.60         9   0    0   1  1.0     1.0    
+    element-hq/synapse                 thr0.60 m0.020 piso0.60        91   3   28   3  0.9681  0.7647 
+    element-hq/element-web             thr0.60 m0.020 piso0.60         7   1    0   0  0.875   1.0    
+    matrix-org/matrix-js-sdk           thr0.60 m0.020 piso0.60        18   4    2   0  0.8182  0.9    
+    matrix-org/vodozemac               thr0.60 m0.020 piso0.60         6   0    0   0  1.0     1.0    
+    element-hq/dendrite                thr0.60 m0.020 piso0.60        10   0    0   0  1.0     1.0    
+    element-hq/element-android         thr0.60 m0.020 piso0.60        30   0    0   0  1.0     1.0    
+    matrix-org/matrix-rust-sdk         thr0.60 m0.020 piso0.60        30   1   24   3  0.9677  0.5556 
+    t2bot/matrix-media-repo            thr0.60 m0.020 piso0.60        15   0    0   1  1.0     1.0    
+    matrix-org/mjolnir                 thr0.60 m0.020 piso0.60         2   0    0   0  1.0     1.0    
+    matrix-org/sydent                  thr0.60 m0.020 piso0.60         5   0    1   0  1.0     0.8333 
+    matrix-org/matrix-hookshot         thr0.60 m0.020 piso0.60        11   0    0   1  1.0     1.0    
+    matrix-org/matrix-appservice-bridg thr0.60 m0.020 piso0.60         3   0    0   1  1.0     1.0    
+    matrix-nio/matrix-nio              thr0.60 m0.020 piso0.60         0   1    0   0  0.0     None   
+    element-hq/element-x-android       thr0.60 m0.020 piso0.60         1   0    0   0  1.0     1.0    
+    matrix-org/matrix-appservice-irc   thr0.60 m0.020 piso0.60        18   0    0   0  1.0     1.0    
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          256  10   55  10  0.9624  0.8232 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       208  13  103   7  0.9412  0.6688 
+      F1 fora da amostra 0.8873  ·  F1 com os limiares fixos 0.782
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        16x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  leave-one-upstream-out · criterio de selecao no treino: cobertura maxima com FP=0
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    element-hq/matrix-authentication-s thr0.60 m0.020 piso0.60         9   0    0   1  1.0     1.0    
+    element-hq/synapse                 thr0.60 m0.020 piso0.60        91   3   28   3  0.9681  0.7647 
+    element-hq/element-web             thr0.60 m0.020 piso0.60         7   1    0   0  0.875   1.0    
+    matrix-org/matrix-js-sdk           thr0.60 m0.020 piso0.60        18   4    2   0  0.8182  0.9    
+    matrix-org/vodozemac               thr0.60 m0.020 piso0.60         6   0    0   0  1.0     1.0    
+    element-hq/dendrite                thr0.60 m0.020 piso0.60        10   0    0   0  1.0     1.0    
+    element-hq/element-android         thr0.60 m0.020 piso0.60        30   0    0   0  1.0     1.0    
+    matrix-org/matrix-rust-sdk         thr0.60 m0.020 piso0.60        30   1   24   3  0.9677  0.5556 
+    t2bot/matrix-media-repo            thr0.60 m0.020 piso0.60        15   0    0   1  1.0     1.0    
+    matrix-org/mjolnir                 thr0.60 m0.020 piso0.60         2   0    0   0  1.0     1.0    
+    matrix-org/sydent                  thr0.60 m0.020 piso0.60         5   0    1   0  1.0     0.8333 
+    matrix-org/matrix-hookshot         thr0.60 m0.020 piso0.60        11   0    0   1  1.0     1.0    
+    matrix-org/matrix-appservice-bridg thr0.60 m0.020 piso0.60         3   0    0   1  1.0     1.0    
+    matrix-nio/matrix-nio              thr0.60 m0.020 piso0.60         0   1    0   0  0.0     None   
+    element-hq/element-x-android       thr0.60 m0.020 piso0.60         1   0    0   0  1.0     1.0    
+    matrix-org/matrix-appservice-irc   thr0.60 m0.020 piso0.60        18   0    0   0  1.0     1.0    
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          256  10   55  10  0.9624  0.8232 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       208  13  103   7  0.9412  0.6688 
+      F1 fora da amostra 0.8873  ·  F1 com os limiares fixos 0.782
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        16x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  k-fold estratificado (k=5) · criterio de selecao no treino: maximo F1
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    fold 1                             thr0.60 m0.020 piso0.60        51   2   12   2  0.9623  0.8095 
+    fold 2                             thr0.60 m0.020 piso0.60        51   4   11   0  0.9273  0.8226 
+    fold 3                             thr0.60 m0.020 piso0.60        48   3   14   1  0.9412  0.7742 
+    fold 4                             thr0.60 m0.020 piso0.60        51   1   11   3  0.9808  0.8226 
+    fold 5                             thr0.60 m0.020 piso0.60        55   0    7   4  1.0     0.8871 
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          256  10   55  10  0.9624  0.8232 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       208  13  103   7  0.9412  0.6688 
+      F1 fora da amostra 0.8873  ·  F1 com os limiares fixos 0.782
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        5x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+  k-fold estratificado (k=5) · criterio de selecao no treino: cobertura maxima com FP=0
+    fold (teste)                       limiares escolhidos no treino   TP  FP   FN  TN  P       R      
+    fold 1                             thr0.60 m0.020 piso0.60        51   2   12   2  0.9623  0.8095 
+    fold 2                             thr0.60 m0.020 piso0.60        51   4   11   0  0.9273  0.8226 
+    fold 3                             thr0.60 m0.020 piso0.60        48   3   14   1  0.9412  0.7742 
+    fold 4                             thr0.60 m0.020 piso0.60        51   1   11   3  0.9808  0.8226 
+    fold 5                             thr0.60 m0.020 piso0.60        55   0    7   4  1.0     0.8871 
+    AGREGADO FORA DA AMOSTRA           (limiares do treino)          256  10   55  10  0.9624  0.8232 
+    MESMOS PARES, limiares fixos       thr0.80 m0.050 piso0.60       208  13  103   7  0.9412  0.6688 
+      F1 fora da amostra 0.8873  ·  F1 com os limiares fixos 0.782
+      estabilidade dos limiares entre folds: 1 configuracao(oes) distinta(s)
+        5x  {'margin': 0.02, 'sim_min_2b': 0.6, 'thr_high': 0.6}
+
+==============================================================================
+E3 — DISCRIMINANTE DE TAMANHO DO PATCH  (Rev.3: 'if I do not have a
+     method to classify small and big patches, I can not trust the results')
+==============================================================================
+
+  331 pares com arquivo em disco.
+    razao patch/arquivo — mediana nos ACERTOS: 0.04762  (n=215)
+    razao patch/arquivo — mediana nos ERROS  : 0.04428  (n=116)
+
+  REGRA PROPOSTA: se razao(patch/arquivo) < c, o veredito CORRIGIDO
+  vai para a ZONA DE INCERTEZA em vez de ser afirmado.
+    c            TP  FP   FN  TN  P       R       F1      kappa     % p/ auditoria
+    0.0         208  13  103   7  0.9412  0.6688  0.782   0.0061    0.0%
+    0.005       204  12  107   8  0.9444  0.6559  0.7742  0.0174    1.5%
+    0.01        180  10  131  10  0.9474  0.5788  0.7186  0.0206    9.4%
+    0.02        173   7  138  13  0.9611  0.5563  0.7047  0.0508    12.4%
+    0.03        162   4  149  16  0.9759  0.5209  0.6792  0.0731    16.6%
+    0.05         99   1  212  19  0.99    0.3183  0.4818  0.0452    36.6%
+    0.08         96   0  215  20  1.0     0.3087  0.4717  0.0512    37.8%
+    0.12         82   0  229  20  1.0     0.2637  0.4173  0.0415    42.0%
+    0.2          63   0  248  20  1.0     0.2026  0.3369  0.0298    47.7%
+    0.4          39   0  272  20  1.0     0.1254  0.2229  0.017     55.0%
+
+  COMPARACAO DE DISCRIMINANTES — qual sinal realmente separa o erro?
+    discriminante                    TP  FP   FN  TN  P       R       F1      kappa    casos movidos
+    (nenhum — pipeline atual)       208  13  103   7  0.9412  0.6688  0.782   0.0061   0
+    razao patch/arquivo < 0,05       99   1  212  19  0.99    0.3183  0.4818  0.0452   121
+    delta < 0 (guarda A)            206   2  105  18  0.9904  0.6624  0.7938  0.1649   13
+
+    LEITURA: o tamanho do patch NAO e um discriminante utilizavel neste
+    conjunto — para zerar os 2 FP ele arrasta dezenas de acertos junto.
+    O sinal do delta zera os mesmos 2 FP mexendo em pouquissimos casos.
+    A resposta ao Rev.3 nao e 'sabemos separar patch pequeno de grande':
+    e 'medimos, o tamanho nao serve, e o sinal que serve e outro'.
+
+==============================================================================
+E4 — INTERVALOS DE CONFIANCA E TESTE DE McNEMAR
+     (Rev.2/Rev.3: rigor estatistico; e a ressalva do ganho de 1 par)
+==============================================================================
+
+  Oraculo automatico — uniao das camadas (n=312 pares)
+    P      0.9242    IC95% [0.8867 , 0.9579]  (bootstrap, 10000 reamostragens)
+    R      0.7117    IC95% [0.658 , 0.7647]  (bootstrap, 10000 reamostragens)
+    F1     0.8041    IC95% [0.7636 , 0.841]  (bootstrap, 10000 reamostragens)
+    kappa  0.1696    IC95% [0.0674 , 0.2735]  (bootstrap, 10000 reamostragens)
+
+    McNemar (a uniao e mesmo melhor que as alternativas?)
+      uniao x Camada 2A isolada              b01=32 b10=4  p=0.0  -> SIGNIFICATIVO
+      uniao x Camada 2B isolada              b01=54 b10=10  p=0.0  -> SIGNIFICATIVO
+      uniao x trivial (sempre CORRIGIDO)     b01=22 b10=79  p=0.0  -> SIGNIFICATIVO
+      uniao x Regra A+B                      b01=17 b10=12  p=0.4583  -> nao significativo
+
+  Oraculo humano — uniao das camadas (n=331 pares)
+    P      0.9412    IC95% [0.9091 , 0.9706]  (bootstrap, 10000 reamostragens)
+    R      0.6688    IC95% [0.6161 , 0.7203]  (bootstrap, 10000 reamostragens)
+    F1     0.782     IC95% [0.7413 , 0.819]  (bootstrap, 10000 reamostragens)
+    kappa  0.0061    IC95% [-0.0608 , 0.0775]  (bootstrap, 10000 reamostragens)
+
+    McNemar (a uniao e mesmo melhor que as alternativas?)
+      uniao x Camada 2A isolada              b01=36 b10=0  p=0.0  -> SIGNIFICATIVO
+      uniao x Camada 2B isolada              b01=62 b10=13  p=0.0  -> SIGNIFICATIVO
+      uniao x trivial (sempre CORRIGIDO)     b01=7 b10=103  p=0.0  -> SIGNIFICATIVO
+      uniao x Regra A+B                      b01=21 b10=11  p=0.1102  -> nao significativo
+
+==============================================================================
+E5 — ANALISE DE FALHAS CASO A CASO  (Rev.2: 'no failure analysis')
+==============================================================================
+
+  Oraculo: humano. 116 erro(s) em 331 pares.
+
+  [FP (falsa seguranca)] tchapgouv/matrix-rust-sdk :: CVE-2025-66622
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-base/src/room/room_info.rs (churn 24)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.8961)  2B=ZONA_INCERTEZA (delta -0.012)
+      a Regra A+B corrige este caso? SIM
+  [FN (perdeu a correcao)] SchildiChat/matrix-rust-sdk :: CVE-2025-66622
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/tests/integration/client.rs (churn 84)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7953)  2B=ZONA_INCERTEZA (delta 0.0272)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] WhiteBirchForumTeam/matrix-rust-sdk :: CVE-2025-66622
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/tests/integration/client.rs (churn 84)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7953)  2B=ZONA_INCERTEZA (delta 0.0272)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] codyfinn/matrix-rust-sdk :: CVE-2025-66622
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/tests/integration/client.rs (churn 84)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7955)  2B=ZONA_INCERTEZA (delta 0.0272)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] Stanislav1975/matrix-nio :: CVE-2022-39254
+      categoria=sdk linguagem=python  arquivo=nio/crypto/olm_machine.py (churn 54)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.8665)  2B=ZONA_INCERTEZA (delta -0.0141)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] RocketChat/matrix-appservice-bridge :: CVE-2023-38691
+      categoria=sdk linguagem=typescript  arquivo=src/provisioning/api.ts (churn 10)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9094)  2B=ZONA_INCERTEZA (delta -0.0213)
+      a Regra A+B corrige este caso? SIM
+  [FN (perdeu a correcao)] SchildiChat/matrix-rust-sdk :: CVE-2024-40648
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/identities/user.rs (churn 95)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4437)  2B=ZONA_INCERTEZA (delta 0.0483)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] WhiteBirchForumTeam/matrix-rust-sdk :: CVE-2024-40648
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/identities/user.rs (churn 95)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4437)  2B=ZONA_INCERTEZA (delta 0.0483)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] codyfinn/matrix-rust-sdk :: CVE-2024-40648
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/identities/user.rs (churn 95)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4437)  2B=ZONA_INCERTEZA (delta 0.0483)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] morlinbrot/matrix-rust-sdk :: CVE-2024-40648
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/identities/user.rs (churn 95)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4437)  2B=ZONA_INCERTEZA (delta 0.0483)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] natheihei/matrix-rust-sdk :: CVE-2024-40648
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/identities/user.rs (churn 95)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4484)  2B=ZONA_INCERTEZA (delta 0.0492)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] maxgithubprofile/matrix-js-sdk :: CVE-2024-42369
+      categoria=sdk linguagem=typescript  arquivo=src/client.ts (churn 5)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9873)  2B=ZONA_INCERTEZA (delta -0.0011)
+      a Regra A+B corrige este caso? SIM
+  [FN (perdeu a correcao)] CatCraftYT/matrix-js-sdk :: CVE-2024-42369
+      categoria=sdk linguagem=typescript  arquivo=src/client.ts (churn 5)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7194)  2B=ZONA_INCERTEZA (delta 0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] ashnigam/matrix-js-sdk :: CVE-2024-42369
+      categoria=sdk linguagem=typescript  arquivo=src/client.ts (churn 5)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7358)  2B=ZONA_INCERTEZA (delta 0.0013)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] maunium/matrix-js-sdk :: CVE-2024-42369
+      categoria=sdk linguagem=typescript  arquivo=src/client.ts (churn 5)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7365)  2B=ZONA_INCERTEZA (delta 0.0013)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] maxgithubprofile/matrix-js-sdk :: CVE-2024-47080
+      categoria=sdk linguagem=typescript  arquivo=src/client.ts (churn 37)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9633)  2B=ZONA_INCERTEZA (delta -0.0047)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] PseudoResonance/matrix-hookshot :: CVE-2025-23197
+      categoria=integration linguagem=typescript  arquivo=src/github/GithubInstance.ts (churn 10)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9434)  2B=ZONA_INCERTEZA (delta -0.0281)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] tchapgouv/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9308)  2B=ZONA_INCERTEZA (delta -0.0209)
+      a Regra A+B corrige este caso? SIM
+  [FN (perdeu a correcao)] JoFrost/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4072)  2B=ZONA_INCERTEZA (delta -0.0018)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] SchildiChat/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3912)  2B=ZONA_INCERTEZA (delta -0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] WhiteBirchForumTeam/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3912)  2B=ZONA_INCERTEZA (delta -0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] codyfinn/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3913)  2B=ZONA_INCERTEZA (delta -0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] markovsdima/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4638)  2B=ZONA_INCERTEZA (delta -0.0017)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] morlinbrot/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3948)  2B=ZONA_INCERTEZA (delta -0.0015)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] natheihei/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4072)  2B=ZONA_INCERTEZA (delta -0.0018)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] verji/matrix-rust-sdk :: CVE-2025-53549
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-sqlite/src/event_cache_store.rs (churn 101)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4638)  2B=ZONA_INCERTEZA (delta -0.0017)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] maxgithubprofile/matrix-js-sdk :: CVE-2025-59160
+      categoria=sdk linguagem=typescript  arquivo=spec/unit/matrix-client.spec.ts (churn 23)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.853)  2B=ZONA_INCERTEZA (delta -0.009)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] verji/matrix-js-sdk-v2 :: CVE-2025-59160
+      categoria=sdk linguagem=typescript  arquivo=spec/unit/matrix-client.spec.ts (churn 23)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.8935)  2B=ZONA_INCERTEZA (delta -0.0094)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] Buzzlabs/synapse :: CVE-2026-45076
+      categoria=server linguagem=python  arquivo=synapse/storage/databases/main/stream.py (churn 13)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 1.0)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] CharmanderV123/synapse :: CVE-2026-45076
+      categoria=server linguagem=python  arquivo=tests/rest/client/test_rooms.py (churn 86)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9876)  2B=ZONA_INCERTEZA (delta -0.0124)
+      a Regra A+B corrige este caso? SIM
+  [FP (falsa seguranca)] mindroom-ai/mindroom-synapse :: CVE-2026-45076
+      categoria=server linguagem=python  arquivo=synapse/storage/databases/main/stream.py (churn 13)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 1.0)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FP (falsa seguranca)] Buzzlabs/element-web :: CVE-2026-55850
+      categoria=client linguagem=typescript  arquivo=apps/web/src/HtmlUtils.tsx (churn 13)
+      pipeline=CORRIGIDO  rotulo=VULNERAVEL  |  2A=CORRIGIDO (sim 0.9938)  2B=ZONA_INCERTEZA (delta -0.0062)
+      a Regra A+B corrige este caso? SIM
+  [FN (perdeu a correcao)] Pdeeti/sydent :: CVE-2019-11340
+      categoria=support linguagem=python  arquivo=sydent/util/emailutils.py (churn 16)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5187)  2B=ZONA_INCERTEZA (delta -0.0029)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4187)  2B=ZONA_INCERTEZA (delta 0.0015)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3677)  2B=ZONA_INCERTEZA (delta 0.0013)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] CharmanderV123/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3653)  2B=ZONA_INCERTEZA (delta 0.0013)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4183)  2B=ZONA_INCERTEZA (delta 0.0015)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4018)  2B=ZONA_INCERTEZA (delta 0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4013)  2B=ZONA_INCERTEZA (delta 0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4183)  2B=ZONA_INCERTEZA (delta 0.0015)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3677)  2B=ZONA_INCERTEZA (delta 0.0013)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4018)  2B=ZONA_INCERTEZA (delta 0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2020-26257
+      categoria=server linguagem=python  arquivo=tests/handlers/test_federation.py (churn 1)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3999)  2B=ZONA_INCERTEZA (delta 0.0014)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] toger5/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/machine.rs (churn 78)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.754)  2B=ZONA_INCERTEZA (delta -0.0138)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] JoFrost/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5084)  2B=ZONA_INCERTEZA (delta 0.0137)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] SchildiChat/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.501)  2B=ZONA_INCERTEZA (delta 0.0083)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] WhiteBirchForumTeam/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.501)  2B=ZONA_INCERTEZA (delta 0.0083)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] codyfinn/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.4585)  2B=ZONA_INCERTEZA (delta 0.0063)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] markovsdima/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.506)  2B=ZONA_INCERTEZA (delta 0.0136)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] morlinbrot/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.501)  2B=ZONA_INCERTEZA (delta 0.0083)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] natheihei/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.501)  2B=ZONA_INCERTEZA (delta 0.0083)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] tchapgouv/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6512)  2B=ZONA_INCERTEZA (delta 0.0119)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] verji/matrix-rust-sdk :: CVE-2024-34353
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk/src/encryption/mod.rs (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5102)  2B=ZONA_INCERTEZA (delta 0.0138)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3744)  2B=ZONA_INCERTEZA (delta 0.0409)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3744)  2B=ZONA_INCERTEZA (delta 0.0409)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2018-10657
+      categoria=server linguagem=python  arquivo=synapse/federation/federation_base.py (churn 21)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.3594)  2B=ZONA_INCERTEZA (delta 0.0401)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] CharmanderV123/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2021-21273
+      categoria=server linguagem=python  arquivo=tests/replication/test_federation_sender_shard.py (churn 10)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6898)  2B=ZONA_INCERTEZA (delta 0.0)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6606)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] CharmanderV123/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6606)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6606)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6606)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2021-21274
+      categoria=server linguagem=python  arquivo=tests/http/federation/test_matrix_federation_agent.py (churn 27)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6603)  2B=ZONA_INCERTEZA (delta 0.0158)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5879)  2B=ZONA_INCERTEZA (delta 0.0085)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2021-21332
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] AliAbutorabi/Synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Buzzlabs/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5879)  2B=ZONA_INCERTEZA (delta 0.0085)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] bxdxnn/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] denisovvsh/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] guillemo12/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] kakahu2015/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] mindroom-ai/mindroom-synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] shcherbak/synapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] thetayloredman/lognapse :: CVE-2021-21333
+      categoria=server linguagem=python  arquivo=synapse/config/_base.py (churn 42)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5779)  2B=ZONA_INCERTEZA (delta 0.0087)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] JoFrost/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] SchildiChat/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] WhiteBirchForumTeam/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] codyfinn/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] markovsdima/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] morlinbrot/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] natheihei/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] tchapgouv/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6425)  2B=ZONA_INCERTEZA (delta 0.02)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] verji/matrix-rust-sdk :: CVE-2022-39252
+      categoria=sdk linguagem=rust  arquivo=crates/matrix-sdk-crypto/src/gossiping/machine.rs (churn 64)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.556)  2B=ZONA_INCERTEZA (delta 0.0174)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] maxgithubprofile/matrix-js-sdk :: CVE-2021-40823
+      categoria=sdk linguagem=typescript  arquivo=src/crypto/algorithms/megolm.ts (churn 38)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5551)  2B=ZONA_INCERTEZA (delta 0.0035)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] verji/matrix-js-sdk-v2 :: CVE-2021-40823
+      categoria=sdk linguagem=typescript  arquivo=src/crypto/algorithms/megolm.ts (churn 38)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.5537)  2B=ZONA_INCERTEZA (delta 0.0035)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] gamesguru/dendrite :: CVE-2022-39200
+      categoria=server linguagem=go  arquivo=roomserver/internal/input/input_missing.go (churn 5)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.7102)  2B=ZONA_INCERTEZA (delta 0.0059)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] Rath-debug/matrix-hookshot :: CVE-2023-43656
+      categoria=integration linguagem=typescript  arquivo=tests/connections/GenericHookTest.ts (churn 3)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6131)  2B=ZONA_INCERTEZA (delta 0.005)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] maladesov/matrix-hookshot :: CVE-2023-43656
+      categoria=integration linguagem=typescript  arquivo=tests/connections/GenericHookTest.ts (churn 3)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6131)  2B=ZONA_INCERTEZA (delta 0.005)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] qdii/matrix-hookshot :: CVE-2023-43656
+      categoria=integration linguagem=typescript  arquivo=tests/connections/GenericHookTest.ts (churn 3)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6131)  2B=ZONA_INCERTEZA (delta 0.005)
+      a Regra A+B corrige este caso? nao
+  [FN (perdeu a correcao)] yncyrydybyl/matrix-hookshot :: CVE-2023-43656
+      categoria=integration linguagem=typescript  arquivo=tests/connections/GenericHookTest.ts (churn 3)
+      pipeline=ZONA_INCERTEZA  rotulo=CORRIGIDO  |  2A=ZONA_INCERTEZA (sim 0.6131)  2B=ZONA_INCERTEZA (delta 0.005)
+      a Regra A+B corrige este caso? nao
+
+  Onde os vereditos param, por categoria:
+    bridge         {'CORRIGIDO': 18}
+    client         {'CORRIGIDO': 40, 'FILE_NOT_FOUND': 50}
+    integration    {'CORRIGIDO': 10, 'ZONA_INCERTEZA': 4}
+    sdk            {'FILE_NOT_FOUND': 22, 'CORRIGIDO': 46, 'ZONA_INCERTEZA': 40, 'NAO_CORRIGIDO': 1, 'VULNERAVEL': 1}
+    server         {'VULNERAVEL': 3, 'CORRIGIDO': 74, 'FILE_NOT_FOUND': 55, 'ZONA_INCERTEZA': 58}
+    support        {'CORRIGIDO': 35, 'VULNERAVEL': 2, 'ZONA_INCERTEZA': 1}
+
+==============================================================================
+E6 — CURVA DE OPERACAO COM O BASELINE TRIVIAL MARCADO
+     (Rev.1: 'your methods barely beat a constant classifier')
+==============================================================================
+
+  Oraculo automatico — trivial (sempre CORRIGIDO): P=0.8782 R=1.0 F1=0.9352 kappa=0.0
+    thr_high    TP  FP   FN  TN  P       R       F1      kappa    bate o trivial?
+    0.5        256  18   18  20  0.9343  0.9343  0.9343  0.4606   sim
+    0.55       249  17   25  21  0.9361  0.9088  0.9222  0.423    sim
+    0.6        223  17   51  21  0.9292  0.8139  0.8677  0.2646   sim
+    0.65       222  17   52  21  0.9289  0.8102  0.8655  0.2598   sim
+    0.7        201  17   73  21  0.922   0.7336  0.8171  0.1751   sim
+    0.75       198  17   76  21  0.9209  0.7226  0.8098  0.165    sim
+    0.8        195  16   79  22  0.9242  0.7117  0.8041  0.1696   sim <<< adotado
+    0.85       188  16   86  22  0.9216  0.6861  0.7866  0.1478   sim
+    0.9        181  13   93  25  0.933   0.6606  0.7735  0.167    sim
+    0.95       168  11  106  27  0.9385  0.6131  0.7417  0.1559   sim
+
+  Oraculo humano — trivial (sempre CORRIGIDO): P=0.9396 R=1.0 F1=0.9688 kappa=0.0
+    thr_high    TP  FP   FN  TN  P       R       F1      kappa    bate o trivial?
+    0.5        278  13   33   7  0.9553  0.8939  0.9236  0.1662   sim
+    0.55       270  13   41   7  0.9541  0.8682  0.9091  0.1318   sim
+    0.6        242  13   69   7  0.949   0.7781  0.8551  0.0555   sim
+    0.65       237  13   74   7  0.948   0.7621  0.8449  0.0462   sim
+    0.7        216  13   95   7  0.9432  0.6945  0.8     0.0153   sim
+    0.75       212  13   99   7  0.9422  0.6817  0.791   0.0105   sim
+    0.8        208  13  103   7  0.9412  0.6688  0.782   0.0061   sim <<< adotado
+    0.85       201  13  110   7  0.9393  0.6463  0.7657  -0.0011  NAO
+    0.9        185   9  126  11  0.9536  0.5949  0.7327  0.0388   sim
+    0.95       173   6  138  14  0.9665  0.5563  0.7061  0.0627   sim
+
+==============================================================================
+-> resultados/resultados_2026-09-18_final72_top10/experimentos_revisores.json

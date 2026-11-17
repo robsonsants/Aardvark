@@ -1,0 +1,63 @@
+{
+ "slug": "subpop/Relay",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 4,
+  "stars": 53,
+  "watchers": 2,
+  "tamanho_kb": 24236,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2026-03-20T20:53:29Z",
+  "push_em": "2026-08-12T01:13:48Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:37+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 4,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 4,
+  "divergentes": 0,
+  "detalhe": [
+   {
+    "fork": "lukaaas176/Relay",
+    "ahead_by": 0,
+    "behind_by": 9,
+    "push_em": "2026-08-11T02:16:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "rexbron/Relay",
+    "ahead_by": 0,
+    "behind_by": 34,
+    "push_em": "2026-07-05T14:09:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "mgcm/Relay",
+    "ahead_by": 0,
+    "behind_by": 148,
+    "push_em": "2026-06-04T14:33:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "dnisbetjones/Relay",
+    "ahead_by": 0,
+    "behind_by": 208,
+    "push_em": "2026-05-24T13:24:49Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 4
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

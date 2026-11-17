@@ -1,0 +1,338 @@
+{
+ "slug": "matrix-org/matrix-rust-sdk",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 479,
+  "stars": 2245,
+  "watchers": 26,
+  "tamanho_kb": 80399,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2020-02-21T15:47:16Z",
+  "push_em": "2026-08-17T00:36:03Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:04+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 483,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 6,
+  "detalhe": [
+   {
+    "fork": "polyv0x/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 203,
+    "push_em": "2026-08-16T19:54:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "paul8711-code/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-16T17:18:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "eleboucher/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T20:36:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "bananawalnut/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 288,
+    "push_em": "2026-08-15T17:14:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "mgoldenberg/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T15:02:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "danielinspring/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-15T01:33:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "CloudEngineHub/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T01:05:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "ACay047/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T23:43:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "stonehold76/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T21:59:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "SIDHARTH20K4/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 346,
+    "push_em": "2026-08-14T19:11:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "gmelodie/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-14T17:33:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hywan/matrix-rust-sdk",
+    "ahead_by": 1,
+    "behind_by": 6522,
+    "push_em": "2026-08-14T14:39:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "uhoreg/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 8895,
+    "push_em": "2026-08-14T14:06:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "MoChahadeh/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 643,
+    "push_em": "2026-08-14T13:35:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "alexookah/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-14T10:04:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "tchapgouv/matrix-rust-sdk",
+    "ahead_by": 6,
+    "behind_by": 3316,
+    "push_em": "2026-08-14T09:37:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "ewilderj/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-08-12T17:27:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "codyfinn/matrix-rust-sdk",
+    "ahead_by": 8,
+    "behind_by": 34,
+    "push_em": "2026-08-12T17:19:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "robintown/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 4283,
+    "push_em": "2026-08-12T13:13:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "mmaudet/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 32,
+    "push_em": "2026-08-12T03:16:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "natheihei/matrix-rust-sdk",
+    "ahead_by": 1,
+    "behind_by": 55,
+    "push_em": "2026-08-10T22:49:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "troublemaker-dev/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-08-09T19:33:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "umarphaarook/matrix-rust-sdk",
+    "ahead_by": 5,
+    "behind_by": 55,
+    "push_em": "2026-08-09T16:37:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "SchildiChat/matrix-rust-sdk",
+    "ahead_by": 169,
+    "behind_by": 146,
+    "push_em": "2026-08-09T13:30:06Z",
+    "stars": 7
+   },
+   {
+    "fork": "evan1ee/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-08-08T02:49:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "notpeter/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-08-07T19:52:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "hughns/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 58,
+    "push_em": "2026-08-06T10:48:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "demian-welt/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 59,
+    "push_em": "2026-08-05T21:58:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "pengwius/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 170,
+    "push_em": "2026-08-05T16:34:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "Horizon-Factory/matrix-rust-sdk",
+    "ahead_by": 0,
+    "behind_by": 77,
+    "push_em": "2026-08-04T08:07:16Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 479
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-h97m-27fx-42rx",
+    "cve": "CVE-2026-45057",
+    "severidade": "medium",
+    "cvss": 4.9,
+    "cwes": [],
+    "publicado_em": "2026-06-03T14:46:31Z",
+    "resumo": "Incomplete message edit validation"
+   },
+   {
+    "ghsa": "GHSA-wfq4-36m3-9g42",
+    "cve": "CVE-2026-45056",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-06-03T18:40:26Z",
+    "resumo": "Sender-binding gaps in to-device messages allow for sender spoofing"
+   },
+   {
+    "ghsa": "GHSA-jj6p-3m75-g2p3",
+    "cve": "CVE-2025-66622",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-12-08T11:30:54Z",
+    "resumo": "Denial of service due to custom `m.room.join_rules` events"
+   },
+   {
+    "ghsa": "GHSA-qhj8-q5r6-8q6j",
+    "cve": "CVE-2025-59047",
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-09-11T11:19:53Z",
+    "resumo": "Panic in the `RoomMember::normalized_power_level()` method"
+   },
+   {
+    "ghsa": "GHSA-275g-g844-73jh",
+    "cve": "CVE-2025-53549",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-07-10T15:48:00Z",
+    "resumo": "SQL injection in the Matrix Rust SDK EventCache implementation"
+   },
+   {
+    "ghsa": "GHSA-x958-rvg6-956w",
+    "cve": "CVE-2025-48937",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-06-10T12:10:00Z",
+    "resumo": "Sender of encrypted events can be spoofed by homeserver administrator"
+   },
+   {
+    "ghsa": "GHSA-r5vf-wf4h-82gg",
+    "cve": "CVE-2024-52813",
+    "severidade": "medium",
+    "cvss": 4.3,
+    "cwes": [],
+    "publicado_em": "2025-01-07T11:21:31Z",
+    "resumo": "Missing facility to signal rotation of a verified cryptographic identity"
+   },
+   {
+    "ghsa": "GHSA-4qg4-cvh2-crgg",
+    "cve": "CVE-2024-40648",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-07-18T14:21:07Z",
+    "resumo": "`UserIdentity::is_verified` not checking verification status of own user identity while performing the check"
+   },
+   {
+    "ghsa": "GHSA-9ggc-845v-gcgv",
+    "cve": "CVE-2024-34353",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [
+     "CWE-532"
+    ],
+    "publicado_em": "2024-05-13T10:59:52Z",
+    "resumo": "Log exposure of private key of the server-side key backup"
+   },
+   {
+    "ghsa": "GHSA-vp68-2wrm-69qm",
+    "cve": "CVE-2022-39252",
+    "severidade": "low",
+    "cvss": 2.7,
+    "cwes": [],
+    "publicado_em": "2022-09-29T10:23:37Z",
+    "resumo": "When receiving forwarded room keys, we don't check that the forwarder device matches the device we requested from"
+   }
+  ]
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "swarmcom/jSynapse",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 7,
+  "stars": 27,
+  "watchers": 7,
+  "tamanho_kb": 444,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2015-03-17T23:59:31Z",
+  "push_em": "2015-04-24T16:05:04Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:48+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

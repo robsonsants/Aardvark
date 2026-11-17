@@ -1,0 +1,287 @@
+{
+ "slug": "element-hq/element-x-android",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 594,
+  "stars": 2327,
+  "watchers": 27,
+  "tamanho_kb": 115971,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2022-10-06T07:59:24Z",
+  "push_em": "2026-08-16T21:05:51Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:31+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 599,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 12,
+  "detalhe": [
+   {
+    "fork": "hayaksi1/element-x-android",
+    "ahead_by": 119,
+    "behind_by": 167,
+    "push_em": "2026-08-17T01:13:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "sibbl/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 1294,
+    "push_em": "2026-08-16T19:18:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "Gua-ra/gua-android",
+    "ahead_by": 46,
+    "behind_by": 735,
+    "push_em": "2026-08-16T03:18:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "elementx-av/element-x-android",
+    "ahead_by": 254,
+    "behind_by": 0,
+    "push_em": "2026-08-16T02:35:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "not-inept/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-16T01:09:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "grzegorzjenask/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T23:01:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "moccassins/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 59,
+    "push_em": "2026-08-15T19:42:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "jekahu/element-x-android",
+    "ahead_by": 72,
+    "behind_by": 0,
+    "push_em": "2026-08-15T19:00:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "JensorX/iltix-messenger-android",
+    "ahead_by": 75,
+    "behind_by": 1561,
+    "push_em": "2026-08-15T14:35:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "allenxie/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T12:31:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "hardcore-sushi/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T10:48:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "nagicantsleep/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-14T19:34:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "bxdxnn/element-x-android",
+    "ahead_by": 1,
+    "behind_by": 1758,
+    "push_em": "2026-08-14T18:27:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "eduardomoralesmartines618-pixel/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2026-08-14T15:57:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "taus232323/arcana-android",
+    "ahead_by": 38,
+    "behind_by": 1310,
+    "push_em": "2026-08-14T15:22:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "hi3ris/kdodo-android",
+    "ahead_by": 0,
+    "behind_by": 1907,
+    "push_em": "2026-08-14T14:47:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "tchapgouv/tchap-x-android",
+    "ahead_by": 325,
+    "behind_by": 891,
+    "push_em": "2026-08-14T10:30:59Z",
+    "stars": 4
+   },
+   {
+    "fork": "hughns/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 50,
+    "push_em": "2026-08-14T09:58:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "escix/element-x-android",
+    "ahead_by": 1,
+    "behind_by": 4285,
+    "push_em": "2026-08-14T09:28:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "ayomide0806967/element-x-android",
+    "ahead_by": 4,
+    "behind_by": 412,
+    "push_em": "2026-08-14T06:04:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "unseal-network/unseal-android",
+    "ahead_by": 567,
+    "behind_by": 870,
+    "push_em": "2026-08-13T16:29:21Z",
+    "stars": 1
+   },
+   {
+    "fork": "Chewall/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 61,
+    "push_em": "2026-08-13T11:30:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "jkumz/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 61,
+    "push_em": "2026-08-13T10:46:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "guillemo12/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 62,
+    "push_em": "2026-08-13T10:10:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "unclejay80/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 422,
+    "push_em": "2026-08-13T07:44:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "ShadowRZ/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 703,
+    "push_em": "2026-08-13T06:22:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "Eklavya47/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 93,
+    "push_em": "2026-08-12T18:15:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "int-tech-systems/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 110,
+    "push_em": "2026-08-12T06:24:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "filewire/connect",
+    "ahead_by": 19,
+    "behind_by": 277,
+    "push_em": "2026-08-12T01:16:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "slipstyle/element-x-android",
+    "ahead_by": 0,
+    "behind_by": 173,
+    "push_em": "2026-08-11T20:54:59Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 594
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-r4f9-46vw-v7g3",
+    "cve": "CVE-2026-55080",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-15T11:03:59Z",
+    "resumo": "DoS via malformed OIDC callback intent"
+   },
+   {
+    "ghsa": "GHSA-x2g5-f28j-p7w6",
+    "cve": "CVE-2025-31127",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-04-03T08:14:05Z",
+    "resumo": "The entity in control of the well-known file can break the confidentiality embedded Element Call"
+   },
+   {
+    "ghsa": "GHSA-m5px-pwq3-4p5m",
+    "cve": "CVE-2025-27599",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-20",
+     "CWE-926"
+    ],
+    "publicado_em": "2025-04-17T11:06:14Z",
+    "resumo": "Element X Android vulnerable to loading malicious web pages via received intent"
+   },
+   {
+    "ghsa": "GHSA-42h8-mgpm-8gwv",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-201"
+    ],
+    "publicado_em": "2024-05-15T14:57:13Z",
+    "resumo": "Exposure of private backup key to Element's rageshake servers"
+   }
+  ]
+ }
+}

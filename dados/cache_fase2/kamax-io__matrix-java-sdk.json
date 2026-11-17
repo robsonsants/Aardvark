@@ -1,0 +1,22 @@
+{
+ "slug": "kamax-io/matrix-java-sdk",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 13,
+  "stars": 21,
+  "watchers": 1,
+  "tamanho_kb": 686,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2017-04-26T22:26:48Z",
+  "push_em": "2019-06-20T21:16:30Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:53+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

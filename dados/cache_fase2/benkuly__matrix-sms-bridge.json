@@ -1,0 +1,49 @@
+{
+ "slug": "benkuly/matrix-sms-bridge",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 7,
+  "stars": 92,
+  "watchers": 2,
+  "tamanho_kb": 546,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-05-12T07:46:28Z",
+  "push_em": "2025-10-20T18:31:08Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:25+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 7,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 2,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "underclockeddev/better-matrix-sms-bridge",
+    "ahead_by": 4,
+    "behind_by": 0,
+    "push_em": "2026-08-13T11:39:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "coltrall/matrix-sms-bridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-20T18:31:08Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 7
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

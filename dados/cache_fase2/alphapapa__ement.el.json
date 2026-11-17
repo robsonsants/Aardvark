@@ -1,0 +1,22 @@
+{
+ "slug": "alphapapa/ement.el",
+ "meta": {
+  "linguagem": "Emacs Lisp",
+  "forks": 52,
+  "stars": 605,
+  "watchers": 15,
+  "tamanho_kb": 2445,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-11-28T23:14:31Z",
+  "push_em": "2025-11-18T01:18:37Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:03+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

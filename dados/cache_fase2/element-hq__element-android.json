@@ -1,0 +1,289 @@
+{
+ "slug": "element-hq/element-android",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 917,
+  "stars": 3719,
+  "watchers": 85,
+  "tamanho_kb": 223929,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2018-10-02T15:56:15Z",
+  "push_em": "2026-08-11T11:31:41Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:30+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 830,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 9,
+  "detalhe": [
+   {
+    "fork": "validkanaheiuser/element-android",
+    "ahead_by": 19,
+    "behind_by": 0,
+    "push_em": "2026-08-16T22:11:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "meoovv/element-android",
+    "ahead_by": 5,
+    "behind_by": 0,
+    "push_em": "2026-08-16T12:47:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "StrajnarFilip/element-android",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "push_em": "2026-08-13T20:17:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "remarny/element-android_praktic_test",
+    "ahead_by": 10,
+    "behind_by": 20,
+    "push_em": "2026-08-12T07:03:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "int-tech-systems/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-12T06:55:17Z",
+    "stars": 0
+   },
+   {
+    "fork": "H1d3r/element-android",
+    "ahead_by": 35,
+    "behind_by": 70,
+    "push_em": "2026-08-11T16:43:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "andrewaylett/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T16:11:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "phiberoptick/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T15:32:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "cloudsofmana/element-android-iotb",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T12:06:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "moccassins/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T11:31:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "heatherladue700-design/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T11:31:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "onepartho/element-android",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-11T11:31:41Z",
+    "stars": 1
+   },
+   {
+    "fork": "luki-ev/synod-android",
+    "ahead_by": 268,
+    "behind_by": 22,
+    "push_em": "2026-08-09T09:55:14Z",
+    "stars": 5
+   },
+   {
+    "fork": "ibwc/element-android",
+    "ahead_by": 2,
+    "behind_by": 6,
+    "push_em": "2026-08-04T05:37:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "SchildiChat/SchildiChat-android",
+    "ahead_by": 2168,
+    "behind_by": 8,
+    "push_em": "2026-07-26T11:55:46Z",
+    "stars": 505
+   },
+   {
+    "fork": "openlocal/element-android",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-26T02:03:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "jekahu/element-android",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-07-21T19:00:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "nimaflower/element-android",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-21T09:56:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "xingli888/element-android",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-21T09:56:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "jiandanjian/element-android",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-21T09:56:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "anjalifredy-ai/element-android",
+    "ahead_by": 0,
+    "behind_by": 12,
+    "push_em": "2026-07-17T11:05:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "StrixG/element-android",
+    "ahead_by": 7,
+    "behind_by": 20,
+    "push_em": "2026-07-17T10:15:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "1day0fmylife/element-android",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-07-10T05:12:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "haloscope/element-android",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-07-02T12:13:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "yumasaga/ChatSivoraAndroid",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-06-30T13:35:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "stjordanis/element-android",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-06-30T13:35:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "Sambit-rgb/Kt-element-android",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-06-30T13:35:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "micadibugit/element-android",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-06-24T15:25:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "rahman2008-svg/element-android",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-08T13:51:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "HamaraRadio/AaTek-Call",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-06-08T13:51:14Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 917
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-632v-9pm3-m8ch",
+    "cve": "CVE-2025-27606",
+    "severidade": "medium",
+    "cvss": 5.1,
+    "cwes": [],
+    "publicado_em": "2025-03-14T15:53:26Z",
+    "resumo": "Element Android PIN autologout bypass"
+   },
+   {
+    "ghsa": "GHSA-8wj9-cx7h-pvm4",
+    "cve": "CVE-2024-26132",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [
+     "CWE-200"
+    ],
+    "publicado_em": "2024-02-20T16:02:46Z",
+    "resumo": "Element Android can be forced to share internal files"
+   },
+   {
+    "ghsa": "GHSA-j6pr-fpc8-q9vm",
+    "cve": "CVE-2024-26131",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-923",
+     "CWE-940"
+    ],
+    "publicado_em": "2024-02-20T16:02:15Z",
+    "resumo": " Element Android Intent Redirection"
+   },
+   {
+    "ghsa": "GHSA-p2m5-74vh-pj57",
+    "cve": "CVE-2021-40824",
+    "severidade": "critical",
+    "cvss": null,
+    "cwes": [
+     "CWE-322"
+    ],
+    "publicado_em": "2021-09-14T11:16:29Z",
+    "resumo": "Element Android can be tricked into disclosing E2EE room keys to a participating homeserver"
+   }
+  ]
+ }
+}

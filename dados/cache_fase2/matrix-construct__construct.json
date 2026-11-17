@@ -1,0 +1,22 @@
+{
+ "slug": "matrix-construct/construct",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 41,
+  "stars": 395,
+  "watchers": 11,
+  "tamanho_kb": 27384,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-09-04T10:26:23Z",
+  "push_em": "2023-05-02T04:19:05Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:48+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,245 @@
+{
+ "slug": "SableClient/Sable",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 87,
+  "stars": 355,
+  "watchers": 3,
+  "tamanho_kb": 79923,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "dev",
+  "criado_em": "2026-03-09T18:53:02Z",
+  "push_em": "2026-08-17T01:41:39Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:38+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 87,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 5,
+  "detalhe": [
+   {
+    "fork": "CloudHub-Social/Charm-1.0",
+    "ahead_by": 2034,
+    "behind_by": 1801,
+    "push_em": "2026-08-16T22:40:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "TomOdellSheetMusic/Sable",
+    "ahead_by": 14,
+    "behind_by": 22,
+    "push_em": "2026-08-16T21:18:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "Th-Underscore/Sable",
+    "ahead_by": 0,
+    "behind_by": 56,
+    "push_em": "2026-08-16T06:00:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "jedenastka/Sable",
+    "ahead_by": 0,
+    "behind_by": 22,
+    "push_em": "2026-08-16T04:51:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "lunar-seal/Sable",
+    "ahead_by": 0,
+    "behind_by": 608,
+    "push_em": "2026-08-14T21:15:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "ProfessorVarox/sable",
+    "ahead_by": 39,
+    "behind_by": 80,
+    "push_em": "2026-08-13T21:29:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "blueberrymuffin3/Sable",
+    "ahead_by": 0,
+    "behind_by": 265,
+    "push_em": "2026-08-13T05:00:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "smokku/Sable",
+    "ahead_by": 0,
+    "behind_by": 151,
+    "push_em": "2026-08-12T22:00:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "j0lol/Sable",
+    "ahead_by": 0,
+    "behind_by": 748,
+    "push_em": "2026-08-12T21:16:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "mortebrume/Sable",
+    "ahead_by": 0,
+    "behind_by": 733,
+    "push_em": "2026-08-12T17:24:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "advaitc31/Sable",
+    "ahead_by": 0,
+    "behind_by": 199,
+    "push_em": "2026-08-12T01:27:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "eleboucher/Sable",
+    "ahead_by": 1,
+    "behind_by": 1171,
+    "push_em": "2026-08-11T21:34:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "Raupinger/Sable",
+    "ahead_by": 0,
+    "behind_by": 235,
+    "push_em": "2026-08-11T19:07:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "Steffo99/sable-dev",
+    "ahead_by": 0,
+    "behind_by": 581,
+    "push_em": "2026-08-11T03:17:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "Milkman337/Sable",
+    "ahead_by": 0,
+    "behind_by": 235,
+    "push_em": "2026-08-10T12:54:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "bo0tzz/sable",
+    "ahead_by": 0,
+    "behind_by": 328,
+    "push_em": "2026-08-08T18:22:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "Josef552/Sable",
+    "ahead_by": 0,
+    "behind_by": 306,
+    "push_em": "2026-08-08T18:21:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "AsmitBhardwaj/Sable",
+    "ahead_by": 0,
+    "behind_by": 492,
+    "push_em": "2026-08-05T05:49:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "illucc/Sable",
+    "ahead_by": 0,
+    "behind_by": 493,
+    "push_em": "2026-08-04T18:17:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "BurgundyDev/Sable",
+    "ahead_by": 0,
+    "behind_by": 521,
+    "push_em": "2026-08-04T14:39:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "bartoostveen/Sable",
+    "ahead_by": 0,
+    "behind_by": 581,
+    "push_em": "2026-08-02T17:50:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "yousayrock/project-goddess-client",
+    "ahead_by": 0,
+    "behind_by": 581,
+    "push_em": "2026-08-02T10:40:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "jasonlaguidice/Sable",
+    "ahead_by": 0,
+    "behind_by": 703,
+    "push_em": "2026-07-30T15:49:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "etnperlong/Sable",
+    "ahead_by": 0,
+    "behind_by": 733,
+    "push_em": "2026-07-29T09:16:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "Septicity/Sable",
+    "ahead_by": 0,
+    "behind_by": 779,
+    "push_em": "2026-07-27T21:01:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "Grphq1/Sable",
+    "ahead_by": 0,
+    "behind_by": 875,
+    "push_em": "2026-07-26T18:14:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "mohsenasm/Sable",
+    "ahead_by": 11,
+    "behind_by": 1736,
+    "push_em": "2026-07-26T17:27:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "eva856/Sable",
+    "ahead_by": 0,
+    "behind_by": 900,
+    "push_em": "2026-07-26T11:54:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "why-evil-glthub-help-me/Sable",
+    "ahead_by": 0,
+    "behind_by": 1170,
+    "push_em": "2026-07-25T16:20:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "thundertheidiot/Sable",
+    "ahead_by": 0,
+    "behind_by": 1096,
+    "push_em": "2026-07-24T17:02:53Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 87
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

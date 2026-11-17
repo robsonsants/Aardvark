@@ -1,0 +1,236 @@
+{
+ "slug": "SchildiChat/SchildiChat-android",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 77,
+  "stars": 505,
+  "watchers": 12,
+  "tamanho_kb": 220025,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "sc",
+  "criado_em": "2020-05-12T14:37:19Z",
+  "push_em": "2026-07-26T11:55:46Z",
+  "e_fork": true,
+  "upstream": "element-hq/element-android"
+ },
+ "coletado_em": "2026-09-18T03:47:38+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 81,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "omariahernandez434-png/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 52,
+    "push_em": "2026-06-11T09:14:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "MurotxonovAnvarxon/SchildiChat-android-khan",
+    "ahead_by": 0,
+    "behind_by": 52,
+    "push_em": "2026-06-11T09:14:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "adeelmalay-cell/aatek-android",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-05-26T10:32:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "jim-daf/element-android-upstream",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-05-13T18:48:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "nishantvr/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 55,
+    "push_em": "2026-05-02T13:57:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "darbulat/schildichat-android",
+    "ahead_by": 0,
+    "behind_by": 84,
+    "push_em": "2026-04-04T04:34:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "sub314xxl/SchildiChat",
+    "ahead_by": 0,
+    "behind_by": 86,
+    "push_em": "2026-03-14T08:25:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "scm-repo-mirror/SchildiChat_SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 110,
+    "push_em": "2026-02-16T11:55:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "LESP-book/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 110,
+    "push_em": "2026-02-14T11:03:56Z",
+    "stars": 0
+   },
+   {
+    "fork": "idkyou1500/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 1754,
+    "push_em": "2026-02-12T15:55:26Z",
+    "stars": 1
+   },
+   {
+    "fork": "ayanarshad/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2026-02-04T19:07:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "Kela-Systems/SchildiChat-android",
+    "ahead_by": 32,
+    "behind_by": 162,
+    "push_em": "2026-01-25T16:56:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "matrix543/KebabChat-android",
+    "ahead_by": 6,
+    "behind_by": 157,
+    "push_em": "2025-12-04T10:48:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "Gitexchange/SchildiChat-android",
+    "erro": 404
+   },
+   {
+    "fork": "jenb12785/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 157,
+    "push_em": "2025-11-27T14:29:30Z",
+    "stars": 1
+   },
+   {
+    "fork": "arsen878/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 158,
+    "push_em": "2025-11-22T22:38:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "zhgres/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 184,
+    "push_em": "2025-10-14T18:20:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "jasoncrevier/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 186,
+    "push_em": "2025-10-11T08:23:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "aphisit182534-ui/Asia",
+    "ahead_by": 0,
+    "behind_by": 189,
+    "push_em": "2025-09-29T13:50:06Z",
+    "stars": 1
+   },
+   {
+    "fork": "Ekene1998/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 216,
+    "push_em": "2025-08-12T18:51:30Z",
+    "stars": 1
+   },
+   {
+    "fork": "CreativLogic/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 216,
+    "push_em": "2025-08-12T18:51:30Z",
+    "stars": 1
+   },
+   {
+    "fork": "naywint/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 278,
+    "push_em": "2025-07-12T06:27:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "vpnxen/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 279,
+    "push_em": "2025-06-10T19:02:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "reh147147/SchildiChat-android",
+    "erro": 404
+   },
+   {
+    "fork": "NoCloud-today/SchildiChat-android",
+    "erro": 404
+   },
+   {
+    "fork": "herrrhein/RheinChat",
+    "ahead_by": 0,
+    "behind_by": 324,
+    "push_em": "2025-03-27T21:33:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "Melissa1181/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 855,
+    "push_em": "2024-12-22T13:05:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "Pitoshen/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 856,
+    "push_em": "2024-12-20T18:51:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "GlebMikhailov/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 877,
+    "push_em": "2024-12-19T01:09:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "AlexeyJarlax/SchildiChat-android",
+    "ahead_by": 0,
+    "behind_by": 877,
+    "push_em": "2024-12-02T09:09:47Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 77
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

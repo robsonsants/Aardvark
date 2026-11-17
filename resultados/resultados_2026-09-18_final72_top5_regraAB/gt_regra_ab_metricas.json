@@ -1,0 +1,25 @@
+{
+  "base": {
+    "TP": 122,
+    "FP": 10,
+    "FN": 42,
+    "TN": 13,
+    "n_pares": 187,
+    "precision": 0.9242,
+    "recall": 0.7439,
+    "f1": 0.8243,
+    "accuracy": 0.7219
+  },
+  "regra_ab": {
+    "TP": 113,
+    "FP": 2,
+    "FN": 51,
+    "TN": 21,
+    "n_pares": 187,
+    "precision": 0.9826,
+    "recall": 0.689,
+    "f1": 0.81,
+    "accuracy": 0.7166
+  },
+  "n_rotulos_gt": 187
+}

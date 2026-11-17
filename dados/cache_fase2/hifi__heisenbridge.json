@@ -1,0 +1,140 @@
+{
+ "slug": "hifi/heisenbridge",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 42,
+  "stars": 309,
+  "watchers": 7,
+  "tamanho_kb": 411,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2021-04-11T05:00:18Z",
+  "push_em": "2025-10-04T11:13:47Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:20+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 42,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 15,
+  "divergentes": 3,
+  "detalhe": [
+   {
+    "fork": "rollecode/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-05-23T09:30:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "ewilderj/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-05-18T02:17:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "BtbN/heisenbridge",
+    "ahead_by": 4,
+    "behind_by": 0,
+    "push_em": "2026-04-29T20:36:37Z",
+    "stars": 2
+   },
+   {
+    "fork": "overdrivenetworks/heisenbridge",
+    "ahead_by": 7,
+    "behind_by": 0,
+    "push_em": "2026-02-27T04:52:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "chinese-soup/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-02-19T15:58:30Z",
+    "stars": 0
+   },
+   {
+    "fork": "intelfx/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-01-20T08:20:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "kokomo123/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-11T14:06:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "capiyomero/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-10-04T11:13:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "vecna-sh/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 1,
+    "push_em": "2025-05-09T10:15:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "kevincox/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-05-03T16:33:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "lfaraone/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2025-04-20T02:41:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "NovaAndrom3da/heisenbridge",
+    "ahead_by": 14,
+    "behind_by": 3,
+    "push_em": "2025-03-18T17:14:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "rikhuijzer/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2024-12-23T08:00:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "olmari/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2024-12-13T22:49:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "ilmari/heisenbridge",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2024-10-20T20:18:10Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 42
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

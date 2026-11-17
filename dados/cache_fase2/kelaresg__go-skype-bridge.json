@@ -1,0 +1,56 @@
+{
+ "slug": "kelaresg/go-skype-bridge",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 19,
+  "stars": 39,
+  "watchers": 3,
+  "tamanho_kb": 267,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-09-02T03:52:32Z",
+  "push_em": "2023-02-23T13:28:09Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:23+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 18,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 3,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "napisani/go-skype-bridge",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "push_em": "2024-12-27T20:54:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "yannickulrich/go-skype-bridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2024-12-26T19:19:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "aostanin/go-skype-bridge",
+    "ahead_by": 4,
+    "behind_by": 0,
+    "push_em": "2024-08-31T02:11:25Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 19
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

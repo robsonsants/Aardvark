@@ -1,0 +1,22 @@
+{
+ "slug": "enimatek-nl/matrixbot-dotnet-sdk",
+ "meta": {
+  "linguagem": "C#",
+  "forks": 0,
+  "stars": 15,
+  "watchers": 1,
+  "tamanho_kb": 27,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2022-07-07T12:44:58Z",
+  "push_em": "2022-07-18T11:23:30Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:50+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

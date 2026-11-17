@@ -1,0 +1,63 @@
+{
+ "slug": "GearKite/MatrixZulipBridge",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 5,
+  "stars": 20,
+  "watchers": 2,
+  "tamanho_kb": 408,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-01-18T17:54:32Z",
+  "push_em": "2025-12-06T04:51:44Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:29+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 5,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 4,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "rv32ima/MatrixZulipBridge",
+    "ahead_by": 21,
+    "behind_by": 0,
+    "push_em": "2026-07-16T20:43:48Z",
+    "stars": 1
+   },
+   {
+    "fork": "samuel-asleep/MatrixZulipBridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-11T14:54:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "jaxassistant55/MatrixZulipBridge",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-06-01T02:28:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "Monadical-SAS/MatrixZulipBridge",
+    "ahead_by": 3,
+    "behind_by": 0,
+    "push_em": "2025-10-09T18:48:45Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 5
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

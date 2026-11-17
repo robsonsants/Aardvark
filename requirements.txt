@@ -1,37 +1,32 @@
-# Verification pipeline for security-patch propagation in divergent forks
-# Python 3.10+ (tested on 3.12)
-#   pip install -r requirements.txt
+# Pipeline de Verificação de Patches — Dissertação MDCC/UFC
+# Python 3.10+
+#   python -m pip install -r requirements.txt
 
-# --- Phase 1: pipeline1.py (NVD/GHSA mining) --------------------------------
+# ─── Fase 1: mineração NVD/GHSA
 nvdlib>=0.7.6
 pandas>=2.0.0
 numpy>=1.24.0
 requests>=2.31.0
 
-# --- Phase 2: layers 1/2A/2B (pipeline_core + dissertation + ground_truth) ---
+# ─── Fase 2: verificação semântica (pipeline_core + dissertation + ground_truth)
 tree-sitter>=0.23.0
 tree-sitter-python>=0.23.0
 tree-sitter-rust>=0.23.0
 tree-sitter-kotlin>=0.3.0
 tree-sitter-swift>=0.5.0
+
+# Parsers TS/Go — JÁ registrados em pipeline_core.py (SUPPORTED_LANGS) e
+# necessários para as categorias client (element-web, .ts/.tsx) e
+# integration (matrix-hookshot, .ts). Go cobre a categoria bridge.
 tree-sitter-typescript>=0.23.0
 tree-sitter-go>=0.23.0
 
-# Zhang-Shasha tree edit distance (ASTs under 600 nodes)
+# Distância de edição de árvores Zhang-Shasha (ASTs < 600 nós)
 zss>=1.2.0
+rapidfuzz>=3.0.0   # Levenshtein exato em C++ (bit-paralelo); sem ele o pipeline usa o laco puro, ordens de grandeza mais lento
 
-# Exact Levenshtein in C++ (bit-parallel Myers). Without it pipeline_core falls back
-# to the pure-Python loop, which is orders of magnitude slower on monolithic files.
-rapidfuzz>=3.0.0
+# difflib (SequenceMatcher em ground_truth.py) — biblioteca padrão, não instala
 
-# --- Embedding prototype: UniXcoder ------------------------------------------
-# NOT part of the method as reported. The prototype under prototipo_ranking_embeddings/
-# has not run since July 2026 and no published figure depends on it; it is kept as
-# future work (see REVIEW_RESPONSE_AND_ROADMAP.md, §4 item 6). Install only to re-run it.
-torch>=2.0.0
-transformers>=4.30.0
-
-# --- Figures ----------------------------------------------------------------
-matplotlib>=3.7.0
-
-# difflib (SequenceMatcher, used in ground_truth.py) is in the standard library.
+# ─── Opcionais
+# tree-sitter-c>=0.24.0   # só para refazer a validação externa (src/experimento_patchlens.py)
+# matplotlib>=3.8         # só para src/gerar_figura_severidade.py

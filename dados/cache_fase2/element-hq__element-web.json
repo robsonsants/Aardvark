@@ -1,0 +1,99 @@
+{
+ "slug": "element-hq/element-web",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 2725,
+  "stars": 13382,
+  "watchers": 221,
+  "tamanho_kb": 572741,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2015-07-22T05:32:15Z",
+  "push_em": "2026-08-16T22:18:33Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:03+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-wqmv-r2qj-2j9p",
+    "cve": null,
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-09-16T12:33:15Z",
+    "resumo": "XSS in HTML chat export via unsanitised attachment filenames and MXIDs"
+   },
+   {
+    "ghsa": "GHSA-9r5h-8m2x-w7q6",
+    "cve": null,
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-09-02T11:11:48Z",
+    "resumo": "Bundled URL preview links are not sanitized"
+   },
+   {
+    "ghsa": "GHSA-wrcp-5v3v-3j6v",
+    "cve": "CVE-2026-55850",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-20T13:58:21Z",
+    "resumo": "A malicious homeserver can inject HTML in Element Web using its homepage"
+   },
+   {
+    "ghsa": "GHSA-m6c8-98f4-75rr",
+    "cve": "CVE-2025-59161",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-09-16T13:12:50Z",
+    "resumo": "A malicious room can hide an unrelated room and cause it to be left when the malicious room is left"
+   },
+   {
+    "ghsa": "GHSA-69q3-jg79-cg79",
+    "cve": "CVE-2025-32026",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-04-08T14:06:37Z",
+    "resumo": "Element Web could load a malicious instance of Element Call leaking media encryption keys"
+   },
+   {
+    "ghsa": "GHSA-w36j-v56h-q9pc",
+    "cve": "CVE-2024-51750",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-20"
+    ],
+    "publicado_em": "2024-11-12T10:12:35Z",
+    "resumo": "A malicious homeserver can modify events leading to unrenderable events or rooms"
+   },
+   {
+    "ghsa": "GHSA-5486-384g-mcx2",
+    "cve": "CVE-2024-51749",
+    "severidade": "low",
+    "cvss": 3.5,
+    "cwes": [],
+    "publicado_em": "2024-11-12T10:12:27Z",
+    "resumo": "Thumbnails can be abused to misrepresent the content of an attachment"
+   },
+   {
+    "ghsa": "GHSA-3jm3-x98c-r34x",
+    "cve": "CVE-2024-47779",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-200"
+    ],
+    "publicado_em": "2024-10-15T12:00:00Z",
+    "resumo": " Potential exposure of access token via authenticated media"
+   }
+  ]
+ }
+}

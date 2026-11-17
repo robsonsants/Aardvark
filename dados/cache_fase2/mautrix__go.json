@@ -1,0 +1,242 @@
+{
+ "slug": "mautrix/go",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 119,
+  "stars": 649,
+  "watchers": 8,
+  "tamanho_kb": 5285,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2016-06-20T21:27:20Z",
+  "push_em": "2026-08-16T22:25:25Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:58+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 164,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 7,
+  "detalhe": [
+   {
+    "fork": "AKJUS/go",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-16T13:05:11Z",
+    "stars": 1
+   },
+   {
+    "fork": "ajkessel/go",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-08-08T22:55:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "natheihei/mautrix-go-upstream",
+    "ahead_by": 0,
+    "behind_by": 35,
+    "push_em": "2026-07-29T22:59:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "Katze-942/go",
+    "ahead_by": 0,
+    "behind_by": 36,
+    "push_em": "2026-07-29T16:07:31Z",
+    "stars": 1
+   },
+   {
+    "fork": "iKonoTelecomunicaciones/go",
+    "ahead_by": 57,
+    "behind_by": 62,
+    "push_em": "2026-07-28T15:12:19Z",
+    "stars": 0
+   },
+   {
+    "fork": "weebl2000/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 37,
+    "push_em": "2026-07-27T08:57:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "SilverBirchh/go",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2026-07-22T14:59:18Z",
+    "stars": 0
+   },
+   {
+    "fork": "wlongo/mautrix-go",
+    "ahead_by": 9,
+    "behind_by": 48,
+    "push_em": "2026-07-18T22:57:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "keithah/mautrix-go",
+    "ahead_by": 17,
+    "behind_by": 1939,
+    "push_em": "2026-07-03T19:30:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "cocode32/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 86,
+    "push_em": "2026-06-24T15:45:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "LeaPhant/mautrix-go",
+    "ahead_by": 14,
+    "behind_by": 1939,
+    "push_em": "2026-06-23T09:36:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "Fizzadar/go",
+    "ahead_by": 0,
+    "behind_by": 86,
+    "push_em": "2026-06-16T12:09:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "eiabea/go",
+    "ahead_by": 0,
+    "behind_by": 89,
+    "push_em": "2026-06-10T07:53:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "alborzjafari/go",
+    "ahead_by": 0,
+    "behind_by": 91,
+    "push_em": "2026-06-07T16:41:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "romash1408/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 94,
+    "push_em": "2026-06-03T10:15:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "KaiStarkk/go",
+    "ahead_by": 0,
+    "behind_by": 307,
+    "push_em": "2026-05-26T03:25:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "APOLLONLIN/go",
+    "ahead_by": 0,
+    "behind_by": 112,
+    "push_em": "2026-05-16T10:22:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "Mukhammadali/go",
+    "ahead_by": 2,
+    "behind_by": 113,
+    "push_em": "2026-05-15T18:49:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "bradtgmurray/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 113,
+    "push_em": "2026-05-14T15:07:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "Deln0r/go",
+    "ahead_by": 0,
+    "behind_by": 121,
+    "push_em": "2026-05-13T06:53:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "iFixRobots/go",
+    "ahead_by": 0,
+    "behind_by": 145,
+    "push_em": "2026-05-09T20:33:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "tomaioo/go",
+    "erro": 404
+   },
+   {
+    "fork": "zluudg/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 173,
+    "push_em": "2026-05-07T23:22:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "saces/mautrix-go",
+    "ahead_by": 1,
+    "behind_by": 215,
+    "push_em": "2026-04-15T21:12:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "blau2/go",
+    "ahead_by": 0,
+    "behind_by": 238,
+    "push_em": "2026-04-10T22:16:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "milliiletisimagi/go",
+    "ahead_by": 0,
+    "behind_by": 260,
+    "push_em": "2026-04-03T15:32:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "kalix127/go",
+    "ahead_by": 0,
+    "behind_by": 274,
+    "push_em": "2026-03-29T22:12:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "maltee1/mautrix-go",
+    "ahead_by": 0,
+    "behind_by": 649,
+    "push_em": "2026-03-27T15:22:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "qdii/go",
+    "ahead_by": 1,
+    "behind_by": 294,
+    "push_em": "2026-03-20T19:06:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "hydrick-lux/go",
+    "ahead_by": 0,
+    "behind_by": 307,
+    "push_em": "2026-03-13T16:34:05Z",
+    "stars": 1
+   }
+  ],
+  "forks_declarados": 119
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

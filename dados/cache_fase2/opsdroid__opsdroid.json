@@ -1,0 +1,22 @@
+{
+ "slug": "opsdroid/opsdroid",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 425,
+  "stars": 869,
+  "watchers": 26,
+  "tamanho_kb": 3492,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2016-07-23T20:18:56Z",
+  "push_em": "2026-05-05T08:46:46Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:11+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

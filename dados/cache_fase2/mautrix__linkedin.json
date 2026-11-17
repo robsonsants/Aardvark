@@ -1,0 +1,77 @@
+{
+ "slug": "mautrix/linkedin",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 6,
+  "stars": 32,
+  "watchers": 5,
+  "tamanho_kb": 4076,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-01-20T18:49:26Z",
+  "push_em": "2026-08-16T13:17:01Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:21+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 6,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 6,
+  "divergentes": 3,
+  "detalhe": [
+   {
+    "fork": "stegmatix/linkedin",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-04-11T09:16:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "TrimmerOrg/linkedin",
+    "ahead_by": 0,
+    "behind_by": 44,
+    "push_em": "2025-10-13T14:26:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "manmeta288/matrix-linkedin",
+    "ahead_by": 6,
+    "behind_by": 62,
+    "push_em": "2025-10-03T22:15:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "jqssun/linkedin",
+    "ahead_by": 1,
+    "behind_by": 94,
+    "push_em": "2025-07-14T12:26:23Z",
+    "stars": 1
+   },
+   {
+    "fork": "HaxThePlanet/linkedin",
+    "ahead_by": 0,
+    "behind_by": 96,
+    "push_em": "2025-05-06T22:03:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "williams-surjanto/linkedin",
+    "ahead_by": 10,
+    "behind_by": 97,
+    "push_em": "2025-04-23T00:51:37Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 6
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

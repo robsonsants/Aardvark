@@ -1,0 +1,22 @@
+{
+ "slug": "noordstar/elm-matrix-sdk-beta",
+ "meta": {
+  "linguagem": "Elm",
+  "forks": 0,
+  "stars": 10,
+  "watchers": 1,
+  "tamanho_kb": 735,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-12-07T20:17:12Z",
+  "push_em": "2026-04-17T15:36:39Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:58+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

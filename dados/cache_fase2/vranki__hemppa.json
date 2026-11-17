@@ -1,0 +1,22 @@
+{
+ "slug": "vranki/hemppa",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 37,
+  "stars": 180,
+  "watchers": 10,
+  "tamanho_kb": 519,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2019-12-09T17:43:05Z",
+  "push_em": "2026-02-12T13:42:29Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:07+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

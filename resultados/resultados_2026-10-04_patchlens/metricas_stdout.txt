@@ -1,0 +1,110 @@
+
+verificabilidade por idade do fix:
+  ate_2012   n=1757  resolvidos 28.6%
+  2013_16    n=2337  resolvidos 36.6%
+  2017_19    n=1872  resolvidos 64.9%
+  2020_21    n=359   resolvidos 76.3%
+  2022_23    n=522   resolvidos 89.8%
+  2024_mais  n=79    resolvidos 94.9%
+
+== linux == 6030 pares, 5301 verificáveis
+  proveniencia               uniao     n=5301  TP 2247  FP 44    FN 2962  TN 48    P 0.981 R 0.431 F1 0.599 k -0.003
+  proveniencia               regra_ab  n=5301  TP 2040  FP 13    FN 3169  TN 79    P 0.994 R 0.392 F1 0.562 k 0.014
+  proveniencia               trivial   n=5301  TP 5209  FP 92    FN 0     TN 0     P 0.983 R 1.000 F1 0.991 k 0.000
+  proveniencia_refinada      uniao     n=5301  TP 2247  FP 44    FN 2962  TN 48    P 0.981 R 0.431 F1 0.599 k -0.003
+  proveniencia_refinada      regra_ab  n=5301  TP 2040  FP 13    FN 3169  TN 79    P 0.994 R 0.392 F1 0.562 k 0.014
+  proveniencia_refinada      trivial   n=5301  TP 5209  FP 92    FN 0     TN 0     P 0.983 R 1.000 F1 0.991 k 0.000
+  linhas                     uniao     n=4620  TP 1975  FP 155   FN 1849  TN 641   P 0.927 R 0.516 F1 0.663 k 0.175
+  linhas                     regra_ab  n=4620  TP 1886  FP 64    FN 1938  TN 732   P 0.967 R 0.493 F1 0.653 k 0.214
+  linhas                     trivial   n=4620  TP 3824  FP 796   FN 0     TN 0     P 0.828 R 1.000 F1 0.906 k 0.000
+  consenso                   uniao     n=3842  TP 1964  FP 23    FN 1833  TN 22    P 0.988 R 0.517 F1 0.679 k 0.000
+  consenso                   regra_ab  n=3842  TP 1881  FP 8     FN 1916  TN 37    P 0.996 R 0.495 F1 0.662 k 0.014
+  consenso                   trivial   n=3842  TP 3797  FP 45    FN 0     TN 0     P 0.988 R 1.000 F1 0.994 k 0.000
+  proveniencia_sem_heranca   uniao     n=577   TP 441   FP 44    FN 44    TN 48    P 0.909 R 0.909 F1 0.909 k 0.431
+  proveniencia_sem_heranca   regra_ab  n=577   TP 416   FP 13    FN 69    TN 79    P 0.970 R 0.858 F1 0.910 k 0.575
+  proveniencia_sem_heranca   trivial   n=577   TP 485   FP 92    FN 0     TN 0     P 0.841 R 1.000 F1 0.913 k 0.000
+  proveniencia_refinada_sem_heranca uniao     n=577   TP 441   FP 44    FN 44    TN 48    P 0.909 R 0.909 F1 0.909 k 0.431
+  proveniencia_refinada_sem_heranca regra_ab  n=577   TP 416   FP 13    FN 69    TN 79    P 0.970 R 0.858 F1 0.910 k 0.575
+  proveniencia_refinada_sem_heranca trivial   n=577   TP 485   FP 92    FN 0     TN 0     P 0.841 R 1.000 F1 0.913 k 0.000
+  consenso_sem_heranca       uniao     n=476   TP 393   FP 23    FN 38    TN 22    P 0.945 R 0.912 F1 0.928 k 0.349
+  consenso_sem_heranca       regra_ab  n=476   TP 382   FP 8     FN 49    TN 37    P 0.979 R 0.886 F1 0.931 k 0.503
+  consenso_sem_heranca       trivial   n=476   TP 431   FP 45    FN 0     TN 0     P 0.905 R 1.000 F1 0.950 k 0.000
+  oraculo_linhas_vs_proveniencia_refinada todos     n=4620  TP 3797  FP 27    FN 751   TN 45    P 0.993 R 0.835 F1 0.907 k 0.077
+  oraculo_linhas_vs_proveniencia_refinada sem_heranca n=518   TP 431   FP 27    FN 15    TN 45    P 0.941 R 0.966 F1 0.954 k 0.636
+
+== ffmpeg == 1428 pares, 1321 verificáveis
+  proveniencia               uniao     n=1321  TP 523   FP 26    FN 668   TN 104   P 0.953 R 0.439 F1 0.601 k 0.075
+  proveniencia               regra_ab  n=1321  TP 498   FP 9     FN 693   TN 121   P 0.982 R 0.418 F1 0.587 k 0.104
+  proveniencia               trivial   n=1321  TP 1191  FP 130   FN 0     TN 0     P 0.902 R 1.000 F1 0.948 k 0.000
+  proveniencia_refinada      uniao     n=1214  TP 523   FP 19    FN 668   TN 4     P 0.965 R 0.439 F1 0.604 k -0.026
+  proveniencia_refinada      regra_ab  n=1214  TP 498   FP 2     FN 693   TN 21    P 0.996 R 0.418 F1 0.589 k 0.021
+  proveniencia_refinada      trivial   n=1214  TP 1191  FP 23    FN 0     TN 0     P 0.981 R 1.000 F1 0.990 k 0.000
+  linhas                     uniao     n=1185  TP 495   FP 24    FN 491   TN 175   P 0.954 R 0.502 F1 0.658 k 0.197
+  linhas                     regra_ab  n=1185  TP 476   FP 13    FN 510   TN 186   P 0.973 R 0.483 F1 0.645 k 0.209
+  linhas                     trivial   n=1185  TP 986   FP 199   FN 0     TN 0     P 0.832 R 1.000 F1 0.908 k 0.000
+  consenso                   uniao     n=924   TP 479   FP 4     FN 438   TN 3     P 0.992 R 0.522 F1 0.684 k -0.002
+  consenso                   regra_ab  n=924   TP 467   FP 0     FN 450   TN 7     P 1.000 R 0.509 F1 0.675 k 0.015
+  consenso                   trivial   n=924   TP 917   FP 7     FN 0     TN 0     P 0.992 R 1.000 F1 0.996 k 0.000
+  proveniencia_sem_heranca   uniao     n=179   TP 47    FP 26    FN 2     TN 104   P 0.644 R 0.959 F1 0.770 k 0.659
+  proveniencia_sem_heranca   regra_ab  n=179   TP 47    FP 9     FN 2     TN 121   P 0.839 R 0.959 F1 0.895 k 0.852
+  proveniencia_sem_heranca   trivial   n=179   TP 49    FP 130   FN 0     TN 0     P 0.274 R 1.000 F1 0.430 k 0.000
+  proveniencia_refinada_sem_heranca uniao     n=72    TP 47    FP 19    FN 2     TN 4     P 0.712 R 0.959 F1 0.817 k 0.166
+  proveniencia_refinada_sem_heranca regra_ab  n=72    TP 47    FP 2     FN 2     TN 21    P 0.959 R 0.959 F1 0.959 k 0.872
+  proveniencia_refinada_sem_heranca trivial   n=72    TP 49    FP 23    FN 0     TN 0     P 0.681 R 1.000 F1 0.810 k 0.000
+  consenso_sem_heranca       uniao     n=53    TP 44    FP 4     FN 2     TN 3     P 0.917 R 0.957 F1 0.936 k 0.438
+  consenso_sem_heranca       regra_ab  n=53    TP 44    FP 0     FN 2     TN 7     P 1.000 R 0.957 F1 0.978 k 0.853
+  consenso_sem_heranca       trivial   n=53    TP 46    FP 7     FN 0     TN 0     P 0.868 R 1.000 F1 0.929 k 0.000
+  oraculo_linhas_vs_proveniencia_refinada todos     n=1101  TP 917   FP 9     FN 168   TN 7     P 0.990 R 0.845 F1 0.912 k 0.048
+  oraculo_linhas_vs_proveniencia_refinada sem_heranca n=65    TP 46    FP 9     FN 3     TN 7     P 0.836 R 0.939 F1 0.885 k 0.431
+
+== php == 390 pares, 304 verificáveis
+  proveniencia               uniao     n=304   TP 62    FP 1     FN 218   TN 23    P 0.984 R 0.221 F1 0.362 k 0.035
+  proveniencia               regra_ab  n=304   TP 50    FP 1     FN 230   TN 23    P 0.980 R 0.179 F1 0.302 k 0.026
+  proveniencia               trivial   n=304   TP 280   FP 24    FN 0     TN 0     P 0.921 R 1.000 F1 0.959 k 0.000
+  proveniencia_refinada      uniao     n=280   TP 62    FP 0     FN 218   TN 0     P 1.000 R 0.221 F1 0.363 k 0.000
+  proveniencia_refinada      regra_ab  n=280   TP 50    FP 0     FN 230   TN 0     P 1.000 R 0.179 F1 0.303 k 0.000
+  proveniencia_refinada      trivial   n=280   TP 280   FP 0     FN 0     TN 0     P 1.000 R 1.000 F1 1.000 k 0.000
+  linhas                     uniao     n=252   TP 47    FP 2     FN 148   TN 55    P 0.959 R 0.241 F1 0.385 k 0.108
+  linhas                     regra_ab  n=252   TP 47    FP 2     FN 148   TN 55    P 0.959 R 0.241 F1 0.385 k 0.108
+  linhas                     trivial   n=252   TP 195   FP 57    FN 0     TN 0     P 0.774 R 1.000 F1 0.872 k 0.000
+  consenso                   uniao     n=177   TP 46    FP 0     FN 131   TN 0     P 1.000 R 0.260 F1 0.413 k 0.000
+  consenso                   regra_ab  n=177   TP 46    FP 0     FN 131   TN 0     P 1.000 R 0.260 F1 0.413 k 0.000
+  consenso                   trivial   n=177   TP 177   FP 0     FN 0     TN 0     P 1.000 R 1.000 F1 1.000 k 0.000
+  proveniencia_sem_heranca   uniao     n=24    TP 0     FP 1     FN 0     TN 23    P 0.000 R 0.000 F1 0.000 k 0.000
+  proveniencia_sem_heranca   regra_ab  n=24    TP 0     FP 1     FN 0     TN 23    P 0.000 R 0.000 F1 0.000 k 0.000
+  proveniencia_sem_heranca   trivial   n=24    TP 0     FP 24    FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  proveniencia_refinada_sem_heranca uniao     n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  proveniencia_refinada_sem_heranca regra_ab  n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  proveniencia_refinada_sem_heranca trivial   n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  consenso_sem_heranca       uniao     n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  consenso_sem_heranca       regra_ab  n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  consenso_sem_heranca       trivial   n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+  oraculo_linhas_vs_proveniencia_refinada todos     n=228   TP 177   FP 0     FN 51    TN 0     P 1.000 R 0.776 F1 0.874 k 0.000
+  oraculo_linhas_vs_proveniencia_refinada sem_heranca n=0     TP 0     FP 0     FN 0     TN 0     P 0.000 R 0.000 F1 0.000 k 0.000
+
+== TOTAL == 7848 pares, 6926 verificáveis
+  proveniencia               uniao     n=6926  TP 2832  FP 71    FN 3848  TN 175   P 0.976 R 0.424 F1 0.591 k 0.016
+  proveniencia               regra_ab  n=6926  TP 2588  FP 23    FN 4092  TN 223   P 0.991 R 0.387 F1 0.557 k 0.033
+  proveniencia               trivial   n=6926  TP 6680  FP 246   FN 0     TN 0     P 0.964 R 1.000 F1 0.982 k 0.000
+  proveniencia_refinada      uniao     n=6795  TP 2832  FP 63    FN 3848  TN 52    P 0.978 R 0.424 F1 0.592 k -0.007
+  proveniencia_refinada      regra_ab  n=6795  TP 2588  FP 15    FN 4092  TN 100   P 0.994 R 0.387 F1 0.558 k 0.014
+  proveniencia_refinada      trivial   n=6795  TP 6680  FP 115   FN 0     TN 0     P 0.983 R 1.000 F1 0.991 k 0.000
+  linhas                     uniao     n=6057  TP 2517  FP 181   FN 2488  TN 871   P 0.933 R 0.503 F1 0.654 k 0.177
+  linhas                     regra_ab  n=6057  TP 2409  FP 79    FN 2596  TN 973   P 0.968 R 0.481 F1 0.643 k 0.209
+  linhas                     trivial   n=6057  TP 5005  FP 1052  FN 0     TN 0     P 0.826 R 1.000 F1 0.905 k 0.000
+  consenso                   uniao     n=4943  TP 2489  FP 27    FN 2402  TN 25    P 0.989 R 0.509 F1 0.672 k -0.000
+  consenso                   regra_ab  n=4943  TP 2394  FP 8     FN 2497  TN 44    P 0.997 R 0.489 F1 0.657 k 0.014
+  consenso                   trivial   n=4943  TP 4891  FP 52    FN 0     TN 0     P 0.989 R 1.000 F1 0.995 k 0.000
+  proveniencia_sem_heranca   uniao     n=780   TP 488   FP 71    FN 46    TN 175   P 0.873 R 0.914 F1 0.893 k 0.643
+  proveniencia_sem_heranca   regra_ab  n=780   TP 463   FP 23    FN 71    TN 223   P 0.953 R 0.867 F1 0.908 k 0.735
+  proveniencia_sem_heranca   trivial   n=780   TP 534   FP 246   FN 0     TN 0     P 0.685 R 1.000 F1 0.813 k 0.000
+  proveniencia_refinada_sem_heranca uniao     n=649   TP 488   FP 63    FN 46    TN 52    P 0.886 R 0.914 F1 0.900 k 0.389
+  proveniencia_refinada_sem_heranca regra_ab  n=649   TP 463   FP 15    FN 71    TN 100   P 0.969 R 0.867 F1 0.915 k 0.618
+  proveniencia_refinada_sem_heranca trivial   n=649   TP 534   FP 115   FN 0     TN 0     P 0.823 R 1.000 F1 0.903 k 0.000
+  consenso_sem_heranca       uniao     n=529   TP 437   FP 27    FN 40    TN 25    P 0.942 R 0.916 F1 0.929 k 0.357
+  consenso_sem_heranca       regra_ab  n=529   TP 426   FP 8     FN 51    TN 44    P 0.982 R 0.893 F1 0.935 k 0.540
+  consenso_sem_heranca       trivial   n=529   TP 477   FP 52    FN 0     TN 0     P 0.902 R 1.000 F1 0.948 k 0.000
+  oraculo_linhas_vs_proveniencia_refinada todos     n=5949  TP 4891  FP 36    FN 970   TN 52    P 0.993 R 0.834 F1 0.907 k 0.068
+  oraculo_linhas_vs_proveniencia_refinada sem_heranca n=583   TP 477   FP 36    FN 18    TN 52    P 0.930 R 0.964 F1 0.946 k 0.605
+
+→ resultados/resultados_2026-10-04_patchlens/metricas_patchlens.json

@@ -1,0 +1,60 @@
+{
+ "slug": "duo/matrix-wechat",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 14,
+  "stars": 178,
+  "watchers": 6,
+  "tamanho_kb": 105,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2022-09-13T15:01:27Z",
+  "push_em": "2025-02-19T06:05:13Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:27+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 15,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 4,
+  "divergentes": 1,
+  "detalhe": [
+   {
+    "fork": "Cynn1989/matrix-wechat",
+    "erro": 404
+   },
+   {
+    "fork": "hafeoz/matrix-wechat",
+    "ahead_by": 8,
+    "behind_by": 2,
+    "push_em": "2025-02-19T06:06:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "nathanwang16/matrix-wecha",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-02-19T06:05:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "zhudy/matrix-wechat",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2025-02-19T06:05:13Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 14
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

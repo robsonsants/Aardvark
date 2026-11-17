@@ -1,0 +1,22 @@
+{
+ "slug": "matrix-org/olm",
+ "meta": {
+  "linguagem": null,
+  "forks": 9,
+  "stars": 74,
+  "watchers": 28,
+  "tamanho_kb": 7,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2015-10-02T23:05:25Z",
+  "push_em": "2026-02-23T15:55:10Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:09+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

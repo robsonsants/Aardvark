@@ -1,0 +1,22 @@
+{
+ "slug": "dylhack/matrix-nim-sdk",
+ "meta": {
+  "linguagem": "Nim",
+  "forks": 2,
+  "stars": 19,
+  "watchers": 1,
+  "tamanho_kb": 413,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2021-09-25T03:01:24Z",
+  "push_em": "2022-08-11T09:46:36Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:59+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

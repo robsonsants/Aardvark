@@ -1,0 +1,22 @@
+{
+ "slug": "SchildiChat/schildichat-android-next",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 38,
+  "stars": 308,
+  "watchers": 4,
+  "tamanho_kb": 129029,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-10-01T15:07:31Z",
+  "push_em": "2026-08-15T08:57:27Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:07+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

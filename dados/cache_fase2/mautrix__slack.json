@@ -1,0 +1,154 @@
+{
+ "slug": "mautrix/slack",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 31,
+  "stars": 101,
+  "watchers": 5,
+  "tamanho_kb": 782,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2022-05-20T20:53:32Z",
+  "push_em": "2026-08-16T13:19:27Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:24+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 31,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 17,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "0x-chad/slack",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2026-08-06T20:20:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "thesuperRL/mautrix-slack",
+    "ahead_by": 16,
+    "behind_by": 25,
+    "push_em": "2026-08-05T19:50:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "lytedev/mautrix-slack",
+    "ahead_by": 0,
+    "behind_by": 8,
+    "push_em": "2026-07-23T16:42:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "stjordanis/slack",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-07-13T20:30:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "wrmilling/mautrix-slack",
+    "ahead_by": 0,
+    "behind_by": 12,
+    "push_em": "2026-07-13T19:25:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "yaakov-h/slack",
+    "ahead_by": 0,
+    "behind_by": 35,
+    "push_em": "2026-05-25T23:21:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "redgoat650/mautrix-slack",
+    "ahead_by": 2,
+    "behind_by": 24,
+    "push_em": "2026-05-24T22:45:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "BierDav/mautrix-slack",
+    "ahead_by": 0,
+    "behind_by": 42,
+    "push_em": "2026-05-07T11:32:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "Gottox/slack",
+    "ahead_by": 0,
+    "behind_by": 31,
+    "push_em": "2026-04-30T08:20:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "tiers-io/mautrix-slack",
+    "ahead_by": 3,
+    "behind_by": 35,
+    "push_em": "2026-04-21T04:27:04Z",
+    "stars": 0
+   },
+   {
+    "fork": "kokomo123/slack",
+    "ahead_by": 0,
+    "behind_by": 40,
+    "push_em": "2026-03-27T14:51:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "ABoringBusiness/slack",
+    "ahead_by": 0,
+    "behind_by": 40,
+    "push_em": "2026-03-16T16:10:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "regulad/slack",
+    "ahead_by": 0,
+    "behind_by": 42,
+    "push_em": "2026-03-07T18:07:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "bru02/teams",
+    "ahead_by": 0,
+    "behind_by": 46,
+    "push_em": "2026-02-08T19:16:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "twouters/slack",
+    "ahead_by": 0,
+    "behind_by": 67,
+    "push_em": "2025-10-09T10:59:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "sajeelH/slack",
+    "ahead_by": 0,
+    "behind_by": 102,
+    "push_em": "2025-02-27T12:09:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "dvcrn/slack",
+    "ahead_by": 1,
+    "behind_by": 108,
+    "push_em": "2025-01-10T05:57:34Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 31
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

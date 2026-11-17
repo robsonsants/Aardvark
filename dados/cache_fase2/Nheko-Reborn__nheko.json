@@ -1,0 +1,32 @@
+{
+ "slug": "Nheko-Reborn/nheko",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 242,
+  "stars": 2477,
+  "watchers": 35,
+  "tamanho_kb": 29663,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2019-01-10T23:09:21Z",
+  "push_em": "2026-07-10T18:31:14Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:06+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-8jcp-8jq4-5mm7",
+    "cve": "CVE-2022-39264",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2022-09-28T15:59:35Z",
+    "resumo": "Secret poisoning using MITM on secret requests by the homeserver"
+   }
+  ]
+ }
+}

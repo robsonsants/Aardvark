@@ -1,0 +1,451 @@
+{
+ "slug": "element-hq/synapse",
+ "meta": {
+  "linguagem": "Python",
+  "forks": 578,
+  "stars": 4525,
+  "watchers": 32,
+  "tamanho_kb": 613152,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2023-12-13T14:40:43Z",
+  "push_em": "2026-08-14T14:45:47Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:50+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 580,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 5,
+  "detalhe": [
+   {
+    "fork": "gamesguru/synapse",
+    "ahead_by": 0,
+    "behind_by": 112,
+    "push_em": "2026-08-16T23:46:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "h7x4/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T09:23:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "catfromplan9/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T19:22:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "naushniki/synapse",
+    "ahead_by": 0,
+    "behind_by": 206,
+    "push_em": "2026-08-14T18:29:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "barodeur/element-synapse",
+    "ahead_by": 0,
+    "behind_by": 38,
+    "push_em": "2026-08-14T16:28:15Z",
+    "stars": 0
+   },
+   {
+    "fork": "guillemo12/synapse",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "push_em": "2026-08-14T15:49:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "nagicantsleep/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T14:45:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "elijahr2411/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T14:45:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "Barry3D/synapse",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2026-08-14T13:49:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "Letyri/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T13:03:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "famedly/synapse-upstreaming",
+    "ahead_by": 0,
+    "behind_by": 415,
+    "push_em": "2026-08-14T11:43:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "ricalnet/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T11:23:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hawthorne001/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-13T21:02:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "manamahere/synapse",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-13T16:52:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "JaxLUG/synapse",
+    "ahead_by": 0,
+    "behind_by": 148,
+    "push_em": "2026-08-12T20:11:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "Buzzlabs/synapse",
+    "ahead_by": 119,
+    "behind_by": 537,
+    "push_em": "2026-08-12T14:17:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "Oele/synapse",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-08-11T15:40:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "tedroden/synapse",
+    "ahead_by": 0,
+    "behind_by": 77,
+    "push_em": "2026-08-11T14:38:40Z",
+    "stars": 0
+   },
+   {
+    "fork": "Fefaine/synapse",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2026-08-11T08:13:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "supernaga/synapse",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2026-08-10T21:34:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "kau17033/synapse",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2026-08-10T21:34:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "HMB-research/synapse",
+    "ahead_by": 0,
+    "behind_by": 1172,
+    "push_em": "2026-08-09T05:54:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "CharmanderV123/synapse",
+    "ahead_by": 1,
+    "behind_by": 269,
+    "push_em": "2026-08-09T05:36:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "shcherbak/synapse",
+    "ahead_by": 6,
+    "behind_by": 24,
+    "push_em": "2026-08-08T17:56:00Z",
+    "stars": 0
+   },
+   {
+    "fork": "Disha714/synapse",
+    "ahead_by": 0,
+    "behind_by": 28,
+    "push_em": "2026-08-06T10:18:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "tdavis298/synapse",
+    "ahead_by": 0,
+    "behind_by": 32,
+    "push_em": "2026-08-05T21:26:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "timedoutuk/synapse",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2026-08-05T15:07:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "thetayloredman/lognapse",
+    "ahead_by": 11,
+    "behind_by": 37,
+    "push_em": "2026-08-04T20:34:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "aouxwoux/synapse",
+    "ahead_by": 0,
+    "behind_by": 105,
+    "push_em": "2026-08-03T01:09:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "saisharan0103/synapse",
+    "erro": 404
+   }
+  ],
+  "forks_declarados": 578
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-hgcg-p9gx-fq5f",
+    "cve": null,
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:48:50Z",
+    "resumo": "Synapse accepts extraneous trailing (suffix) data on the URL of some endpoints, enabling access to unintended endpoints"
+   },
+   {
+    "ghsa": "GHSA-vh4c-pqh4-w3wq",
+    "cve": null,
+    "severidade": "low",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:48:32Z",
+    "resumo": "Synapse allows insertion of extraneous HTTP path segments in some endpoints"
+   },
+   {
+    "ghsa": "GHSA-6wjm-9p2x-gvpm",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:48:05Z",
+    "resumo": "Synapse exhausts memory in response to malicious `multipart/form-data` requests"
+   },
+   {
+    "ghsa": "GHSA-jhcg-5392-5mjw",
+    "cve": null,
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:47:47Z",
+    "resumo": "Synapse produces invalid Sliding Sync responses if a room contains invalid name, avatar or user profile data"
+   },
+   {
+    "ghsa": "GHSA-95fh-hv8c-chvq",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:49:38Z",
+    "resumo": "Synapse relays 401 Unauthorized federation responses to clients, causing them to log out"
+   },
+   {
+    "ghsa": "GHSA-r66v-qhwx-8rg4",
+    "cve": null,
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:46:56Z",
+    "resumo": "Federation `/timestamp_to_event` endpoint discloses event IDs from unjoined room"
+   },
+   {
+    "ghsa": "GHSA-27p5-4f45-gx76",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:46:14Z",
+    "resumo": "Federation `/get_missing_events` endpoint can disclose events from another room"
+   },
+   {
+    "ghsa": "GHSA-fp53-rw9v-hcf9",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:49:07Z",
+    "resumo": "Resource exhaustion from user-configured push rules"
+   },
+   {
+    "ghsa": "GHSA-rgv2-84w7-5j9p",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:49:20Z",
+    "resumo": "Synapse accepts to-device messages which have been spoofed to look like they came from another server"
+   },
+   {
+    "ghsa": "GHSA-qcjr-46gf-7f4r",
+    "cve": null,
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:46:27Z",
+    "resumo": "Federation `/event_auth` endpoint can disclose authorisation events from another room"
+   },
+   {
+    "ghsa": "GHSA-cjh7-rcpx-xpf8",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-28T13:49:54Z",
+    "resumo": "Room aliases can be maliciously redirected to other rooms"
+   },
+   {
+    "ghsa": "GHSA-8q93-326v-3m7g",
+    "cve": "CVE-2026-45078",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-05-08T13:54:02Z",
+    "resumo": "Synapse CPU starvation (Denial of Service)"
+   },
+   {
+    "ghsa": "GHSA-6qf2-7x63-mm6v",
+    "cve": "CVE-2026-45076",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-05-08T13:54:19Z",
+    "resumo": "Synapse pagination Denial of Service"
+   },
+   {
+    "ghsa": "GHSA-fh66-fcv5-jjfr",
+    "cve": "CVE-2025-61672",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-1287"
+    ],
+    "publicado_em": "2025-10-08T12:39:53Z",
+    "resumo": "Invalid device keys degrade federation functionality"
+   },
+   {
+    "ghsa": "GHSA-v56r-hwv5-mxg6",
+    "cve": "CVE-2025-30355",
+    "severidade": "high",
+    "cvss": 7.1,
+    "cwes": [],
+    "publicado_em": "2025-03-26T22:23:48Z",
+    "resumo": "Federation denial of service via malformed events"
+   },
+   {
+    "ghsa": "GHSA-vp6v-whfm-rv3g",
+    "cve": "CVE-2024-53863",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-12-03T16:36:34Z",
+    "resumo": "Synapse can be forced to thumbnail unexpected file formats, invoking potentially untrustworthy decoders"
+   },
+   {
+    "ghsa": "GHSA-f3r3-h2mq-hx2h",
+    "cve": "CVE-2024-52815",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-12-03T16:40:17Z",
+    "resumo": "Malicious invites via federation can break a user's sync"
+   },
+   {
+    "ghsa": "GHSA-rfq8-j7rh-8hf2",
+    "cve": "CVE-2024-52805",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [
+     "CWE-770"
+    ],
+    "publicado_em": "2024-12-03T16:40:42Z",
+    "resumo": "Unsupported content types can lead to memory exhaustion"
+   },
+   {
+    "ghsa": "GHSA-56w4-5538-8v8h",
+    "cve": "CVE-2024-53867",
+    "severidade": "medium",
+    "cvss": 4.3,
+    "cwes": [
+     "CWE-497"
+    ],
+    "publicado_em": "2024-12-03T16:41:02Z",
+    "resumo": "Partial room state leak via Sliding Sync"
+   },
+   {
+    "ghsa": "GHSA-gjgr-7834-rhxr",
+    "cve": "CVE-2024-37303",
+    "severidade": "medium",
+    "cvss": 5.3,
+    "cwes": [
+     "CWE-306"
+    ],
+    "publicado_em": "2024-12-03T16:41:13Z",
+    "resumo": "Unauthenticated writes to the media repository allow planting of problematic content"
+   },
+   {
+    "ghsa": "GHSA-4mhg-xv73-xq2x",
+    "cve": "CVE-2024-37302",
+    "severidade": "high",
+    "cvss": 7.5,
+    "cwes": [
+     "CWE-770"
+    ],
+    "publicado_em": "2024-12-03T16:41:18Z",
+    "resumo": "Denial of service through media disk space consumption"
+   },
+   {
+    "ghsa": "GHSA-3h7q-rfh9-xm4v",
+    "cve": "CVE-2024-31208",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-04-23T16:02:55Z",
+    "resumo": "Weakness in auth chain indexing allows DoS from remote room members through disk fill and high CPU usage"
+   }
+  ]
+ }
+}

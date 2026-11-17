@@ -1,0 +1,22 @@
+{
+ "slug": "8go/matrix-eno-bot",
+ "meta": {
+  "linguagem": "Shell",
+  "forks": 17,
+  "stars": 101,
+  "watchers": 5,
+  "tamanho_kb": 210,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2020-07-13T15:03:14Z",
+  "push_em": "2024-09-03T14:57:51Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:59+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/mrs",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 5,
+  "stars": 38,
+  "watchers": 1,
+  "tamanho_kb": 141686,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-20T06:25:25Z",
+  "push_em": "2026-08-16T16:56:35Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:10+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

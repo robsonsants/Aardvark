@@ -1,0 +1,49 @@
+{
+ "slug": "circles-project/Matrix.swift",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 2,
+  "stars": 17,
+  "watchers": 2,
+  "tamanho_kb": 1496,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-07-25T16:55:09Z",
+  "push_em": "2025-02-03T20:16:17Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:05+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 2,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 2,
+  "divergentes": 2,
+  "detalhe": [
+   {
+    "fork": "bomberfish/Matrix.swift",
+    "ahead_by": 3,
+    "behind_by": 0,
+    "push_em": "2025-10-09T19:20:52Z",
+    "stars": 0
+   },
+   {
+    "fork": "deadf0nki/Matrix.swift",
+    "ahead_by": 2,
+    "behind_by": 1,
+    "push_em": "2024-10-22T20:11:44Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 2
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

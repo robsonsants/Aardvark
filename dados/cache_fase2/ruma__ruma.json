@@ -1,0 +1,245 @@
+{
+ "slug": "ruma/ruma",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 199,
+  "stars": 732,
+  "watchers": 14,
+  "tamanho_kb": 16616,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2020-06-03T12:05:42Z",
+  "push_em": "2026-08-12T09:56:58Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:46:56+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 192,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "gdnaio/gdna-matrix-sdk",
+    "ahead_by": 8,
+    "behind_by": 0,
+    "push_em": "2026-08-14T19:44:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "thetayloredman/ruma",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-08-14T17:25:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "edward-121/ruma",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T15:03:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "matrix-construct/ruma",
+    "ahead_by": 125,
+    "behind_by": 20,
+    "push_em": "2026-08-14T04:40:49Z",
+    "stars": 4
+   },
+   {
+    "fork": "BillCarsonFr/ruma",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2026-08-13T10:22:14Z",
+    "stars": 0
+   },
+   {
+    "fork": "matrix-org/ruma",
+    "ahead_by": 0,
+    "behind_by": 1218,
+    "push_em": "2026-08-12T15:22:59Z",
+    "stars": 5
+   },
+   {
+    "fork": "SINHASantos/ruma",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-12T13:38:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "andybalaam/ruma",
+    "ahead_by": 0,
+    "behind_by": 2983,
+    "push_em": "2026-08-12T09:38:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "SchildiChat/ruma",
+    "ahead_by": 82,
+    "behind_by": 20,
+    "push_em": "2026-08-09T13:29:39Z",
+    "stars": 2
+   },
+   {
+    "fork": "timedoutuk/ruma",
+    "ahead_by": 0,
+    "behind_by": 5,
+    "push_em": "2026-08-06T18:50:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "palpo-im/ruma",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-29T21:40:32Z",
+    "stars": 0
+   },
+   {
+    "fork": "troublemaker-dev/ruma",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-07-27T21:21:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "gingershaped/ruwuma",
+    "ahead_by": 294,
+    "behind_by": 1179,
+    "push_em": "2026-07-27T07:14:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "IT-ess/ruma",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2026-07-25T14:48:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "subpop/ruma",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-07-25T11:10:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "verji/ruma",
+    "ahead_by": 0,
+    "behind_by": 20,
+    "push_em": "2026-07-24T10:41:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "pixlwave/ruma",
+    "ahead_by": 0,
+    "behind_by": 68,
+    "push_em": "2026-07-20T07:52:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "Devil1716/ruma",
+    "ahead_by": 0,
+    "behind_by": 30,
+    "push_em": "2026-07-18T07:50:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "tchapgouv/ruma",
+    "ahead_by": 0,
+    "behind_by": 1164,
+    "push_em": "2026-07-17T13:14:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "ara4n/ruma",
+    "ahead_by": 0,
+    "behind_by": 33,
+    "push_em": "2026-07-15T09:54:51Z",
+    "stars": 0
+   },
+   {
+    "fork": "Hywan/ruma",
+    "ahead_by": 0,
+    "behind_by": 2414,
+    "push_em": "2026-07-14T13:12:22Z",
+    "stars": 0
+   },
+   {
+    "fork": "stefdevscore/ruma",
+    "ahead_by": 0,
+    "behind_by": 39,
+    "push_em": "2026-07-12T09:55:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "RasmusRendal/ruma",
+    "ahead_by": 0,
+    "behind_by": 45,
+    "push_em": "2026-07-08T14:53:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "mredig/ruma",
+    "ahead_by": 0,
+    "behind_by": 46,
+    "push_em": "2026-07-06T20:00:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "ganfra/ruma",
+    "ahead_by": 0,
+    "behind_by": 49,
+    "push_em": "2026-06-29T11:37:45Z",
+    "stars": 1
+   },
+   {
+    "fork": "project-robius/ruma",
+    "ahead_by": 0,
+    "behind_by": 544,
+    "push_em": "2026-06-26T20:21:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "Navegos/ruma",
+    "ahead_by": 0,
+    "behind_by": 61,
+    "push_em": "2026-06-13T11:10:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "new-years-eve/ruma",
+    "ahead_by": 0,
+    "behind_by": 61,
+    "push_em": "2026-06-12T12:46:23Z",
+    "stars": 0
+   },
+   {
+    "fork": "Johennes/ruma",
+    "ahead_by": 0,
+    "behind_by": 1199,
+    "push_em": "2026-06-01T18:33:12Z",
+    "stars": 0
+   },
+   {
+    "fork": "bradtgmurray/ruma",
+    "ahead_by": 0,
+    "behind_by": 93,
+    "push_em": "2026-05-25T14:06:31Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 199
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

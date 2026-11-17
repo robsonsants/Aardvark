@@ -1,0 +1,22 @@
+{
+ "slug": "mujx/mtxclient",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 9,
+  "stars": 21,
+  "watchers": 0,
+  "tamanho_kb": 739,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-02-26T21:46:50Z",
+  "push_em": "2019-03-12T21:13:52Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:57+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

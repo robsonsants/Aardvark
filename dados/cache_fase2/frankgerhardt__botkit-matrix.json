@@ -1,0 +1,34 @@
+{
+ "slug": "frankgerhardt/botkit-matrix",
+ "meta": {
+  "linguagem": "JavaScript",
+  "forks": 2,
+  "stars": 7,
+  "watchers": 1,
+  "tamanho_kb": 40,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-11-27T10:00:39Z",
+  "push_em": "2021-02-04T05:29:31Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:01+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 2,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 0,
+  "divergentes": 0,
+  "detalhe": [],
+  "forks_declarados": 2
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "commetchat/commet",
+ "meta": {
+  "linguagem": "Dart",
+  "forks": 72,
+  "stars": 1082,
+  "watchers": 8,
+  "tamanho_kb": 30793,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2023-02-07T09:24:03Z",
+  "push_em": "2026-08-06T14:17:40Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:02+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "slug": "IngoHohmann/newlisp-matrix-client",
+ "meta": {
+  "linguagem": "NewLisp",
+  "forks": 0,
+  "stars": 7,
+  "watchers": 3,
+  "tamanho_kb": 212,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2015-05-06T05:16:44Z",
+  "push_em": "2015-05-15T15:04:23Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:57+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

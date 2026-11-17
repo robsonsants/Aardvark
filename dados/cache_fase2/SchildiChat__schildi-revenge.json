@@ -1,0 +1,22 @@
+{
+ "slug": "SchildiChat/schildi-revenge",
+ "meta": {
+  "linguagem": "Kotlin",
+  "forks": 12,
+  "stars": 138,
+  "watchers": 2,
+  "tamanho_kb": 17261,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2025-11-25T20:47:33Z",
+  "push_em": "2026-08-16T12:28:10Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:07+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

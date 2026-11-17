@@ -1,0 +1,273 @@
+{
+ "slug": "element-hq/element-x-ios",
+ "meta": {
+  "linguagem": "Swift",
+  "forks": 360,
+  "stars": 919,
+  "watchers": 13,
+  "tamanho_kb": 135517,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2022-02-11T12:06:24Z",
+  "push_em": "2026-08-17T00:56:43Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:32+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 359,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 10,
+  "detalhe": [
+   {
+    "fork": "Gua-ra/gua-ios",
+    "ahead_by": 58,
+    "behind_by": 1316,
+    "push_em": "2026-08-16T23:03:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "ludekdolejsky/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 788,
+    "push_em": "2026-08-15T09:43:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "shoaib196/element-x-ios",
+    "ahead_by": 1,
+    "behind_by": 1107,
+    "push_em": "2026-08-15T07:20:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "nagicantsleep/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-15T01:18:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "grzegorzjenask/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-14T23:18:26Z",
+    "stars": 0
+   },
+   {
+    "fork": "pnpixel/element-x-ios",
+    "ahead_by": 3,
+    "behind_by": 676,
+    "push_em": "2026-08-14T12:46:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "NaosV1/delesse-chat",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2026-08-12T05:11:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "vesnindev/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 25,
+    "push_em": "2026-08-11T13:58:01Z",
+    "stars": 0
+   },
+   {
+    "fork": "zikrullo-akhmedov/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 138,
+    "push_em": "2026-08-10T12:33:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "ank1n/element-x-ios",
+    "ahead_by": 789,
+    "behind_by": 960,
+    "push_em": "2026-08-08T23:03:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "evan1ee/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 42,
+    "push_em": "2026-08-08T04:10:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "pr3m-kamble/element-x-ios",
+    "ahead_by": 1,
+    "behind_by": 42,
+    "push_em": "2026-08-07T21:44:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "danderson-cont/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 78,
+    "push_em": "2026-08-07T10:46:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "mohdothman/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 50,
+    "push_em": "2026-08-06T21:44:27Z",
+    "stars": 0
+   },
+   {
+    "fork": "jelf-work/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 60,
+    "push_em": "2026-08-04T15:35:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "oskarfreye/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 68,
+    "push_em": "2026-08-03T14:58:08Z",
+    "stars": 0
+   },
+   {
+    "fork": "revivalistsorg/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 78,
+    "push_em": "2026-08-02T04:46:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "somiljain2006/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 78,
+    "push_em": "2026-08-01T01:16:57Z",
+    "stars": 0
+   },
+   {
+    "fork": "iszkq/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 91,
+    "push_em": "2026-07-30T21:59:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "beposec/element-x-ios",
+    "ahead_by": 4,
+    "behind_by": 91,
+    "push_em": "2026-07-30T14:53:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "hayaksi1/element-x-ios",
+    "ahead_by": 4,
+    "behind_by": 129,
+    "push_em": "2026-07-29T18:50:50Z",
+    "stars": 0
+   },
+   {
+    "fork": "DevopsDiris/element-x-ios-to-skiris",
+    "ahead_by": 0,
+    "behind_by": 114,
+    "push_em": "2026-07-27T05:39:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "qike-ms/element-x-ios",
+    "ahead_by": 4,
+    "behind_by": 107,
+    "push_em": "2026-07-26T23:42:39Z",
+    "stars": 0
+   },
+   {
+    "fork": "God-Made-Ministries/ricc-x-ios",
+    "ahead_by": 2,
+    "behind_by": 142,
+    "push_em": "2026-07-26T05:47:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "mt4vmb2rjf-alt/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 107,
+    "push_em": "2026-07-24T16:47:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "openlocal/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 107,
+    "push_em": "2026-07-24T16:47:42Z",
+    "stars": 0
+   },
+   {
+    "fork": "IOrelI/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 446,
+    "push_em": "2026-07-23T09:55:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "tchapgouv/tchap-x-ios",
+    "ahead_by": 609,
+    "behind_by": 370,
+    "push_em": "2026-07-23T08:31:00Z",
+    "stars": 3
+   },
+   {
+    "fork": "BabyWu/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 113,
+    "push_em": "2026-07-23T07:40:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "blackwolf3342/element-x-ios",
+    "ahead_by": 0,
+    "behind_by": 127,
+    "push_em": "2026-07-22T12:33:18Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 360
+ },
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-54w7-rw44-49m7",
+    "cve": "CVE-2026-55644",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-06-15T10:35:14Z",
+    "resumo": "io.element.call deeplink allows attacker-controlled HTTPS origin and may grant mic/camera to that origin"
+   },
+   {
+    "ghsa": "GHSA-69qf-p24v-rf8j",
+    "cve": "CVE-2025-31126",
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2025-04-03T08:14:09Z",
+    "resumo": "The entity in control of the well-known file can break the confidentiality of embedded Element Call"
+   },
+   {
+    "ghsa": "GHSA-j9f4-49p7-x4cq",
+    "cve": null,
+    "severidade": "high",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2024-05-15T14:56:40Z",
+    "resumo": "Exposure of private backup key to Element's rageshake servers"
+   }
+  ]
+ }
+}

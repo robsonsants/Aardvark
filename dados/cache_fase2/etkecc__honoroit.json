@@ -1,0 +1,22 @@
+{
+ "slug": "etkecc/honoroit",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 1,
+  "stars": 29,
+  "watchers": 2,
+  "tamanho_kb": 152028,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-08-20T19:40:48Z",
+  "push_em": "2026-08-16T12:58:51Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:08+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

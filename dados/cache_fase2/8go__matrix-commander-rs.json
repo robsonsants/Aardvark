@@ -1,0 +1,193 @@
+{
+ "slug": "8go/matrix-commander-rs",
+ "meta": {
+  "linguagem": "Rust",
+  "forks": 23,
+  "stars": 231,
+  "watchers": 2,
+  "tamanho_kb": 1257,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2022-10-09T07:56:51Z",
+  "push_em": "2026-08-10T05:20:46Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:36+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 24,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 23,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "w3lld1/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2026-08-02T23:30:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "jamesmstone/matrix-commander-rs",
+    "ahead_by": 13,
+    "behind_by": 120,
+    "push_em": "2026-07-29T09:26:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "0xf4z/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2026-07-28T02:23:53Z",
+    "stars": 0
+   },
+   {
+    "fork": "kcexn/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 19,
+    "push_em": "2026-07-25T04:59:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "Itz-Agasta/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 48,
+    "push_em": "2026-07-22T14:05:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "hqnseunglovenorhu/matrix-commander-rs",
+    "erro": 404
+   },
+   {
+    "fork": "macalinao/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 65,
+    "push_em": "2026-06-29T05:22:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "wvmscs/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 67,
+    "push_em": "2026-06-19T09:41:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "Benjamin-Loison/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 90,
+    "push_em": "2026-06-08T14:32:49Z",
+    "stars": 0
+   },
+   {
+    "fork": "longregen/matrix-commander-ng",
+    "ahead_by": 5,
+    "behind_by": 111,
+    "push_em": "2026-03-20T04:49:14Z",
+    "stars": 1
+   },
+   {
+    "fork": "sasa-tomic/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2026-02-26T10:35:35Z",
+    "stars": 0
+   },
+   {
+    "fork": "fidoman/matrix-commander-rs",
+    "ahead_by": 1,
+    "behind_by": 111,
+    "push_em": "2026-02-22T14:55:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "UnbreakableMJ/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2026-02-22T13:25:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "JLEWells2003/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2026-01-17T12:06:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "meta-introspector/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2025-10-27T05:21:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "llComodino/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2025-09-22T05:16:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "DimitriiTrater/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2025-09-18T16:36:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "kostukovic/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2025-07-28T07:12:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "throwException/matrix-commander-rs",
+    "ahead_by": 1,
+    "behind_by": 122,
+    "push_em": "2025-04-18T19:08:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "dustymabe/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 120,
+    "push_em": "2025-01-20T06:01:36Z",
+    "stars": 0
+   },
+   {
+    "fork": "dwattttt/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 138,
+    "push_em": "2024-10-21T06:55:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "jknedlik/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 184,
+    "push_em": "2024-10-06T16:22:13Z",
+    "stars": 0
+   },
+   {
+    "fork": "source-c/matrix-commander-rs",
+    "ahead_by": 0,
+    "behind_by": 139,
+    "push_em": "2024-09-30T14:01:28Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 23
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

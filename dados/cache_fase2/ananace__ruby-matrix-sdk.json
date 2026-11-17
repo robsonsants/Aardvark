@@ -1,0 +1,22 @@
+{
+ "slug": "ananace/ruby-matrix-sdk",
+ "meta": {
+  "linguagem": "Ruby",
+  "forks": 12,
+  "stars": 94,
+  "watchers": 6,
+  "tamanho_kb": 1040,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2018-05-04T17:46:13Z",
+  "push_em": "2026-01-16T15:08:14Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:56+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

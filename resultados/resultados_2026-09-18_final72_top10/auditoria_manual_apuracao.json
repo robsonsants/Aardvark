@@ -1,0 +1,274 @@
+{
+  "n_revisados": 333,
+  "concordancia": {
+    "concorda": 289,
+    "diverge": 44
+  },
+  "sondas_nao_corretivas": 65,
+  "divergencias": [
+    {
+      "par": "Stanislav1975/matrix-nio::CVE-2022-39254",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": "Fork parado em nio 0.18.7 (nov/2021), antes do fix b1cbf23 (0.20.0, set/2022), _handle_forwarded_room_key_event importa a sessao sem checar device.verified nem user_id proprio, unico commit proprio e pin do snyk em requirements de docs Ressalva: Anchor device.verified aparece em share_with_ourselves (caminho de saida), falso positivo de busca, fix ausente em todas as branches"
+    },
+    {
+      "par": "JoFrost/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD, a upstream moveu a condicao para OwnUserIdentityData::is_identity_verified (is_verified() && is_identity_signed), chamado por OtherUserIdentity::is_verified, o fork so altera serializacao de midia no indexeddb Ressalva: Falso negativo de refactor (helper is_identity_verified). Fora do escopo: feature experimental X.509 cria caminho de verificacao alternativo"
+    },
+    {
+      "par": "markovsdima/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (zyna/dev), OtherUserIdentity::is_verified usa is_identity_verified (is_verified() && is_identity_signed), o fork nao altera matrix-sdk-crypto (diff vazio desde a base de mai/2026) Ressalva: Falso negativo de refactor (helper is_identity_verified)"
+    },
+    {
+      "par": "tchapgouv/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (main, sync de jul/2025), OtherUserIdentity::is_verified usa is_identity_verified (is_verified() && is_identity_signed) e os usos diretos de is_identity_signed sao guardados por own.is_verified(), o fork so adiciona access_rules do Tchap Ressalva: Falso negativo de refactor (helper is_identity_verified)"
+    },
+    {
+      "par": "verji/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (verji-main, base set/2026), a upstream recolocou a condicao inline em OtherUserIdentityData::is_verified (own_identity.is_verified() && is_identity_signed(self)), o fork altera o crate de cripto so em file_encryption (FLOE), nao em identities Ressalva: Sonda por linha falha (self vs &self.inner, bool vs .is_ok()), busca por anchor acha. Fora do escopo: FLOE e cripto propria, merece auditoria"
+    },
+    {
+      "par": "SchildiChat/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (main, base set/2026), OtherUserIdentityData::is_verified tem own_identity.is_verified() && is_identity_signed(self) inline, no crate de cripto o fork so remove uma opcao do uniffi.toml Ressalva: Sonda casou a linha central (0.899)"
+    },
+    {
+      "par": "WhiteBirchForumTeam/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (base set/2026, pos-refactor 918c047), OtherUserIdentityData::is_verified tem own_identity.is_verified() && is_identity_signed(self) inline, o fork so torna Client::base_client() publico Ressalva: Sonda casou a linha central (0.899). Fora do escopo: base_client publico expoe OlmMachine ao consumidor"
+    },
+    {
+      "par": "codyfinn/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (base out/2026), OtherUserIdentityData::is_verified tem own_identity.is_verified() && is_identity_signed(self) inline, o fork so adiciona progresso de download de midia, sem tocar matrix-sdk-crypto Ressalva: Sonda casou a linha central (0.899)"
+    },
+    {
+      "par": "morlinbrot/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (base set/2026, pos-refactor 918c047), OtherUserIdentityData::is_verified tem own_identity.is_verified() && is_identity_signed(self) inline, o fork so altera o Logger do crypto-ffi Ressalva: Sonda casou a linha central (0.899)"
+    },
+    {
+      "par": "natheihei/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 76a7052 e ancestral do HEAD (base 27/08/2026, antes do refactor 918c047), OtherUserIdentity::is_verified usa is_identity_verified (is_verified() && is_identity_signed), o fork so altera FFI e matrix-sdk-ui Ressalva: Falso negativo de refactor (forma com helper). Fora do escopo: change_password nao desloga outros dispositivos"
+    },
+    {
+      "par": "CatCraftYT/matrix-js-sdk::CVE-2024-47080",
+      "gt": "CONFIRMED_PATCHED",
+      "humano": "INCONCLUSIVO",
+      "obs": "Repositorio indisponivel (404/Unknown repo) e card sem resultado de sonda, a ausencia na busca vem de repo inexistente, nao de remocao do metodo, a base conhecida (>= v34.3.1) nao decide em relacao ao fix v34.8.0 Ressalva: REPO INDISPONIVEL. Em patch de remocao, 'nao encontrado' por repo inexistente geraria falso CORRIGIDO"
+    },
+    {
+      "par": "tchapgouv/matrix-rust-sdk::CVE-2025-53549",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": "Branch padrao main parada no merge da upstream 39d1ed9 (03/07/2025), anterior ao fix d0c0100 (10/07/2025), find_event_with_relations ainda monta rel_type IN (...) com format!(r#'{f}'#), os repeat_vars da code search sao de outras funcoes Ressalva: Fix presente nas branches de produto tchap-main-android/ios (out/2026), main congelada desde jul/2025. Exploracao depende de o app repassar RelationType::Custom de terceiros"
+    },
+    {
+      "par": "CharmanderV123/synapse::CVE-2026-45076",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": "Layout relocado (pacote synapse/ movido para a raiz do repo): arquivos lidos sem o prefixo synapse/. Base 1.152.0rc1 (abr/2026) anterior ao fix 2d48851 (mai/2026), pagination.py ainda encerra com if not events: (sem checar limited). Card mostra stream.py (so docstring) e teste."
+    },
+    {
+      "par": "AlaisterLeung/element-web::CVE-2026-55850",
+      "gt": "CONFIRMED_PATCHED",
+      "humano": "INCONCLUSIVO",
+      "obs": "Repositorio indisponivel (clone pede credencial). Card so mostra HtmlUtils.tsx (mudanca de assinatura, nao e a correcao), sem como ver EmbeddedPage.tsx."
+    },
+    {
+      "par": "Pdeeti/sydent::CVE-2019-11340",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 4e1cfff ancestral, sendEmail envia smtp.sendmail(mailFrom, mailTo, ...) para o endereco cru e valida antes com check_valid_email_address (parseaddr vazio -> EmailAddressException). Ausencias no card por refactor de emailutils.py."
+    },
+    {
+      "par": "AliAbutorabi/Synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "Buzzlabs/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "CharmanderV123/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Layout relocado (pacote synapse/ movido para a raiz do repo): arquivos lidos sem o prefixo synapse/. Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "bxdxnn/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "denisovvsh/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "guillemo12/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "kakahu2015/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "mindroom-ai/mindroom-synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "shcherbak/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "thetayloredman/lognapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 3ce2f30 ancestral, federation_server.py usa content['room_id'] do corpo e _on_send_membership_event recusa room_id divergente. Card so mostra teste (remove um argumento) - sonda nao corretiva."
+    },
+    {
+      "par": "toger5/matrix-rust-sdk::CVE-2024-34353",
+      "gt": "CONFIRMED_VULNERABLE",
+      "humano": "CORRIGIDO",
+      "obs": "NAO AFETADO: base matrix-sdk-crypto 0.6 (ago/2023), o codigo vulneravel (chave de backup carregada em with_store, introduzido na 0.7.0) nao existe. Commit do card (71136e4, setup_and_resume) nao e a correcao real (fa10bbb: usar megolm_v1_public_key())."
+    },
+    {
+      "par": "CharmanderV123/synapse::CVE-2026-45078",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": "Layout relocado (pacote synapse/ movido para a raiz do repo): arquivos lidos sem o prefixo synapse/. Base 1.152.0rc1 (abr/2026) anterior ao fix 3f58bc5 (mai/2026), worker_lock.py ainda usa _get_next_retry_interval e except Exception: pass (sem teto de 60s nem tratamento de defer.TimeoutError). Card so mostra teste."
+    },
+    {
+      "par": "maxgithubprofile/matrix-js-sdk::CVE-2021-40823",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 894c248 ancestral, megolm.ts guarda deviceKey em sharedWithDevices e recusa reshare se deviceKey !== device.getIdentityKey()."
+    },
+    {
+      "par": "verji/matrix-js-sdk-v2::CVE-2021-40823",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 894c248 ancestral (base v35), megolm.ts recusa reshare se deviceKey !== device.getIdentityKey()."
+    },
+    {
+      "par": "EricEisaman/sig-hq::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "Mukhammadali/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "PancakeTAS/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "Protofy-xyz/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "cyberb/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "gamesguru/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "go-i2p/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "jackmaninov/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "nicholasarvelo/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "vialucis1597/dendrite::CVE-2022-39200",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix 2792d04 ancestral, input_missing.go chama VerifyEventSignatures em cada evento de /get_missing_events e descarta (continue) se falhar."
+    },
+    {
+      "par": "Rath-debug/matrix-hookshot::CVE-2023-43656",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix dc126af ancestral, sandbox refatorado na upstream para src/generic/WebhookTransformer.ts com quickjs-emscripten ^0.31, vm2 nao e dependencia. Ausencias no card = falso negativo de refactor."
+    },
+    {
+      "par": "maladesov/matrix-hookshot::CVE-2023-43656",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix dc126af ancestral, sandbox refatorado na upstream para src/generic/WebhookTransformer.ts com quickjs-emscripten ^0.31, vm2 nao e dependencia. Ausencias no card = falso negativo de refactor."
+    },
+    {
+      "par": "qdii/matrix-hookshot::CVE-2023-43656",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix dc126af ancestral, sandbox refatorado na upstream para src/generic/WebhookTransformer.ts com quickjs-emscripten ^0.31, vm2 nao e dependencia. Ausencias no card = falso negativo de refactor."
+    },
+    {
+      "par": "yncyrydybyl/matrix-hookshot::CVE-2023-43656",
+      "gt": "AMBIGUOUS",
+      "humano": "CORRIGIDO",
+      "obs": "Fix dc126af ancestral, sandbox refatorado na upstream para src/generic/WebhookTransformer.ts com quickjs-emscripten ^0.31, vm2 nao e dependencia. Ausencias no card = falso negativo de refactor."
+    },
+    {
+      "par": "dsp-testing/matrix-authentication-service::CVE-2025-62425",
+      "gt": "AMBIGUOUS",
+      "humano": "VULNERAVEL",
+      "obs": "Base 0.14.2 (ago/2025) anterior ao fix bce99ed (out/2025), mutations/mod.rs verify_password_if_needed retorna Ok(res.is_ok()) - senha errada aceita. Card so mostra graphql/tests.rs - sonda nao corretiva."
+    }
+  ]
+}

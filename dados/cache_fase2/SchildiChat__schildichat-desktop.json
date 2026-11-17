@@ -1,0 +1,154 @@
+{
+ "slug": "SchildiChat/schildichat-desktop",
+ "meta": {
+  "linguagem": "Shell",
+  "forks": 53,
+  "stars": 465,
+  "watchers": 8,
+  "tamanho_kb": 5517,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "lite",
+  "criado_em": "2020-08-31T13:45:39Z",
+  "push_em": "2026-03-09T16:46:59Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:39+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 51,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 17,
+  "divergentes": 4,
+  "detalhe": [
+   {
+    "fork": "NicoReiser/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-03-09T16:46:59Z",
+    "stars": 0
+   },
+   {
+    "fork": "SpiritCroc/schildichat-desktop",
+    "ahead_by": 1,
+    "behind_by": 6,
+    "push_em": "2026-02-22T09:02:37Z",
+    "stars": 1
+   },
+   {
+    "fork": "gamesguru/schildichat-desktop",
+    "ahead_by": 10,
+    "behind_by": 111,
+    "push_em": "2026-02-18T13:05:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "scm-repo-mirror/SchildiChat_schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 2,
+    "push_em": "2026-02-16T11:55:20Z",
+    "stars": 0
+   },
+   {
+    "fork": "sa3ronaldo/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "push_em": "2025-09-17T07:21:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "run-my-job/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2025-09-02T14:29:38Z",
+    "stars": 0
+   },
+   {
+    "fork": "CreativLogic/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 6,
+    "push_em": "2025-08-15T15:13:24Z",
+    "stars": 1
+   },
+   {
+    "fork": "ahorn42/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 7,
+    "push_em": "2025-08-12T09:39:29Z",
+    "stars": 0
+   },
+   {
+    "fork": "cellect-ai/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 10,
+    "push_em": "2025-07-01T18:09:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "AnasDevO/schildichat-desktop",
+    "ahead_by": 3,
+    "behind_by": 20,
+    "push_em": "2025-04-11T21:43:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "UCD012/ucmeetchat-desktop",
+    "ahead_by": 7,
+    "behind_by": 111,
+    "push_em": "2025-02-02T14:38:11Z",
+    "stars": 0
+   },
+   {
+    "fork": "Melissa1181/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 22,
+    "push_em": "2024-12-19T10:20:58Z",
+    "stars": 0
+   },
+   {
+    "fork": "LifeCANvs/LCvs-app_data_comms-matrix-schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 24,
+    "push_em": "2024-12-03T19:01:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "tibu/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2024-10-21T18:42:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "rottenwheel/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 50,
+    "push_em": "2024-10-20T16:16:07Z",
+    "stars": 0
+   },
+   {
+    "fork": "mrabbehassan/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2024-10-06T15:30:33Z",
+    "stars": 0
+   },
+   {
+    "fork": "Darkprinz/schildichat-desktop",
+    "ahead_by": 0,
+    "behind_by": 111,
+    "push_em": "2024-08-19T18:33:30Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 53
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

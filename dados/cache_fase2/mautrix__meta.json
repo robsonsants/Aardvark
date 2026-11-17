@@ -1,0 +1,245 @@
+{
+ "slug": "mautrix/meta",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 68,
+  "stars": 419,
+  "watchers": 7,
+  "tamanho_kb": 2383,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2024-01-16T20:46:10Z",
+  "push_em": "2026-08-16T13:17:09Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:17+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 64,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 30,
+  "divergentes": 6,
+  "detalhe": [
+   {
+    "fork": "kovapatrik/meta",
+    "ahead_by": 0,
+    "behind_by": 0,
+    "push_em": "2026-08-16T13:17:09Z",
+    "stars": 0
+   },
+   {
+    "fork": "aminebalti55/meta",
+    "ahead_by": 0,
+    "behind_by": 15,
+    "push_em": "2026-08-15T16:34:03Z",
+    "stars": 0
+   },
+   {
+    "fork": "alan-morford/meta",
+    "ahead_by": 0,
+    "behind_by": 3,
+    "push_em": "2026-08-14T17:53:45Z",
+    "stars": 0
+   },
+   {
+    "fork": "HuddleChat/mautrix-meta",
+    "ahead_by": 0,
+    "behind_by": 13,
+    "push_em": "2026-08-07T08:53:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "dvcrn/matrix-meta-nodelete",
+    "ahead_by": 7,
+    "behind_by": 13,
+    "push_em": "2026-08-06T06:38:10Z",
+    "stars": 3
+   },
+   {
+    "fork": "Pavel12431432/meta",
+    "ahead_by": 0,
+    "behind_by": 261,
+    "push_em": "2026-08-03T13:07:41Z",
+    "stars": 0
+   },
+   {
+    "fork": "gwiazdorrr/meta",
+    "ahead_by": 5,
+    "behind_by": 80,
+    "push_em": "2026-08-01T22:52:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "beenim-labs/meta-bridge-go",
+    "ahead_by": 3,
+    "behind_by": 32,
+    "push_em": "2026-07-29T10:38:21Z",
+    "stars": 0
+   },
+   {
+    "fork": "eliasx45/clianta-mautrix-meta",
+    "ahead_by": 0,
+    "behind_by": 231,
+    "push_em": "2026-07-10T23:01:55Z",
+    "stars": 0
+   },
+   {
+    "fork": "it-pal-net/meta",
+    "ahead_by": 0,
+    "behind_by": 182,
+    "push_em": "2026-07-06T00:58:48Z",
+    "stars": 0
+   },
+   {
+    "fork": "heiho1/meta",
+    "ahead_by": 0,
+    "behind_by": 181,
+    "push_em": "2026-06-24T05:40:06Z",
+    "stars": 0
+   },
+   {
+    "fork": "chanchilun2004/meta",
+    "ahead_by": 11,
+    "behind_by": 190,
+    "push_em": "2026-06-21T15:35:37Z",
+    "stars": 0
+   },
+   {
+    "fork": "tiagobecker/meta",
+    "ahead_by": 0,
+    "behind_by": 191,
+    "push_em": "2026-06-16T04:08:05Z",
+    "stars": 0
+   },
+   {
+    "fork": "rrashedul59/meta",
+    "ahead_by": 0,
+    "behind_by": 193,
+    "push_em": "2026-06-12T21:03:44Z",
+    "stars": 0
+   },
+   {
+    "fork": "nexoracontrol-ops/meta",
+    "ahead_by": 0,
+    "behind_by": 201,
+    "push_em": "2026-06-10T20:59:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "saulcapital/meta",
+    "ahead_by": 0,
+    "behind_by": 207,
+    "push_em": "2026-06-03T00:46:46Z",
+    "stars": 0
+   },
+   {
+    "fork": "Bryllebanquil/mautrix-meta",
+    "ahead_by": 0,
+    "behind_by": 207,
+    "push_em": "2026-05-29T19:51:28Z",
+    "stars": 0
+   },
+   {
+    "fork": "essentialols/meta",
+    "ahead_by": 1,
+    "behind_by": 287,
+    "push_em": "2026-05-20T18:39:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "clins1994/mautrix-meta",
+    "ahead_by": 0,
+    "behind_by": 222,
+    "push_em": "2026-05-17T07:24:54Z",
+    "stars": 0
+   },
+   {
+    "fork": "RafaelFernandesMotta/meta",
+    "ahead_by": 0,
+    "behind_by": 223,
+    "push_em": "2026-05-13T12:06:34Z",
+    "stars": 0
+   },
+   {
+    "fork": "glam3k/meta-matrix-bridge",
+    "ahead_by": 0,
+    "behind_by": 237,
+    "push_em": "2026-04-12T14:34:16Z",
+    "stars": 0
+   },
+   {
+    "fork": "Receipts-love/meta",
+    "ahead_by": 0,
+    "behind_by": 249,
+    "push_em": "2026-03-26T01:56:43Z",
+    "stars": 0
+   },
+   {
+    "fork": "TorMaireDusi/meta",
+    "ahead_by": 0,
+    "behind_by": 259,
+    "push_em": "2026-03-18T17:35:24Z",
+    "stars": 0
+   },
+   {
+    "fork": "sebb3/meta",
+    "ahead_by": 0,
+    "behind_by": 260,
+    "push_em": "2026-03-17T16:32:31Z",
+    "stars": 0
+   },
+   {
+    "fork": "LukasMojzis/mautrix-meta",
+    "ahead_by": 0,
+    "behind_by": 261,
+    "push_em": "2026-03-13T12:42:25Z",
+    "stars": 0
+   },
+   {
+    "fork": "iomoath/meta",
+    "ahead_by": 0,
+    "behind_by": 268,
+    "push_em": "2026-03-10T17:30:10Z",
+    "stars": 0
+   },
+   {
+    "fork": "DuongJs/meta",
+    "ahead_by": 0,
+    "behind_by": 283,
+    "push_em": "2026-02-27T17:42:47Z",
+    "stars": 0
+   },
+   {
+    "fork": "bru02/meta",
+    "ahead_by": 10,
+    "behind_by": 303,
+    "push_em": "2026-02-17T22:19:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "vakuryf/meta_bridge",
+    "ahead_by": 0,
+    "behind_by": 304,
+    "push_em": "2026-02-15T11:09:02Z",
+    "stars": 0
+   },
+   {
+    "fork": "yumi-team/meta",
+    "ahead_by": 0,
+    "behind_by": 306,
+    "push_em": "2026-01-30T16:57:12Z",
+    "stars": 0
+   }
+  ],
+  "forks_declarados": 68
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

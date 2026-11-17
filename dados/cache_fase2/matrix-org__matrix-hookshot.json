@@ -1,0 +1,83 @@
+{
+ "slug": "matrix-org/matrix-hookshot",
+ "meta": {
+  "linguagem": "TypeScript",
+  "forks": 93,
+  "stars": 443,
+  "watchers": 10,
+  "tamanho_kb": 13723,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "main",
+  "criado_em": "2019-08-02T18:07:04Z",
+  "push_em": "2026-08-14T22:39:42Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:00+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": [
+   {
+    "ghsa": "GHSA-5c49-6fvm-2xvc",
+    "cve": null,
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-08-05T13:22:39Z",
+    "resumo": " /metrics endpoint leaks webhook URLs"
+   },
+   {
+    "ghsa": "GHSA-77cp-42c4-85vm",
+    "cve": "CVE-2026-81173",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-15T10:59:03Z",
+    "resumo": "Potential Denial of Service when certain integrations are enabled"
+   },
+   {
+    "ghsa": "GHSA-j286-3cjc-8f39",
+    "cve": "CVE-2026-62267",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [],
+    "publicado_em": "2026-07-06T10:06:09Z",
+    "resumo": "Denial of service by replying to an event Hookshot can not read"
+   },
+   {
+    "ghsa": "GHSA-cr4q-jf47-3645",
+    "cve": "CVE-2025-23197",
+    "severidade": "medium",
+    "cvss": 6.5,
+    "cwes": [
+     "CWE-754"
+    ],
+    "publicado_em": "2025-01-27T16:55:21Z",
+    "resumo": "Potential Denial of Service when Hookshot is configured with GitHub support"
+   },
+   {
+    "ghsa": "GHSA-fr97-pv6w-4cj6",
+    "cve": "CVE-2023-43656",
+    "severidade": "medium",
+    "cvss": null,
+    "cwes": [
+     "CWE-94"
+    ],
+    "publicado_em": "2023-09-27T09:49:54Z",
+    "resumo": "Potential sandbox escape for instances that have enabled transformation functions"
+   },
+   {
+    "ghsa": "GHSA-jrrj-5f8r-7p57",
+    "cve": null,
+    "severidade": "high",
+    "cvss": 7.7,
+    "cwes": [
+     "CWE-200"
+    ],
+    "publicado_em": "2022-06-08T16:44:28Z",
+    "resumo": "Users can bridge repositories they should not have access to"
+   }
+  ]
+ }
+}

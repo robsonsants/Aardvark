@@ -1,0 +1,34 @@
+{
+ "slug": "diamondburned/gotktrix",
+ "meta": {
+  "linguagem": "Go",
+  "forks": 6,
+  "stars": 310,
+  "watchers": 4,
+  "tamanho_kb": 2808,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "compound",
+  "criado_em": "2021-07-22T09:25:09Z",
+  "push_em": "2023-04-05T10:48:50Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:47:34+00:00",
+ "forks_amostra": {
+  "amostra": 30,
+  "dias_atividade": 730,
+  "forks_vistos": 6,
+  "paginas_percorridas": 40,
+  "rede_completa": true,
+  "erro_paginacao": false,
+  "ativos": 0,
+  "divergentes": 0,
+  "detalhe": [],
+  "forks_declarados": 6
+ },
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

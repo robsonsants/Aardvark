@@ -1,0 +1,22 @@
+{
+ "slug": "matrix-org/matrix-android-sdk",
+ "meta": {
+  "linguagem": "Java",
+  "forks": 134,
+  "stars": 365,
+  "watchers": 9,
+  "tamanho_kb": 56099,
+  "arquivado": true,
+  "desabilitado": false,
+  "branch_padrao": "develop",
+  "criado_em": "2014-09-30T11:09:12Z",
+  "push_em": "2022-02-08T09:00:16Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:49:53+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}

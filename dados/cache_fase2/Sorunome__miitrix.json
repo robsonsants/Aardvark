@@ -1,0 +1,22 @@
+{
+ "slug": "Sorunome/miitrix",
+ "meta": {
+  "linguagem": "C++",
+  "forks": 3,
+  "stars": 142,
+  "watchers": 2,
+  "tamanho_kb": 105,
+  "arquivado": false,
+  "desabilitado": false,
+  "branch_padrao": "master",
+  "criado_em": "2019-10-20T21:51:58Z",
+  "push_em": "2020-08-03T16:24:11Z",
+  "e_fork": false,
+  "upstream": null
+ },
+ "coletado_em": "2026-09-18T03:50:05+00:00",
+ "advisories": {
+  "erro": null,
+  "itens": []
+ }
+}
