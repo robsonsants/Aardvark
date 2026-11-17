@@ -1888,5 +1888,5 @@
       "pred_corrigido": true
     }
   ],
-  "nota_recorte": "derivado de resultados_2026-09-18_final72_top10 com --top 10"
+  "nota_recorte": "derivado de resultados/matrix/top10 com --top 10"
 }

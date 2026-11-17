@@ -1,5 +1,5 @@
 {
-  "run": "resultados_2026-09-18_final72_top10",
+  "run": "resultados/matrix/top10",
   "n_linhas": 770,
   "n_pares_gt_auto": 312,
   "n_pares_humano": 331,

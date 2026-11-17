@@ -15,8 +15,8 @@ CONFIRMED_VULNERABLE) nao dependem da regra, entao os pares de gt_dissertation_
 resultados.json sao reaproveitados e apenas cruzados com o novo veredito.
 
 Uso:
-    python experimento_regra_ab.py --run resultados/resultados_2026-09-18_final72_top10
-    python experimento_regra_ab.py --run resultados/resultados_2026-09-18_final72_top10 --outdir minha_pasta
+    python experimento_regra_ab.py --run resultados/matrix/top10
+    python experimento_regra_ab.py --run resultados/matrix/top10 --outdir minha_pasta
 """
 import argparse
 import csv

@@ -1,6 +1,6 @@
 {
-  "run_base": "resultados_2026-09-18_final72_top10",
-  "run_regra_ab": "resultados_2026-09-18_final72_top10_regraAB",
+  "run_base": "resultados/matrix/top10",
+  "run_regra_ab": "resultados/matrix/top10_regraAB",
   "sim_minima_2b": 0.6,
   "n_linhas": 770,
   "n_linhas_alteradas": 41,

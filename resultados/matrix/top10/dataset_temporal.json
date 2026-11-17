@@ -1,5 +1,5 @@
 {
- "run": "resultados_2026-09-18_final72_top10",
+ "run": "resultados/matrix/top10",
  "gerado_em": "2026-10-24T23:59:54.538953+00:00",
  "chamadas_api": 810,
  "n_pares": 770,

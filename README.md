@@ -40,66 +40,66 @@ O pacote reproduz os resultados das duas questões de pesquisa:
 
 ```text
 .
-├── README.md
+├── README.md                    este arquivo
 ├── LICENSE                      Licença MIT
 ├── requirements.txt
 ├── .env.example                 modelo para as credenciais (não contém tokens)
-├── src/                         programas, na ordem de execução abaixo
-├── dados/                       entradas e coleta congelada em 18/09/2026
-│   ├── manifesto_ecossistema_matrix.csv
-│   ├── target_dissertation.csv
-│   ├── fase2_2026-09-18.csv
-│   ├── censo_cpe_nvd.csv
-│   ├── cves_enriquecidas.csv
-│   ├── cves-fixing-commits-dataset.csv
-│   ├── cache_fase2/  e  cache_cpe_nvd/
-│   └── patchlens/final_dataset.csv
-└── resultados/
-    ├── resultados_2026-09-18_final72_top10/          execução oficial
-    ├── resultados_2026-09-18_final72_top{3,5}/       recortes da mesma coleta
-    ├── resultados_2026-09-18_final72_top{3,5,10}_regraAB/
-    └── resultados_2026-10-04_patchlens/              validação externa
+├── src/                         programas
+├── dados/                       entradas e coleta congelada em 18/09/2026   (ver dados/README.md)
+└── resultados/                                                               (ver resultados/README.md)
+    ├── matrix/
+    │   ├── top10/               EXECUÇÃO OFICIAL: 16 projetos, 64 CVEs, 109 forks, 460 pares
+    │   │                        verificação, gabarito automático, gabarito humano,
+    │   │                        experimentos de avaliação e caracterização da propagação
+    │   ├── top10_regraAB/       a mesma execução sob a configuração A+B
+    │   └── top5/, top3/ e *_regraAB/   recortes aninhados da mesma coleta
+    └── validacao_externa/       Linux, FFmpeg e PHP, com o oráculo de proveniência
 ```
+
+Cada pasta de dados e de resultados tem um README que descreve os seus
+arquivos. Os arquivos de uma execução ficam juntos numa só pasta porque é assim
+que os programas os leem.
 
 **Programas (`src/`)**
 
 | Etapa | Programa | Função |
 |---|---|---|
-| Fase 1 | `fase2_coletar.py` | Lê o diretório do ecossistema e coleta metadados, avisos de segurança e a rede de *forks* de cada repositório. |
-| Fase 1 | `censo_cpe_nvd.py` | Consulta o NVD por nome de produto e aplica a guarda de atribuição. |
-| Fase 1 | `fase1_fix_commits.py`, `fase1_cves_do_nvd.py` | Localizam e validam os *commits* de correção de cada CVE. |
-| Fase 1 | `enriquecer_cves.py` | Acrescenta CVSS e CWE e cruza severidade e ano com os vereditos. |
-| Fases 2 a 4 | `pipeline_core.py` | Normalização da árvore sintática, distâncias e classificação das camadas. |
-| Fases 2 a 4 | `pipeline_dissertation.py` | Seleciona os *forks*, extrai a evidência, aplica as camadas e agrega os vereditos por par. |
-| Fases 2 a 4 | `recorte_topn.py` | Deriva os recortes de 3 e 5 *forks* do recorte de 10, na mesma coleta. |
+| Fase 1, coleta | `fase2_coletar.py` | Lê o diretório do ecossistema e coleta metadados, avisos de segurança e a rede de *forks* de cada repositório. |
+| Fase 1, coleta | `censo_cpe_nvd.py` | Consulta o NVD por nome de produto e aplica a guarda de atribuição. |
+| Fase 1, coleta | `fase1_fix_commits.py`, `fase1_cves_do_nvd.py` | Localizam e validam os *commits* de correção de cada CVE. |
+| Fase 1, coleta | `enriquecer_cves.py` | Acrescenta CVSS e CWE e cruza severidade e ano com os vereditos. |
+| Fases 2 a 4, método | `pipeline_core.py` | Normalização da árvore sintática, distâncias e classificação das camadas. |
+| Fases 2 a 4, método | `pipeline_dissertation.py` | Seleciona os *forks*, extrai a evidência, aplica as camadas e agrega os vereditos por par. |
+| Fases 2 a 4, método | `recorte_topn.py` | Deriva os recortes de 3 e 5 *forks* do recorte de 10, na mesma coleta. |
 | Avaliação | `ground_truth.py` | Gabarito automático por presença das linhas do *patch*. |
+| Avaliação | `auditoria_manual.py` | Gera a lista de trabalho cega da auditoria humana e apura os vereditos. |
 | Avaliação | `experimento_regra_ab.py` | Deriva a configuração A+B das mesmas linhas cruas. |
 | Avaliação | `sensibilidade_regras.py` | Varre os limiares de decisão. |
-| Avaliação | `auditoria_manual.py` | Gera a lista de trabalho da auditoria humana e apura os vereditos. |
 | Avaliação | `experimentos_revisores.py` | Camadas isoladas, classificador trivial, validação cruzada dos limiares, intervalos de confiança, teste de McNemar e curva de operação. |
 | Avaliação | `experimento_patchlens.py` | Validação externa em Linux, FFmpeg e PHP. |
 | Caracterização | `dataset_temporal.py` | Datas de criação dos *forks* e dos *commits* de correção. |
 | Caracterização | `tempo_correcao.py` | Tempo até a correção medido no grafo do Git. |
 | Figura | `gerar_figura_severidade.py` | Figura da distribuição de severidade das CVEs verificadas. |
 
-**Execução oficial (`resultados/resultados_2026-09-18_final72_top10/`)**
+# Onde Está Cada Resultado da Dissertação
 
-- `dissertation_resultados.json` e `.csv`: 770 linhas cruas, uma por
-  combinação de *commit*, arquivo e *fork*.
-- `dissertation_veredictos.json`: 460 vereditos, um por par.
-- `dissertation_cobertura.json`: cobertura de cada um dos 109 *forks*.
-- `dissertation_metricas.json`: resumo da população e cobertura por categoria.
-- `gt_dissertation_resultados.json` e `gt_dissertation_metricas.json`:
-  gabarito automático e métricas contra ele.
-- `auditoria_manual_revisor1.html` e `.csv`: lista de trabalho cega.
-- `auditoria_manual_preenchida.csv` e `auditoria_manual_apuracao.json`:
-  vereditos humanos e apuração.
-- `experimentos_revisores.json` e `experimentos_revisores_log.txt`.
-- `dataset_temporal_pares.csv`, `dataset_temporal_forks.csv`,
-  `heranca_propagacao.json`.
-- `tempo_correcao.csv` e `tempo_correcao.json`.
-- `evidencias_dissertacao/` e `evidencias_gt_dissertacao/`: código-fonte
-  baixado, usado como evidência na verificação e na auditoria.
+Os caminhos abaixo são relativos a `resultados/matrix/top10/`, salvo indicação.
+
+| Resultado na dissertação | Arquivos | Reivindicação |
+|---|---|---|
+| Funil da coleta e CVEs excluídas | `dados/fase2_2026-09-18.csv`, `dados/censo_cpe_nvd.csv`, `dados/cves-fixing-commits-dataset.csv` | #1 |
+| Distribuição dos vereditos nos 460 pares | `dissertation_veredictos.json`, `dissertation_metricas.json` | #2 |
+| Severidade (CVSS) e fraquezas (CWE) das CVEs verificadas | `dados/cves_enriquecidas.csv`, `dissertation_veredictos.json` | #9 |
+| Desempenho contra o gabarito humano, com intervalos de confiança | `auditoria_manual_preenchida.csv`, `experimentos_revisores_log.txt` (E1 e E4) | #4 |
+| Desempenho contra o gabarito automático | `gt_dissertation_metricas.json`, `../top10_regraAB/gt_regra_ab_metricas.json` | #3 |
+| Contribuição de cada camada isolada | `experimentos_revisores_log.txt` (E1) | #4 |
+| Vereditos por ano de publicação da CVE | `dissertation_veredictos.json` | #2 |
+| Validade dos parâmetros: validação cruzada e curva de operação | `experimentos_revisores_log.txt` (E2 e E6) | #5 |
+| Validação externa em Linux, FFmpeg e PHP | `resultados/validacao_externa/metricas_patchlens.json` | #6 |
+| Cobertura por categoria e recortes de 3, 5 e 10 *forks* | `dissertation_metricas.json`, `../top3/`, `../top5/` | #7 |
+| Herança e propagação, e desempenho nos 55 pares de propagação | `heranca_propagacao.json`, `dataset_temporal_pares.csv`, `auditoria_manual_preenchida.csv`, `../top10_regraAB/dissertation_veredictos.json` | #8 |
+| Tempo até a correção (QP2.2) | `tempo_correcao.json`, `tempo_correcao.csv` | #9 |
+| Fatores associados (QP2.3) | `dados/cves_enriquecidas.csv`, `dissertation_veredictos.json`, `dataset_temporal_forks.csv` | #9 |
 
 # Informações Básicas
 
@@ -189,7 +189,7 @@ Roda sem rede, em menos de 5 segundos:
 
 ```bash
 python -m py_compile src/pipeline_core.py src/pipeline_dissertation.py src/ground_truth.py src/experimento_regra_ab.py src/experimentos_revisores.py
-python -c "import json; from pathlib import Path; r=Path('resultados/resultados_2026-09-18_final72_top10'); esperado={'dissertation_resultados.json':770,'dissertation_veredictos.json':460,'dissertation_cobertura.json':109}; obtido={n: len(json.loads((r/n).read_text(encoding='utf-8'))) for n in esperado}; assert obtido==esperado,(obtido,esperado); print('TESTE OK:',obtido)"
+python -c "import json; from pathlib import Path; r=Path('resultados/matrix/top10'); esperado={'dissertation_resultados.json':770,'dissertation_veredictos.json':460,'dissertation_cobertura.json':109}; obtido={n: len(json.loads((r/n).read_text(encoding='utf-8'))) for n in esperado}; assert obtido==esperado,(obtido,esperado); print('TESTE OK:',obtido)"
 ```
 
 Saída esperada:
@@ -211,7 +211,7 @@ Há dois níveis de reprodução:
 
 As reivindicações 1 e 2 descrevem a execução do método, as reivindicações 3 a
 6 respondem à QP1 e as reivindicações 7 a 9 respondem à QP2. Nos comandos, a
-execução oficial é `resultados/resultados_2026-09-18_final72_top10`.
+execução oficial é `resultados/matrix/top10`.
 
 ## Reivindicação #1: Censo de vulnerabilidades do ecossistema
 
@@ -241,7 +241,7 @@ linguagem sem analisador, quatro com correção fora do código-fonte e uma cujo
 *commit* é um *merge* sem alteração própria.
 
 ```bash
-python -c "import json,collections as c; R='resultados/resultados_2026-09-18_final72_top10/'; d=json.load(open(R+'dissertation_metricas.json')); v=json.load(open(R+'dissertation_veredictos.json',encoding='utf-8')); print({k:x for k,x in d.items() if k!='por_categoria'}); s=c.Counter(x['status'] for x in v); print(dict(s),'| verificaveis',len(v)-s['FILE_NOT_FOUND'])"
+python -c "import json,collections as c; R='resultados/matrix/top10/'; d=json.load(open(R+'dissertation_metricas.json')); v=json.load(open(R+'dissertation_veredictos.json',encoding='utf-8')); print({k:x for k,x in d.items() if k!='por_categoria'}); s=c.Counter(x['status'] for x in v); print(dict(s),'| verificaveis',len(v)-s['FILE_NOT_FOUND'])"
 ```
 
 A saída deve trazer 16 projetos, 109 *forks*, 64 CVEs, 460 verificações,
@@ -260,12 +260,12 @@ Nos 312 pares com rótulo automático conclusivo:
 | Trivial, sempre corrigido | 276 | 36 | 0 | 0 | 0,885 | 1,000 | 0,939 | 0,000 |
 
 ```bash
-python src/experimento_regra_ab.py --run resultados/resultados_2026-09-18_final72_top10
-python -c "import json; d=json.load(open('resultados/resultados_2026-09-18_final72_top10_regraAB/gt_regra_ab_metricas.json')); b=d['base']; t={'TP':b['TP']+b['FN'],'FP':b['FP']+b['TN'],'FN':0,'TN':0}; k=lambda x:(lambda tp,fp,fn,tn,n:((tp+tn)/n-((tp+fp)*(tp+fn)+(fn+tn)*(fp+tn))/n**2)/(1-((tp+fp)*(tp+fn)+(fn+tn)*(fp+tn))/n**2))(x['TP'],x['FP'],x['FN'],x['TN'],x['TP']+x['FP']+x['FN']+x['TN']); [print(nome.ljust(8),x['TP'],x['FP'],x['FN'],x['TN'],'kappa %.3f'%k(x)) for nome,x in [('uniao',b),('A+B',d['regra_ab']),('trivial',t)]]"
+python src/experimento_regra_ab.py --run resultados/matrix/top10
+python -c "import json; d=json.load(open('resultados/matrix/top10_regraAB/gt_regra_ab_metricas.json')); b=d['base']; t={'TP':b['TP']+b['FN'],'FP':b['FP']+b['TN'],'FN':0,'TN':0}; k=lambda x:(lambda tp,fp,fn,tn,n:((tp+tn)/n-((tp+fp)*(tp+fn)+(fn+tn)*(fp+tn))/n**2)/(1-((tp+fp)*(tp+fn)+(fn+tn)*(fp+tn))/n**2))(x['TP'],x['FP'],x['FN'],x['TN'],x['TP']+x['FP']+x['FN']+x['TN']); [print(nome.ljust(8),x['TP'],x['FP'],x['FN'],x['TN'],'kappa %.3f'%k(x)) for nome,x in [('uniao',b),('A+B',d['regra_ab']),('trivial',t)]]"
 ```
 
 O primeiro comando deriva a configuração A+B das mesmas linhas cruas, sem rede,
-e regrava `resultados/resultados_2026-09-18_final72_top10_regraAB/` com
+e regrava `resultados/matrix/top10_regraAB/` com
 conteúdo idêntico. O segundo calcula o Kappa das três linhas.
 
 ## Reivindicação #4: Desempenho contra o gabarito humano (QP1)
@@ -289,8 +289,8 @@ com p = 0,11. Os 103 falsos negativos da União são todos pares na zona de
 incerteza, ou seja, abstenções.
 
 ```bash
-python src/experimentos_revisores.py --run resultados/resultados_2026-09-18_final72_top10
-python src/auditoria_manual.py apurar --run resultados/resultados_2026-09-18_final72_top10
+python src/experimentos_revisores.py --run resultados/matrix/top10
+python src/auditoria_manual.py apurar --run resultados/matrix/top10
 ```
 
 O primeiro comando leva cerca de 20 segundos, por causa das 10.000
@@ -313,8 +313,8 @@ Camada 2A em 0,50 dá Kappa 0,166 e em 0,95 dá 0,063. Limiares mais permissivos
 reconhecem mais correções sem aumentar os falsos positivos.
 
 ```bash
-python src/sensibilidade_regras.py --run resultados/resultados_2026-09-18_final72_top10
-python src/experimentos_revisores.py --run resultados/resultados_2026-09-18_final72_top10
+python src/sensibilidade_regras.py --run resultados/matrix/top10
+python src/experimentos_revisores.py --run resultados/matrix/top10
 ```
 
 O primeiro comando imprime uma tabela por parâmetro e grava
@@ -332,11 +332,11 @@ que há propagação a decidir, a União obtém precisão 0,886, revocação 0,9
 Kappa 0,618.
 
 ```bash
-python -c "import json; d=json.load(open('resultados/resultados_2026-10-04_patchlens/metricas_patchlens.json',encoding='utf-8')); t=d['populacao']['TOTAL']; print('pares',t['pares'],'| verificaveis',t['verificaveis'],'| heranca',t['proveniencia_verificaveis']['HERANCA']); [print(k.ljust(9),v) for k,v in d['metricas']['TOTAL']['proveniencia_refinada_sem_heranca'].items()]; [print(k.ljust(10),v['n'],v['taxa_resolvidos']) for k,v in d['verificabilidade_por_idade'].items()]"
+python -c "import json; d=json.load(open('resultados/validacao_externa/metricas_patchlens.json',encoding='utf-8')); t=d['populacao']['TOTAL']; print('pares',t['pares'],'| verificaveis',t['verificaveis'],'| heranca',t['proveniencia_verificaveis']['HERANCA']); [print(k.ljust(9),v) for k,v in d['metricas']['TOTAL']['proveniencia_refinada_sem_heranca'].items()]; [print(k.ljust(10),v['n'],v['taxa_resolvidos']) for k,v in d['verificabilidade_por_idade'].items()]"
 ```
 
 A leitura por extenso está em
-`resultados/resultados_2026-10-04_patchlens/RESULTADOS_PATCHLENS.md`.
+`resultados/validacao_externa/RESULTADOS_PATCHLENS.md`.
 Recalcular desde a verificação exige os históricos Git completos dos três
 projetos em uma pasta indicada pela variável `PATCHLENS_REPOS`, que não
 acompanham o pacote, e o pacote `tree-sitter-c`. As fases são
@@ -352,8 +352,8 @@ recortes com 3, 5 e 10 *forks* por projeto saem da mesma coleta e são
 aninhados.
 
 ```bash
-python -c "import json; d=json.load(open('resultados/resultados_2026-09-18_final72_top10/dissertation_metricas.json')); print('media',d['cobertura_media_pct']); [print(k.ljust(12),v['n_verificacoes'],v['cobertura_media_pct']) for k,v in d['por_categoria'].items()]"
-python src/recorte_topn.py --run resultados/resultados_2026-09-18_final72_top10 --top 3 --outdir recorte_top3_teste
+python -c "import json; d=json.load(open('resultados/matrix/top10/dissertation_metricas.json')); print('media',d['cobertura_media_pct']); [print(k.ljust(12),v['n_verificacoes'],v['cobertura_media_pct']) for k,v in d['por_categoria'].items()]"
+python src/recorte_topn.py --run resultados/matrix/top10 --top 3 --outdir recorte_top3_teste
 ```
 
 O segundo comando deve reportar 16 projetos, 44 *forks*, 177 pares e
@@ -368,7 +368,7 @@ corrigidos os 274 pares de herança. Os 20 pares vulneráveis estão todos entre
 os 55 de propagação, dos quais 35 estão corrigidos.
 
 ```bash
-python -c "import json; d=json.load(open('resultados/resultados_2026-09-18_final72_top10/heranca_propagacao.json',encoding='utf-8')); print(d['top10']); print('metodo',d['status_por_classe']); print('humano',d['humano_por_classe'])"
+python -c "import json; d=json.load(open('resultados/matrix/top10/heranca_propagacao.json',encoding='utf-8')); print(d['top10']); print('metodo',d['status_por_classe']); print('humano',d['humano_por_classe'])"
 ```
 
 A classificação compara a coluna `fork_created_at` com a coluna
@@ -384,8 +384,8 @@ correção tem mediana de 48,7 dias, com primeiro quartil de 4,2 e terceiro de
 é −0,078 e entre o ano de publicação e a cobertura é +0,535.
 
 ```bash
-python -c "import json; d=json.load(open('resultados/resultados_2026-09-18_final72_top10/tempo_correcao.json',encoding='utf-8')); print(d['n_pares'],d['via']); print('corrigidos',d['corrigidos_com_data']); print('vulneraveis',d['vulneraveis_exposicao'])"
-python src/enriquecer_cves.py --run resultados/resultados_2026-09-18_final72_top10 --saida cves_enriquecidas_teste.csv
+python -c "import json; d=json.load(open('resultados/matrix/top10/tempo_correcao.json',encoding='utf-8')); print(d['n_pares'],d['via']); print('corrigidos',d['corrigidos_com_data']); print('vulneraveis',d['vulneraveis_exposicao'])"
+python src/enriquecer_cves.py --run resultados/matrix/top10 --saida cves_enriquecidas_teste.csv
 ```
 
 O segundo comando imprime o perfil de severidade e de CWE e, ao final, as duas

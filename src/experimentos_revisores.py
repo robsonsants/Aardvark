@@ -35,7 +35,7 @@ ja estao gravados nas linhas cruas. Os limiares so mudam como esses numeros vira
 rotulo. Nao ha rede, nao ha token, nao ha reprocessamento de AST.
 
 Uso:
-    python experimentos_revisores.py --run resultados/resultados_2026-09-18_final72_top10
+    python experimentos_revisores.py --run resultados/matrix/top10
 """
 import argparse, csv, json, math, os, random, sys
 from collections import defaultdict, Counter
@@ -653,7 +653,7 @@ def e6_curva(D, out):
 # ══════════════════════════════════════════════════════════ main
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", default="resultados/resultados_2026-09-18_final72_top10")
+    ap.add_argument("--run", default="resultados/matrix/top10")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
     base = Path(args.run)

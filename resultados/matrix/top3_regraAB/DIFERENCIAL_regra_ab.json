@@ -1,46 +1,46 @@
 {
-  "run_base": "resultados_2026-09-18_final72_top5",
-  "run_regra_ab": "resultados_2026-09-18_final72_top5_regraAB",
+  "run_base": "resultados/matrix/top3",
+  "run_regra_ab": "resultados/matrix/top3_regraAB",
   "sim_minima_2b": 0.6,
-  "n_linhas": 460,
-  "n_linhas_alteradas": 29,
+  "n_linhas": 296,
+  "n_linhas_alteradas": 21,
   "qd1_base": {
     "n_upstreams": 16,
-    "n_forks_total": 68,
+    "n_forks_total": 44,
     "n_cves_verificadas": 64,
-    "n_verificacoes": 275,
-    "n_corrigidas": 139,
-    "n_vulneraveis": 4,
-    "n_zona_incerteza": 59,
-    "cobertura_media_pct": 60.4,
+    "n_verificacoes": 177,
+    "n_corrigidas": 93,
+    "n_vulneraveis": 2,
+    "n_zona_incerteza": 35,
+    "cobertura_media_pct": 62.1,
     "por_categoria": {
       "server": {
-        "n_verificacoes": 95,
-        "n_corrigidas": 34,
-        "n_vulneraveis": 3,
-        "n_incertas": 28,
-        "cobertura_media_pct": 37.6
+        "n_verificacoes": 57,
+        "n_corrigidas": 19,
+        "n_vulneraveis": 2,
+        "n_incertas": 16,
+        "cobertura_media_pct": 33.3
       },
       "support": {
-        "n_verificacoes": 26,
-        "n_corrigidas": 24,
-        "n_vulneraveis": 1,
+        "n_verificacoes": 18,
+        "n_corrigidas": 17,
+        "n_vulneraveis": 0,
         "n_incertas": 1,
-        "cobertura_media_pct": 95.8
+        "cobertura_media_pct": 98.3
       },
       "client": {
-        "n_verificacoes": 45,
-        "n_corrigidas": 21,
+        "n_verificacoes": 27,
+        "n_corrigidas": 13,
         "n_vulneraveis": 0,
         "n_incertas": 0,
-        "cobertura_media_pct": 46.7
+        "cobertura_media_pct": 51.1
       },
       "sdk": {
-        "n_verificacoes": 79,
-        "n_corrigidas": 34,
+        "n_verificacoes": 49,
+        "n_corrigidas": 21,
         "n_vulneraveis": 0,
-        "n_incertas": 26,
-        "cobertura_media_pct": 41.2
+        "n_incertas": 15,
+        "cobertura_media_pct": 39.8
       },
       "bridge": {
         "n_verificacoes": 18,
@@ -50,51 +50,51 @@
         "cobertura_media_pct": 100.0
       },
       "integration": {
-        "n_verificacoes": 12,
-        "n_corrigidas": 8,
+        "n_verificacoes": 8,
+        "n_corrigidas": 5,
         "n_vulneraveis": 0,
-        "n_incertas": 4,
-        "cobertura_media_pct": 71.4
+        "n_incertas": 3,
+        "cobertura_media_pct": 70.0
       }
     }
   },
   "qd1_regra_ab": {
     "n_upstreams": 16,
-    "n_forks_total": 68,
+    "n_forks_total": 44,
     "n_cves_verificadas": 64,
-    "n_verificacoes": 275,
-    "n_corrigidas": 119,
-    "n_vulneraveis": 4,
-    "n_zona_incerteza": 79,
-    "cobertura_media_pct": 53.0,
+    "n_verificacoes": 177,
+    "n_corrigidas": 80,
+    "n_vulneraveis": 2,
+    "n_zona_incerteza": 48,
+    "cobertura_media_pct": 55.1,
     "por_categoria": {
       "server": {
-        "n_verificacoes": 95,
-        "n_corrigidas": 28,
-        "n_vulneraveis": 3,
-        "n_incertas": 34,
-        "cobertura_media_pct": 34.1
+        "n_verificacoes": 57,
+        "n_corrigidas": 15,
+        "n_vulneraveis": 2,
+        "n_incertas": 20,
+        "cobertura_media_pct": 29.4
       },
       "support": {
-        "n_verificacoes": 26,
-        "n_corrigidas": 20,
-        "n_vulneraveis": 1,
-        "n_incertas": 5,
+        "n_verificacoes": 18,
+        "n_corrigidas": 14,
+        "n_vulneraveis": 0,
+        "n_incertas": 4,
         "cobertura_media_pct": 83.3
       },
       "client": {
-        "n_verificacoes": 45,
-        "n_corrigidas": 20,
+        "n_verificacoes": 27,
+        "n_corrigidas": 12,
         "n_vulneraveis": 0,
         "n_incertas": 1,
-        "cobertura_media_pct": 45.3
+        "cobertura_media_pct": 48.9
       },
       "sdk": {
-        "n_verificacoes": 79,
-        "n_corrigidas": 25,
+        "n_verificacoes": 49,
+        "n_corrigidas": 16,
         "n_vulneraveis": 0,
-        "n_incertas": 35,
-        "cobertura_media_pct": 26.5
+        "n_incertas": 20,
+        "cobertura_media_pct": 29.6
       },
       "bridge": {
         "n_verificacoes": 18,
@@ -104,38 +104,38 @@
         "cobertura_media_pct": 100.0
       },
       "integration": {
-        "n_verificacoes": 12,
-        "n_corrigidas": 8,
+        "n_verificacoes": 8,
+        "n_corrigidas": 5,
         "n_vulneraveis": 0,
-        "n_incertas": 4,
-        "cobertura_media_pct": 71.4
+        "n_incertas": 3,
+        "cobertura_media_pct": 70.0
       }
     }
   },
   "qd2": {
     "base": {
-      "TP": 122,
-      "FP": 10,
-      "FN": 42,
-      "TN": 13,
-      "n_pares": 187,
-      "precision": 0.9242,
-      "recall": 0.7439,
-      "f1": 0.8243,
-      "accuracy": 0.7219
+      "TP": 83,
+      "FP": 6,
+      "FN": 24,
+      "TN": 7,
+      "n_pares": 120,
+      "precision": 0.9326,
+      "recall": 0.7757,
+      "f1": 0.8469,
+      "accuracy": 0.75
     },
     "regra_ab": {
-      "TP": 113,
-      "FP": 2,
-      "FN": 51,
-      "TN": 21,
-      "n_pares": 187,
-      "precision": 0.9826,
-      "recall": 0.689,
-      "f1": 0.81,
-      "accuracy": 0.7166
+      "TP": 77,
+      "FP": 1,
+      "FN": 30,
+      "TN": 12,
+      "n_pares": 120,
+      "precision": 0.9872,
+      "recall": 0.7196,
+      "f1": 0.8324,
+      "accuracy": 0.7417
     },
-    "n_rotulos_gt": 187
+    "n_rotulos_gt": 120
   },
   "linhas_alteradas": [
     {
@@ -172,28 +172,6 @@
       "label_2b": "CORRIGIDO"
     },
     {
-      "fork": "guillemo12/synapse",
-      "cve": "CVE-2021-29471",
-      "arquivo": "tests/push/test_push_rule_evaluator.py",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.2294,
-      "delta": 0.1381,
-      "label_2a": "NAO_CORRIGIDO",
-      "label_2b": "CORRIGIDO"
-    },
-    {
-      "fork": "mindroom-ai/mindroom-synapse",
-      "cve": "CVE-2021-29471",
-      "arquivo": "tests/push/test_push_rule_evaluator.py",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.2327,
-      "delta": 0.1401,
-      "label_2a": "NAO_CORRIGIDO",
-      "label_2b": "CORRIGIDO"
-    },
-    {
       "fork": "Buzzlabs/synapse",
       "cve": "CVE-2026-45076",
       "arquivo": "tests/rest/client/test_rooms.py",
@@ -212,28 +190,6 @@
       "para": "ZONA_INCERTEZA",
       "sim_2a": 0.9876,
       "delta": -0.0124,
-      "label_2a": "CORRIGIDO",
-      "label_2b": "ZONA_INCERTEZA"
-    },
-    {
-      "fork": "mindroom-ai/mindroom-synapse",
-      "cve": "CVE-2026-45076",
-      "arquivo": "tests/rest/client/test_rooms.py",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.9872,
-      "delta": -0.0124,
-      "label_2a": "CORRIGIDO",
-      "label_2b": "ZONA_INCERTEZA"
-    },
-    {
-      "fork": "Stanislav1975/matrix-nio",
-      "cve": "CVE-2022-39254",
-      "arquivo": "nio/crypto/olm_machine.py",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.8665,
-      "delta": -0.0141,
       "label_2a": "CORRIGIDO",
       "label_2b": "ZONA_INCERTEZA"
     },
@@ -293,39 +249,6 @@
       "label_2b": "ZONA_INCERTEZA"
     },
     {
-      "fork": "maxgithubprofile/matrix-js-sdk",
-      "cve": "CVE-2025-59160",
-      "arquivo": "spec/unit/matrix-client.spec.ts",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.853,
-      "delta": -0.009,
-      "label_2a": "CORRIGIDO",
-      "label_2b": "ZONA_INCERTEZA"
-    },
-    {
-      "fork": "maxgithubprofile/matrix-js-sdk",
-      "cve": "CVE-2024-42369",
-      "arquivo": "src/client.ts",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.9873,
-      "delta": -0.0011,
-      "label_2a": "CORRIGIDO",
-      "label_2b": "ZONA_INCERTEZA"
-    },
-    {
-      "fork": "maxgithubprofile/matrix-js-sdk",
-      "cve": "CVE-2024-47080",
-      "arquivo": "src/client.ts",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.9633,
-      "delta": -0.0047,
-      "label_2a": "CORRIGIDO",
-      "label_2b": "ZONA_INCERTEZA"
-    },
-    {
       "fork": "RocketChat/matrix-appservice-bridge",
       "cve": "CVE-2023-38691",
       "arquivo": "src/provisioning/api.ts",
@@ -371,17 +294,6 @@
     },
     {
       "fork": "ricardo-duarte-av/matrix-media-repo",
-      "cve": "CVE-2021-29453",
-      "arquivo": "thumbnailing/thumbnail.go",
-      "de": "CORRIGIDO",
-      "para": "ZONA_INCERTEZA",
-      "sim_2a": 0.5979,
-      "delta": 0.0759,
-      "label_2a": "ZONA_INCERTEZA",
-      "label_2b": "CORRIGIDO"
-    },
-    {
-      "fork": "SCJ-Victory/matrix-media-repo",
       "cve": "CVE-2021-29453",
       "arquivo": "thumbnailing/thumbnail.go",
       "de": "CORRIGIDO",

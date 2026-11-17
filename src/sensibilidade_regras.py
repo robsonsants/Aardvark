@@ -12,7 +12,7 @@ O limite ZSS_NODE_LIMIT (600 nos) NAO entra aqui: ele decide QUAL metrica e
 calculada, e exige reprocessar a AST sobre evidencias_dissertacao/.
 
 Uso:
-    python sensibilidade_regras.py --run resultados/resultados_2026-09-18_final72_top10
+    python sensibilidade_regras.py --run resultados/matrix/top10
 """
 import argparse, json, os, sys
 from pathlib import Path

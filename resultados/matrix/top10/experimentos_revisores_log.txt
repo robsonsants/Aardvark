@@ -1,5 +1,5 @@
 ==============================================================================
-EXPERIMENTOS EM RESPOSTA AOS PARECERES — run resultados_2026-09-18_final72_top10
+EXPERIMENTOS EM RESPOSTA AOS PARECERES — run resultados/matrix/top10
 ==============================================================================
   770 linhas cruas · 312 pares com GT automatico conclusivo · 331 pares com veredito humano
 
@@ -765,4 +765,4 @@ E6 — CURVA DE OPERACAO COM O BASELINE TRIVIAL MARCADO
     0.95       173   6  138  14  0.9665  0.5563  0.7061  0.0627   sim
 
 ==============================================================================
--> resultados/resultados_2026-09-18_final72_top10/experimentos_revisores.json
+-> resultados/matrix/top10/experimentos_revisores.json

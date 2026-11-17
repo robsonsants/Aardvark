@@ -67,7 +67,7 @@ DATASET   = AQUI.parent / "dados" / "patchlens" / "final_dataset.csv"
 REPOS     = Path(os.environ.get("PATCHLENS_REPOS", "patchlens_repos"))
 CACHE_RAW = REPOS / "cache_raw"
 CACHE_API = REPOS / "cache_api"
-OUT       = AQUI.parent / "resultados" / "resultados_2026-10-04_patchlens"
+OUT       = AQUI.parent / "resultados" / "validacao_externa"
 
 PRODUTOS = {
     "linux/linux_kernel": {

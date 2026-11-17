@@ -21,8 +21,8 @@ procurar). Os anchors das CVEs auditadas em julho vem do GT v2
 derivada do diff e estao marcados como "a confirmar".
 
 Uso:
-    python auditoria_manual.py gerar  --run resultados/resultados_2026-09-18_final72_top10
-    python auditoria_manual.py apurar --run resultados/resultados_2026-09-18_final72_top10
+    python auditoria_manual.py gerar  --run resultados/matrix/top10
+    python auditoria_manual.py apurar --run resultados/matrix/top10
 """
 import argparse
 import csv

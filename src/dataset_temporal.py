@@ -24,8 +24,8 @@ superestimado; se herdou o arquivo por merge sem tocar nele, pode dar NEGATIVO.
 Valores negativos NAO sao removidos — ficam marcados em `lag_confiavel=nao`.
 
 Uso:
-    python dataset_temporal.py --run resultados/resultados_2026-09-18_final72_top10
-    python dataset_temporal.py --run resultados/resultados_2026-09-18_final72_top10 --token ghp_xxx
+    python dataset_temporal.py --run resultados/matrix/top10
+    python dataset_temporal.py --run resultados/matrix/top10 --token ghp_xxx
 """
 import argparse
 import csv

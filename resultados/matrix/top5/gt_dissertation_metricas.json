@@ -1,17 +1,17 @@
 {
   "n_pares_fork_cve": 333,
-  "n_com_gt_conclusivo": 120,
+  "n_com_gt_conclusivo": 187,
   "n_ambiguous": 21,
   "n_inacessivel": 0,
-  "TP": 83,
-  "FP": 6,
-  "FN": 24,
-  "TN": 7,
-  "precision": 0.9326,
-  "recall": 0.7757,
-  "f1_score": 0.8469,
-  "accuracy": 0.75,
-  "kappa_cohen": 0.1954,
+  "TP": 122,
+  "FP": 10,
+  "FN": 42,
+  "TN": 13,
+  "precision": 0.9242,
+  "recall": 0.7439,
+  "f1_score": 0.8243,
+  "accuracy": 0.7219,
+  "kappa_cohen": 0.1934,
   "falsos_positivos_graves": 14,
   "nota_fp": "ATENÇÃO: FP = classificador marcou CORRIGIDO um fork que o GT confirma VULNERÁVEL — falsa sensação de segurança",
   "pares": [
@@ -28,6 +28,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2026-45078",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2026-45078",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "VULNERAVEL",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2025-61672",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -35,6 +47,18 @@
     },
     {
       "chave": "element-hq/synapse::thetayloredman/lognapse::CVE-2025-61672",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2025-61672",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2025-61672",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -58,6 +82,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2025-30355",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2025-30355",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2024-31208",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -65,6 +101,18 @@
     },
     {
       "chave": "element-hq/synapse::thetayloredman/lognapse::CVE-2024-31208",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2024-31208",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2024-31208",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -88,6 +136,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2018-10657",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2018-10657",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2020-26257",
       "gt": "CONFIRMED_VULNERABLE",
       "auto": "ZONA_INCERTEZA",
@@ -106,6 +166,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2020-26257",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2021-21273",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -113,6 +185,18 @@
     },
     {
       "chave": "element-hq/synapse::thetayloredman/lognapse::CVE-2021-21273",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2021-21273",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2021-21273",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
       "pred_corrigido": false
@@ -136,6 +220,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2021-21274",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2021-21274",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::CharmanderV123/synapse::CVE-2021-21274",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -154,6 +250,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2021-21332",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2021-21332",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2021-21333",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -166,6 +274,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2021-21333",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2021-21333",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2021-29471",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -173,6 +293,18 @@
     },
     {
       "chave": "element-hq/synapse::thetayloredman/lognapse::CVE-2021-29471",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2021-29471",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2021-29471",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -196,6 +328,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2023-43796",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2023-43796",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "element-hq/synapse::Buzzlabs/synapse::CVE-2026-45076",
       "gt": "CONFIRMED_VULNERABLE",
       "auto": "CORRIGIDO",
@@ -204,6 +348,18 @@
     {
       "chave": "element-hq/synapse::thetayloredman/lognapse::CVE-2026-45076",
       "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::guillemo12/synapse::CVE-2026-45076",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/synapse::mindroom-ai/mindroom-synapse::CVE-2026-45076",
+      "gt": "CONFIRMED_VULNERABLE",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
     },
@@ -221,6 +377,18 @@
     },
     {
       "chave": "matrix-org/vodozemac::tangowhisky-dev/vodozemac::CVE-2024-40640",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/vodozemac::KaitoTLex/vodozemac::CVE-2024-40640",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/vodozemac::sorydima/vodozemac::CVE-2024-40640",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -244,6 +412,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/matrix-authentication-service::shing-yu/matrix-authentication-service::CVE-2025-62425",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/matrix-authentication-service::prex-ru/pressgram-mas::CVE-2025-62425",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "element-hq/element-android::usbssdhdd-gif/gapandishe2::CVE-2025-27606",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -257,6 +437,18 @@
     },
     {
       "chave": "element-hq/element-android::remarny/element-android_praktic_test::CVE-2025-27606",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-android::validkanaheiuser/element-android::CVE-2025-27606",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2025-27606",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -280,6 +472,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/element-android::validkanaheiuser/element-android::CVE-2024-26132",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2024-26132",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "element-hq/element-android::usbssdhdd-gif/gapandishe2::CVE-2024-26131",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -293,6 +497,18 @@
     },
     {
       "chave": "element-hq/element-android::remarny/element-android_praktic_test::CVE-2024-26131",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-android::validkanaheiuser/element-android::CVE-2024-26131",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-android::SchildiChat/SchildiChat-android::CVE-2024-26131",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -322,6 +538,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2025-66622",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2025-66622",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "matrix-org/matrix-rust-sdk::codyfinn/matrix-rust-sdk::CVE-2025-53549",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -329,6 +557,18 @@
     },
     {
       "chave": "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2025-53549",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2025-53549",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2025-53549",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
       "pred_corrigido": false
@@ -352,6 +592,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2025-48937",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2025-48937",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/matrix-rust-sdk::codyfinn/matrix-rust-sdk::CVE-2024-40648",
       "gt": "CONFIRMED_VULNERABLE",
       "auto": "ZONA_INCERTEZA",
@@ -365,6 +617,18 @@
     },
     {
       "chave": "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2024-40648",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2024-40648",
       "gt": "CONFIRMED_VULNERABLE",
       "auto": "ZONA_INCERTEZA",
       "pred_corrigido": false
@@ -388,6 +652,18 @@
       "pred_corrigido": false
     },
     {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2024-34353",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2024-34353",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "matrix-org/matrix-rust-sdk::codyfinn/matrix-rust-sdk::CVE-2022-39252",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -401,6 +677,18 @@
     },
     {
       "chave": "matrix-org/matrix-rust-sdk::SchildiChat/matrix-rust-sdk::CVE-2022-39252",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::natheihei/matrix-rust-sdk::CVE-2022-39252",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "matrix-org/matrix-rust-sdk::WhiteBirchForumTeam/matrix-rust-sdk::CVE-2022-39252",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
       "pred_corrigido": false
@@ -424,6 +712,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2025-59160",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maunium/matrix-js-sdk::CVE-2025-59160",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/matrix-js-sdk::CatCraftYT/matrix-js-sdk::CVE-2024-42369",
       "gt": "CONFIRMED_PATCHED",
       "auto": "ZONA_INCERTEZA",
@@ -442,7 +742,25 @@
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2024-42369",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maunium/matrix-js-sdk::CVE-2024-42369",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "ZONA_INCERTEZA",
+      "pred_corrigido": false
+    },
+    {
       "chave": "matrix-org/matrix-js-sdk::verji/matrix-js-sdk-v2::CVE-2022-39249",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2022-39249",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -454,13 +772,31 @@
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2022-39236",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/matrix-js-sdk::verji/matrix-js-sdk-v2::CVE-2022-39251",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2022-39251",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/matrix-js-sdk::verji/matrix-js-sdk-v2::CVE-2022-39250",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2022-39250",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -479,6 +815,18 @@
     },
     {
       "chave": "matrix-org/matrix-js-sdk::verji/matrix-js-sdk-v2::CVE-2024-47080",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maxgithubprofile/matrix-js-sdk::CVE-2024-47080",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-js-sdk::maunium/matrix-js-sdk::CVE-2024-47080",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -670,6 +1018,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "t2bot/matrix-media-repo::Lykos153/matrix-media-repo::CVE-2023-41318",
+      "gt": "CONFIRMED_VULNERABLE",
+      "auto": "VULNERAVEL",
+      "pred_corrigido": false
+    },
+    {
+      "chave": "t2bot/matrix-media-repo::SCJ-Victory/matrix-media-repo::CVE-2023-41318",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "t2bot/matrix-media-repo::tsuiio/matrix-media-repo::CVE-2021-29453",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -683,6 +1043,18 @@
     },
     {
       "chave": "t2bot/matrix-media-repo::ricardo-duarte-av/matrix-media-repo::CVE-2021-29453",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "t2bot/matrix-media-repo::Lykos153/matrix-media-repo::CVE-2021-29453",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "t2bot/matrix-media-repo::SCJ-Victory/matrix-media-repo::CVE-2021-29453",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
       "pred_corrigido": true
@@ -706,6 +1078,18 @@
       "pred_corrigido": true
     },
     {
+      "chave": "element-hq/element-web::davidmcarati/element-capacitor::CVE-2026-55850",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "element-hq/element-web::unstableneutron/element-web::CVE-2026-55850",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/matrix-hookshot::maladesov/matrix-hookshot::CVE-2025-23197",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -724,6 +1108,24 @@
       "pred_corrigido": true
     },
     {
+      "chave": "matrix-org/matrix-hookshot::qdii/matrix-hookshot::CVE-2025-23197",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-hookshot::SpiritCroc/matrix-hookshot::CVE-2025-23197",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
+      "chave": "matrix-org/matrix-hookshot::SpiritCroc/matrix-hookshot::CVE-2023-43656",
+      "gt": "CONFIRMED_PATCHED",
+      "auto": "CORRIGIDO",
+      "pred_corrigido": true
+    },
+    {
       "chave": "matrix-org/mjolnir::PC-Admin/mjolnir::CVE-2025-24024",
       "gt": "CONFIRMED_PATCHED",
       "auto": "CORRIGIDO",
@@ -736,5 +1138,5 @@
       "pred_corrigido": true
     }
   ],
-  "nota_recorte": "derivado de resultados_2026-09-18_final72_top10 com --top 3"
+  "nota_recorte": "derivado de resultados/matrix/top10 com --top 5"
 }

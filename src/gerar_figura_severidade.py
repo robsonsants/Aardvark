@@ -8,7 +8,7 @@ classe de severidade e grava a figura no mesmo estilo de fig_estados_saida.png.
 
 Uso:
   python gerar_figura_severidade.py
-  python gerar_figura_severidade.py --run resultados_2026-09-18_final72_top10 \
+  python gerar_figura_severidade.py --run resultados/matrix/top10 \
          --saida "agora_vai_Dissertação_Robson_MDCC (2)/figuras/fig_severidade_cvss.png"
 """
 import argparse
@@ -57,7 +57,7 @@ def contar(run, enriquecidas):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--run", default="resultados/resultados_2026-09-18_final72_top10")
+    ap.add_argument("--run", default="resultados/matrix/top10")
     ap.add_argument("--enriquecidas", default="dados/cves_enriquecidas.csv")
     ap.add_argument("--saida", default=None)
     a = ap.parse_args()

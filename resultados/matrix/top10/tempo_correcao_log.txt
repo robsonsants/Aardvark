@@ -116,8 +116,8 @@
     Lykos153/matrix-media-repo                 CVE-2023-41318   humano=VULNERAVEL nao_encontrado_no_grafo    exposto 1145.2 d
     tchapgouv/matrix-media-repo                CVE-2023-41318   humano=CORRIGIDO  merge_ou_rebase            1036.6 d
 
--> resultados_2026-09-18_final72_top10\tempo_correcao.csv
--> resultados_2026-09-18_final72_top10\tempo_correcao.json
+-> resultados/matrix/top10\tempo_correcao.csv
+-> resultados/matrix/top10\tempo_correcao.json
 Corrigidos (humano) com data de adocao: {'n': 34, 'mediana': 48.7, 'q1': 4.2, 'q3': 384.9, 'min': 0.0, 'max': 1036.6}
 Vulneraveis (humano), dias expostos ate hoje: {'n': 20, 'mediana': 388.5, 'q1': 172.5, 'q3': 781.6, 'min': 131.5, 'max': 1487.5}
 Via: {'nao_encontrado_no_grafo': 21, 'merge_ou_rebase': 34}

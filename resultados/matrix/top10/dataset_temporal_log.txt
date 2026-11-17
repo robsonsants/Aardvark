@@ -184,9 +184,9 @@
 [3/4] Último toque em 413 pares (fork, arquivo)...
 
 [4/4] Montando o dataset...
-    -> resultados_2026-09-18_final72_top10\dataset_temporal_pares.csv  (770 linhas)
-    -> resultados_2026-09-18_final72_top10\dataset_temporal_forks.csv  (109 linhas)
-    -> resultados_2026-09-18_final72_top10\dataset_temporal.json
+    -> resultados/matrix/top10\dataset_temporal_pares.csv  (770 linhas)
+    -> resultados/matrix/top10\dataset_temporal_forks.csv  (109 linhas)
+    -> resultados/matrix/top10\dataset_temporal.json
 
 Chamadas à API: 810
 Lag de adoção (n=460 confiáveis): mediana 516.1 dias · min 0.0 · max 2927.0

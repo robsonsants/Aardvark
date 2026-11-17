@@ -15,7 +15,7 @@ Saida   : CSV no formato esperado por pipeline_dissertation.py
 
 Uso:
     python fase1_fix_commits.py --entrada fase2.csv \
-        --saida resultados/resultados_2026-09-18_final72_top10/cves-fixing-commits-dataset.csv \
+        --saida resultados/matrix/top10/cves-fixing-commits-dataset.csv \
         --token $GITHUB_TOKEN
 """
 import argparse

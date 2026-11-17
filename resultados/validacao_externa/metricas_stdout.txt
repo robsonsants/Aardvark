@@ -107,4 +107,4 @@ verificabilidade por idade do fix:
   oraculo_linhas_vs_proveniencia_refinada todos     n=5949  TP 4891  FP 36    FN 970   TN 52    P 0.993 R 0.834 F1 0.907 k 0.068
   oraculo_linhas_vs_proveniencia_refinada sem_heranca n=583   TP 477   FP 36    FN 18    TN 52    P 0.930 R 0.964 F1 0.946 k 0.605
 
-→ resultados/resultados_2026-10-04_patchlens/metricas_patchlens.json
+→ resultados/validacao_externa/metricas_patchlens.json

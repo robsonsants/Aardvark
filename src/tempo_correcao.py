@@ -16,7 +16,7 @@ Usa clones TREELESS (--filter=tree:0), um repositorio bare por upstream com os f
 como remotes, entao so os commits sao baixados.
 
 Uso:
-  python tempo_correcao.py --run resultados_2026-09-18_final72_top10 [--cache DIR]
+  python tempo_correcao.py --run resultados/matrix/top10 [--cache DIR]
 Le: dataset_temporal.json, dissertation_veredictos.json, auditoria_manual_preenchida.csv
 Grava: tempo_correcao.csv e tempo_correcao.json na pasta do run.
 """
