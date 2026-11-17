@@ -51,8 +51,7 @@ O pacote reproduz os resultados das duas questões de pesquisa:
     │   ├── top10/               EXECUÇÃO OFICIAL: 16 projetos, 64 CVEs, 109 forks, 460 pares
     │   │                        verificação, gabarito automático, gabarito humano,
     │   │                        experimentos de avaliação e caracterização da propagação
-    │   ├── top10_regraAB/       a mesma execução sob a configuração A+B
-    │   └── top5/, top3/ e *_regraAB/   recortes aninhados da mesma coleta
+    │   └── top10_regraAB/       a mesma execução sob a configuração A+B
     └── validacao_externa/       Linux, FFmpeg e PHP, com o oráculo de proveniência
 ```
 
@@ -70,7 +69,6 @@ que os programas os leem.
 | Fase 1, coleta | `enriquecer_cves.py` | Acrescenta CVSS e CWE e cruza severidade e ano com os vereditos. |
 | Fases 2 a 4, método | `pipeline_core.py` | Normalização da árvore sintática, distâncias e classificação das camadas. |
 | Fases 2 a 4, método | `pipeline_dissertation.py` | Seleciona os *forks*, extrai a evidência, aplica as camadas e agrega os vereditos por par. |
-| Fases 2 a 4, método | `recorte_topn.py` | Deriva os recortes de 3 e 5 *forks* do recorte de 10, na mesma coleta. |
 | Avaliação | `ground_truth.py` | Gabarito automático por presença das linhas do *patch*. |
 | Avaliação | `auditoria_manual.py` | Gera a lista de trabalho cega da auditoria humana e apura os vereditos. |
 | Avaliação | `experimento_regra_ab.py` | Deriva a configuração A+B das mesmas linhas cruas. |
@@ -96,7 +94,7 @@ Os caminhos abaixo são relativos a `resultados/matrix/top10/`, salvo indicaçã
 | Vereditos por ano de publicação da CVE | `dissertation_veredictos.json` | #2 |
 | Validade dos parâmetros: validação cruzada e curva de operação | `experimentos_revisores_log.txt` (E2 e E6) | #5 |
 | Validação externa em Linux, FFmpeg e PHP | `resultados/validacao_externa/metricas_patchlens.json` | #6 |
-| Cobertura por categoria e recortes de 3, 5 e 10 *forks* | `dissertation_metricas.json`, `../top3/`, `../top5/` | #7 |
+| Cobertura por categoria | `dissertation_metricas.json`, `dissertation_cobertura.json` | #7 |
 | Herança e propagação, e desempenho nos 55 pares de propagação | `heranca_propagacao.json`, `dataset_temporal_pares.csv`, `auditoria_manual_preenchida.csv`, `../top10_regraAB/dissertation_veredictos.json` | #8 |
 | Tempo até a correção (QP2.2) | `tempo_correcao.json`, `tempo_correcao.csv` | #9 |
 | Fatores associados (QP2.3) | `dados/cves_enriquecidas.csv`, `dissertation_veredictos.json`, `dataset_temporal_forks.csv` | #9 |
@@ -344,20 +342,14 @@ acompanham o pacote, e o pacote `tree-sitter-c`. As fases são
 ramos de manutenção fazem o papel de *forks*, mas não são *forks*, e o
 resultado é lido como generalização do comportamento do método.
 
-## Reivindicação #7: Cobertura por categoria e recortes aninhados (QP2.1)
+## Reivindicação #7: Cobertura por categoria (QP2.1)
 
 A cobertura média dos *forks* é de 57,3%: pontes 100,0%, suporte 93,3%,
-integrações 75,0%, clientes 42,7%, servidores 41,6% e bibliotecas 39,1%. Os
-recortes com 3, 5 e 10 *forks* por projeto saem da mesma coleta e são
-aninhados.
+integrações 75,0%, clientes 42,7%, servidores 41,6% e bibliotecas 39,1%.
 
 ```bash
 python -c "import json; d=json.load(open('resultados/matrix/top10/dissertation_metricas.json')); print('media',d['cobertura_media_pct']); [print(k.ljust(12),v['n_verificacoes'],v['cobertura_media_pct']) for k,v in d['por_categoria'].items()]"
-python src/recorte_topn.py --run resultados/matrix/top10 --top 3 --outdir recorte_top3_teste
 ```
-
-O segundo comando deve reportar 16 projetos, 44 *forks*, 177 pares e
-cobertura de 62,1%. A pasta `recorte_top3_teste` pode ser apagada.
 
 ## Reivindicação #8: Herança e propagação (QP2.1)
 
@@ -424,9 +416,8 @@ por nome de produto traz CVEs de produtos homônimos. Não use
 **Fases 2 a 4, verificação.** Teste com um projeto antes de rodar todos.
 
 ```bash
-python src/pipeline_dissertation.py --token "$GITHUB_TOKEN" --upstream matrix-org/sydent --top 3 --outdir resultados/NOVO
+python src/pipeline_dissertation.py --token "$GITHUB_TOKEN" --upstream matrix-org/sydent --top 10 --outdir resultados/NOVO
 python src/pipeline_dissertation.py --token "$GITHUB_TOKEN" --fresh --top 10 --outdir resultados/NOVO
-python src/recorte_topn.py --run resultados/NOVO --top 3 --outdir resultados/NOVO_top3
 ```
 
 **Avaliação.**
@@ -468,7 +459,7 @@ unset GITHUB_TOKEN NVD_TOKEN
 | Similaridade combinada | 0,45 · Levenshtein + 0,55 · Zhang e Shasha |
 | Limite de nós para Zhang e Shasha | 600 |
 | Limiar de casamento de linha do gabarito automático | 0,85 |
-| *Forks* por projeto | 3, 5 ou 10 |
+| *Forks* por projeto | 10 |
 | Janela de atividade dos *forks* | 730 dias |
 | Máximo de *forks* comparados por projeto | 80 |
 

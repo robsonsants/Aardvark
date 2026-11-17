@@ -4,15 +4,11 @@
 resultados/
 ├── matrix/                    ecossistema Matrix, coleta de 18/09/2026
 │   ├── top10/                 EXECUÇÃO OFICIAL: 10 forks por projeto, 460 pares
-│   ├── top10_regraAB/         a mesma execução sob a configuração A+B
-│   ├── top5/  e  top5_regraAB/
-│   └── top3/  e  top3_regraAB/
+│   └── top10_regraAB/         a mesma execução sob a configuração A+B
 └── validacao_externa/         Linux, FFmpeg e PHP (PatchLens), 04/10/2026
 ```
 
-Os recortes `top3` e `top5` não são novas coletas: são derivados de `top10`
-por `src/recorte_topn.py` e por isso são aninhados e comparáveis entre si. As
-pastas `*_regraAB` são derivadas por `src/experimento_regra_ab.py` das mesmas
+A pasta `top10_regraAB` é derivada por `src/experimento_regra_ab.py` das mesmas
 linhas cruas, sem rede.
 
 ## `matrix/top10/`, a execução oficial
