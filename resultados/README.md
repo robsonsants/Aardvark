@@ -47,7 +47,7 @@ por isso eles ficam lado a lado. Agrupados por etapa:
 
 | Arquivo | Conteúdo |
 |---|---|
-| `experimentos_revisores_log.txt` | Saída completa: E1 camadas isoladas e classificador trivial, E2 validação cruzada dos limiares, E4 intervalos de confiança e McNemar, E6 curva de operação. |
+| `experimentos_revisores_log.txt` | Saída completa: E1 camadas isoladas e classificador trivial, E2 validação cruzada dos limiares (exploratória, não reportada na dissertação), E4 intervalos de confiança e McNemar, E6 curva de operação (análise de sensibilidade). |
 | `experimentos_revisores.json` | Os mesmos resultados em JSON. |
 
 **5. Caracterização da propagação** (`src/dataset_temporal.py`, `src/tempo_correcao.py`)

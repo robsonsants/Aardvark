@@ -73,10 +73,11 @@ que os programas os leem.
 | Avaliação | `auditoria_manual.py` | Gera a lista de trabalho cega da auditoria humana e apura os vereditos. |
 | Avaliação | `experimento_regra_ab.py` | Deriva a configuração A+B das mesmas linhas cruas. |
 | Avaliação | `sensibilidade_regras.py` | Varre os limiares de decisão. |
-| Avaliação | `experimentos_revisores.py` | Camadas isoladas, classificador trivial, validação cruzada dos limiares, intervalos de confiança, teste de McNemar e curva de operação. |
+| Avaliação | `experimentos_revisores.py` | Camadas isoladas, classificador trivial, intervalos de confiança, teste de McNemar e curva de operação (análise de sensibilidade). |
 | Avaliação | `experimento_patchlens.py` | Validação externa em Linux, FFmpeg e PHP. |
 | Caracterização | `dataset_temporal.py` | Datas de criação dos *forks* e dos *commits* de correção. |
 | Caracterização | `tempo_correcao.py` | Tempo até a correção medido no grafo do Git. |
+| Caracterização | `qp2_gabarito_humano.py` | Presença da correção por categoria e fatores associados, pelo gabarito humano. |
 | Figura | `gerar_figura_severidade.py` | Figura da distribuição de severidade das CVEs verificadas. |
 
 # Onde Está Cada Resultado da Dissertação
@@ -92,12 +93,12 @@ Os caminhos abaixo são relativos a `resultados/matrix/top10/`, salvo indicaçã
 | Desempenho contra o gabarito automático | `gt_dissertation_metricas.json`, `../top10_regraAB/gt_regra_ab_metricas.json` | #3 |
 | Contribuição de cada camada isolada | `experimentos_revisores_log.txt` (E1) | #4 |
 | Vereditos por ano de publicação da CVE | `dissertation_veredictos.json` | #2 |
-| Validade dos parâmetros: validação cruzada e curva de operação | `experimentos_revisores_log.txt` (E2 e E6) | #5 |
+| Validade dos parâmetros: análise de sensibilidade | `experimentos_revisores_log.txt` (E6) | #5 |
 | Validação externa em Linux, FFmpeg e PHP | `resultados/validacao_externa/metricas_patchlens.json` | #6 |
-| Cobertura por categoria | `dissertation_metricas.json`, `dissertation_cobertura.json` | #7 |
+| Presença da correção por categoria (gabarito humano) | `auditoria_manual_preenchida.csv`, `dissertation_cobertura.json` | #7 |
 | Herança e propagação, e desempenho nos 55 pares de propagação | `heranca_propagacao.json`, `dataset_temporal_pares.csv`, `auditoria_manual_preenchida.csv`, `../top10_regraAB/dissertation_veredictos.json` | #8 |
 | Tempo até a correção (QP2.2) | `tempo_correcao.json`, `tempo_correcao.csv` | #9 |
-| Fatores associados (QP2.3) | `dados/cves_enriquecidas.csv`, `dissertation_veredictos.json`, `dataset_temporal_forks.csv` | #9 |
+| Fatores associados (QP2.3) | `dados/cves_enriquecidas.csv`, `auditoria_manual_preenchida.csv`, `dataset_temporal_forks.csv` | #9 |
 
 # Informações Básicas
 
@@ -269,7 +270,8 @@ conteúdo idêntico. O segundo calcula o Kappa das três linhas.
 ## Reivindicação #4: Desempenho contra o gabarito humano (QP1)
 
 A auditoria manual deu 311 corrigidos, 20 vulneráveis e 2 inconclusivos nos 333
-pares. O gabarito automático concorda com ela em 289 pares, 86,8%. Nos 331
+pares. O gabarito automático concorda com ela em 289 dos 310 pares rotulados
+pelos dois, 93,2%. Nos 331
 pares com veredito humano conclusivo:
 
 | Classificador | VP | FP | FN | VN | Precisão | Revocação | F1 | Kappa |
@@ -293,22 +295,29 @@ python src/auditoria_manual.py apurar --run resultados/matrix/top10
 
 O primeiro comando leva cerca de 20 segundos, por causa das 10.000
 reamostragens do *bootstrap*, e imprime os blocos E1 a E6: a tabela acima é o
-E1, os intervalos e o McNemar são o E4, a validação cruzada é o E2 e a curva de
-operação é o E6. A saída é determinística e igual a
+E1, os intervalos e o McNemar são o E4 e a curva de operação é o E6. A saída é
+determinística e igual a
 `experimentos_revisores_log.txt`. Sob o gabarito automático este programa refaz
 a decisão sem a tabela de prioridade da agregação e reporta a União com 195,
 16, 79 e 22; os números oficiais contra o gabarito automático são os da
 Reivindicação #3.
 
-## Reivindicação #5: Sensibilidade e validação cruzada dos limiares (QP1)
+## Reivindicação #5: Análise de sensibilidade dos limiares (QP1)
 
-Os limiares fixos não foram ajustados aos dados avaliados. Contra o gabarito
-humano, a União com os limiares fixos tem Kappa 0,006. Na validação cruzada
-que deixa um projeto de fora por vez e na validação em cinco partições, os
-limiares escolhidos no treino (0,60 e margem 0,02) obtêm fora da amostra 256,
-10, 55 e 10, com Kappa 0,157. Na curva de operação, o limiar superior da
-Camada 2A em 0,50 dá Kappa 0,166 e em 0,95 dá 0,063. Limiares mais permissivos
-reconhecem mais correções sem aumentar os falsos positivos.
+Os limiares fixos não foram ajustados aos dados avaliados. A análise de
+sensibilidade varia o limiar superior da Camada 2A com os demais parâmetros
+fixos. Contra o gabarito humano, na configuração União:
+
+| Limiar superior da 2A | VP | FP | FN | VN | Kappa |
+|---|---:|---:|---:|---:|---:|
+| 0,50 | 278 | 13 | 33 | 7 | 0,166 |
+| 0,80, valor fixo | 208 | 13 | 103 | 7 | 0,006 |
+| 0,95 | 173 | 6 | 138 | 14 | 0,063 |
+
+Os falsos positivos ficam em 13 de 0,50 a 0,85, porque têm similaridade alta e
+não dependem do limiar: limiares mais permissivos reconhecem mais correções sem
+aumentar os falsos positivos. A análise foi feita depois da execução e não
+alterou os parâmetros do método.
 
 ```bash
 python src/sensibilidade_regras.py --run resultados/matrix/top10
@@ -317,8 +326,7 @@ python src/experimentos_revisores.py --run resultados/matrix/top10
 
 O primeiro comando imprime uma tabela por parâmetro e grava
 `sensibilidade_limiares.json` na pasta da execução. Se usar `--outdir`, crie a
-pasta antes. A validação cruzada é o bloco E2 e a curva de operação o E6 do
-segundo comando.
+pasta antes. A tabela acima é o bloco E6 do segundo comando.
 
 ## Reivindicação #6: Validação externa em Linux, FFmpeg e PHP (QP1)
 
@@ -342,14 +350,24 @@ acompanham o pacote, e o pacote `tree-sitter-c`. As fases são
 ramos de manutenção fazem o papel de *forks*, mas não são *forks*, e o
 resultado é lido como generalização do comportamento do método.
 
-## Reivindicação #7: Cobertura por categoria (QP2.1)
+## Reivindicação #7: Presença da correção por categoria (QP2.1)
 
-A cobertura média dos *forks* é de 57,3%: pontes 100,0%, suporte 93,3%,
-integrações 75,0%, clientes 42,7%, servidores 41,6% e bibliotecas 39,1%.
+A QP2 usa o gabarito humano. A cobertura calculada pelos vereditos do método
+conta a zona de incerteza e o arquivo não encontrado como não corrigido, e por
+isso mistura a propagação com a capacidade de decisão do método. Segundo o
+gabarito humano, a correção está em 311 dos 331 pares (94,0%). A média por
+*fork*, nos 93 *forks* com veredito humano, é de 93,1%: pontes 100,0%,
+servidores 97,2%, clientes 94,7%, suporte 94,0%, integrações 93,8% e bibliotecas
+84,3%. Para contraste, a cobertura que o método confirma é de 57,3% em média
+(109 *forks*).
 
 ```bash
+python src/qp2_gabarito_humano.py --run resultados/matrix/top10 --cves dados/cves_enriquecidas.csv
 python -c "import json; d=json.load(open('resultados/matrix/top10/dissertation_metricas.json')); print('media',d['cobertura_media_pct']); [print(k.ljust(12),v['n_verificacoes'],v['cobertura_media_pct']) for k,v in d['por_categoria'].items()]"
 ```
+
+O primeiro comando imprime a presença pelo gabarito humano e também os fatores
+da Reivindicação #9. O segundo imprime a cobertura do método.
 
 ## Reivindicação #8: Herança e propagação (QP2.1)
 
@@ -372,16 +390,28 @@ A classificação compara a coluna `fork_created_at` com a coluna
 Nos 34 pares de propagação corrigidos com data de adoção, o tempo até a
 correção tem mediana de 48,7 dias, com primeiro quartil de 4,2 e terceiro de
 384,9; 9 levaram mais de um ano. Os 20 pares vulneráveis estão expostos há
-388,5 dias na mediana. Por CVE, com n = 36, a correlação entre CVSS e cobertura
-é −0,078 e entre o ano de publicação e a cobertura é +0,535.
+388,5 dias na mediana.
+
+Os fatores associados são medidos pelo gabarito humano. Por CVE, com n = 36, a
+presença da correção não se associa à severidade (CVSS, r = −0,128) nem ao ano
+de publicação (r = −0,209). Por *fork*, com n = 92, não se associa aos *commits*
+à frente do *upstream* (r = +0,046), mas se associa aos *commits* atrás
+(r = −0,380; Spearman −0,444): os 13 *forks* com algum par vulnerável estão, em
+mediana, 771 *commits* atrás do *upstream*, contra 131 dos 79 *forks* em que
+todas as correções estão presentes. Pelos vereditos do método, o ano parecia se
+associar à presença (r = +0,535), mas o efeito vinha da abstenção, que é maior
+nas CVEs antigas.
 
 ```bash
 python -c "import json; d=json.load(open('resultados/matrix/top10/tempo_correcao.json',encoding='utf-8')); print(d['n_pares'],d['via']); print('corrigidos',d['corrigidos_com_data']); print('vulneraveis',d['vulneraveis_exposicao'])"
+python src/qp2_gabarito_humano.py --run resultados/matrix/top10 --cves dados/cves_enriquecidas.csv
 python src/enriquecer_cves.py --run resultados/matrix/top10 --saida cves_enriquecidas_teste.csv
 ```
 
-O segundo comando imprime o perfil de severidade e de CWE e, ao final, as duas
-correlações. O arquivo `cves_enriquecidas_teste.csv` pode ser apagado. O tempo
+O segundo comando imprime os fatores pelo gabarito humano. O terceiro imprime o
+perfil de severidade e de CWE e, ao final, as correlações pelos vereditos do
+método, para contraste. O arquivo `cves_enriquecidas_teste.csv` pode ser
+apagado. O tempo
 até a correção é um limite superior: a data de adoção é a do primeiro *commit*
 próprio do *fork* que já contém a correção.
 
