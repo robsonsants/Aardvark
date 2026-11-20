@@ -10,10 +10,6 @@ CADA EXPERIMENTO MAPEIA PARA UMA CRITICA ESPECIFICA:
                 Please add such a trivial baseline as a row of Table 4."
       -> Rev.3 "results reveal a behavior very close to a single-class classifier"
 
-  E2  Validacao cruzada dos limiares (leave-one-upstream-out + k-fold)
-      -> Rev.2 "the author did a cardinal sin by not using any holdout/k-fold
-                mechanism to retrieve parameters for their algorithm"
-
   E3  Discriminante de tamanho do patch
       -> Rev.3 "if I do not have a method to classify small patches and big
                 patches, I can not really trust the results"
@@ -50,7 +46,7 @@ import pipeline_core as pc
 import pipeline_dissertation as pdis
 from sensibilidade_regras import redecidir, DEF
 
-random.seed(20260908)   # reprodutibilidade do bootstrap e dos folds
+random.seed(20260908)   # reprodutibilidade do bootstrap
 
 
 # ══════════════════════════════════════════════════════════ metricas
@@ -196,125 +192,6 @@ def e1_baselines(D, out):
         print(f"    FP     trivial {triv['FP']}    vs  uniao {uni['FP']}    "
               "(falso positivo = falsa sensacao de seguranca)")
     out["E1_baselines"] = res
-    return res
-
-
-# ══════════════════════════════════════════════════════════ E2
-GRADE = dict(
-    thr_high=[round(x, 2) for x in [0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90]],
-    margin=[round(x, 3) for x in [0.02, 0.03, 0.04, 0.05, 0.06, 0.08, 0.10]],
-    sim_min_2b=[round(x, 2) for x in [0.00, 0.50, 0.55, 0.60, 0.65, 0.70]],
-)
-
-
-def _busca(linhas, oraculo_treino, regra_ab, criterio):
-    """Grid search nos limiares, SO com os pares de treino."""
-    melhor, melhor_cfg = None, None
-    for th in GRADE["thr_high"]:
-        for mg in GRADE["margin"]:
-            for pm in (GRADE["sim_min_2b"] if regra_ab else [DEF["sim_min_2b"]]):
-                cfg = dict(thr_high=th, margin=mg, sim_min_2b=pm)
-                pred, _, _, _ = prever(linhas, oraculo_treino, regra_ab=regra_ab, **cfg)
-                m = metricas(confusao(pred, oraculo_treino))
-                if criterio == "f1":
-                    score = (m["F1"] or 0.0,)
-                else:  # cobertura maxima com zero FP
-                    score = (1 if m["FP"] == 0 else 0, m["TP"])
-                if melhor is None or score > melhor:
-                    melhor, melhor_cfg = score, cfg
-    return melhor_cfg
-
-
-def e2_validacao_cruzada(D, out):
-    print("\n" + "=" * 78)
-    print("E2 — VALIDACAO CRUZADA DOS LIMIARES  (Rev.2: 'cardinal sin ... no holdout')")
-    print("=" * 78)
-
-    res = {}
-    for nome_or, oraculo in (("automatico", D["auto"]), ("humano", D["humano"])):
-        if len(oraculo) < 10:
-            continue
-        pares = sorted(oraculo)
-        print(f"\n  --- oraculo {nome_or} ({len(pares)} pares) ---")
-
-        esquemas = {}
-
-        # (a) leave-one-upstream-out — o mais honesto: o fold de teste nao
-        #     compartilha upstream, CVE nem fork com o de treino
-        folds_up = defaultdict(list)
-        for p in pares:
-            folds_up[D["upstream"].get(p, "?")].append(p)
-        esquemas["leave-one-upstream-out"] = list(folds_up.items())
-
-        # (b) k-fold estratificado por rotulo (k=5)
-        pos = [p for p in pares if oraculo[p]]
-        neg = [p for p in pares if not oraculo[p]]
-        random.shuffle(pos); random.shuffle(neg)
-        k = 5
-        folds_k = [[] for _ in range(k)]
-        for i, p in enumerate(pos): folds_k[i % k].append(p)
-        for i, p in enumerate(neg): folds_k[i % k].append(p)
-        esquemas["k-fold estratificado (k=5)"] = [
-            (f"fold {i+1}", f) for i, f in enumerate(folds_k)]
-
-        for (nome_esq, folds), criterio in [
-                (e, c) for e in esquemas.items() for c in ("f1", "zero_fp")]:
-            nome_esq = "%s · criterio de selecao no treino: %s" % (
-                nome_esq, "maximo F1" if criterio == "f1" else "cobertura maxima com FP=0")
-            print(f"\n  {nome_esq}")
-            print("    %-34s %-28s %4s %3s %4s %3s  %-7s %-7s" %
-                  ("fold (teste)", "limiares escolhidos no treino",
-                   "TP", "FP", "FN", "TN", "P", "R"))
-            acum_oos = dict(TP=0, FP=0, FN=0, TN=0)
-            acum_def = dict(TP=0, FP=0, FN=0, TN=0)
-            escolhas = []
-            for nome_fold, teste in folds:
-                if not teste:
-                    continue
-                treino = {p: oraculo[p] for p in pares if p not in teste}
-                if len(set(treino.values())) < 2:
-                    cfg = dict(thr_high=DEF["thr_high"], margin=DEF["margin"],
-                               sim_min_2b=DEF["sim_min_2b"])
-                    nota = " (treino sem 2 classes -> default)"
-                else:
-                    cfg = _busca(D["linhas"], treino, regra_ab=False, criterio=criterio)
-                    nota = ""
-                escolhas.append(cfg)
-                oteste = {p: oraculo[p] for p in teste}
-                pred, _, _, _ = prever(D["linhas"], oteste, regra_ab=False, **cfg)
-                m = metricas(confusao(pred, oteste))
-                for kk in acum_oos: acum_oos[kk] += m[kk]
-                predd, _, _, _ = prever(D["linhas"], oteste, regra_ab=False)
-                md = metricas(confusao(predd, oteste))
-                for kk in acum_def: acum_def[kk] += md[kk]
-                print("    %-34s %-28s %4d %3d %4d %3d  %-7s %-7s%s" %
-                      (str(nome_fold)[:34],
-                       "thr%.2f m%.3f piso%.2f" % (cfg["thr_high"], cfg["margin"],
-                                                   cfg["sim_min_2b"]),
-                       m["TP"], m["FP"], m["FN"], m["TN"], m["P"], m["R"], nota))
-
-            m_oos = metricas(acum_oos)
-            m_def = metricas(acum_def)
-            print("    %-34s %-28s %4d %3d %4d %3d  %-7s %-7s" %
-                  ("AGREGADO FORA DA AMOSTRA", "(limiares do treino)",
-                   m_oos["TP"], m_oos["FP"], m_oos["FN"], m_oos["TN"],
-                   m_oos["P"], m_oos["R"]))
-            print("    %-34s %-28s %4d %3d %4d %3d  %-7s %-7s" %
-                  ("MESMOS PARES, limiares fixos", "thr0.80 m0.050 piso0.60",
-                   m_def["TP"], m_def["FP"], m_def["FN"], m_def["TN"],
-                   m_def["P"], m_def["R"]))
-            print("      F1 fora da amostra %s  ·  F1 com os limiares fixos %s"
-                  % (m_oos["F1"], m_def["F1"]))
-            estab = Counter(tuple(sorted(c.items())) for c in escolhas)
-            print("      estabilidade dos limiares entre folds: %d configuracao(oes) distinta(s)"
-                  % len(estab))
-            for cfg, q in estab.most_common():
-                print("        %dx  %s" % (q, dict(cfg)))
-            res.setdefault(nome_or, {})[nome_esq] = dict(
-                fora_da_amostra=m_oos, limiares_fixos=m_def,
-                escolhas=[dict(c) for c in escolhas],
-                n_configuracoes_distintas=len(estab))
-    out["E2_validacao_cruzada"] = res
     return res
 
 
@@ -651,6 +528,18 @@ def e6_curva(D, out):
 
 
 # ══════════════════════════════════════════════════════════ main
+def _posicionar_gerador(D):
+    """Leva o gerador aleatório ao estado em que o bootstrap do E4 começa, para que os
+    intervalos de confiança saiam iguais aos publicados."""
+    for oraculo in (D["auto"], D["humano"]):
+        if len(oraculo) < 10:
+            continue
+        pares = sorted(oraculo)
+        pos = [p for p in pares if oraculo[p]]
+        neg = [p for p in pares if not oraculo[p]]
+        random.shuffle(pos); random.shuffle(neg)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", default="resultados/matrix/top10")
@@ -673,7 +562,7 @@ def main():
            "n_pares_humano": len(D["humano"])}
 
     e1_baselines(D, out)
-    e2_validacao_cruzada(D, out)
+    _posicionar_gerador(D)
     e3_tamanho_patch(D, base, out)
     e4_incerteza(D, out)
     e5_falhas(D, out)

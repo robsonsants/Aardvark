@@ -294,7 +294,7 @@ python src/auditoria_manual.py apurar --run resultados/matrix/top10
 ```
 
 O primeiro comando leva cerca de 20 segundos, por causa das 10.000
-reamostragens do *bootstrap*, e imprime os blocos E1 a E6: a tabela acima é o
+reamostragens do *bootstrap*, e imprime os seus blocos: a tabela acima é o
 E1, os intervalos e o McNemar são o E4 e a curva de operação é o E6. A saída é
 determinística e igual a
 `experimentos_revisores_log.txt`. Sob o gabarito automático este programa refaz
