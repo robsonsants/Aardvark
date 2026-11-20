@@ -41,16 +41,16 @@ por isso eles ficam lado a lado. Agrupados por etapa:
 | `auditoria_manual_revisor1.html` | Lista de trabalho cega usada pelo revisor no navegador: para cada par, a linha que distingue a versão corrigida da vulnerável, o *commit* de correção e o arquivo do *fork*, sem o veredito do método. |
 | `auditoria_manual_revisor1.csv` | A mesma lista em CSV. |
 | `auditoria_manual_preenchida.csv` | **Vereditos humanos** dos 333 pares (corrigido, vulnerável ou inconclusivo), com a justificativa de cada um. É o gabarito usado na dissertação. |
-| `auditoria_manual_apuracao.json` | Apuração: concordância com o gabarito automático (86,8%) e lista das divergências. |
+| `auditoria_manual_apuracao.json` | Apuração: 289 pares em que os dois gabaritos concordam e lista dos demais. Dos 310 pares rotulados pelos dois, 289 concordam (93,2%). |
 
-**4. Experimentos de avaliação** (`src/experimentos_revisores.py`)
+**4. Avaliação contra os gabaritos** (`src/avaliacao_gabaritos.py`)
 
 | Arquivo | Conteúdo |
 |---|---|
-| `experimentos_revisores_log.txt` | Saída completa: E1 camadas isoladas e classificador trivial, E4 intervalos de confiança e McNemar, E6 curva de operação (análise de sensibilidade). |
-| `experimentos_revisores.json` | Os mesmos resultados em JSON. |
+| `avaliacao_gabaritos_log.txt` | Saída completa: E1 classificador trivial, camadas isoladas e configurações; E2 intervalos de confiança e McNemar; E3 erros caso a caso; E4 análise de sensibilidade. |
+| `avaliacao_gabaritos.json` | Os mesmos resultados em JSON. |
 
-**5. Caracterização da propagação** (`src/dataset_temporal.py`, `src/tempo_correcao.py`)
+**5. Caracterização da propagação** (`src/dataset_temporal.py`, `src/tempo_correcao.py`, `src/qp2_gabarito_humano.py`)
 
 | Arquivo | Conteúdo |
 |---|---|
@@ -64,14 +64,12 @@ por isso eles ficam lado a lado. Agrupados por etapa:
 
 Execução do método, sem alteração, sobre os ramos de manutenção do Linux, do
 FFmpeg e do PHP, com as correções do conjunto de dados do PatchLens
-(`src/experimento_patchlens.py`). A leitura por extenso está em
-`RESULTADOS_PATCHLENS.md`.
+(`src/experimento_patchlens.py`).
 
 | Arquivo | Conteúdo |
 |---|---|
 | `oraculo_proveniencia.json` | Gabarito por proveniência no grafo do Git: se o ramo contém o *commit* de correção ou um equivalente. |
 | `linhas_cruas.jsonl` | Uma linha por verificação, com as similaridades de cada camada. |
 | `pares_agregados.json` | Vereditos por par ramo × correção. |
-| `metricas_patchlens.json` | Métricas por projeto e no total, com e sem herança, e verificabilidade por idade da correção. |
+| `metricas_patchlens.json` | Métricas por projeto e no total, com e sem herança. |
 | `metricas_stdout.txt` | Saída original do cálculo das métricas. |
-| `negativos_com_titulo_igual.json` | Checagem do oráculo: negativos com *commit* de mesmo título no ramo. Está vazio, ou seja, nenhum foi encontrado. |

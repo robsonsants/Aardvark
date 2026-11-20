@@ -72,13 +72,12 @@ que os programas os leem.
 | Avaliação | `ground_truth.py` | Gabarito automático por presença das linhas do *patch*. |
 | Avaliação | `auditoria_manual.py` | Gera a lista de trabalho cega da auditoria humana e apura os vereditos. |
 | Avaliação | `experimento_regra_ab.py` | Deriva a configuração A+B das mesmas linhas cruas. |
-| Avaliação | `sensibilidade_regras.py` | Varre os limiares de decisão. |
-| Avaliação | `experimentos_revisores.py` | Camadas isoladas, classificador trivial, intervalos de confiança, teste de McNemar e curva de operação (análise de sensibilidade). |
+| Avaliação | `sensibilidade_regras.py` | Funções que re-derivam o veredito com limiares dados, usadas pela avaliação. |
+| Avaliação | `avaliacao_gabaritos.py` | Classificador trivial, camadas isoladas, intervalos de confiança das duas configurações, teste de McNemar, erros caso a caso e análise de sensibilidade. |
 | Avaliação | `experimento_patchlens.py` | Validação externa em Linux, FFmpeg e PHP. |
 | Caracterização | `dataset_temporal.py` | Datas de criação dos *forks* e dos *commits* de correção. |
 | Caracterização | `tempo_correcao.py` | Tempo até a correção medido no grafo do Git. |
 | Caracterização | `qp2_gabarito_humano.py` | Presença da correção por categoria e fatores associados, pelo gabarito humano. |
-| Figura | `gerar_figura_severidade.py` | Figura da distribuição de severidade das CVEs verificadas. |
 
 # Onde Está Cada Resultado da Dissertação
 
@@ -89,11 +88,11 @@ Os caminhos abaixo são relativos a `resultados/matrix/top10/`, salvo indicaçã
 | Funil da coleta e CVEs excluídas | `dados/fase2_2026-09-18.csv`, `dados/censo_cpe_nvd.csv`, `dados/cves-fixing-commits-dataset.csv` | #1 |
 | Distribuição dos vereditos nos 460 pares | `dissertation_veredictos.json`, `dissertation_metricas.json` | #2 |
 | Severidade (CVSS) e fraquezas (CWE) das CVEs verificadas | `dados/cves_enriquecidas.csv`, `dissertation_veredictos.json` | #9 |
-| Desempenho contra o gabarito humano, com intervalos de confiança | `auditoria_manual_preenchida.csv`, `experimentos_revisores_log.txt` (E1 e E4) | #4 |
+| Desempenho contra o gabarito humano, com intervalos de confiança | `auditoria_manual_preenchida.csv`, `avaliacao_gabaritos_log.txt` (E1 e E2) | #4 |
 | Desempenho contra o gabarito automático | `gt_dissertation_metricas.json`, `../top10_regraAB/gt_regra_ab_metricas.json` | #3 |
-| Contribuição de cada camada isolada | `experimentos_revisores_log.txt` (E1) | #4 |
+| Contribuição de cada camada isolada | `avaliacao_gabaritos_log.txt` (E1) | #4 |
 | Vereditos por ano de publicação da CVE | `dissertation_veredictos.json` | #2 |
-| Validade dos parâmetros: análise de sensibilidade | `experimentos_revisores_log.txt` (E6) | #5 |
+| Validade dos parâmetros: análise de sensibilidade | `avaliacao_gabaritos_log.txt` (E4) | #5 |
 | Validação externa em Linux, FFmpeg e PHP | `resultados/validacao_externa/metricas_patchlens.json` | #6 |
 | Presença da correção por categoria (gabarito humano) | `auditoria_manual_preenchida.csv`, `dissertation_cobertura.json` | #7 |
 | Herança e propagação, e desempenho nos 55 pares de propagação | `heranca_propagacao.json`, `dataset_temporal_pares.csv`, `auditoria_manual_preenchida.csv`, `../top10_regraAB/dissertation_veredictos.json` | #8 |
@@ -129,8 +128,7 @@ As dependências estão em `requirements.txt`:
 - `requests`: chamadas às APIs do NVD e do GitHub;
 - `nvdlib`, `pandas` e `numpy`: mineração e tabulação da Fase 1.
 
-Dois pacotes são opcionais: `tree-sitter-c`, para refazer a validação externa, e
-`matplotlib`, para a figura de severidade.
+Um pacote é opcional: `tree-sitter-c`, para refazer a validação externa.
 
 Versões do ambiente de referência: tree-sitter 0.25.2, tree-sitter-python
 0.25.0, tree-sitter-rust 0.24.2, tree-sitter-kotlin 1.1.0, tree-sitter-swift
@@ -187,7 +185,7 @@ refazer a coleta, copie `.env.example` para `.env` e preencha os dois tokens.
 Roda sem rede, em menos de 5 segundos:
 
 ```bash
-python -m py_compile src/pipeline_core.py src/pipeline_dissertation.py src/ground_truth.py src/experimento_regra_ab.py src/experimentos_revisores.py
+python -m py_compile src/pipeline_core.py src/pipeline_dissertation.py src/ground_truth.py src/experimento_regra_ab.py src/avaliacao_gabaritos.py
 python -c "import json; from pathlib import Path; r=Path('resultados/matrix/top10'); esperado={'dissertation_resultados.json':770,'dissertation_veredictos.json':460,'dissertation_cobertura.json':109}; obtido={n: len(json.loads((r/n).read_text(encoding='utf-8'))) for n in esperado}; assert obtido==esperado,(obtido,esperado); print('TESTE OK:',obtido)"
 ```
 
@@ -216,9 +214,8 @@ execução oficial é `resultados/matrix/top10`.
 
 Dos 218 projetos do diretório, 160 foram lidos. O censo contém 127 CVEs
 distintas em 24 projetos. A consulta ao NVD com guarda de atribuição aceitou 67
-candidatas e rejeitou 408. A severidade está disponível para as 127 CVEs, com
-17 baixas, 62 médias, 36 altas e 12 críticas; o CVSS numérico existe para 84 e
-a categoria CWE para 94. Das 127, 72 têm *commit* de correção público, em 85
+candidatas e rejeitou 408. A severidade está disponível para as 127 CVEs e a
+categoria CWE para 94. Das 127, 72 têm *commit* de correção público, em 85
 linhas de CVE e *commit* e 78 *commits* distintos.
 
 ```bash
@@ -226,7 +223,7 @@ python -c "import csv,collections as c; L=lambda f,d: list(csv.DictReader(open('
 ```
 
 A saída deve trazer 160 projetos lidos, 22 com CVE nos avisos do GitHub, 67
-aceitas e 408 rejeitadas, 127 CVEs, 84 com CVSS, 94 com CWE, 72 CVEs com
+aceitas e 408 rejeitadas, 127 CVEs, 94 com CWE, 72 CVEs com
 *commit*, 85 linhas e 78 *commits* distintos. Os 24 projetos com CVE resultam
 dos 22 dos avisos mais `olm` e `dendrite`, que só aparecem no NVD.
 
@@ -283,21 +280,27 @@ pares com veredito humano conclusivo:
 | União | 208 | 13 | 103 | 7 | 0,941 | 0,669 | 0,782 | 0,006 |
 | A+B | 187 | 2 | 124 | 18 | 0,989 | 0,601 | 0,748 | 0,130 |
 
-O intervalo de confiança de 95% do Kappa da União é [−0,061; 0,078] e inclui
-zero. A diferença entre União e A+B não é significativa no teste de McNemar,
+Intervalos de confiança de 95% por *bootstrap*:
+
+| Configuração | Precisão | Revocação | F1 | Kappa |
+|---|---|---|---|---|
+| União | [0,909; 0,971] | [0,616; 0,720] | [0,741; 0,819] | [−0,061; 0,078] |
+| A+B | [0,973; 1,000] | [0,547; 0,656] | [0,704; 0,789] | [0,070; 0,196] |
+
+O intervalo do Kappa da União inclui zero, e o da A+B não. A diferença entre União e A+B não é significativa no teste de McNemar,
 com p = 0,11. Os 103 falsos negativos da União são todos pares na zona de
 incerteza, ou seja, abstenções.
 
 ```bash
-python src/experimentos_revisores.py --run resultados/matrix/top10
+python src/avaliacao_gabaritos.py --run resultados/matrix/top10
 python src/auditoria_manual.py apurar --run resultados/matrix/top10
 ```
 
 O primeiro comando leva cerca de 20 segundos, por causa das 10.000
-reamostragens do *bootstrap*, e imprime os seus blocos: a tabela acima é o
-E1, os intervalos e o McNemar são o E4 e a curva de operação é o E6. A saída é
-determinística e igual a
-`experimentos_revisores_log.txt`. Sob o gabarito automático este programa refaz
+reamostragens do *bootstrap*, e imprime os seus blocos: a primeira tabela é o
+E1, os intervalos e o McNemar são o E2, os erros caso a caso são o E3 e a
+análise de sensibilidade é o E4. A saída é determinística e igual a
+`avaliacao_gabaritos_log.txt`. Sob o gabarito automático este programa refaz
 a decisão sem a tabela de prioridade da agregação e reporta a União com 195,
 16, 79 e 22; os números oficiais contra o gabarito automático são os da
 Reivindicação #3.
@@ -320,29 +323,23 @@ aumentar os falsos positivos. A análise foi feita depois da execução e não
 alterou os parâmetros do método.
 
 ```bash
-python src/sensibilidade_regras.py --run resultados/matrix/top10
-python src/experimentos_revisores.py --run resultados/matrix/top10
+python src/avaliacao_gabaritos.py --run resultados/matrix/top10
 ```
 
-O primeiro comando imprime uma tabela por parâmetro e grava
-`sensibilidade_limiares.json` na pasta da execução. Se usar `--outdir`, crie a
-pasta antes. A tabela acima é o bloco E6 do segundo comando.
+A tabela acima é o bloco E4 da saída.
 
 ## Reivindicação #6: Validação externa em Linux, FFmpeg e PHP (QP1)
 
 Aplicado sem alteração aos ramos de manutenção do Linux, do FFmpeg e do PHP,
 com as correções do conjunto de dados do PatchLens, o método avaliou 7.848
 pares, dos quais 6.926 verificáveis, 88,7% deles de herança. Nos 649 pares em
-que há propagação a decidir, a União obtém precisão 0,886, revocação 0,914, F1
-0,900 e Kappa 0,389, e a A+B obtém precisão 0,969, revocação 0,867, F1 0,915 e
-Kappa 0,618.
+que há propagação a decidir, a União obtém F1 0,900 e Kappa 0,389, a A+B obtém
+F1 0,915 e Kappa 0,618, e o palpite fixo obtém F1 0,903 e Kappa 0.
 
 ```bash
-python -c "import json; d=json.load(open('resultados/validacao_externa/metricas_patchlens.json',encoding='utf-8')); t=d['populacao']['TOTAL']; print('pares',t['pares'],'| verificaveis',t['verificaveis'],'| heranca',t['proveniencia_verificaveis']['HERANCA']); [print(k.ljust(9),v) for k,v in d['metricas']['TOTAL']['proveniencia_refinada_sem_heranca'].items()]; [print(k.ljust(10),v['n'],v['taxa_resolvidos']) for k,v in d['verificabilidade_por_idade'].items()]"
+python -c "import json; d=json.load(open('resultados/validacao_externa/metricas_patchlens.json',encoding='utf-8')); t=d['populacao']['TOTAL']; print('pares',t['pares'],'| verificaveis',t['verificaveis'],'| heranca',t['proveniencia_verificaveis']['HERANCA']); [print(k.ljust(9),v) for k,v in d['metricas']['TOTAL']['proveniencia_refinada_sem_heranca'].items()]"
 ```
 
-A leitura por extenso está em
-`resultados/validacao_externa/RESULTADOS_PATCHLENS.md`.
 Recalcular desde a verificação exige os históricos Git completos dos três
 projetos em uma pasta indicada pela variável `PATCHLENS_REPOS`, que não
 acompanham o pacote, e o pacote `tree-sitter-c`. As fases são
@@ -455,16 +452,15 @@ python src/pipeline_dissertation.py --token "$GITHUB_TOKEN" --fresh --top 10 --o
 ```bash
 python src/ground_truth.py --token "$GITHUB_TOKEN" --results resultados/NOVO/dissertation_resultados.json --outdir resultados/NOVO
 python src/experimento_regra_ab.py --run resultados/NOVO
-python src/sensibilidade_regras.py --run resultados/NOVO
 python src/auditoria_manual.py gerar --run resultados/NOVO --cego --completo --revisor 1
 python src/auditoria_manual.py apurar --run resultados/NOVO
-python src/experimentos_revisores.py --run resultados/NOVO
+python src/avaliacao_gabaritos.py --run resultados/NOVO
 ```
 
 A auditoria manual é o passo humano: `gerar` produz a lista de trabalho em
 HTML, o revisor responde no navegador e exporta
 `auditoria_manual_preenchida.csv` para a pasta da execução, e só então
-`apurar` e `experimentos_revisores.py` podem rodar.
+`apurar` e `avaliacao_gabaritos.py` podem rodar.
 
 **Caracterização.**
 
@@ -472,6 +468,7 @@ HTML, o revisor responde no navegador e exporta
 python src/dataset_temporal.py --run resultados/NOVO
 python src/tempo_correcao.py --run resultados/NOVO
 python src/enriquecer_cves.py --censo fase2_NOVO.csv --cpe censo_cpe_nvd_NOVO.csv --run resultados/NOVO --saida cves_enriquecidas_NOVO.csv
+python src/qp2_gabarito_humano.py --run resultados/NOVO --cves cves_enriquecidas_NOVO.csv
 unset GITHUB_TOKEN NVD_TOKEN
 ```
 

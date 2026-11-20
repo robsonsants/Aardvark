@@ -1,12 +1,3 @@
-
-verificabilidade por idade do fix:
-  ate_2012   n=1757  resolvidos 28.6%
-  2013_16    n=2337  resolvidos 36.6%
-  2017_19    n=1872  resolvidos 64.9%
-  2020_21    n=359   resolvidos 76.3%
-  2022_23    n=522   resolvidos 89.8%
-  2024_mais  n=79    resolvidos 94.9%
-
 == linux == 6030 pares, 5301 verificáveis
   proveniencia               uniao     n=5301  TP 2247  FP 44    FN 2962  TN 48    P 0.981 R 0.431 F1 0.599 k -0.003
   proveniencia               regra_ab  n=5301  TP 2040  FP 13    FN 3169  TN 79    P 0.994 R 0.392 F1 0.562 k 0.014

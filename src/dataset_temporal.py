@@ -1,31 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Monta o DATASET TEMPORAL do ecossistema: as datas que o pipeline não persistia.
+Monta o dataset temporal do ecossistema: as datas que a verificação não grava.
 
-O QUE ELE ACRESCENTA AO QUE JA EXISTE
-O run guarda apenas `fork_pushed` (ultimo push do fork) e `ts` (quando a
-verificacao rodou). Para qualquer leitura temporal — quando a correcao saiu no
-upstream, quando o fork encostou no arquivo, quanto tempo levou — faltam datas.
-Este script minera essas datas pela API do GitHub e grava um dataset proprio.
+DATAS MINERADAS PELA API DO GITHUB
+  1. data do commit de correção no upstream          (1 chamada por fix_sha)
+  2. created_at e pushed_at de cada fork             (1 chamada por fork)
+  3. ahead_by / behind_by de cada fork contra o upstream
 
-DATAS MINERADAS
-  1. data do COMMIT DE CORRECAO no upstream          (1 chamada por fix_sha)
-  2. data do ULTIMO COMMIT DO FORK que tocou o arquivo do patch
-     (heuristica de "ultimo toque", a mesma do rw5 / Decan et al. 2018)
-  3. created_at e pushed_at de cada fork             (1 chamada por fork)
-  4. ahead_by / behind_by de cada fork contra o upstream
-
-LAG DE ADOCAO = (ultimo toque no fork) - (commit de correcao no upstream), em dias.
-
-LIMITACAO CONHECIDA, herdada do rw5: "ultimo toque" e aproximacao. Se o fork
-mexeu no arquivo por motivo nao relacionado depois da correcao, o lag fica
-superestimado; se herdou o arquivo por merge sem tocar nele, pode dar NEGATIVO.
-Valores negativos NAO sao removidos — ficam marcados em `lag_confiavel=nao`.
+A data de criação do fork, comparada com as datas dos commits de correção, separa os
+pares de herança dos de propagação. Os commits atrás do upstream entram nos fatores
+associados (QP2.3). O tempo até a correção é medido pelo grafo do Git, em
+tempo_correcao.py.
 
 Uso:
-    python dataset_temporal.py --run resultados/matrix/top10
-    python dataset_temporal.py --run resultados/matrix/top10 --token ghp_xxx
+    python src/dataset_temporal.py --run resultados/matrix/top10
+    python src/dataset_temporal.py --run resultados/matrix/top10 --token ghp_xxx
 """
 import argparse
 import csv
@@ -86,19 +76,6 @@ class GH:
         return None
 
 
-def dias(a: str, b: str):
-    """Diferenca em dias entre dois timestamps ISO (a - b)."""
-    if not a or not b:
-        return None
-    f = "%Y-%m-%dT%H:%M:%SZ"
-    try:
-        da = datetime.strptime(a, f).replace(tzinfo=timezone.utc)
-        db = datetime.strptime(b, f).replace(tzinfo=timezone.utc)
-    except ValueError:
-        return None
-    return round((da - db).total_seconds() / 86400.0, 1)
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", required=True)
@@ -116,7 +93,7 @@ def main():
 
     # ── 1. data do commit de correcao ───────────────────────────────────────
     fix_shas = sorted({(r["upstream"], r["fix_sha"]) for r in linhas})
-    print(f"[1/4] Data dos {len(fix_shas)} commits de correção...")
+    print(f"[1/3] Data dos {len(fix_shas)} commits de correção...")
     data_fix = {}
     for up, sha in fix_shas:
         c = gh.get(f"repos/{up}/commits/{sha}")
@@ -127,7 +104,7 @@ def main():
     # ── 2. metadados de cada fork ───────────────────────────────────────────
     forks = sorted({v["fork"] for v in vered})
     up_do_fork = {v["fork"]: v["upstream"] for v in vered}
-    print(f"\n[2/4] Metadados de {len(forks)} forks...")
+    print(f"\n[2/3] Metadados de {len(forks)} forks...")
     meta = {}
     for f in forks:
         r = gh.get(f"repos/{f}") or {}
@@ -146,26 +123,12 @@ def main():
         print(f"    {f:<44} criado {str(meta[f]['created_at'])[:10]}  "
               f"ahead={meta[f]['ahead_by']} behind={meta[f]['behind_by']}")
 
-    # ── 3. ultimo toque do fork no arquivo do patch ─────────────────────────
-    alvos = sorted({(r["fork"], r["filepath"]) for r in linhas
-                    if r["status"] != "FILE_NOT_FOUND"})
-    print(f"\n[3/4] Último toque em {len(alvos)} pares (fork, arquivo)...")
-    ultimo_toque = {}
-    for fk, fp in alvos:
-        c = gh.get(f"repos/{fk}/commits", path=fp, per_page=1)
-        d = None
-        if isinstance(c, list) and c:
-            d = ((c[0].get("commit") or {}).get("committer") or {}).get("date")
-        ultimo_toque[(fk, fp)] = d
-
-    # ── 4. montagem ─────────────────────────────────────────────────────────
-    print("\n[4/4] Montando o dataset...")
+    # ── 3. montagem ─────────────────────────────────────────────────────────
+    print("\n[3/3] Montando o dataset...")
     pares = []
     for r in linhas:
         chave = (r["upstream"], r["fix_sha"])
         d_fix = data_fix.get(chave)
-        d_toque = ultimo_toque.get((r["fork"], r["filepath"]))
-        lag = dias(d_toque, d_fix)
         m = meta.get(r["fork"], {})
         pares.append({
             "upstream": r["upstream"], "categoria": r["category"],
@@ -174,9 +137,6 @@ def main():
             "arquivo": r["filepath"],
             "eh_arquivo_de_teste": "sim" if ("test" in r["filepath"].lower()) else "nao",
             "fix_sha": r["fix_sha"], "data_fix_upstream": d_fix,
-            "data_ultimo_toque_fork": d_toque,
-            "lag_dias": lag,
-            "lag_confiavel": ("nao" if (lag is None or lag < 0) else "sim"),
             "sim_2a": r.get("sim_2a"), "delta": r.get("delta"),
             "metrica": r.get("method"),
             "fork_created_at": m.get("created_at"),
@@ -212,29 +172,17 @@ def main():
     grava_csv("dataset_temporal_pares.csv", pares)
     grava_csv("dataset_temporal_forks.csv", tabela_forks)
 
-    lags = [p["lag_dias"] for p in pares
-            if p["lag_dias"] is not None and p["lag_confiavel"] == "sim"]
-    import statistics
     resumo = {
         "run": str(base),
         "gerado_em": datetime.now(timezone.utc).isoformat(),
         "chamadas_api": gh.n,
         "n_pares": len(pares), "n_forks": len(tabela_forks),
-        "n_lags_confiaveis": len(lags),
-        "lag_mediana_dias": round(statistics.median(lags), 1) if lags else None,
-        "lag_media_dias": round(statistics.mean(lags), 1) if lags else None,
-        "lag_min_dias": min(lags) if lags else None,
-        "lag_max_dias": max(lags) if lags else None,
         "pares": pares, "forks": tabela_forks,
     }
     json.dump(resumo, open(base / "dataset_temporal.json", "w", encoding="utf-8"),
               indent=1, ensure_ascii=False)
     print(f"    -> {base / 'dataset_temporal.json'}")
     print(f"\nChamadas à API: {gh.n}")
-    if lags:
-        print(f"Lag de adoção (n={len(lags)} confiáveis): mediana {resumo['lag_mediana_dias']} dias · "
-              f"min {resumo['lag_min_dias']} · max {resumo['lag_max_dias']}")
-        print(f"Descartados por lag negativo ou data ausente: {len(pares) - len(lags)}")
 
 
 if __name__ == "__main__":

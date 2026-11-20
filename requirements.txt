@@ -29,4 +29,3 @@ rapidfuzz>=3.0.0   # Levenshtein exato em C++ (bit-paralelo); sem ele o pipeline
 
 # ─── Opcionais
 # tree-sitter-c>=0.24.0   # só para refazer a validação externa (src/experimento_patchlens.py)
-# matplotlib>=3.8         # só para src/gerar_figura_severidade.py

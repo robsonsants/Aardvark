@@ -573,25 +573,6 @@ def fase_metricas(args):
             "n": len(both),
             "concordam": sum(gt_prov(p) == gt_lin(p) for p in both),
         }
-    # verificabilidade por idade do fix (mesma leitura do run final72 do Matrix)
-    faixas = [("ate_2012", "2012"), ("2013_16", "2016"), ("2017_19", "2019"),
-              ("2020_21", "2021"), ("2022_23", "2023"), ("2024_mais", "9999")]
-    por_idade = {}
-    for p in pares:
-        if not verificavel(p):
-            continue
-        ano = (p["fix_data"] or "0000")[:4]
-        nome = next(n for n, lim in faixas if ano <= lim)
-        d = por_idade.setdefault(nome, {"n": 0, "resolvidos": 0, "heranca": 0})
-        d["n"] += 1
-        d["resolvidos"] += p["status"] != "ZONA_INCERTEZA"
-        d["heranca"] += p["proveniencia"] == "HERANCA"
-    res["verificabilidade_por_idade"] = {
-        n: {**por_idade[n], "taxa_resolvidos": round(por_idade[n]["resolvidos"] / por_idade[n]["n"], 3)}
-        for n, _ in faixas if n in por_idade}
-    print("\nverificabilidade por idade do fix:")
-    for n, d in res["verificabilidade_por_idade"].items():
-        print(f"  {n:<10} n={d['n']:<5} resolvidos {d['taxa_resolvidos']:.1%}")
     json.dump(res, open(OUT / "metricas_patchlens.json", "w", encoding="utf-8"),
               indent=1, ensure_ascii=False)
     for nome, m in res["metricas"].items():

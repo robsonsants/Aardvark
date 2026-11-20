@@ -1,4 +1,4 @@
-﻿[1/4] Data dos 70 commits de correção...
+﻿[1/3] Data dos 70 commits de correção...
     dendrite                         2792d049  2022-09-12T12:30:51Z
     dendrite                         723fd495  2022-08-15T09:19:47Z
     element-android                  53734255  2024-02-16T10:51:16Z
@@ -70,7 +70,7 @@
     matrix-media-repo                96d23d40  2021-04-16T02:19:05Z
     matrix-media-repo                bf8abdd7  2023-09-05T22:14:13Z
 
-[2/4] Metadados de 109 forks...
+[2/3] Metadados de 109 forks...
     AC-Lover/matrix-authentication-service       criado 2025-12-29  ahead=2 behind=1482
     AlaisterLeung/element-web                    criado None  ahead=None behind=None
     AliAbutorabi/Synapse                         criado 2026-07-07  ahead=5 behind=347
@@ -181,13 +181,9 @@
     xsanm/vodozemac                              criado 2025-10-31  ahead=1 behind=174
     yncyrydybyl/matrix-hookshot                  criado 2022-07-23  ahead=6 behind=140
 
-[3/4] Último toque em 413 pares (fork, arquivo)...
-
-[4/4] Montando o dataset...
+[3/3] Montando o dataset...
     -> resultados/matrix/top10\dataset_temporal_pares.csv  (770 linhas)
     -> resultados/matrix/top10\dataset_temporal_forks.csv  (109 linhas)
     -> resultados/matrix/top10\dataset_temporal.json
 
 Chamadas à API: 810
-Lag de adoção (n=460 confiáveis): mediana 516.1 dias · min 0.0 · max 2927.0
-Descartados por lag negativo ou data ausente: 310

@@ -1298,43 +1298,5 @@
    "n": 6057,
    "concordam": 4973
   }
- },
- "verificabilidade_por_idade": {
-  "ate_2012": {
-   "n": 1757,
-   "resolvidos": 502,
-   "heranca": 1733,
-   "taxa_resolvidos": 0.286
-  },
-  "2013_16": {
-   "n": 2337,
-   "resolvidos": 856,
-   "heranca": 2236,
-   "taxa_resolvidos": 0.366
-  },
-  "2017_19": {
-   "n": 1872,
-   "resolvidos": 1215,
-   "heranca": 1780,
-   "taxa_resolvidos": 0.649
-  },
-  "2020_21": {
-   "n": 359,
-   "resolvidos": 274,
-   "heranca": 211,
-   "taxa_resolvidos": 0.763
-  },
-  "2022_23": {
-   "n": 522,
-   "resolvidos": 469,
-   "heranca": 163,
-   "taxa_resolvidos": 0.898
-  },
-  "2024_mais": {
-   "n": 79,
-   "resolvidos": 75,
-   "heranca": 23,
-   "taxa_resolvidos": 0.949
-  }
  }
 }

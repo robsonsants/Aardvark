@@ -1,37 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Experimentos que respondem aos pareceres do LADC 2026 (submissao 34024, recusada).
+Avaliação do método contra os gabaritos, a partir das linhas cruas de uma execução.
 
-CADA EXPERIMENTO MAPEIA PARA UMA CRITICA ESPECIFICA:
+  E1  Classificador trivial, camadas isoladas e as duas configurações do método
+  E2  Intervalos de confiança (bootstrap) e teste de McNemar
+  E3  Erros caso a caso
+  E4  Análise de sensibilidade do limiar superior da Camada 2A
 
-  E1  Baselines triviais (classificador constante)
-      -> Rev.1 "always answering PATCHED gives P 0.440 R 1.000 F1 0.611.
-                Please add such a trivial baseline as a row of Table 4."
-      -> Rev.3 "results reveal a behavior very close to a single-class classifier"
-
-  E3  Discriminante de tamanho do patch
-      -> Rev.3 "if I do not have a method to classify small patches and big
-                patches, I can not really trust the results"
-
-  E4  Intervalos de confianca (bootstrap) e teste de McNemar
-      -> Rev.2/Rev.3 rigor estatistico; e a ressalva interna de que a uniao
-         supera a melhor camada isolada por UM par
-
-  E5  Analise de falhas caso a caso
-      -> Rev.2 "no analysis of the dataset is conducted to understand where
-                their approach fails nor are examples discussed"
-
-  E6  Curva de operacao com o baseline trivial marcado
-      -> Rev.1 "your methods barely beat a constant classifier, and this
-                comparison is never made"
-
-TUDO OFFLINE. Nenhum limiar muda uma MEDIDA: sim_2a, sim_patch, sim_vuln e delta
-ja estao gravados nas linhas cruas. Os limiares so mudam como esses numeros viram
-rotulo. Nao ha rede, nao ha token, nao ha reprocessamento de AST.
+Tudo offline. Nenhum limiar muda uma medida: sim_2a, sim_patch, sim_vuln e delta já
+estão gravados nas linhas cruas, e os limiares só mudam como esses números viram
+rótulo. Não há rede, token nem reprocessamento da árvore sintática.
 
 Uso:
-    python experimentos_revisores.py --run resultados/matrix/top10
+    python src/avaliacao_gabaritos.py --run resultados/matrix/top10
 """
 import argparse, csv, json, math, os, random, sys
 from collections import defaultdict, Counter
@@ -127,9 +109,9 @@ def carregar(base: Path):
 
 
 # ══════════════════════════════════════════════════════════ E1
-def e1_baselines(D, out):
+def e1_classificadores(D, out):
     print("\n" + "=" * 78)
-    print("E1 — BASELINES TRIVIAIS  (Rev.1: 'add such a trivial baseline as a row')")
+    print("E1 — CLASSIFICADOR TRIVIAL, CAMADAS ISOLADAS E CONFIGURACOES")
     print("=" * 78)
 
     res = {}
@@ -143,11 +125,9 @@ def e1_baselines(D, out):
               f"prevalencia {100*n_pos/len(oraculo):.1f}%)")
 
         linha = {}
-        # constante: sempre CORRIGIDO / sempre VULNERAVEL
+        # constante: sempre CORRIGIDO
         linha["trivial: sempre CORRIGIDO"] = metricas(
             confusao({p: True for p in oraculo}, oraculo))
-        linha["trivial: sempre VULNERAVEL"] = metricas(
-            confusao({p: False for p in oraculo}, oraculo))
         # camadas isoladas
         for nome, kw in (("Camada 1 (hash)", None),
                          ("Camada 2A isolada", "2a"),
@@ -180,7 +160,7 @@ def e1_baselines(D, out):
                    m["P"], m["R"], m["F1"], m["acc"], m["kappa"]))
         res[nome_or] = linha
 
-    # a leitura que os revisores vao fazer
+    # leitura
     for nome_or in res:
         triv = res[nome_or]["trivial: sempre CORRIGIDO"]
         uni  = res[nome_or]["PIPELINE: uniao das camadas"]
@@ -191,161 +171,11 @@ def e1_baselines(D, out):
               "   <-- e AQUI que o metodo se separa do trivial")
         print(f"    FP     trivial {triv['FP']}    vs  uniao {uni['FP']}    "
               "(falso positivo = falsa sensacao de seguranca)")
-    out["E1_baselines"] = res
+    out["E1_classificadores"] = res
     return res
 
 
-# ══════════════════════════════════════════════════════════ E3
-def _linhas_arquivo(base: Path, cve: str, tipo: str, fork: str, filepath: str):
-    d = base / "evidencias_dissertacao" / cve
-    if not d.is_dir():
-        return None
-    sufixo = filepath.replace("/", "_")
-    if tipo == "fork":
-        prefixo = "fork_" + fork.replace("/", "_") + "_"
-    else:
-        prefixo = "upstream_post_"
-    for f in d.iterdir():
-        if f.name.startswith(prefixo) and f.name.endswith(sufixo):
-            try:
-                return sum(1 for _ in open(f, encoding="utf-8", errors="ignore"))
-            except Exception:
-                return None
-    return None
-
-
-def e3_tamanho_patch(D, base, out):
-    print("\n" + "=" * 78)
-    print("E3 — DISCRIMINANTE DE TAMANHO DO PATCH  (Rev.3: 'if I do not have a")
-    print("     method to classify small and big patches, I can not trust the results')")
-    print("=" * 78)
-
-    agrup = defaultdict(list)
-    for r in D["linhas"]:
-        agrup[(r["fork"], r["cve_id"])].append(r)
-
-    oraculo = D["humano"] or D["auto"]
-    pred_u, _, _, _ = prever(D["linhas"], oraculo, regra_ab=False)
-
-    dados = []
-    for par, real in oraculo.items():
-        rows = agrup.get(par, [])
-        if not rows:
-            continue
-        rep = max(rows, key=lambda r: r.get("churn") or 0)
-        churn = rep.get("churn") or 0
-        n_lin = _linhas_arquivo(base, rep["cve_id"], "upstream_post",
-                                rep["fork"], rep["filepath"])
-        if not n_lin:
-            continue
-        razao = churn / n_lin
-        acertou = (pred_u.get(par) == real)
-        dados.append(dict(par="%s::%s" % par, categoria=rep["category"],
-                          churn=churn, linhas_arquivo=n_lin,
-                          razao_patch_arquivo=round(razao, 6),
-                          sim_2a=rep.get("sim_2a"), delta=rep.get("delta"),
-                          predito_corrigido=bool(pred_u.get(par)),
-                          rotulo_corrigido=bool(real), acertou=acertou))
-
-    if not dados:
-        print("  (sem evidencia em disco para medir)")
-        return {}
-
-    print(f"\n  {len(dados)} pares com arquivo em disco.")
-    erros = [d for d in dados if not d["acertou"]]
-    acertos = [d for d in dados if d["acertou"]]
-    def mediana(v):
-        v = sorted(v); n = len(v)
-        return None if not n else (v[n//2] if n % 2 else (v[n//2-1]+v[n//2])/2)
-    print("    razao patch/arquivo — mediana nos ACERTOS: %s  (n=%d)"
-          % (round(mediana([d['razao_patch_arquivo'] for d in acertos]), 5), len(acertos)))
-    print("    razao patch/arquivo — mediana nos ERROS  : %s  (n=%d)"
-          % (round(mediana([d['razao_patch_arquivo'] for d in erros]), 5) if erros else "—",
-             len(erros)))
-
-    # regra: patch pequeno em arquivo grande -> nao confiar no CORRIGIDO
-    print("\n  REGRA PROPOSTA: se razao(patch/arquivo) < c, o veredito CORRIGIDO")
-    print("  vai para a ZONA DE INCERTEZA em vez de ser afirmado.")
-    print("    %-10s %4s %3s %4s %3s  %-7s %-7s %-7s %-9s %s" %
-          ("c", "TP", "FP", "FN", "TN", "P", "R", "F1", "kappa", "% p/ auditoria"))
-    varredura = []
-    for c in [0.0, 0.005, 0.01, 0.02, 0.03, 0.05, 0.08, 0.12, 0.20, 0.40]:
-        pred = {}
-        movidos = 0
-        for d in dados:
-            par = tuple(d["par"].split("::"))
-            p = d["predito_corrigido"]
-            if p and d["razao_patch_arquivo"] < c:
-                p = False; movidos += 1     # vai para incerteza => nao afirma CORRIGIDO
-            pred[par] = p
-        orac = {tuple(d["par"].split("::")): d["rotulo_corrigido"] for d in dados}
-        m = metricas(confusao(pred, orac))
-        pct = 100.0 * movidos / len(dados)
-        print("    %-10s %4d %3d %4d %3d  %-7s %-7s %-7s %-9s %.1f%%" %
-              (c, m["TP"], m["FP"], m["FN"], m["TN"], m["P"], m["R"], m["F1"],
-               m["kappa"], pct))
-        varredura.append(dict(corte=c, **m, pct_para_auditoria=round(pct, 1)))
-
-    # ---------------------------------------------------------------
-    # O tamanho do patch discrimina? E o SINAL DO DELTA discrimina?
-    print("\n  COMPARACAO DE DISCRIMINANTES — qual sinal realmente separa o erro?")
-    agrup2 = defaultdict(list)
-    for r in D["linhas"]:
-        agrup2[(r["fork"], r["cve_id"])].append(r)
-
-    def _delta_negativo(par):
-        """A evidencia de dupla referencia aponta para o PRE-patch?"""
-        rows = [r for r in agrup2.get(par, []) if r.get("delta") is not None]
-        if not rows:
-            return None
-        rep_ = max(rows, key=lambda r: (r.get("sim_2a") or 0))
-        return rep_["delta"] < 0
-
-    linhas_tab = []
-    for nome, corte in (("razao patch/arquivo < 0,05", "tam"),
-                        ("delta < 0 (guarda A)", "delta")):
-        pred = {}
-        movidos = 0
-        for d in dados:
-            par = tuple(d["par"].split("::"))
-            pr = d["predito_corrigido"]
-            if pr:
-                if corte == "tam":
-                    gatilho = d["razao_patch_arquivo"] < 0.05
-                else:
-                    gatilho = _delta_negativo(par) is True
-                if gatilho:
-                    pr = False; movidos += 1
-            pred[par] = pr
-        orac = {tuple(d["par"].split("::")): d["rotulo_corrigido"] for d in dados}
-        m = metricas(confusao(pred, orac))
-        linhas_tab.append(dict(discriminante=nome, movidos=movidos, **m))
-
-    base_m = metricas(confusao(
-        {tuple(d["par"].split("::")): d["predito_corrigido"] for d in dados},
-        {tuple(d["par"].split("::")): d["rotulo_corrigido"] for d in dados}))
-    print("    %-30s %4s %3s %4s %3s  %-7s %-7s %-7s %-8s %s" %
-          ("discriminante", "TP", "FP", "FN", "TN", "P", "R", "F1", "kappa", "casos movidos"))
-    print("    %-30s %4d %3d %4d %3d  %-7s %-7s %-7s %-8s %s" %
-          ("(nenhum — pipeline atual)", base_m["TP"], base_m["FP"], base_m["FN"],
-           base_m["TN"], base_m["P"], base_m["R"], base_m["F1"], base_m["kappa"], 0))
-    for t in linhas_tab:
-        print("    %-30s %4d %3d %4d %3d  %-7s %-7s %-7s %-8s %s" %
-              (t["discriminante"], t["TP"], t["FP"], t["FN"], t["TN"],
-               t["P"], t["R"], t["F1"], t["kappa"], t["movidos"]))
-    print("\n    LEITURA: o tamanho do patch NAO e um discriminante utilizavel neste")
-    print("    conjunto — para zerar os 2 FP ele arrasta dezenas de acertos junto.")
-    print("    O sinal do delta zera os mesmos 2 FP mexendo em pouquissimos casos.")
-    print("    A resposta ao Rev.3 nao e 'sabemos separar patch pequeno de grande':")
-    print("    e 'medimos, o tamanho nao serve, e o sinal que serve e outro'.")
-
-    out["E3_tamanho_patch"] = dict(pares=dados, varredura_corte=varredura,
-                                   comparacao_discriminantes=linhas_tab,
-                                   pipeline_sem_discriminante=base_m)
-    return dados
-
-
-# ══════════════════════════════════════════════════════════ E4
+# ══════════════════════════════════════════════════════════ E2
 def _bootstrap(pred, oraculo, n=10000):
     pares = sorted(oraculo)
     amostras = defaultdict(list)
@@ -390,10 +220,9 @@ def _mcnemar(pred_a, pred_b, oraculo):
     return dict(b01=b01, b10=b10, n_discordancias=n, p_valor=round(p_val, 4))
 
 
-def e4_incerteza(D, out):
+def e2_incerteza(D, out):
     print("\n" + "=" * 78)
-    print("E4 — INTERVALOS DE CONFIANCA E TESTE DE McNEMAR")
-    print("     (Rev.2/Rev.3: rigor estatistico; e a ressalva do ganho de 1 par)")
+    print("E2 — INTERVALOS DE CONFIANCA E TESTE DE McNEMAR")
     print("=" * 78)
 
     res = {}
@@ -410,7 +239,6 @@ def e4_incerteza(D, out):
                    for p in oraculo}
         pred_2b = {p: any(r.get("label_2b") == "CORRIGIDO" for r in agrup.get(p, []))
                    for p in oraculo}
-        pred_tr = {p: True for p in oraculo}
 
         m = metricas(confusao(pred_u, oraculo))
         ic = _bootstrap(pred_u, oraculo)
@@ -420,10 +248,9 @@ def e4_incerteza(D, out):
                 print("    %-6s %-8s  IC95%% [%s , %s]  (bootstrap, %d reamostragens)"
                       % (k, m[k], ic[k]["ic95_baixo"], ic[k]["ic95_alto"], ic[k]["n_amostras"]))
 
-        print("\n    McNemar (a uniao e mesmo melhor que as alternativas?)")
+        print("\n    McNemar")
         comps = [("uniao x Camada 2A isolada", pred_u, pred_2a),
                  ("uniao x Camada 2B isolada", pred_u, pred_2b),
-                 ("uniao x trivial (sempre CORRIGIDO)", pred_u, pred_tr),
                  ("uniao x Regra A+B", pred_u, pred_ab)]
         mc = {}
         for nome, a, b in comps:
@@ -436,14 +263,28 @@ def e4_incerteza(D, out):
             else:
                 print("      %-38s %s" % (nome, r["nota"]))
         res[nome_or] = dict(metricas=m, ic95=ic, mcnemar=mc)
-    out["E4_incerteza"] = res
+
+    # configuração A+B, depois da União, com o mesmo procedimento
+    for nome_or, oraculo in (("automatico", D["auto"]), ("humano", D["humano"])):
+        if len(oraculo) < 10:
+            continue
+        pred_ab, _, _, _ = prever(D["linhas"], oraculo, regra_ab=True)
+        m = metricas(confusao(pred_ab, oraculo))
+        ic = _bootstrap(pred_ab, oraculo)
+        print(f"\n  Oraculo {nome_or} — configuracao A+B (n={len(oraculo)} pares)")
+        for k in ("P", "R", "F1", "kappa"):
+            if k in ic:
+                print("    %-6s %-8s  IC95%% [%s , %s]  (bootstrap, %d reamostragens)"
+                      % (k, m[k], ic[k]["ic95_baixo"], ic[k]["ic95_alto"], ic[k]["n_amostras"]))
+        res[nome_or]["regra_ab"] = dict(metricas=m, ic95=ic)
+    out["E2_incerteza"] = res
     return res
 
 
-# ══════════════════════════════════════════════════════════ E5
-def e5_falhas(D, out):
+# ══════════════════════════════════════════════════════════ E3
+def e3_falhas(D, out):
     print("\n" + "=" * 78)
-    print("E5 — ANALISE DE FALHAS CASO A CASO  (Rev.2: 'no failure analysis')")
+    print("E3 — ERROS CASO A CASO")
     print("=" * 78)
 
     agrup = defaultdict(list)
@@ -491,16 +332,15 @@ def e5_falhas(D, out):
     for cat, cont in sorted(tot.items()):
         print("    %-14s %s" % (cat, dict(cont)))
 
-    out["E5_falhas"] = dict(oraculo=nome_or, casos=casos,
+    out["E3_falhas"] = dict(oraculo=nome_or, casos=casos,
                             por_categoria={k: dict(v) for k, v in tot.items()})
     return casos
 
 
-# ══════════════════════════════════════════════════════════ E6
-def e6_curva(D, out):
+# ══════════════════════════════════════════════════════════ E4
+def e4_sensibilidade(D, out):
     print("\n" + "=" * 78)
-    print("E6 — CURVA DE OPERACAO COM O BASELINE TRIVIAL MARCADO")
-    print("     (Rev.1: 'your methods barely beat a constant classifier')")
+    print("E4 — ANALISE DE SENSIBILIDADE DO LIMIAR SUPERIOR DA CAMADA 2A")
     print("=" * 78)
 
     res = {}
@@ -523,13 +363,13 @@ def e6_curva(D, out):
                    m["F1"], m["kappa"], bate, marca))
             curva.append(dict(thr_high=th, **m))
         res[nome_or] = dict(trivial=triv, curva=curva)
-    out["E6_curva"] = res
+    out["E4_sensibilidade"] = res
     return res
 
 
 # ══════════════════════════════════════════════════════════ main
 def _posicionar_gerador(D):
-    """Leva o gerador aleatório ao estado em que o bootstrap do E4 começa, para que os
+    """Leva o gerador aleatório ao estado em que o bootstrap do E2 começa, para que os
     intervalos de confiança saiam iguais aos publicados."""
     for oraculo in (D["auto"], D["humano"]):
         if len(oraculo) < 10:
@@ -546,11 +386,11 @@ def main():
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
     base = Path(args.run)
-    dest = Path(args.out) if args.out else base / "experimentos_revisores.json"
+    dest = Path(args.out) if args.out else base / "avaliacao_gabaritos.json"
 
     D = carregar(base)
     print("=" * 78)
-    print("EXPERIMENTOS EM RESPOSTA AOS PARECERES — run %s" % base)
+    print("AVALIACAO CONTRA OS GABARITOS — run %s" % base)
     print("=" * 78)
     print("  %d linhas cruas · %d pares com GT automatico conclusivo · "
           "%d pares com veredito humano"
@@ -561,12 +401,11 @@ def main():
            "n_pares_gt_auto": len(D["auto"]),
            "n_pares_humano": len(D["humano"])}
 
-    e1_baselines(D, out)
+    e1_classificadores(D, out)
     _posicionar_gerador(D)
-    e3_tamanho_patch(D, base, out)
-    e4_incerteza(D, out)
-    e5_falhas(D, out)
-    e6_curva(D, out)
+    e2_incerteza(D, out)
+    e3_falhas(D, out)
+    e4_sensibilidade(D, out)
 
     json.dump(out, open(dest, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     print("\n" + "=" * 78)
